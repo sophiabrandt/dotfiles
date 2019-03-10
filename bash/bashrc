@@ -1,0 +1,26 @@
+#
+# ~/.bashrc
+#
+
+[[ $- != *i* ]] && return
+
+# elixir
+export PATH="$PATH:/path/to/elixir/bin"
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+#yarn path
+export PATH="$(yarn global bin):$PATH"
+
+# Terminal to sterminal
+TERMINAL="sterminal"
+
+# Neovim
+export VISUAL=nvim
+export VIMCONFIG=~/.config/nvim
+export VIMDATA=~/.local/share/nvim
+
+# RIPGREP
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+
+# Fish Shell
+exec fish

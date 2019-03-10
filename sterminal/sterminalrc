@@ -1,0 +1,5 @@
+#!/bin/dash
+#~/.sterminalrc
+# see man st for possible options to set.
+#export font="MesloLGS Nerd Font Mono:size=12"
+export font="FuraCode Nerd Font:style=medium:size=14"
