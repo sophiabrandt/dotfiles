@@ -32,13 +32,6 @@ set list listchars=tab:»·,trail:·,nbsp:·
 "Use one space, not two, after punctuation.
 set nojoinspaces
 
-" TERMINAL
-" Getting out of Terminal mode
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
-endif
-
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
