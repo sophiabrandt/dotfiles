@@ -4,11 +4,13 @@
 
 ## OS
 
-Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/download/i3/)
+- Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/download/i3/)
+
+The i3 config is pretty much vanilla Manjaro i3 except some keybindingto make Colemak work and some programs which I wanted to run at startup.
 
 ## Terminal
 
-- [st](https://st.suckless.org/) with tmux wrapper
+- [st](https://st.suckless.org/) with tmux wrapper (sterminal, a wrapper for st-manjaro and tmux)
 - [fish shell](https://fishshell.com/) with [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 
 ## Editor
