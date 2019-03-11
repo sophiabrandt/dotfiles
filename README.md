@@ -6,7 +6,7 @@
 
 - Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/download/i3/)
 
-The i3 config is pretty much vanilla Manjaro i3 except some keybindingto make Colemak work and some programs which I wanted to run at startup.
+The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Colemak](https://colemak.com/) and some programs which I wanted to run at startup.
 
 ## Terminal
 
@@ -15,7 +15,7 @@ The i3 config is pretty much vanilla Manjaro i3 except some keybindingto make Co
 
 ## Editor
 
-[NeoVim](https://neovim.io/)
+- [NeoVim](https://neovim.io/)
 
 ## Look
 
