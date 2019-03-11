@@ -77,6 +77,50 @@ au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.mdx setlocal spell
 
+" CLOJURE
+" https://medium.com/@jebberjeb/vim-clojure-tooling-redux-16ce62e4d729
+" Strip off the symbol’s namespace
+function! SanitizeTag(word)
+  return (split(a:word, ‘/’)[-1])
+endfunction
+
+" " Returns the job id of the first terminal buffer on the
+" " current tab.
+" function! FirstTermOfTabJobId()
+"     let t_id = nvim_get_current_tabpage()
+"     for w_id in nvim_tabpage_list_wins(t_id)
+"         let b_id = nvim_win_get_buf(w_id)
+"         if nvim_buf_get_option(b_id, 'buftype') == 'terminal'
+"             return nvim_buf_get_var(b_id, 'terminal_job_id')
+"         endif
+"     endfor
+" endfunction
+
+" Returns the latest terminal job id
+augroup Terminal
+  au!
+  au TermOpen * let g:term_jid = b:terminal_job_id
+augroup END
+
+" Sends to REPL
+function! REPLSendSafe()
+    " Hack to get character under the cursor.
+    norm "ayl
+    if index(["(", ")", "[", "]", "{", "}"], @a) >= 0
+        " Hack to get text using % motion.
+        norm v%"ay
+        call REPLSend(@a)
+    endif
+endfunction
+
+" function! REPLSend(cmd)
+"     call jobsend(FirstTermOfTabJobId(), a:cmd."\n")
+" endfunction
+
+function! REPLSend(cmd)
+    call jobsend(g:term_jid, a:cmd."\n")
+endfunction
+
 " EMMET
 let g:user_emmet_leader_key='<Tab>'
 let g:user_emmet_settings = {
