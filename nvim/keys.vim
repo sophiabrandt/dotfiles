@@ -26,7 +26,7 @@ autocmd Filetype help nnoremap <buffer> q :q<cr>
 " Turn off search highlight
 nnoremap <leader>, :nohlsearch<CR>
 
-"Split edit your vimrc. Type space, v, r in sequence to trigger
+" Split edit your vimrc. Type space, v, r in sequence to trigger
 nnoremap <leader>vr :tabedit $MYVIMRC<cr>
 " Source (reload) your vimrc. Type space, s, o in sequence to trigger
 nnoremap <leader>so :source $MYVIMRC<cr>

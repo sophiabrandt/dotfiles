@@ -3,6 +3,9 @@ let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 
+" SNEAK VIM
+let g:sneak#label = 1
+
 " RIPGREP FZF
 if executable('ag')
   " Use Ag over Grep

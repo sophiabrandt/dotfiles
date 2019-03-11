@@ -2,6 +2,8 @@
 colorscheme nova
 set nobackup
 set backspace=indent,eol,start
+set autoindent
+set smartindent
 set nowritebackup
 set autowrite
 set number relativenumber
