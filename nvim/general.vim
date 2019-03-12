@@ -51,7 +51,6 @@ set wildmenu
 set wildmode=full
 
 " TAG JUMPING:
-
 " Create the `tags` file (may need to install ctags first)
 command! MakeTags !ctags -R -f ./.git/tags .
 

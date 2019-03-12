@@ -19,6 +19,13 @@ nnoremap E $
 " New Tab
 noremap <c-t> :tabnew<cr>
 
+" TERMINAL
+" Getting out of Terminal mode
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
+
 " Quit help files
 " type q to exit
 autocmd Filetype help nnoremap <buffer> q :q<cr>
