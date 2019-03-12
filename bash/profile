@@ -1,0 +1,20 @@
+# Browser
+export BROWSER="/usr/bin/chromium"
+
+# Elixir
+export PATH="$PATH:/path/to/elixir/bin"
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Yarn
+export PATH="$(yarn global bin):$PATH"
+
+# Neovim
+export VISUAL="nvim"
+export VIMCONFIG="~/.config/nvim"
+export VIMDATA="~/.local/share/nvim"
+
+# Python/PIP3
+export PATH="~/.local/bin:$PATH"
+
+# RipGrep
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden"

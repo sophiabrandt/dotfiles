@@ -26,6 +26,9 @@ if has('nvim')
   tnoremap <C-v><Esc> <Esc>
 endif
 
+" <leader>tl will clear neoterm-3.
+nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+
 " Quit help files
 " type q to exit
 autocmd Filetype help nnoremap <buffer> q :q<cr>
