@@ -1,5 +1,6 @@
 " BASIC SETUP
 colorscheme nova
+set termguicolors
 set nobackup
 set backspace=indent,eol,start
 set autoindent
