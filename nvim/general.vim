@@ -7,6 +7,7 @@ set autoindent
 set smartindent
 set nowritebackup
 set autowrite
+set inccommand=nosplit
 set number relativenumber
 set tabstop=2
 set softtabstop=2
