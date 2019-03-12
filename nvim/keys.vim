@@ -7,8 +7,8 @@ nnoremap <space> <Nop>
 nnoremap j gj
 nnoremap k gk
 
-" sx is escape in insert mode
-inoremap sx <esc>
+" xx is escape in insert mode
+inoremap xx <esc>
 
 " jump to start of line and end of line
 inoremap <c-a> <c-o>^
