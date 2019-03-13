@@ -72,6 +72,10 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.mdx setlocal spell
+" Grip (Preview Markdown)
+if executable('grip')
+  nnoremap <silent> <leader>mp :!grip % -b<cr>
+endif
 
 " CLOJURE
 " https://medium.com/@jebberjeb/vim-clojure-tooling-redux-16ce62e4d729
