@@ -17,4 +17,4 @@ export VIMDATA="~/.local/share/nvim"
 export PATH="~/.local/bin:$PATH"
 
 # RipGrep
-export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden"
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!.git/'"

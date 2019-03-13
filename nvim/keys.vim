@@ -33,6 +33,9 @@ nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 " type q to exit
 autocmd Filetype help nnoremap <buffer> q :q<cr>
 
+" Find with :Rg
+nnoremap <c-f> :Rg<cr>
+
 " Turn off search highlight
 nnoremap <leader>, :nohlsearch<CR>
 
