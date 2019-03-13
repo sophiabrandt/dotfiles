@@ -36,6 +36,12 @@ autocmd Filetype help nnoremap <buffer> q :q<cr>
 " Find with :Rg
 nnoremap <c-f> :Rg<cr>
 
+" replace f and t with one-character vim sneak
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
+
 " Turn off search highlight
 nnoremap <leader>, :nohlsearch<CR>
 
