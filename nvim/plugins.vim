@@ -3,6 +3,10 @@ let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 
+
+" VIMCOMPLETESME SETUP
+autocmd FileType vim let b:vcm_tab_complete = 'vim'
+
 " SNEAK VIM
 let g:sneak#label = 1
 
