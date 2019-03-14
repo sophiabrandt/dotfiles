@@ -42,9 +42,6 @@ map F <Plug>Sneak_F
 map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 
-" Turn off search highlight
-nnoremap <leader>, :nohlsearch<CR>
-
 " Split edit your vimrc. Type space, v, r in sequence to trigger
 nnoremap <leader>vr :tabedit $MYVIMRC<cr>
 " Source (reload) your vimrc. Type space, s, o in sequence to trigger
