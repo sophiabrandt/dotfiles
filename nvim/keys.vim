@@ -34,7 +34,7 @@ nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 autocmd Filetype help nnoremap <buffer> q :q<cr>
 
 " Find with :Rg
-nnoremap <c-f> :Rg<cr>
+nnoremap <leader>rg :Rg<cr>
 
 " replace f and t with one-character vim sneak
 map f <Plug>Sneak_f
