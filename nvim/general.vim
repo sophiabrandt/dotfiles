@@ -25,7 +25,7 @@ set laststatus=2
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
-filetype plugin on
+filetype plugin indent on
 syntax enable
 
 " WHITESPACE
@@ -73,9 +73,7 @@ au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.mdx setlocal spell
 " Grip (Preview Markdown)
-if executable('grip')
-  nnoremap <silent> <leader>mp :!grip % -b<cr>
-endif
+nnoremap <silent> <leader>mp :!grip % -b<cr>
 
 " EMMET
 let g:user_emmet_settings = {
