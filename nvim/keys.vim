@@ -58,24 +58,8 @@ nnoremap <leader>vk :tabedit ~/.config/nvim/keys.vim<cr>
 " FZF
 nnoremap <c-p> :<c-u>FZF<cr>
 
-" CLOJURE
-" REPLSend
-" If no visual selection, send safely
-nnoremap <leader>ef :call REPLSendSafe()<cr>
-" If there's a visual selection, just send it
-vnoremap <leader>ef "ay:call REPLSend(@a)<cr>
-" Send the entire buffer
-nnoremap <leader>eb :call REPLSend("(load-file \"".expand('%:p')."\")")<cr>
-" Get docs
-nnoremap <leader>doc :call REPLSend("(clojure.repl/doc ".expand("<cword>").")")<cr>
-" Jump to definition
-nnoremap tt :exe “:tag “.SanitizeTag(expand(“<cword>”))
-" Run tests in current namespace
-nnoremap <leader>tb :norm gg,ef<cr>:call REPLSend("(require '[clojure.test]) (clojure.test/run-tests)")<cr>
-
 " ALE
 nnoremap <leader>af :ALEFix<cr>
-
 "Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>

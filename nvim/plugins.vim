@@ -62,7 +62,6 @@ let g:ale_linters = {
 \   'javascript': ['standard'],
 \   'typescript': ['standard'],
 \   'elixir': ['elixir-ls'],
-\   'clojure': ['joker']
 \}
 
 let g:ale_fixers = {
