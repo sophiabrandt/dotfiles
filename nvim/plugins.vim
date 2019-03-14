@@ -3,7 +3,6 @@ let g:auto_save = 1
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 
-
 " VIMCOMPLETESME SETUP
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
 
@@ -63,6 +62,7 @@ let g:ale_linters = {
 \   'javascript': ['standard'],
 \   'typescript': ['standard'],
 \   'elixir': ['elixir-ls'],
+\   'clojure': ['joker']
 \}
 
 let g:ale_fixers = {
@@ -72,6 +72,7 @@ let g:ale_fixers = {
 \   'css': ['prettier'],
 \   'html': ['prettier'],
 \   'markdown': ['prettier'],
+\   'elixir': ['mix_format'],
 \   'python' : ['autopep8', 'yapf'],
 \   'graphql' : ['prettier'],
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
