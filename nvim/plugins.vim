@@ -54,11 +54,9 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
-" RAINBOW PARENS
-au VimEnter * RainbowParentheses!!
-
 " ALE
 let g:ale_linters = {
+\   'clojure': ['joker'],
 \   'javascript': ['standard'],
 \   'typescript': ['standard'],
 \   'elixir': ['elixir-ls'],
