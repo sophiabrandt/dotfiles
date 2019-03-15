@@ -54,6 +54,20 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
+" EMMET
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
+" Treat <li> and <p> tags like the block tags they are
+let g:html_indent_tags = 'li\|p'
+
+" JSX
+let g:jsx_ext_required = 0
+let g:vim_jsx_pretty_colorful_config = 1
+
 " ALE
 let g:ale_linters = {
 \   'clojure': ['joker'],
