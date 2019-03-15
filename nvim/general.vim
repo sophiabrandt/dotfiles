@@ -1,5 +1,5 @@
 " BASIC SETUP
-colorscheme nova
+colorscheme gruvbox8
 set termguicolors
 set hidden
 set nobackup

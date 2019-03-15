@@ -7,7 +7,7 @@ endif
 
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
-call minpac#add('trevordmiller/nova-vim')
+call minpac#add('lifepillar/vim-gruvbox8')
 call minpac#add('jeffkreeftmeijer/vim-numbertoggle')
 call minpac#add('junegunn/fzf.vim')
 call minpac#add('itchyny/lightline.vim')
