@@ -65,7 +65,9 @@ nnoremap <leader>vk :tabedit ~/.config/nvim/keys.vim<cr>
 nnoremap <c-p> :<c-u>FZF<cr>
 
 " ALE
+noremap <Leader>ad :ALEGoToDefinition<CR>
 nnoremap <leader>af :ALEFix<cr>
+noremap <Leader>ar :ALEFindReferences<CR>
 "Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
