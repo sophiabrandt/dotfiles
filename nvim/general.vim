@@ -1,32 +1,24 @@
 " BASIC SETUP
 colorscheme nova
 set termguicolors
+set hidden
 set nobackup
-set backspace=indent,eol,start
-set autoindent
-set smartindent
 set nowritebackup
-set autowrite
+set smartindent
+set copyindent
 set inccommand=nosplit
 set number relativenumber
 set tabstop=2
 set softtabstop=2
+set shiftwidth=2
 set scrolloff=4
-set smarttab
 set expandtab
-set encoding=utf-8
 set ignorecase
-set nocompatible
-set autoread
 set lazyredraw
-set showcmd
 set showmatch
-set laststatus=2
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
-filetype plugin indent on
-syntax enable
 
 " WHITESPACE
 " Display extra whitespace
@@ -38,17 +30,12 @@ set nojoinspaces
 set splitbelow
 set splitright
 
-" SEARCHING
-set incsearch
-set hlsearch
-
 " FINDING FILES:
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
 
 " Display all matching files when we tab complete
-set wildmenu
 set wildmode=full
 
 " TAG JUMPING:
@@ -72,8 +59,6 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.mdx setlocal spell
-" Grip (Preview Markdown)
-nnoremap <silent> <leader>mp :!grip % -b<cr>
 
 " EMMET
 let g:user_emmet_settings = {

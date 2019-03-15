@@ -1,7 +1,10 @@
 " LEADER SHORTCUTS
 " leader is space
 let mapleader=" "
-nnoremap <space> <Nop>
+nnoremap <space> <nop>
+" localleader is comma
+let maplocalleader=","
+nnoremap , <nop>
 
 " movement
 nnoremap j gj
@@ -28,6 +31,9 @@ endif
 
 " <leader>tl will clear neoterm-3.
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+
+" Grip (Preview Markdown)
+nnoremap <silent> <leader>mp :!grip % -b<cr>
 
 " Quit help files
 " type q to exit
