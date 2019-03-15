@@ -11,7 +11,7 @@ The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Col
 ## Terminal
 
 - [st](https://st.suckless.org/) with tmux wrapper (sterminal, a wrapper for st-manjaro and tmux)
-- [fish shell](https://fishshell.com/) with [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+- [fish shell](https://fishshell.com/) with [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) and [fisher](https://github.com/jorgebucaran/fisher)
 
 ## Editor
 
