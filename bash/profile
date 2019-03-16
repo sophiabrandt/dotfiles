@@ -13,8 +13,11 @@ export VISUAL="nvim"
 export VIMCONFIG="~/.config/nvim"
 export VIMDATA="~/.local/share/nvim"
 
-# Python/PIP3
+# Python
 export PATH="~/.local/bin:$PATH"
+
+# Ruby
+export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # RipGrep
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!.git/'"
