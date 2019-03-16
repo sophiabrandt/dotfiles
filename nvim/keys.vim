@@ -72,6 +72,9 @@ nnoremap <c-p> :<c-u>FZF<cr>
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
 nnoremap <leader>tsp :<c-u>TSDefPreview<cr>
 nnoremap <leader>tsf :<c-u>TSTypeDef<cr>
+nnoremap <leader>tst :<c-u>TSType<cr>
+nnoremap <leader>tsr :<c-u>TSRefs<cr>
+nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
 " ALE
 nnoremap <Leader>ad :<c-u>ALEGoToDefinition<CR>
