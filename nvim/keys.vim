@@ -6,6 +6,10 @@ nnoremap <space> <nop>
 let maplocalleader=","
 nnoremap , <nop>
 
+" swap semicolon and colon in normal mode to enter command mode more easily
+nnoremap ; :
+nnoremap : ;
+
 " movement
 nnoremap j gj
 nnoremap k gk
@@ -20,20 +24,20 @@ inoremap <c-e> <c-o>$
 nnoremap E $
 
 " New Tab
-noremap <c-t> :tabnew<cr>
+noremap <c-t> :<c-u>tabnew<cr>
 
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
+  tnoremap <esc> <c-\><c-n>
+  tnoremap <c-v><esc> <esc>
 endif
 
 " <leader>tl will clear neoterm-3.
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 
 " Grip (Preview Markdown)
-nnoremap <silent> <leader>mp <c-u>:!grip % -b<cr>
+nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
 
 " Quit help files
 " type q to exit
@@ -62,7 +66,7 @@ nnoremap <leader>vp :<c-u>tabedit ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>tabedit ~/.config/nvim/keys.vim<cr>
 
 " FZF
-nnoremap <c-p> :<c-u>FZF<cr>
+nnoremap <c-f> :<c-u>FZF<cr>
 
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
