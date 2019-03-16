@@ -66,7 +66,7 @@ nnoremap <leader>vp :<c-u>tabedit ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>tabedit ~/.config/nvim/keys.vim<cr>
 
 " FZF
-nnoremap <c-f> :<c-u>FZF<cr>
+nnoremap <c-p> :<c-u>FZF<cr>
 
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
