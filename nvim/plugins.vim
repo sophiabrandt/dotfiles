@@ -68,10 +68,6 @@ let g:html_indent_tags = 'li\|p'
 let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
-" TSUQUYOMI
-let g:tsuquyomi_use_dev_node_module = 2
-let g:tsuquyomi_tsserver_path='~/Coding/TypeScript/node_modules/typescript/lib/tsserver.js'
-
 " ALE
 let g:ale_linters = {
 \   'clojure': ['joker'],
@@ -104,5 +100,5 @@ let g:ale_linters_explicit = 1
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
-let g:ale_typescript_tsserver_executable='~/Coding/TypeScript/node_modules/typescript/lib/tsserver.js'
+let g:ale_typescript_tsserver_use_global = 1
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
