@@ -33,14 +33,14 @@ endif
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 
 " Grip (Preview Markdown)
-nnoremap <silent> <leader>mp :!grip % -b<cr>
+nnoremap <silent> <leader>mp <c-u>:!grip % -b<cr>
 
 " Quit help files
 " type q to exit
 autocmd Filetype help nnoremap <buffer> q :q<cr>
 
 " Find with :Rg
-nnoremap <leader>rg :Rg<cr>
+nnoremap <leader>rg :<c-u>Rg<cr>
 
 " replace f and t with one-character vim sneak
 map f <Plug>Sneak_f
@@ -49,25 +49,30 @@ map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 
 " Split edit your vimrc. Type space, v, r in sequence to trigger
-nnoremap <leader>vr :tabedit $MYVIMRC<cr>
+nnoremap <leader>vr :<c-u>tabedit $MYVIMRC<cr>
 " Source (reload) your vimrc. Type space, s, o in sequence to trigger
-nnoremap <leader>so :source $MYVIMRC<cr>
+nnoremap <leader>so :<c-u>source $MYVIMRC<cr>
 " General Config
-nnoremap <leader>vg :tabedit ~/.config/nvim/general.vim<cr>
+nnoremap <leader>vg :<c-u>tabedit ~/.config/nvim/general.vim<cr>
 " Packages
-nnoremap <leader>vm :tabedit ~/.config/nvim/packages.vim<cr>
+nnoremap <leader>vm :<c-u>tabedit ~/.config/nvim/packages.vim<cr>
 " Plugins
-nnoremap <leader>vp :tabedit ~/.config/nvim/plugins.vim<cr>
+nnoremap <leader>vp :<c-u>tabedit ~/.config/nvim/plugins.vim<cr>
 " Keys
-nnoremap <leader>vk :tabedit ~/.config/nvim/keys.vim<cr>
+nnoremap <leader>vk :<c-u>tabedit ~/.config/nvim/keys.vim<cr>
 
 " FZF
 nnoremap <c-p> :<c-u>FZF<cr>
 
+" NVIM-TYPESCRIPT
+nnoremap <leader>tsd :<c-u>TSDoc<cr>
+nnoremap <leader>tsp :<c-u>TSDefPreview<cr>
+nnoremap <leader>tsf :<c-u>TSTypeDef<cr>
+
 " ALE
-noremap <Leader>ad :ALEGoToDefinition<CR>
-nnoremap <leader>af :ALEFix<cr>
-noremap <Leader>ar :ALEFindReferences<CR>
+nnoremap <Leader>ad :<c-u>ALEGoToDefinition<CR>
+nnoremap <leader>af :<c-u>ALEFix<cr>
+nnoremap <Leader>ar :<c-u>ALEFindReferences<CR>
 "Move between linting errors
-nnoremap ]r :ALENextWrap<CR>
-nnoremap [r :ALEPreviousWrap<CR>
+nnoremap ]r :<c-u>ALENextWrap<CR>
+nnoremap [r :<c-u>ALEPreviousWrap<CR>
