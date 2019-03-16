@@ -20,6 +20,9 @@ set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
 
+" RUBY NEOVIM PROVIDER
+let g:ruby_host_prog = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+
 " WHITESPACE
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
