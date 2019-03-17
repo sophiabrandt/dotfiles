@@ -77,9 +77,9 @@ nnoremap <leader>tsr :<c-u>TSRefs<cr>
 nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
 " ALE
-nnoremap <Leader>ad :<c-u>ALEGoToDefinition<CR>
+nnoremap <leader>ad :<c-u>ALEGoToDefinition<cr>
 nnoremap <leader>af :<c-u>ALEFix<cr>
-nnoremap <Leader>ar :<c-u>ALEFindReferences<CR>
+nnoremap <Leader>ar :<c-u>ALEFindReferences<cr>
 "Move between linting errors
-nnoremap ]r :<c-u>ALENextWrap<CR>
-nnoremap [r :<c-u>ALEPreviousWrap<CR>
+nnoremap ]r :<c-u>ALENextWrap<cr>
+nnoremap [r :<c-u>ALEPreviousWrap<cr>
