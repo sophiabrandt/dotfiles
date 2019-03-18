@@ -33,8 +33,13 @@ if has('nvim')
   tnoremap <c-v><esc> <esc>
 endif
 
+" NEOTERM
 " <leader>tl will clear neoterm-3.
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+" REPLSend
+nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
+nmap <leader>rs <plug>(neoterm-repl-send)
+nmap <leader>rl <plug>(neoterm-repl-send-line)
 
 " Grip (Preview Markdown)
 nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
@@ -47,10 +52,10 @@ autocmd Filetype help nnoremap <buffer> q :q<cr>
 nnoremap <leader>rg :<c-u>Rg<cr>
 
 " replace f and t with one-character vim sneak
-map f <Plug>Sneak_f
-map F <Plug>Sneak_F
-map t <Plug>Sneak_t
-map T <Plug>Sneak_T
+map f <plug>Sneak_f
+map F <plug>Sneak_F
+map t <plug>Sneak_t
+map T <plug>Sneak_T
 
 " Split edit your vimrc. Type space, v, r in sequence to trigger
 nnoremap <leader>vr :<c-u>tabedit $MYVIMRC<cr>
