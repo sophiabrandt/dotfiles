@@ -10,6 +10,10 @@ autocmd FileType vim let b:vcm_tab_complete = 'vim'
 let g:sneak#label = 1
 let g:sneak#s_next = 1
 
+" NEOTERM
+let g:neoterm_autoscroll = 1
+
+
 " RIPGREP FZF
 if executable('ag')
   " Use Ag over Grep
