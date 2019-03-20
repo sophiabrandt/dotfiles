@@ -23,9 +23,6 @@ nnoremap B ^
 inoremap <c-e> <c-o>$
 nnoremap E $
 
-" New Tab
-noremap <c-t> :<c-u>tabnew<cr>
-
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
@@ -58,20 +55,24 @@ map t <plug>Sneak_t
 map T <plug>Sneak_T
 
 " Split edit your vimrc. Type space, v, r in sequence to trigger
-nnoremap <leader>vr :<c-u>tabedit $MYVIMRC<cr>
+nnoremap <leader>vr :<c-u>e $MYVIMRC<cr>
 " Source (reload) your vimrc. Type space, s, o in sequence to trigger
 nnoremap <leader>so :<c-u>source $MYVIMRC<cr>
 " General Config
-nnoremap <leader>vg :<c-u>tabedit ~/.config/nvim/general.vim<cr>
+nnoremap <leader>vg :<c-u>e ~/.config/nvim/general.vim<cr>
 " Packages
-nnoremap <leader>vm :<c-u>tabedit ~/.config/nvim/packages.vim<cr>
+nnoremap <leader>vm :<c-u>e ~/.config/nvim/packages.vim<cr>
 " Plugins
-nnoremap <leader>vp :<c-u>tabedit ~/.config/nvim/plugins.vim<cr>
+nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 " Keys
-nnoremap <leader>vk :<c-u>tabedit ~/.config/nvim/keys.vim<cr>
+nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
 " FZF
 nnoremap <c-p> :<c-u>FZF<cr>
+nnoremap <leader>bb :<c-u>Buffers<cr>
+" BUFFERS
+" close the current buffer and move to the previous one
+nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>

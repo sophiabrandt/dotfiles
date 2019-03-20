@@ -27,6 +27,8 @@ if executable('ag')
     nnoremap \ :Rg<SPACE>
   endif
 endif
+" Buffers
+let g:fzf_buffers_jump = 1
 
 " FILE BROWSING:
 " Tweaks for browsing
@@ -42,12 +44,25 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mapping
 
-" DEVICONS FOR LIGHTLINE
+" LIGHTLINE
+let g:lightline#bufferline#show_number  = 1
+let g:lightline#bufferline#shorten_path = 0
+let g:lightline#bufferline#unnamed      = '[No Name]'
 let g:lightline = {
       \ 'component_function': {
       \   'filetype': 'MyFiletype',
       \   'fileformat': 'MyFileformat',
-      \ }
+      \ },
+      \ 'component_expand': {
+      \   'buffers': 'lightline#bufferline#buffers'
+      \ },
+      \ 'component_type': {
+      \   'buffers': 'tabsel'
+      \ },
+      \ 'tabline': {
+      \   'left': [['buffers']],
+      \   'right': [['close']]
+      \ },
       \ }
 
 function! MyFiletype()

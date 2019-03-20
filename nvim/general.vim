@@ -13,6 +13,7 @@ set softtabstop=2
 set shiftwidth=2
 set scrolloff=4
 set expandtab
+set showtabline=2
 set ignorecase
 set lazyredraw
 set showmatch
