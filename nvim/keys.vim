@@ -70,6 +70,14 @@ nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 " FZF
 nnoremap <c-p> :<c-u>FZF<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
+nnoremap <leader>sn :<c-u>Snippets<cr>
+
+" ULTISNIPS
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsListSnippets="<c-l>"
+
 " BUFFERS
 " close the current buffer and move to the previous one
 nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
