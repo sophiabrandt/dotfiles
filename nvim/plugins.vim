@@ -45,25 +45,15 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - check |netrw-browse-maps| for more mapping
 
 " LIGHTLINE
+let lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
 let g:lightline#bufferline#show_number  = 1
 let g:lightline#bufferline#shorten_path = 0
 let g:lightline#bufferline#unnamed      = '[No Name]'
-let g:lightline = {
-      \ 'component_function': {
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ },
-      \ 'component_expand': {
-      \   'buffers': 'lightline#bufferline#buffers'
-      \ },
-      \ 'component_type': {
-      \   'buffers': 'tabsel'
-      \ },
-      \ 'tabline': {
-      \   'left': [['buffers']],
-      \   'right': [['close']]
-      \ },
-      \ }
+let g:lightline.tabline = {'left': [['buffers']],'right': [['close']]}
+let g:lightline.component_function = {'filetype': 'MyFiletype', 'fileformat': 'MyFileformat'}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type = {'buffers': 'tabsel'}
 
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''

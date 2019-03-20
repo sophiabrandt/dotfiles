@@ -8,6 +8,7 @@ endif
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('lifepillar/vim-gruvbox8')
+call minpac#add('shinchu/lightline-gruvbox.vim')
 call minpac#add('jeffkreeftmeijer/vim-numbertoggle')
 call minpac#add('editorconfig/editorconfig-vim')
 call minpac#add('907th/vim-auto-save')
