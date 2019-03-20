@@ -38,8 +38,8 @@ endif
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 " REPLSend
 nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
-nmap <leader>rs <plug>(neoterm-repl-send)
-nmap <leader>rl <plug>(neoterm-repl-send-line)
+nmap <leader>trs <plug>(neoterm-repl-send)
+nmap <leader>trl <plug>(neoterm-repl-send-line)
 
 " Grip (Preview Markdown)
 nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
