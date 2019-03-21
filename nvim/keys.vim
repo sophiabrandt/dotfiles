@@ -93,6 +93,7 @@ nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 " ALE
 nnoremap <leader>ad :<c-u>ALEGoToDefinition<cr>
 nnoremap <leader>af :<c-u>ALEFix<cr>
+nnoremap <leader>al :<c-u>ALELint<cr>
 nnoremap <Leader>ar :<c-u>ALEFindReferences<cr>
 "Move between linting errors
 nnoremap ]r :<c-u>ALENextWrap<cr>

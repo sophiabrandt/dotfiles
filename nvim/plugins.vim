@@ -80,14 +80,14 @@ let g:vim_jsx_pretty_colorful_config = 1
 " ALE
 let g:ale_linters = {
 \   'clojure': ['joker'],
-\   'javascript': ['prettier-eslint'],
+\   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'elixir': ['elixir-ls'],
 \}
 
 let g:ale_fixers = {
-\   'javascript': ['prettier-eslint'],
-\   'typescript': ['prettier-eslint'],
+\   'javascript': ['eslint', 'prettier'],
+\   'typescript': ['eslint', 'prettier'],
 \   'json': ['prettier'],
 \   'css': ['prettier'],
 \   'html': ['prettier'],
