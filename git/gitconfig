@@ -51,26 +51,23 @@
   function = blue
   selected = normal
   separator = red bold
-  linenumber = normaladvice]
-	pushNonFastForward = false
-	statusHints = false
+  linenumber = normal
 [core]
-	whitespace = trailing-space,space-before-tab
+  whitespace = trailing-space,space-before-tab
 [diff]
-	renames = copies
-	mnemonicprefix = true
+  renames = copies
+  mnemonicprefix = true
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 [push]
-	default = tracking
+  default = tracking
 [rerere]
-	enabled = true
+  enabled = true
 [merge]
-	stat = true
+  stat = true
 [alias]
   # Git Commit, Add all and Push — in one step.
   cap = "!f() { git add .; git commit -m \"$@\"; git push; }; f"
-
   # NEW.
   new = "!f() { git cap \"📦 NEW: $@\"; }; f"
   # IMPROVE.
@@ -83,4 +80,6 @@
   doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
   # TEST.
   tst = "!f() { git cap \"✅ TEST: $@\"; }; f"
-	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+  # Logline
+  logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
