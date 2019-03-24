@@ -19,5 +19,13 @@ export PATH="~/.local/bin:$PATH"
 # Ruby
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
+# Android SDK
+export ANDROID_SDK_ROOT="~/Android/Sdk"
+export ANDROID_HOME=$ANDROID_SDK_ROOT
+export PATH="$ANDROID_HOME""tools:$ANDROID_HOME""tools/bin:$ANDROID_HOME""platform-tools:$PATH"
+
+# Flutter
+export PATH="usr/bin/flutter:$PATH"
+
 # RipGrep
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!.git/'"
