@@ -83,7 +83,7 @@ let g:ale_linters = {
 \   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'elixir': ['elixir-ls'],
-\   'dart': ['dart_language_server'],
+\   'dart': ['language_server'],
 \}
 
 let g:ale_fixers = {
