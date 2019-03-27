@@ -13,7 +13,6 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-
 " RIPGREP FZF
 if executable('ag')
   " Use Ag over Grep
@@ -63,12 +62,15 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
+" NVIM-TYPESCRIPT
+let g:nvim_typescript#javascript_support = 1
+
 " EMMET
-let g:user_emmet_settings = {
-\  'javascript.jsx' : {
-\      'extends' : 'jsx',
-\  },
-\}
+"let g:user_emmet_settings = {
+"\  'javascript.jsx' : {
+"\      'extends' : 'jsx',
+"\  },
+"\}
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
