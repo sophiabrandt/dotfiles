@@ -111,5 +111,4 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
-let g:ale_typescript_tsserver_use_global = 1
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'

@@ -91,10 +91,11 @@ nnoremap <leader>tsr :<c-u>TSRefs<cr>
 nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
 " ALE
-nnoremap <leader>ad :<c-u>ALEGoToDefinition<cr>
-nnoremap <leader>af :<c-u>ALEFix<cr>
-nnoremap <leader>al :<c-u>ALELint<cr>
-nnoremap <Leader>ar :<c-u>ALEFindReferences<cr>
+nmap <leader>ad <plug>(ale_go_to_definition)
+nmap <leader>af <plug>(ale_fix)
+nmap <leader>al <plug>(ale_lint)
+nmap <leader>ar <plug>(ale_find_references)
+imap <c-c> <plug>(ale_complete)
 "Move between linting errors
-nnoremap ]r :<c-u>ALENextWrap<cr>
-nnoremap [r :<c-u>ALEPreviousWrap<cr>
+nmap ]r <plug>(ale_next_wrap)
+nmap [r <plug>(ale_previous_wrap)
