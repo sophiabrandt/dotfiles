@@ -21,8 +21,9 @@ set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
 
-" RUBY NEOVIM PROVIDER
+" NEOVIM PROVIDERS
 let g:ruby_host_prog = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+let g:node_host_prog = '/usr/bin/neovim-node-host'
 
 " WHITESPACE
 " Display extra whitespace
