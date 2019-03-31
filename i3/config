@@ -27,7 +27,7 @@ font pango:Cantarell 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec sterminal
+bindsym $mod+Return exec sterminal -n "st-256color"
 
 # kill focused window
 bindsym $mod+Shift+q kill
