@@ -72,6 +72,9 @@ let g:nvim_typescript#javascript_support = 1
 "\  },
 "\}
 
+" HEOKINASE (Hex color display)
+let g:Hexokinase_ftAutoload = ['css', 'xml']
+
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
