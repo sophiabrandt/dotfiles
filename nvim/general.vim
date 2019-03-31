@@ -54,9 +54,11 @@ command! MakeTags !ctags -R -f ./.git/tags .
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
 
-" AUTOCOMPLETE
+" AUTOCOMPLETE & SPELL CHECKING
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
+set spelllang=en
+set spellfile=/media/Data/Gdrive/Coding/vim/spell/en.utf-8.add
 
 " MARKDOWN
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
