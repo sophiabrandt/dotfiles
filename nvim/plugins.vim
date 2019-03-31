@@ -13,19 +13,6 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-" RIPGREP FZF
-if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in FZF for listing files. Lightning fast and respects .gitignore
-  let g:fzf_command_prefix = 'rg --files --no-ignore-vcs --nocolor --hidden -g "" %s'
-
-  if !exists(":Rg")
-    command -nargs=+ -complete=file -bar Rg silent! grep! <args>|cwindow|redraw!
-    nnoremap \ :Rg<SPACE>
-  endif
-endif
 " Buffers
 let g:fzf_buffers_jump = 1
 
