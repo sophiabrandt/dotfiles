@@ -1,1 +1,1 @@
-theme_gruvbox dark
+theme_gruvbox dark medium
