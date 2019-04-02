@@ -1,1 +1,2 @@
 theme_gruvbox dark medium
+fish_ssh_agent
