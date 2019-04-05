@@ -23,6 +23,9 @@ nnoremap B ^
 inoremap <c-e> <c-o>$
 nnoremap E $
 
+" replace word with default register
+nnoremap <leader>r "_diwP"
+
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
