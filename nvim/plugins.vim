@@ -75,6 +75,7 @@ let g:ale_linters = {
 \   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'elixir': ['elixir-ls'],
+\   'python': ['flake-8'],
 \   'dart': ['language_server'],
 \}
 
@@ -86,7 +87,7 @@ let g:ale_fixers = {
 \   'html': ['prettier'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
-\   'python' : ['autopep8', 'yapf'],
+\   'python' : ['yapf'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
