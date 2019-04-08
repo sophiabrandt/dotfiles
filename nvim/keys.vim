@@ -26,6 +26,9 @@ nnoremap E $
 " replace word with default register
 nnoremap <leader>r "_diwP"
 
+" expands to current path
+cabbr %% <c-r>=expand('%:p:h')<cr>
+
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
