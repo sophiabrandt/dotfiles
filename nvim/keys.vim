@@ -97,7 +97,11 @@ nnoremap <leader>tsr :<c-u>TSRefs<cr>
 nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
 " ALE
-nmap <leader>ad <plug>(ale_go_to_definition)
+nmap <leader>ag <plug>(ale_go_to_definition)
+nmap <leader>at <plug>(ale_go_to_type_definition)
+nmap <leader>ah <plug>(ale_hover)
+nmap <leader>ad <plug>(ale_documentation)
+nmap <leader>ap <plug>(ale_detail)
 nmap <leader>af <plug>(ale_fix)
 nmap <leader>al <plug>(ale_lint)
 nmap <leader>ar <plug>(ale_find_references)
