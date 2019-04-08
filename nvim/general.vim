@@ -7,6 +7,7 @@ set nowritebackup
 set smartindent
 set copyindent
 set inccommand=nosplit
+set completeopt=menu,menuone,preview,noselect,noinsert
 set number relativenumber
 set tabstop=2
 set softtabstop=2
