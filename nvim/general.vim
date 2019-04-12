@@ -44,6 +44,9 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmode=full
 
+" Automatically change to current directory
+autocmd BufEnter * silent! lcd %:p:h
+
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)
 command! MakeTags !ctags -R -f ./.git/tags .

@@ -26,9 +26,6 @@ nnoremap E $
 " replace word with default register
 nnoremap <leader>r "_diwP"
 
-" expands to current path
-cabbr %% <c-r>=expand('%:p:h')<cr>
-
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
@@ -74,7 +71,7 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
 " FZF
-nnoremap <c-p> :<c-u>FZF<cr>
+nnoremap <c-p> :<c-u>ProjectFiles<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
 nnoremap <leader>sn :<c-u>Snippets<cr>
 

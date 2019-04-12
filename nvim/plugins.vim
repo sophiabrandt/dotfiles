@@ -13,8 +13,16 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-" Buffers
+" FZF
+" Support for buffers
 let g:fzf_buffers_jump = 1
+
+" search files in git project root
+function! s:find_git_root()
+  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
+
+command! ProjectFiles execute 'Files' s:find_git_root()
 
 " FILE BROWSING:
 " Tweaks for browsing
@@ -75,8 +83,11 @@ let g:ale_linters = {
 \   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'css': ['stylelint', 'csslint'],
+\   'html': ['tidy'],
+\   'markdown': ['languagetool', 'remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'python': ['flake-8'],
+\   'graphql': ['eslint', 'gqlint'],
 \   'dart': ['language_server'],
 \}
 
