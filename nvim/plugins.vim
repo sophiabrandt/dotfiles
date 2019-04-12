@@ -13,7 +13,7 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-" FZF
+" FZF & Ripgrep
 " Support for buffers
 let g:fzf_buffers_jump = 1
 
@@ -23,6 +23,7 @@ function! s:find_git_root()
 endfunction
 
 command! ProjectFiles execute 'Files' s:find_git_root()
+command! ProjectRg execute 'Rg' s:find_git_root()
 
 " FILE BROWSING:
 " Tweaks for browsing

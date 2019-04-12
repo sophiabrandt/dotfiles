@@ -48,9 +48,6 @@ nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
 " type q to exit
 autocmd Filetype help nnoremap <buffer> q :q<cr>
 
-" Find with :Rg
-nnoremap <leader>rg :<c-u>Rg<cr>
-
 " replace f and t with one-character vim sneak
 map f <plug>Sneak_f
 map F <plug>Sneak_F
@@ -74,6 +71,9 @@ nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 nnoremap <c-p> :<c-u>ProjectFiles<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
 nnoremap <leader>sn :<c-u>Snippets<cr>
+
+" Find with :Rg
+nnoremap <leader>rg :<c-u>ProjectRg<cr>
 
 " ULTISNIPS
 let g:UltiSnipsExpandTrigger="<c-j>"
