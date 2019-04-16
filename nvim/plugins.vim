@@ -63,11 +63,11 @@ endfunction
 let g:nvim_typescript#javascript_support = 1
 
 " EMMET
-"let g:user_emmet_settings = {
-"\  'javascript.jsx' : {
-"\      'extends' : 'jsx',
-"\  },
-"\}
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
 
 " HEOKINASE (Hex color display)
 let g:Hexokinase_ftAutoload = ['css', 'xml']
@@ -84,9 +84,10 @@ let g:ale_linters = {
 \   'clojure': ['joker'],
 \   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
+\   'json': ['jsonlint'],
 \   'css': ['stylelint', 'csslint'],
 \   'html': ['tidy'],
-\   'markdown': ['languagetool', 'remark_lint', 'writegood'],
+\   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'python': ['flake-8'],
 \   'graphql': ['eslint', 'gqlint'],
