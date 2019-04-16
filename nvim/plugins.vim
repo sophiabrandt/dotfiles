@@ -23,7 +23,6 @@ function! s:find_git_root()
 endfunction
 
 command! ProjectFiles execute 'Files' s:find_git_root()
-command! ProjectRg execute 'Rg' s:find_git_root()
 
 " FILE BROWSING:
 " Tweaks for browsing
@@ -49,6 +48,8 @@ let g:lightline.tabline = {'left': [['buffers']],'right': [['close']]}
 let g:lightline.component_function = {'filetype': 'MyFiletype', 'fileformat': 'MyFileformat'}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type = {'buffers': 'tabsel'}
+let g:lightline.active = {'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']] }
+let g:lightline.component_function = {'gitbranch': 'fugitive#head'}
 
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''

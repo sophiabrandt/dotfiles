@@ -26,6 +26,9 @@ nnoremap E $
 " replace word with default register
 nnoremap <leader>r "_diwP"
 
+" switch current working directory to project root
+nnoremap <leader>cd :<c-u>ProjectRootCD<cr>
+
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
@@ -68,12 +71,13 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
 " FZF
-nnoremap <c-p> :<c-u>ProjectFiles<cr>
+" nnoremap <c-p> :<c-u>:ProjectFiles<cr>
+nnoremap <c-p> :<c-u>ProjectRootExe Files<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
 nnoremap <leader>sn :<c-u>Snippets<cr>
 
 " Find with :Rg
-nnoremap <leader>rg :<c-u>ProjectRg<cr>
+nnoremap <leader>rg :<c-u>ProjectRootExe Rg<cr>
 
 " ULTISNIPS
 let g:UltiSnipsExpandTrigger="<c-j>"
