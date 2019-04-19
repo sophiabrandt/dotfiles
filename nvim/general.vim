@@ -45,7 +45,7 @@ set path+=**
 set wildmode=full
 
 " Automatically change to current directory
-autocmd BufEnter * silent! lcd %:p:h
+" autocmd BufEnter * silent! lcd %:p:h
 
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)

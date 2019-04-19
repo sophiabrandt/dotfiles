@@ -27,7 +27,9 @@ nnoremap E $
 nnoremap <leader>r "_diwP"
 
 " switch current working directory to project root
-nnoremap <leader>cd :<c-u>ProjectRootCD<cr>
+nnoremap <leader>prd :<c-u>ProjectRootCD<cr>
+" switch to the directory of currently openend file
+nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 
 " TERMINAL
 " Getting out of Terminal mode
@@ -71,13 +73,12 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
 " FZF
-" nnoremap <c-p> :<c-u>:ProjectFiles<cr>
-nnoremap <c-p> :<c-u>ProjectRootExe Files<cr>
+nnoremap <c-p> :<c-u>Files<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
 nnoremap <leader>sn :<c-u>Snippets<cr>
 
 " Find with :Rg
-nnoremap <leader>rg :<c-u>ProjectRootExe Rg<cr>
+nnoremap <leader>rg :<c-u>Rg<cr>
 
 " ULTISNIPS
 let g:UltiSnipsExpandTrigger="<c-j>"
