@@ -90,7 +90,7 @@ let g:ale_linters = {
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'python': ['flake-8'],
-\   'graphql': ['eslint', 'gqlint'],
+\   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
 \}
 
