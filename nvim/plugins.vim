@@ -81,7 +81,7 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " ALE
 let g:ale_linters = {
-\   'clojure': ['joker'],
+\   'clojure': ['joker', 'clj_kondo'],
 \   'javascript': ['tsserver'],
 \   'typescript': ['tsserver'],
 \   'json': ['jsonlint'],
