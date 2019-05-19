@@ -54,4 +54,6 @@ call minpac#add('mhartington/nvim-typescript', {'for': ['typescript', 'tsx', 'ja
 call minpac#add('elixir-editors/vim-elixir')
 call minpac#add('tpope/vim-fireplace')
 call minpac#add('tpope/vim-sexp-mappings-for-regular-people')
+call minpac#add('junegunn/rainbow_parentheses.vim')
 call minpac#add('dart-lang/dart-vim-plugin')
+call minpac#add('chrisbra/unicode.vim')

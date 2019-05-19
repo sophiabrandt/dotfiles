@@ -63,9 +63,15 @@ endfunction
 let g:nvim_typescript#javascript_support = 1
 
 " EMMET
-let g:user_emmet_settings = {
+let g:user_emmet_settings={
 \  'javascript.jsx' : {
-\      'extends' : 'jsx',
+\    'extends': 'jsx',
+\    },
+\  'typescript.tsx' : {
+\    'extends': 'jsx',
+\    },
+\  'jsx': {
+\    'attribute_name': {'for': 'htmlFor', 'class': 'class'},
 \  },
 \}
 

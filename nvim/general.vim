@@ -1,5 +1,6 @@
 " BASIC SETUP
 colorscheme gruvbox8
+"set background=light
 set termguicolors
 set hidden
 set nobackup
