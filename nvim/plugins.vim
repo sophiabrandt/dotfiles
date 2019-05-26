@@ -86,34 +86,6 @@ let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
 " ALE
-let g:ale_linters = {
-\   'clojure': ['joker', 'clj_kondo'],
-\   'javascript': ['tsserver'],
-\   'typescript': ['tsserver'],
-\   'json': ['jsonlint'],
-\   'css': ['stylelint', 'csslint'],
-\   'html': ['tidy'],
-\   'markdown': ['remark_lint', 'writegood'],
-\   'elixir': ['elixir-ls'],
-\   'python': ['flake-8'],
-\   'graphql': ['gqlint'],
-\   'dart': ['language_server'],
-\}
-
-let g:ale_fixers = {
-\   'javascript': ['eslint', 'prettier'],
-\   'typescript': ['eslint', 'prettier'],
-\   'json': ['prettier'],
-\   'css': ['prettier', 'stylelint'],
-\   'html': ['prettier'],
-\   'markdown': ['prettier'],
-\   'elixir': ['mix_format'],
-\   'python' : ['yapf'],
-\   'graphql' : ['prettier'],
-\   'dart': ['dartfmt'],
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\}
-
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
@@ -126,3 +98,37 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
+let g:ale_linter_aliases = { 'jsx': ['css', 'javascript'] }
+let g:ale_linter_aliases = { 'svelte': ['css', 'javascript'] }
+
+let g:ale_linters = {
+\   'clojure': ['joker', 'clj_kondo'],
+\   'javascript': ['tsserver', 'eslint'],
+\   'typescript': ['tsserver', 'eslint'],
+\   'json': ['jsonlint'],
+\   'css': ['stylelint', 'csslint'],
+\   'jsx': ['stylelint', 'eslint'],
+\   'html': ['tidy'],
+\   'svelte': ['tsserver', 'eslint'],
+\   'markdown': ['remark_lint', 'writegood'],
+\   'elixir': ['elixir-ls'],
+\   'python': ['flake-8'],
+\   'graphql': ['gqlint'],
+\   'dart': ['language_server'],
+\}
+
+let g:ale_fixers = {
+\   'javascript': ['eslint', 'prettier'],
+\   'typescript': ['eslint', 'prettier'],
+\   'json': ['prettier', 'fixjson'],
+\   'css': ['prettier', 'stylelint'],
+\   'html': ['prettier'],
+\   'jsx': ['eslint', 'prettier'],
+\   'svelte': ['eslint', 'prettier'],
+\   'markdown': ['prettier'],
+\   'elixir': ['mix_format'],
+\   'python' : ['yapf'],
+\   'graphql' : ['prettier'],
+\   'dart': ['dartfmt'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
