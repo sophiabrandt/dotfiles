@@ -59,6 +59,17 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
+" PEAR-TREE (AUTO-PAIRS SMART PAIRS)
+let g:pear_tree_smart_openers = 1
+let g:pear_tree_smart_closers = 1
+let g:pear_tree_smart_backspace = 1
+
+" RAINBOW PARENS
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,clojure,scheme,racket RainbowParentheses
+augroup END
+
 " NVIM-TYPESCRIPT
 let g:nvim_typescript#javascript_support = 1
 
@@ -109,7 +120,7 @@ let g:ale_linters = {
 \   'css': ['stylelint', 'csslint'],
 \   'jsx': ['stylelint', 'eslint'],
 \   'html': ['tidy'],
-\   'svelte': ['tsserver', 'eslint'],
+\   'svelte': ['stylelint', 'eslint'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'python': ['flake-8'],
