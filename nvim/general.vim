@@ -7,6 +7,7 @@ set nobackup
 set nowritebackup
 set smartindent
 set copyindent
+set smartcase
 set inccommand=nosplit
 set completeopt=menu,menuone,preview,noselect,noinsert
 set number relativenumber
@@ -50,7 +51,7 @@ set wildmode=full
 
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R -f ./.git/tags .
+command! MakeTags !ctags -R .
 
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor
@@ -65,6 +66,15 @@ command! MakeTags !ctags -R -f ./.git/tags .
 set complete+=kspell
 set spelllang=en
 set spellfile=/media/Data/Gdrive/Coding/vim/spell/en.utf-8.add
+
+
+" VISUALLY SELECT, @ TO RUN MACRO ON ALL LINES
+xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
 
 " MARKDOWN
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
