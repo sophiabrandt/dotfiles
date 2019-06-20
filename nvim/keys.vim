@@ -98,6 +98,16 @@ nnoremap <leader>tst :<c-u>TSType<cr>
 nnoremap <leader>tsr :<c-u>TSRefs<cr>
 nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
+" VIM-JS-FILE-IMPORT
+let g:js_file_import_no_mappings = 1
+nmap <leader>if <plug>(JsFileImport)
+nmap <leader>iF <plug>(JsFileImportList)
+nmap <leader>ig <plug>(JsGotoDefinition)
+nmap <leader>iG <plug>(JsGotoDefinition)
+nmap <leader>ip <plug>(PromptJsFileImport)
+nmap <leader>is <plug>(SortJsFileImport)
+nmap <leader>ic <plug>(JsFixImport)
+
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)
