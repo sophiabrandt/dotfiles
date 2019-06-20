@@ -114,13 +114,13 @@ let g:ale_linter_aliases = { 'svelte': ['css', 'javascript'] }
 
 let g:ale_linters = {
 \   'clojure': ['joker', 'clj_kondo'],
-\   'javascript': ['tsserver', 'eslint'],
-\   'typescript': ['tsserver', 'eslint'],
+\   'javascript': ['tsserver', 'eslint', 'standard'],
+\   'typescript': ['tsserver', 'eslint', 'standard'],
 \   'json': ['jsonlint'],
 \   'css': ['stylelint', 'csslint'],
 \   'jsx': ['stylelint', 'eslint'],
 \   'html': ['tidy'],
-\   'svelte': ['stylelint', 'eslint'],
+\   'svelte': ['stylelint', 'eslint', 'standard'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'python': ['flake-8'],
@@ -129,13 +129,13 @@ let g:ale_linters = {
 \}
 
 let g:ale_fixers = {
-\   'javascript': ['eslint', 'prettier'],
-\   'typescript': ['eslint', 'prettier'],
+\   'javascript': ['eslint', 'prettier', 'prettier_standard'],
+\   'typescript': ['eslint', 'prettier', 'prettier_standard'],
 \   'json': ['prettier', 'fixjson'],
 \   'css': ['prettier', 'stylelint'],
 \   'html': ['prettier'],
-\   'jsx': ['eslint', 'prettier'],
-\   'svelte': ['eslint', 'prettier'],
+\   'jsx': ['eslint', 'prettier', 'prettier_standard'],
+\   'svelte': ['eslint', 'prettier', 'prettier_standard'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
 \   'python' : ['yapf'],
