@@ -31,6 +31,10 @@ nnoremap <leader>prd :<c-u>ProjectRootCD<cr>
 " switch to the directory of currently openend file
 nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 
+" maximize/minimize current tab
+nnoremap <leader>tx :<c-u>tabedit %<cr>
+nnoremap <leader>ti :<c-u>tabclose<cr>
+
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
