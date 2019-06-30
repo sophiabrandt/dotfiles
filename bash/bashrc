@@ -4,6 +4,9 @@
 
 [[ $- != *i* ]] && return
 
+# disable interpreting <ctrl+s> as signal for stopping terminal updates
+stty -ixon
+
 # Terminal to sterminal
 export TERMINAL="sterminal"
 
