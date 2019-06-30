@@ -138,7 +138,7 @@ let g:ale_fixers = {
 \   'svelte': ['eslint', 'prettier', 'prettier_standard'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
-\   'python' : ['yapf'],
+\   'python' : ['yapf', 'black'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
