@@ -2,4 +2,5 @@
 #~/.sterminalrc
 # see man st for possible options to set.
 #export font="MesloLGS Nerd Font Mono:size=12"
-export font="FuraCode Nerd Font:size=13"
+# export font="FuraCode Nerd Font:size=13"
+export font="Victor Mono SemiBold:size=13"
