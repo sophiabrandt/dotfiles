@@ -75,15 +75,12 @@ let g:nvim_typescript#javascript_support = 1
 
 " EMMET
 let g:user_emmet_settings={
-\  'javascript.jsx' : {
+\  'javascript' : {
 \    'extends': 'jsx',
 \    },
-\  'typescript.tsx' : {
+\  'typescript' : {
 \    'extends': 'jsx',
 \    },
-\  'jsx': {
-\    'attribute_name': {'for': 'htmlFor', 'class': 'className'},
-\  },
 \}
 
 " HEOKINASE (Hex color display)
