@@ -82,7 +82,7 @@ let g:user_emmet_settings={
 \    'extends': 'jsx',
 \    },
 \  'jsx': {
-\    'attribute_name': {'for': 'htmlFor', 'class': 'class'},
+\    'attribute_name': {'for': 'htmlFor', 'class': 'className'},
 \  },
 \}
 
