@@ -47,6 +47,9 @@ if has('nvim')
   tnoremap <c-v><esc> <esc>
 endif
 
+" AUTOSAVE
+nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
+
 " NEOTERM
 " <leader>tl will clear neoterm-3.
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
