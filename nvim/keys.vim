@@ -101,6 +101,8 @@ let g:UltiSnipsListSnippets="<c-l>"
 " BUFFERS
 " close the current buffer and move to the previous one
 nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
+" close all buffers except current one
+nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
