@@ -85,7 +85,7 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
 " FZF
-nnoremap <c-p> :<c-u>Files<cr>
+nnoremap <leader>f :<c-u>Files<cr>
 nnoremap <leader>bb :<c-u>Buffers<cr>
 nnoremap <leader>sn :<c-u>Snippets<cr>
 
