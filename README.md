@@ -20,4 +20,4 @@ The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Col
 ## Look
 
 - color scheme: [Gruvbox](https://github.com/morhetz/gruvbox)
-- font: [Fira Code](https://github.com/tonsky/FiraCode)/[Fura Code Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts) _(note: st and tmux can't display font ligatures)_
+- font: [Victor Mono](https://rubjo.github.io/victor-mono/)
