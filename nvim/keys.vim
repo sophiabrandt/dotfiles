@@ -122,6 +122,10 @@ nmap <leader>ip <plug>(PromptJsFileImport)
 nmap <leader>is <plug>(SortJsFileImport)
 nmap <leader>ic <plug>(JsFixImport)
 
+" PYTHON-IMPORTS
+nmap <leader>pi :<c-u>ImportName<cr>
+nmap <leader>ph :<c-u>ImportNameHere<cr>
+
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)

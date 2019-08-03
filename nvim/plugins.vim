@@ -108,6 +108,7 @@ let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_linter_aliases = { 'jsx': ['css', 'javascript'] }
 let g:ale_linter_aliases = { 'svelte': ['css', 'javascript'] }
+let g:ale_linter_aliases = { 'scss': ['css']}
 
 let g:ale_linters = {
 \   'clojure': ['joker', 'clj_kondo'],
@@ -115,6 +116,7 @@ let g:ale_linters = {
 \   'typescript': ['tsserver', 'eslint', 'standard'],
 \   'json': ['jsonlint'],
 \   'css': ['stylelint', 'csslint'],
+\   'scss': ['stylelint', 'csslint'],
 \   'jsx': ['stylelint', 'eslint'],
 \   'html': ['tidy'],
 \   'svelte': ['stylelint', 'eslint', 'standard'],
@@ -130,6 +132,7 @@ let g:ale_fixers = {
 \   'typescript': ['eslint', 'prettier', 'prettier_standard'],
 \   'json': ['prettier', 'fixjson'],
 \   'css': ['prettier', 'stylelint'],
+\   'scss': ['prettier', 'stylelint'],
 \   'html': ['prettier'],
 \   'jsx': ['eslint', 'prettier', 'prettier_standard'],
 \   'svelte': ['eslint', 'prettier', 'prettier_standard'],
