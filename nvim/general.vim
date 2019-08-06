@@ -51,7 +51,7 @@ set wildmode=full
 
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R -f .tags
+command! MakeTags !ctags -R .
 
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor

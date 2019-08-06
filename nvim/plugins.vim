@@ -119,7 +119,7 @@ let g:ale_linters = {
 \   'css': ['stylelint', 'csslint'],
 \   'scss': ['stylelint', 'csslint'],
 \   'jsx': ['stylelint', 'eslint'],
-\   'html': ['tidy'],
+\   'html': ['fecs'],
 \   'svelte': ['stylelint', 'eslint', 'standard'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
