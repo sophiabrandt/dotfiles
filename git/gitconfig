@@ -1,6 +1,6 @@
 [user]
-  email =
-  name =
+  email = $GITHUB_EMAIL
+  name = $GITHUB_USERNAME
 [core]
   whitespace = trailing-space,space-before-tab
 [diff]
