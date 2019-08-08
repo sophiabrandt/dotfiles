@@ -110,6 +110,7 @@ let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-com
 let g:ale_linter_aliases = { 'jsx': ['css', 'javascript'] }
 let g:ale_linter_aliases = { 'svelte': ['css', 'javascript'] }
 let g:ale_linter_aliases = { 'scss': ['css']}
+let g:ale_linter_aliases = { 'eelixir': ['html']}
 
 let g:ale_linters = {
 \   'clojure': ['joker', 'clj_kondo'],
@@ -123,6 +124,7 @@ let g:ale_linters = {
 \   'svelte': ['stylelint', 'eslint', 'standard'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
+\   'eelixir': ['fecs'],
 \   'python': ['flake-8'],
 \   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
@@ -139,6 +141,7 @@ let g:ale_fixers = {
 \   'svelte': ['eslint', 'prettier', 'prettier_standard'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
+\   'eelixir': ['prettier'],
 \   'python' : ['yapf', 'black'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],
