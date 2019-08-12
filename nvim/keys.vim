@@ -92,12 +92,6 @@ nnoremap <leader>sn :<c-u>Snippets<cr>
 " Find with :Rg
 nnoremap <leader>rg :<c-u>Rg<cr>
 
-" ULTISNIPS
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-let g:UltiSnipsListSnippets="<c-l>"
-
 " BUFFERS
 " close the current buffer and move to the previous one
 nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
