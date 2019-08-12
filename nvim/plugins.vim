@@ -125,7 +125,7 @@ let g:ale_linters = {
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'eelixir': ['fecs'],
-\   'python': ['flake-8'],
+\   'python': ['flake8'],
 \   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
 \}
