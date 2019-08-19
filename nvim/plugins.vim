@@ -107,10 +107,13 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
-let g:ale_linter_aliases = { 'jsx': ['css', 'javascript'] }
-let g:ale_linter_aliases = { 'svelte': ['svelte', 'css', 'javascript'] }
-let g:ale_linter_aliases = { 'scss': ['css']}
-let g:ale_linter_aliases = { 'eelixir': ['html']}
+
+let g:ale_linter_aliases = {
+\   'jsx': ['css', 'javascript'],
+\   'svelte': ['svelte', 'css', 'javascript'],
+\   'scss': ['css'],
+\   'eelixir': ['elixir', 'html']
+\}
 
 let g:ale_linters = {
 \   'clojure': ['joker', 'clj_kondo'],
@@ -119,9 +122,9 @@ let g:ale_linters = {
 \   'json': ['jsonlint'],
 \   'css': ['stylelint', 'csslint'],
 \   'scss': ['stylelint', 'csslint'],
-\   'jsx': ['stylelint', 'eslint', 'tsserver', 'standard'],
+\   'jsx': ['tsserver', 'eslint', 'standard', 'stylelint'],
 \   'html': ['fecs'],
-\   'svelte': ['stylelint', 'eslint', 'tsserver', 'standard'],
+\   'svelte': ['eslint', 'stylelint'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'eelixir': ['fecs'],
