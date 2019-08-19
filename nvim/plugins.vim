@@ -108,7 +108,7 @@ let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_linter_aliases = { 'jsx': ['css', 'javascript'] }
-let g:ale_linter_aliases = { 'svelte': ['css', 'javascript'] }
+let g:ale_linter_aliases = { 'svelte': ['svelte', 'css', 'javascript'] }
 let g:ale_linter_aliases = { 'scss': ['css']}
 let g:ale_linter_aliases = { 'eelixir': ['html']}
 
@@ -119,9 +119,9 @@ let g:ale_linters = {
 \   'json': ['jsonlint'],
 \   'css': ['stylelint', 'csslint'],
 \   'scss': ['stylelint', 'csslint'],
-\   'jsx': ['stylelint', 'eslint'],
+\   'jsx': ['stylelint', 'eslint', 'tsserver', 'standard'],
 \   'html': ['fecs'],
-\   'svelte': ['stylelint', 'eslint', 'standard'],
+\   'svelte': ['stylelint', 'eslint', 'tsserver', 'standard'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls'],
 \   'eelixir': ['fecs'],
