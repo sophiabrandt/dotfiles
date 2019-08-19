@@ -105,14 +105,13 @@ let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
-let g:ale_elixir_elixir_ls_release='~/Coding/Elixir/elixir-ls/release'
+let g:ale_elixir_elixir_ls_release = $HOME . '/Coding/Elixir/elixir-ls/release'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
 \   'jsx': ['css', 'javascript'],
-\   'svelte': ['svelte', 'css', 'javascript'],
+\   'svelte': ['css', 'javascript'],
 \   'scss': ['css'],
-\   'eelixir': ['elixir', 'html']
 \}
 
 let g:ale_linters = {
@@ -124,10 +123,9 @@ let g:ale_linters = {
 \   'scss': ['stylelint', 'csslint'],
 \   'jsx': ['tsserver', 'eslint', 'standard', 'stylelint'],
 \   'html': ['fecs'],
-\   'svelte': ['eslint', 'stylelint'],
+\   'svelte': ['eslint', 'stylelint', 'csslint'],
 \   'markdown': ['remark_lint', 'writegood'],
-\   'elixir': ['elixir-ls'],
-\   'eelixir': ['fecs'],
+\   'elixir': ['elixir-ls', 'credo'],
 \   'python': ['flake8'],
 \   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
@@ -144,7 +142,6 @@ let g:ale_fixers = {
 \   'svelte': ['eslint', 'prettier', 'prettier_standard'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
-\   'eelixir': ['prettier'],
 \   'python' : ['yapf', 'black'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],
