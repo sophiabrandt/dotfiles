@@ -1,6 +1,5 @@
 [user]
-  email =
-  name =
+  name = 'Sophia Brandt'
 [core]
   whitespace = trailing-space,space-before-tab
 [diff]
