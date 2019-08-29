@@ -120,6 +120,11 @@ nmap <leader>ic <plug>(JsFixImport)
 nmap <leader>pi :<c-u>ImportName<cr>
 nmap <leader>ph :<c-u>ImportNameHere<cr>
 
+" LANGUAGECLIENT
+nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
+nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
+nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()<cr>
+
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)

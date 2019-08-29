@@ -66,6 +66,7 @@ command! MakeTags !ctags -R .
 set complete+=kspell
 set spelllang=en
 set spellfile=/media/Data/Gdrive/Coding/vim/spell/en.utf-8.add
+set completefunc=LanguageClient#complete
 
 
 " VISUALLY SELECT, @ TO RUN MACRO ON ALL LINES

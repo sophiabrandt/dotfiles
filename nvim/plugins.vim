@@ -94,6 +94,11 @@ let g:html_indent_tags = 'li\|p'
 let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
+" LANGUAGECLIENT
+let g:LanguageClient_serverCommands = {
+\   'reason': ['~/Coding/ReasonML/rls-linux/reason-language-server'],
+\}
+
 " ALE
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
@@ -106,6 +111,7 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release = $HOME . '/Coding/Elixir/elixir-ls/release'
+let g:ale_reason_ls_executable = $HOME . '/Coding/ReasonML/rls-linux/reason-language-server'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
@@ -129,21 +135,23 @@ let g:ale_linters = {
 \   'python': ['flake8'],
 \   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
+\   'reason': ['reason-language-server'],
 \}
 
 let g:ale_fixers = {
-\   'javascript': ['eslint', 'prettier'],
-\   'typescript': ['eslint', 'prettier'],
+\   'javascript': ['eslint', 'prettier', 'prettier_eslint'],
+\   'typescript': ['eslint', 'prettier', 'prettier_eslint'],
 \   'json': ['prettier', 'fixjson'],
 \   'css': ['prettier', 'stylelint'],
 \   'scss': ['prettier', 'stylelint'],
 \   'html': ['prettier'],
 \   'jsx': ['eslint', 'prettier'],
-\   'svelte': ['eslint', 'prettier'],
+\   'svelte': ['eslint', 'prettier', 'prettier_eslint'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
 \   'python' : ['yapf', 'black'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],
+\   'reason': ['refmt'],
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
