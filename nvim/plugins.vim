@@ -71,9 +71,6 @@ augroup rainbow_lisp
   autocmd FileType lisp,clojure,scheme,racket RainbowParentheses
 augroup END
 
-" NVIM-TYPESCRIPT
-let g:nvim_typescript#javascript_support = 1
-
 " EMMET
 let g:user_emmet_settings={
 \  'javascript' : {
@@ -94,9 +91,17 @@ let g:html_indent_tags = 'li\|p'
 let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
+" NVIM-TYPESCRIPT
+let g:nvim_typescript#javascript_support = 1
+
 " LANGUAGECLIENT
 let g:LanguageClient_serverCommands = {
 \   'reason': ['~/Coding/ReasonML/rls-linux/reason-language-server'],
+\   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+\}
+
+let g:LanguageClient_rootMarkers = {
+\   'elixir': ['mix.exs'],
 \}
 
 " ALE
@@ -118,6 +123,7 @@ let g:ale_linter_aliases = {
 \   'jsx': ['css', 'javascript'],
 \   'svelte': ['css', 'javascript'],
 \   'scss': ['css'],
+\   'eelixir': ['elixir', 'html'],
 \}
 
 let g:ale_linters = {
@@ -132,6 +138,7 @@ let g:ale_linters = {
 \   'svelte': ['eslint', 'stylelint', 'csslint'],
 \   'markdown': ['remark_lint', 'writegood'],
 \   'elixir': ['elixir-ls', 'credo'],
+\   'eelixir': ['fecs'],
 \   'python': ['flake8'],
 \   'graphql': ['gqlint'],
 \   'dart': ['language_server'],
@@ -149,6 +156,7 @@ let g:ale_fixers = {
 \   'svelte': ['eslint', 'prettier', 'prettier_eslint'],
 \   'markdown': ['prettier'],
 \   'elixir': ['mix_format'],
+\   'eelixir': ['prettier'],
 \   'python' : ['yapf', 'black'],
 \   'graphql' : ['prettier'],
 \   'dart': ['dartfmt'],

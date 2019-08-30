@@ -124,6 +124,7 @@ nmap <leader>ph :<c-u>ImportNameHere<cr>
 nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
 nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
 nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()<cr>
+nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()<cr>
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
