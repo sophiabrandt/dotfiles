@@ -96,7 +96,7 @@ let g:nvim_typescript#javascript_support = 1
 
 " LANGUAGECLIENT
 let g:LanguageClient_serverCommands = {
-\   'reason': ['~/Coding/ReasonML/rls-linux/reason-language-server'],
+\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
 \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
 \}
 
@@ -116,7 +116,7 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_elixir_elixir_ls_release = $HOME . '/Coding/Elixir/elixir-ls/release'
-let g:ale_reason_ls_executable = $HOME . '/Coding/ReasonML/rls-linux/reason-language-server'
+let g:ale_reason_ls_executable = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
