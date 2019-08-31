@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/owlhoot/Coding/JavaScript/react-context/src'
+let g:netrw_dirhist_2='/home/owlhoot/Coding/JavaScript/react-context/src/providers'
+let g:netrw_dirhist_3='/home/owlhoot/Coding/JavaScript/react-context/src/providers/cart'
+let g:netrw_dirhist_4='/home/owlhoot/Coding/JavaScript/react-context/src/redux'
+let g:netrw_dirhist_5='/home/owlhoot/Coding/JavaScript/react-context/src/redux/cart'
+let g:netrw_dirhist_6='/home/owlhoot/Coding/JavaScript/react-context/src'
+let g:netrw_dirhist_7='/home/owlhoot/Coding/JavaScript/react-context/src/providers/cart'
