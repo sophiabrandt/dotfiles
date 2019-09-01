@@ -30,8 +30,8 @@ let g:netrw_banner      =0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv        =1          " open splits to the right
 let g:netrw_liststyle   =3     " tree view
-let g:netrw_list_hide   =netrw_gitignore#Hide()
-let g:netrw_list_hide.  =',\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " NOW WE CAN:
 " - :edit a folder to open a file browser
@@ -82,7 +82,7 @@ let g:user_emmet_settings={
 \}
 
 " HEOKINASE (Hex color display)
-let g:Hexokinase_ftAutoload = ['css', 'xml']
+let g:Hexokinase_ftAutoload = ['css', 'scss', 'html', 'javascript']
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
@@ -96,7 +96,7 @@ let g:nvim_typescript#javascript_support = 1
 
 " LANGUAGECLIENT
 let g:LanguageClient_serverCommands = {
-\   'reason': ['~/Coding/ReasonML/rls-linux/reason-language-server'],
+\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
 \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
 \}
 
@@ -116,7 +116,7 @@ let g:ale_lint_on_save                = 1
 let g:ale_fix_on_save                 = 1
 let g:ale_completion_enabled          = 1
 let g:ale_elixir_elixir_ls_release    = $HOME . '/Coding/Elixir/elixir-ls/release'
-let g:ale_reason_ls_executable        = $HOME . '/Coding/ReasonML/rls-linux/reason-language-server'
+let g:ale_reason_ls_executable        = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
