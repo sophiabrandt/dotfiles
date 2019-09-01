@@ -25,8 +25,10 @@ set backupdir=~/.tmp
 set directory=~/.tmp
 
 " NEOVIM PROVIDERS
-let g:ruby_host_prog = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
-let g:node_host_prog = '/usr/bin/neovim-node-host'
+let g:ruby_host_prog    = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+let g:node_host_prog    = '/usr/bin/neovim-node-host'
+let g:python2_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " WHITESPACE
 " Display extra whitespace
@@ -80,8 +82,8 @@ endfunction
 " MARKDOWN
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.mdx setlocal spell
+autocmd BufRead,BufNewFile       *.md setlocal spell
+autocmd BufRead,BufNewFile       *.mdx setlocal spell
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE
 function! s:MkNonExDir(file, buf)
