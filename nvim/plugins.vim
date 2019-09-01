@@ -76,7 +76,7 @@ let g:user_emmet_settings={
 \}
 
 " HEOKINASE (Hex color display)
-let g:Hexokinase_ftAutoload = ['css', 'scss', 'html', 'javascript']
+let g:Hexokinase_ftAutoload = ['css', 'scss', 'html', 'javascript', 'svelte', 'eelixir', 'reason']
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
