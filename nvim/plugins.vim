@@ -21,11 +21,8 @@ let g:neoterm_autoscroll = 1
 
 " command! ProjectFiles execute 'Files' s:find_git_root()
 
-" PICKER
-if executable('rg')
-  let g:picker_custom_find_executable = 'rg'
-  let g:picker_custom_find_flags = '--color never --files'
-endif
+" RIPGREP
+let g:rg_command = 'rg --vimgrep -S'
 
 " FILE BROWSING:
 " Tweaks for browsing
