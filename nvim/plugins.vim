@@ -96,8 +96,9 @@ let g:nvim_typescript#javascript_support = 1
 
 " LANGUAGECLIENT
 let g:LanguageClient_serverCommands = {
-\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
 \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+\   'python': ['~/.local/bin/pyls'],
+\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
 \}
 
 let g:LanguageClient_rootMarkers = {
