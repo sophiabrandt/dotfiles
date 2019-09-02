@@ -52,11 +52,13 @@ nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 " REPLSend
 nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
-nmap  <leader>trs <plug>(neoterm-repl-send)
-nmap  <leader>trl <plug>(neoterm-repl-send-line)
+nmap <leader>trs <plug>(neoterm-repl-send)
+nmap <leader>trl <plug>(neoterm-repl-send-line)
 
 " Grip (Preview Markdown)
-nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
+if executable('grip')
+  nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
+endif
 
 " Quit help files
 " type q to exit
@@ -128,11 +130,11 @@ nmap <leader>ic <plug>(JsFixImport)
 nmap <leader>pyi :<c-u>ImportName<cr>
 nmap <leader>pyh :<c-u>ImportNameHere<cr>
 
-" " LANGUAGECLIENT
-" nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
-" nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
-" nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()     <cr>
-" nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()            <cr>
+" LANGUAGECLIENT
+nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
+nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
+nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()<cr>
+nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()<cr>
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)

@@ -21,6 +21,12 @@ let g:neoterm_autoscroll = 1
 
 " command! ProjectFiles execute 'Files' s:find_git_root()
 
+" PICKER
+if executable('rg')
+  let g:picker_custom_find_executable = 'rg'
+  let g:picker_custom_find_flags = '--color never --files'
+endif
+
 " FILE BROWSING:
 " Tweaks for browsing
 let g:netrw_banner      =0        " disable annoying banner
@@ -90,6 +96,17 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " NVIM-TYPESCRIPT
 let g:nvim_typescript#javascript_support = 1
+
+" LANGUAGECLIENT
+let g:LanguageClient_serverCommands = {
+\   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
+\   'python': ['~/.local/bin/pyls'],
+\}
+
+let g:LanguageClient_rootMarkers = {
+\   'elixir': ['mix.exs'],
+\}
 
 " ALE
 let g:ale_sign_error                  = '✘'
