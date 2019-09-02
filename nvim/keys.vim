@@ -23,24 +23,19 @@ nnoremap B ^
 inoremap <c-e> <c-o>$
 nnoremap E $
 
-" replace word with default register
-nnoremap <leader>r "_diwP"
-" paste from clipboard
-nnoremap <leader>p "+p
+" " replace word with default register
+" nnoremap <leader>r "_diwP"
+" " paste from clipboard
+" nnoremap <leader>v "+p
 
 " switch current working directory to project root
-nnoremap <leader>prd :<c-u>ProjectRootCD<cr>
+nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
 " switch to the directory of currently openend file
-nnoremap <leader>cwd :<c-u>cd %:p:h     <cr     >
+nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 
 " maximize/minimize current tab
 nnoremap <leader>tx :<c-u>tabedit %<cr>
-nnoremap <leader>ti :<c-u>tabclose <cr >
-
-" ctrl+s to save file
-noremap  <silent><c-s>  :<c-u>update<cr>
-vnoremap <silent><c-s> : <c-u>      <c-c>:update<cr>
-inoremap <silent><c-s> : <c-u>      <c-o>:update<cr>
+nnoremap <leader>ti :<c-u>tabclose<cr>
 
 " TERMINAL
 " Getting out of Terminal mode
@@ -54,11 +49,11 @@ nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
 
 " NEOTERM
 "        <leader>tl will clear neoterm-3.
-nnoremap <leader>tl  :<c-u>exec v:count.'Tclear'<cr>
+nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 " REPLSend
-nnoremap <leader>trf :<c-u>TREPLSendFile        <cr>
-nmap     <leader>trs  <plug>(neoterm-repl-send)
-nmap     <leader>trl  <plug>(neoterm-repl-send-line)
+nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
+nmap  <leader>trs <plug>(neoterm-repl-send)
+nmap  <leader>trl <plug>(neoterm-repl-send-line)
 
 " Grip (Preview Markdown)
 nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
@@ -86,13 +81,24 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 " Keys
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
-" FZF
-nnoremap <leader>f : <c-u>Files   <cr>
-nnoremap <leader>bb :<c-u>Buffers <cr>
-nnoremap <leader>sn :<c-u>Snippets<cr>
+" " FZF
+" nnoremap <leader>f : <c-u>Files   <cr>
+" nnoremap <leader>bb :<c-u>Buffers <cr>
+" nnoremap <leader>sn :<c-u>Snippets<cr>
 
-" Find with :Rg
-nnoremap <leader>rg :<c-u>Rg<cr>
+" " Find with :Rg
+" nnoremap <leader>rg :<c-u>Rg<cr>
+
+" PICKER
+nmap <leader>pe <Plug>(PickerEdit)
+nmap <leader>ps <Plug>(PickerSplit)
+nmap <leader>pt <Plug>(PickerTabedit)
+nmap <leader>pv <Plug>(PickerVsplit)
+nmap <leader>pb <Plug>(PickerBuffer)
+nmap <leader>p] <Plug>(PickerTag)
+nmap <leader>pw <Plug>(PickerStag)
+nmap <leader>po <Plug>(PickerBufferTag)
+nmap <leader>ph <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one
@@ -101,11 +107,11 @@ nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
 " NVIM-TYPESCRIPT
-nnoremap <leader>tsd :<c-u>TSDoc       <cr>
+nnoremap <leader>tsd :<c-u>TSDoc<cr>
 nnoremap <leader>tsp :<c-u>TSDefPreview<cr>
-nnoremap <leader>tsf :<c-u>TSTypeDef   <cr>
-nnoremap <leader>tst :<c-u>TSType      <cr>
-nnoremap <leader>tsr :<c-u>TSRefs      <cr>
+nnoremap <leader>tsf :<c-u>TSTypeDef<cr>
+nnoremap <leader>tst :<c-u>TSType<cr>
+nnoremap <leader>tsr :<c-u>TSRefs<cr>
 nnoremap <leader>tse :<c-u>TSEditConfig<cr>
 
 " VIM-JS-FILE-IMPORT
@@ -119,25 +125,25 @@ nmap <leader>is <plug>(SortJsFileImport)
 nmap <leader>ic <plug>(JsFixImport)
 
 " PYTHON-IMPORTS
-nmap <leader>pi :<c-u>ImportName    <cr>
-nmap <leader>ph :<c-u>ImportNameHere<cr>
+nmap <leader>pyi :<c-u>ImportName<cr>
+nmap <leader>pyh :<c-u>ImportNameHere<cr>
 
-" LANGUAGECLIENT
-nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
-nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
-nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()     <cr>
-nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()            <cr>
+" " LANGUAGECLIENT
+" nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
+" nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
+" nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()     <cr>
+" nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()            <cr>
 
 " ALE
-nmap    <leader>ag <plug>(ale_go_to_definition)
-nmap    <leader>at <plug>(ale_go_to_type_definition)
-nmap    <leader>ah <plug>(ale_hover)
-nmap    <leader>ad <plug>(ale_documentation)
-nmap    <leader>ap <plug>(ale_detail)
-nmap    <leader>af <plug>(ale_fix)
-nmap    <leader>al <plug>(ale_lint)
-nmap    <leader>ar <plug>(ale_find_references)
-imap    <c-c>      <plug>(ale_complete)
+nmap <leader>ag <plug>(ale_go_to_definition)
+nmap <leader>at <plug>(ale_go_to_type_definition)
+nmap <leader>ah <plug>(ale_hover)
+nmap <leader>ad <plug>(ale_documentation)
+nmap <leader>ap <plug>(ale_detail)
+nmap <leader>af <plug>(ale_fix)
+nmap <leader>al <plug>(ale_lint)
+nmap <leader>ar <plug>(ale_find_references)
+imap <c-c> <plug>(ale_complete)
 "Move between linting errors
 nmap ]r <plug>(ale_next_wrap)
 nmap [r <plug>(ale_previous_wrap)

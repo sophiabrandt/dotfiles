@@ -3,9 +3,6 @@ let g:auto_save        = 1
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 
-" VIMCOMPLETESME SETUP
-autocmd FileType vim let b:vcm_tab_complete = 'vim'
-
 " SNEAK VIM
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
@@ -13,16 +10,16 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-" FZF & Ripgrep
-" Support for buffers
-let g:fzf_buffers_jump = 1
+" " FZF & Ripgrep
+" " Support for buffers
+" let g:fzf_buffers_jump = 1
 
-" search files in git project root
-function! s:find_git_root()
-  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
-endfunction
+" " search files in git project root
+" function! s:find_git_root()
+"   return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+" endfunction
 
-command! ProjectFiles execute 'Files' s:find_git_root()
+" command! ProjectFiles execute 'Files' s:find_git_root()
 
 " FILE BROWSING:
 " Tweaks for browsing
@@ -93,17 +90,6 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " NVIM-TYPESCRIPT
 let g:nvim_typescript#javascript_support = 1
-
-" LANGUAGECLIENT
-let g:LanguageClient_serverCommands = {
-\   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
-\   'python': ['~/.local/bin/pyls'],
-\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
-\}
-
-let g:LanguageClient_rootMarkers = {
-\   'elixir': ['mix.exs'],
-\}
 
 " ALE
 let g:ale_sign_error                  = '✘'
