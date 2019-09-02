@@ -23,10 +23,10 @@ nnoremap B ^
 inoremap <c-e> <c-o>$
 nnoremap E $
 
-" " replace word with default register
-" nnoremap <leader>r "_diwP"
-" " paste from clipboard
-" nnoremap <leader>v "+p
+" replace word with default register
+nnoremap <leader>r "_diwP"
+" paste from clipboard
+nnoremap <leader>cp "+p
 
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
