@@ -48,7 +48,7 @@ endif
 nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
 
 " NEOTERM
-"        <leader>tl will clear neoterm-3.
+" <leader>tl will clear neoterm-3.
 nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 " REPLSend
 nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
