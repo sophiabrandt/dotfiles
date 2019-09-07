@@ -10,20 +10,6 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
-" " FZF & Ripgrep
-" " Support for buffers
-" let g:fzf_buffers_jump = 1
-
-" " search files in git project root
-" function! s:find_git_root()
-"   return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
-" endfunction
-
-" command! ProjectFiles execute 'Files' s:find_git_root()
-
-" RIPGREP
-let g:rg_command = 'rg --vimgrep -S'
-
 " FILE BROWSING:
 " Tweaks for browsing
 let g:netrw_banner      =0        " disable annoying banner

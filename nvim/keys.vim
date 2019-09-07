@@ -26,7 +26,7 @@ nnoremap E $
 " replace word with default register
 nnoremap <leader>r "_diwP"
 " paste from clipboard
-nnoremap <leader>cp "+p
+nnoremap <leader>cv "+p
 
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
@@ -83,13 +83,8 @@ nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 " Keys
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 
-" " FZF
-" nnoremap <leader>f : <c-u>Files   <cr>
-" nnoremap <leader>bb :<c-u>Buffers <cr>
-" nnoremap <leader>sn :<c-u>Snippets<cr>
-
-" " Find with :Rg
-" nnoremap <leader>rg :<c-u>Rg<cr>
+" Find with :Rg
+nnoremap <leader>rg :<c-u>Rg<cr>
 
 " PICKER
 nmap <leader>pe <Plug>(PickerEdit)
