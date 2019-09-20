@@ -87,6 +87,8 @@ let g:LanguageClient_serverCommands = {
 \   'python': ['~/.local/bin/pyls'],
 \}
 
+let g:LanguageClient_diagnosticsList = 'Disabled'
+
 let g:LanguageClient_rootMarkers = {
 \   'elixir': ['mix.exs'],
 \}
