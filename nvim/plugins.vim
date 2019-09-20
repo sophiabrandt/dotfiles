@@ -57,6 +57,8 @@ augroup rainbow_lisp
   autocmd FileType lisp,clojure,scheme,racket RainbowParentheses
 augroup END
 
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']]
+
 " EMMET
 let g:user_emmet_settings={
 \  'javascript' : {
