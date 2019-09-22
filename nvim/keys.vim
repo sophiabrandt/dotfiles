@@ -110,7 +110,7 @@ nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
 " RAINBOW PARENTHESES
 nnoremap <leader>rba :<c-u>RainbowParentheses<cr>
-nnoremap <leader>rbd :<c-u>RainbowParentheses!!<cr>
+nnoremap <leader>rbd :<c-u>RainbowParentheses!<cr>
 
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
