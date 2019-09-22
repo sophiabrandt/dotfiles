@@ -108,6 +108,10 @@ nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
+" RAINBOW PARENTHESES
+nnoremap <leader>rba :<c-u>RainbowParentheses<cr>
+nnoremap <leader>rbd :<c-u>RainbowParentheses!!<cr>
+
 " NVIM-TYPESCRIPT
 nnoremap <leader>tsd :<c-u>TSDoc<cr>
 nnoremap <leader>tsp :<c-u>TSDefPreview<cr>
