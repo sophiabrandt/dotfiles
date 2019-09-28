@@ -278,7 +278,7 @@ exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 20 -locker blurlock
 exec --no-startup-id caffeine
-exec --no-startup-id insync start --synchronous-full
+exec --no-startup-id insync start
 exec --no-startup-id numlockx
 exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle,shift:both_capslock,terminate:ctrl_alt_bksp,ctrl:nocaps'
 exec --no-startup-id xmodmap -e 'keycode 94 = backslash bar'
