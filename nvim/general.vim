@@ -67,7 +67,7 @@ command! MakeTags !ctags -R .
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
 set spelllang=en
-set spellfile=/media/Data/Gdrive/Coding/vim/spell/en.utf-8.add
+set spellfile=~/.config/nvim/spell/en.utf-8.add
 
 " VISUALLY SELECT, @ TO RUN MACRO ON ALL LINES
 xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>

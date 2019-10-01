@@ -1,5 +1,6 @@
 # ctags
 tags
 
-# nvim packages
+# nvim
 nvim/pack
+nvim/spell
