@@ -92,15 +92,15 @@ nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 nnoremap <leader>rg :<c-u>Rg<cr>
 
 " PICKER
-nmap <leader>pe <Plug>(PickerEdit)
-nmap <leader>ps <Plug>(PickerSplit)
-nmap <leader>pt <Plug>(PickerTabedit)
-nmap <leader>pv <Plug>(PickerVsplit)
-nmap <leader>pb <Plug>(PickerBuffer)
-nmap <leader>p] <Plug>(PickerTag)
-nmap <leader>pw <Plug>(PickerStag)
-nmap <leader>po <Plug>(PickerBufferTag)
-nmap <leader>ph <Plug>(PickerHelp)
+nmap <leader>be <Plug>(PickerEdit)
+nmap <leader>bs <Plug>(PickerSplit)
+nmap <leader>bt <Plug>(PickerTabedit)
+nmap <leader>bv <Plug>(PickerVsplit)
+nmap <leader>bb <Plug>(PickerBuffer)
+nmap <leader>b] <Plug>(PickerTag)
+nmap <leader>bw <Plug>(PickerStag)
+nmap <leader>bo <Plug>(PickerBufferTag)
+nmap <leader>bh <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one

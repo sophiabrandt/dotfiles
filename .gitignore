@@ -1,6 +1,7 @@
 # ctags
-tags
+tags*
 
 # nvim
 nvim/pack
 nvim/spell
+nvim/.netrwhist
