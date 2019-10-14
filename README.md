@@ -19,5 +19,5 @@ The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Col
 
 ## Look
 
-- color scheme: [Gruvbox](https://github.com/morhetz/gruvbox)
+- color scheme: [Nord](https://github.com/arcticicestudio/nord-vim)
 - font: [Victor Mono](https://rubjo.github.io/victor-mono/)
