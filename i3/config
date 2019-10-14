@@ -27,7 +27,7 @@ font pango:Cantarell 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec sterminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -43,7 +43,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-#bindsym $mod+Ctrl+m exec sterminal -e 'alsamixer'
+#bindsym $mod+Ctrl+m exec kitty -e 'alsamixer'
 exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
@@ -55,12 +55,12 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec sterminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
 bindsym $mod+F2 exec chromium
 bindsym $mod+F3 exec thunar
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu thunar
-bindsym $mod+F5 exec sterminal -e 'mocp'
+bindsym $mod+F5 exec kitty -e 'mocp'
 bindsym $mod+Shift+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"

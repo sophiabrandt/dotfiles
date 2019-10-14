@@ -8,7 +8,7 @@
 stty -ixon
 
 # Terminal to sterminal
-export TERMINAL="sterminal"
+export TERMINAL="kitty"
 
 # Fish Shell
 exec fish

@@ -26,7 +26,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " LIGHTLINE
 let lightline                           = {}
-let g:lightline.colorscheme             = 'gruvbox'
+let g:lightline.colorscheme             = 'nord'
 let g:lightline#bufferline#show_number  = 1
 let g:lightline#bufferline#shorten_path = 0
 let g:lightline#bufferline#unnamed      = '[No Name]'

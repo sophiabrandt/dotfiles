@@ -1,6 +1,9 @@
 " BASIC SETUP
-colorscheme gruvbox8
-"set background=light
+colorscheme nord
+" colorscheme seoul256
+" colorscheme seoul256-light
+" colorscheme PaperColor
+" set background=light
 set termguicolors
 set hidden
 set nobackup
