@@ -42,6 +42,12 @@ noremap  <silent><c-s> :<c-u>update<cr>
 vnoremap <silent><c-s> :<c-u><c-c>:update<cr>
 inoremap <silent><c-s> :<c-u><c-o>:update<cr>
 
+" Use ctrl-[hjkl] to navigate panes
+nmap <silent> <c-k> <c-w><up>
+nmap <silent> <c-j> <c-w><down>
+nmap <silent> <c-h> <c-w><left>
+nmap <silent> <c-l> <c-w><right>
+
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
