@@ -102,7 +102,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+t split h;exec notify-send 'tile horizontally'
+bindsym $mod+t split t;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
@@ -297,32 +297,32 @@ bar {
 	bindsym button5 nop
 	font pango: icomoon,Icons 10
 
-	colors {
-#	background $transparent
-		background #2B2C2B
-                statusline #F9FAF9
-		separator  #454947
+    colors {
+        background #2E3440
+        statusline #ECEFF4
+        separator  #3B4252
 
-#                                  border  backgr. text
-		focused_workspace  #F9FAF9 #16A085 #2B2C2B
-		active_workspace   #595B5B #353836 #FDF6E3
-		inactive_workspace #595B5B #353836 #EEE8D5
-		urgent_workspace   #16A085 #FDF6E3 #E5201D
-	}
+#                      border  backgr. text
+        focused_workspace  #ECEFF4 #88C0D0 #434C5E
+        active_workspace   #595B5B #353836 #E5F9F0
+        inactive_workspace #595B5B #2E3440 #EEE8D5
+        binding_mode       #88C0D0 #2C2C2C #ECEFF4
+        urgent_workspace   #88C0D0 #E5F9F0 #E5201D
+    }
 }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# class                 border  backgr. text    indic.  child_border
-client.focused          #808280 #808280 #80FFF9 #FDF6E3
-client.focused_inactive #434745 #434745 #16A085 #454948
-client.unfocused        #434745 #434745 #16A085 #454948
-client.urgent           #CB4B16 #FDF6E3 #16A085 #268BD2
-client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #556064 #556064 #D8DEE9 #E5F9F0
+  client.focused_inactive #2F3D44 #2F3D44 #8FBCBB #454948
+  client.unfocused        #2F3D44 #2F3D44 #8FBCBB #454948
+  client.urgent           #CB4B16 #E5F9F0 #8FBCBB #268BD2
+  client.placeholder      #000000 #0c0c0c #E5E0F0 #000000
 
-client.background       #2B2C2B
+  client.background       #2B2C2B
 
 #############################
 ### settings for i3-gaps: ###
