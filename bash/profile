@@ -6,11 +6,14 @@ export VISUAL="nvim"
 export VIMCONFIG="~/.config/nvim"
 export VIMDATA="~/.local/share/nvim"
 
-# Python
-export PATH="~/.local/bin:$PATH"
+# # Python
+# export PATH="~/.local/bin:$PATH"
 
-# Dart
-export PATH="~/.pub-cache/bin:$PATH"
+# # Dart
+# export PATH="~/.pub-cache/bin:$PATH"
 
-# RipGrep
-export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!.git/'"
+# # RipGrep
+# export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!.git/'"
+
+# # fnm
+# export PATH="~/.fnm:$PATH"

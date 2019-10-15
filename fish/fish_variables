@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR ANDROID_SDK_ROOT:/home/owlhoot/Android/Sdk
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
@@ -37,5 +36,5 @@ SETUVAR fish_pager_color_completion:B3A06D
 SETUVAR fish_pager_color_description:B3A06D
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/owlhoot/Android/Sdk//emulator\x1e/home/owlhoot/Android/Sdk//platform\x2dtools\x1e/home/owlhoot/Android/Sdk//tools/bin\x1e/home/owlhoot/Android/Sdk//tools\x1e/home/owlhoot/\x2epub\x2dcache/bin
+SETUVAR fish_user_paths:/home/owlhoot/\x2elocal/bin\x1e/home/owlhoot/\x2efnm\x1e/home/owlhoot/\x2enpmbin/bin/
 SETUVAR pure_version:2\x2e1\x2e1
