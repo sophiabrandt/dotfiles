@@ -1,7 +1,5 @@
 " BASIC SETUP
 colorscheme nord
-" colorscheme seoul256
-" colorscheme seoul256-light
 " colorscheme PaperColor
 " set background=light
 set termguicolors
