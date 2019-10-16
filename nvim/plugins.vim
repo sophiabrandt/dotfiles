@@ -25,18 +25,18 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - check |netrw-browse-maps| for more mapping
 
 " LIGHTLINE
-let lightline                           = {}
-let g:lightline.colorscheme             = 'nord'
-let g:lightline#bufferline#show_number  = 1
-let g:lightline#bufferline#shorten_path = 0
+let lightline                              = {}
+let g:lightline.colorscheme                = 'nord'
+let g:lightline#bufferline#show_number     = 1
+let g:lightline#bufferline#shorten_path    = 0
 let g:lightline#bufferline#enable_devicons = 1
 let g:lightline#bufferline#unicode_symbols = 1
-let g:lightline#bufferline#unnamed      = '[No Name]'
-let g:lightline.tabline                 = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_function      = {'filetype': 'MyFiletype', 'fileformat': 'MyFileformat', 'gitbranch': 'fugitive#head'}
-let g:lightline.component_expand        = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type          = {'buffers': 'tabsel'}
-let g:lightline.active                  = {'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']] }
+let g:lightline#bufferline#unnamed         = '[No Name]'
+let g:lightline.tabline                    = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_function         = {'filetype': 'MyFiletype', 'fileformat': 'MyFileformat', 'gitbranch': 'fugitive#head'}
+let g:lightline.component_expand           = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type             = {'buffers': 'tabsel'}
+let g:lightline.active                     = {'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']] }
 
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
