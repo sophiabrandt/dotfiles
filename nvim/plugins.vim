@@ -32,7 +32,7 @@ let g:lightline#bufferline#shorten_path    = 0
 let g:lightline#bufferline#enable_devicons = 1
 let g:lightline#bufferline#unicode_symbols = 1
 let g:lightline#bufferline#unnamed         = '[No Name]'
-let g:lightline.tabline                    = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.tabline                    = {'left': [['buffers']], 'right': []}
 let g:lightline.component_function         = {'filetype': 'MyFiletype', 'fileformat': 'MyFileformat', 'gitbranch': 'fugitive#head'}
 let g:lightline.component_expand           = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type             = {'buffers': 'tabsel'}
@@ -60,6 +60,11 @@ augroup END
 
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']]
 
+" NVIM-COLORIZER-LUA
+set rtp+=~/.config/nvim/pack/minpac/start/nvim-colorizer.lua
+runtime plugin/nvim-colorizer.lua
+lua require'colorizer'.setup()
+
 " EMMET
 let g:user_emmet_settings={
 \  'javascript' : {
@@ -70,9 +75,6 @@ let g:user_emmet_settings={
 \    },
 \}
 
-" HEOKINASE (Hex color display)
-let g:Hexokinase_ftAutoload = ['css', 'scss', 'html', 'javascript', 'svelte', 'eelixir', 'reason']
-let g:Hexokinase_v2 = 0
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'

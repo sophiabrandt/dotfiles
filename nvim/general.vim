@@ -28,7 +28,7 @@ set directory=~/.tmp
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
 let g:node_host_prog    = '~/.npmbin/bin/neovim-node-host'
-let g:python_host_prog = '/usr/bin/python2'
+let g:python_host_prog  = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 
 " WHITESPACE
