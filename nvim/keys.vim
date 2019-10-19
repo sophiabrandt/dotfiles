@@ -118,14 +118,6 @@ nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 nnoremap <leader>rba :<c-u>RainbowParentheses<cr>
 nnoremap <leader>rbd :<c-u>RainbowParentheses!<cr>
 
-" NVIM-TYPESCRIPT
-nnoremap <leader>tsd :<c-u>TSDoc<cr>
-nnoremap <leader>tsp :<c-u>TSDefPreview<cr>
-nnoremap <leader>tsf :<c-u>TSTypeDef<cr>
-nnoremap <leader>tst :<c-u>TSType<cr>
-nnoremap <leader>tsr :<c-u>TSRefs<cr>
-nnoremap <leader>tse :<c-u>TSEditConfig<cr>
-
 " VIM-JS-FILE-IMPORT
 let g:js_file_import_no_mappings = 1
 nmap <leader>if <plug>(JsFileImport)
@@ -141,10 +133,17 @@ nmap <leader>pyi :<c-u>ImportName<cr>
 nmap <leader>pyh :<c-u>ImportNameHere<cr>
 
 " LANGUAGECLIENT
-nnoremap <silent> <leader>ld :<c-u>call LanguageClient#textDocument_definition()<cr>
-nnoremap <silent> <leader>lf :<c-u>call LanguageClient#textDocument_formatting()<cr>
-nnoremap <silent> <leader>lh :<c-u>call LanguageClient#textDocument_hover()<cr>
-nnoremap <silent> <leader>lc :<c-u>call LanguageClient_contextMenu()<cr>
+nnoremap <silent> gd :<c-u>call LanguageClient#textDocument_definition()<cr>
+nnoremap <silent> gt :<c-u>call LanguageClient#textDocument_typeDefinition()<cr>
+nnoremap <silent> gi :<c-u>call LanguageClient#textDocument_implementation()<cr>
+nnoremap <silent> gR :<c-u>call LanguageClient#textDocument_rename()<cr>
+nnoremap <silent> gf :<c-u>call LanguageClient#textDocument_formatting()<cr>
+nnoremap <silent> gS :<c-u>call LanguageClient#textDocument_documentSymbol()<cr>
+nnoremap <silent> gw :<c-u>call LanguageClient#textDocument_workspace_symbol()<cr>
+nnoremap <silent> gr :<c-u>call LanguageClient#textDocument_references()<cr>
+nnoremap <silent> ga :<c-u>call LanguageClient#textDocument_codeAction()<cr>
+nnoremap <silent> K :<c-u>call LanguageClient#textDocument_hover()<cr>
+nnoremap <silent> gh :<c-u>call LanguageClient_contextMenu()<cr>
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)

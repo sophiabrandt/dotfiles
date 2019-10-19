@@ -84,20 +84,24 @@ let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
 " NVIM-TYPESCRIPT
-let g:nvim_typescript#javascript_support = 1
+" let g:nvim_typescript#javascript_support = 1
 
 " LANGUAGECLIENT
-let g:LanguageClient_serverCommands = {
-\   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
-\   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
-\   'python': ['~/.local/bin/pyls'],
-\}
+ let g:LanguageClient_serverCommands = {
+ \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+ \   'javascript': ['typescript-language-server', '--stdio'],
+ \   'javascriptjsx': ['typescript-language-server', '--stdio'],
+ \   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
+ \   'typescript': ['typescript-language-server', '--stdio'],
+ \   'typescript.tsx': ['typescript-language-server', '--stdio'],
+ \   'python': ['~/.local/bin/pyls'],
+ \}
 
-let g:LanguageClient_diagnosticsList = 'Disabled'
+ let g:LanguageClient_diagnosticsList = 'Disabled'
 
-let g:LanguageClient_rootMarkers = {
-\   'elixir': ['mix.exs'],
-\}
+ let g:LanguageClient_rootMarkers = {
+ \   'elixir': ['mix.exs'],
+ \}
 
 " ALE
 let g:ale_sign_error                  = '✘'
