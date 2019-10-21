@@ -83,9 +83,6 @@ let g:html_indent_tags = 'li\|p'
 let g:jsx_ext_required = 0
 let g:vim_jsx_pretty_colorful_config = 1
 
-" NVIM-TYPESCRIPT
-" let g:nvim_typescript#javascript_support = 1
-
 " LANGUAGECLIENT
  let g:LanguageClient_serverCommands = {
  \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
