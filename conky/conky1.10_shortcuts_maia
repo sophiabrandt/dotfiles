@@ -31,6 +31,6 @@ ${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys
 ${color2}toggle floating - ${color}mod+Shift+Space
 ${color2}exit - ${color}mod+0
 
-${color2}help - ${color}mod+Shift+h
+${color2}help - ${color}mod+Shift+;
 default mod=<Super>
 ]]
