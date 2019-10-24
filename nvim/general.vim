@@ -79,10 +79,8 @@ function! ExecuteMacroOverVisualRange()
 endfunction
 
 " MARKDOWN
-au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
-au BufNewFile,BufFilePre,BufRead *.mdx set filetype=markdown
-autocmd BufRead,BufNewFile       *.md setlocal spell
-autocmd BufRead,BufNewFile       *.mdx setlocal spell
+au BufNewFile,BufFilePre,BufRead   *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx set ft=markdown
+autocmd BufRead,BufNewFile         *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE
 function! s:MkNonExDir(file, buf)

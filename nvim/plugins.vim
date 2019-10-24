@@ -75,6 +75,9 @@ let g:user_emmet_settings={
 \    },
 \}
 
+" MARKDOWN-PREVIEW
+let g:mkdp_refresh_slow = 1
+let g:mkdp_markdown_css ='~/.config/nvim/github-markdown-css/github-markdown.css'
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
@@ -88,6 +91,7 @@ let g:vim_jsx_pretty_colorful_config = 1
  \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
  \   'javascript': ['typescript-language-server', '--stdio'],
  \   'javascriptjsx': ['typescript-language-server', '--stdio'],
+ \   'nim': ['nimlsp', '~/.choosenim/toolchains/nim-1.0.0'],
  \   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
  \   'typescript': ['typescript-language-server', '--stdio'],
  \   'typescript.tsx': ['typescript-language-server', '--stdio'],
@@ -124,36 +128,37 @@ let g:ale_linter_aliases = {
 
 let g:ale_linters = {
 \   'clojure':    ['joker', 'clj_kondo'],
-\   'javascript': ['tsserver', 'eslint'],
-\   'typescript': ['tsserver', 'eslint'],
-\   'json':       ['jsonlint'],
 \   'css':        ['stylelint', 'csslint'],
-\   'scss':       ['stylelint', 'csslint'],
-\   'jsx':        ['tsserver', 'eslint', 'stylelint'],
-\   'svelte':     ['eslint', 'stylelint', 'csslint'],
-\   'markdown':   ['remark_lint', 'writegood'],
-\   'elixir':     ['elixir-ls', 'credo'],
-\   'python':     ['flake8'],
-\   'graphql':    ['gqlint'],
 \   'dart':       ['language_server'],
+\   'elixir':     ['elixir-ls', 'credo'],
+\   'graphql':    ['gqlint'],
+\   'javascript': ['tsserver', 'eslint'],
+\   'json':       ['jsonlint'],
+\   'jsx':        ['tsserver', 'eslint', 'stylelint'],
+\   'markdown':   ['remark_lint', 'writegood'],
+\   'nim':        ['nimlsp', 'nim check'],
+\   'python':     ['flake8'],
 \   'reason':     ['reason-language-server'],
+\   'scss':       ['stylelint', 'csslint'],
+\   'svelte':     ['eslint', 'stylelint', 'csslint'],
+\   'typescript': ['tsserver', 'eslint'],
 \}
 
 let g:ale_fixers = {
-\   'javascript': ['eslint', 'prettier', 'prettier_eslint'],
-\   'typescript': ['eslint', 'prettier', 'prettier_eslint'],
-\   'json':       ['prettier', 'fixjson'],
 \   'css':        ['prettier', 'stylelint'],
-\   'scss':       ['prettier', 'stylelint'],
-\   'html':       ['prettier'],
-\   'jsx':        ['eslint', 'prettier'],
-\   'svelte':     ['eslint', 'prettier', 'prettier_eslint'],
-\   'markdown':   ['prettier'],
-\   'elixir':     ['mix_format'],
-\   'eelixir':    ['prettier'],
-\   'python' :    ['yapf', 'black'],
-\   'graphql' :   ['prettier'],
 \   'dart':       ['dartfmt'],
+\   'eelixir':    ['prettier'],
+\   'elixir':     ['mix_format'],
+\   'graphql' :   ['prettier'],
+\   'html':       ['prettier'],
+\   'javascript': ['eslint', 'prettier', 'prettier_eslint'],
+\   'json':       ['prettier', 'fixjson'],
+\   'jsx':        ['eslint', 'prettier'],
+\   'markdown':   ['prettier'],
+\   'python' :    ['yapf', 'black'],
 \   'reason':     ['refmt'],
+\   'scss':       ['prettier', 'stylelint'],
+\   'svelte':     ['eslint', 'prettier', 'prettier_eslint'],
+\   'typescript': ['eslint', 'prettier', 'prettier_eslint'],
 \   '*':          ['remove_trailing_lines', 'trim_whitespace'],
 \}
