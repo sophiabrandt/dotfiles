@@ -2,6 +2,7 @@
   name = 'Sophia Brandt'
 [core]
   whitespace = trailing-space,space-before-tab
+  editor = nvim
 [diff]
   renames = copies
   mnemonicprefix = true
