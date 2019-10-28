@@ -1,3 +1,3 @@
-function gimp
+function gim
 	gcap "👌 IMPROVE: $argv";
 end
