@@ -58,14 +58,6 @@ endif
 " AUTOSAVE
 nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
 
-" NEOTERM
-" <leader>tl will clear neoterm-3.
-nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
-" REPLSend
-nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
-nmap <leader>trs <plug>(neoterm-repl-send)
-nmap <leader>trl <plug>(neoterm-repl-send-line)
-
 " Grip (Preview Markdown)
 if executable('grip')
   nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
@@ -102,39 +94,22 @@ nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 nnoremap <leader>rg :<c-u>Rg<cr>
 
 " PICKER
-nmap <leader>be <Plug>(PickerEdit)
-nmap <leader>bs <Plug>(PickerSplit)
-nmap <leader>bt <Plug>(PickerTabedit)
-nmap <leader>bv <Plug>(PickerVsplit)
-nmap <leader>bb <Plug>(PickerBuffer)
-nmap <leader>b] <Plug>(PickerTag)
-nmap <leader>bw <Plug>(PickerStag)
-nmap <leader>bo <Plug>(PickerBufferTag)
-nmap <leader>bh <Plug>(PickerHelp)
+nmap <leader>pe <Plug>(PickerEdit)
+nmap <leader>ps <Plug>(PickerSplit)
+nmap <leader>pt <Plug>(PickerTabedit)
+nmap <leader>pv <Plug>(PickerVsplit)
+nmap <leader>pb <Plug>(PickerBuffer)
+nmap <leader>p] <Plug>(PickerTag)
+nmap <leader>pw <Plug>(PickerStag)
+nmap <leader>po <Plug>(PickerBufferTag)
+nmap <leader>ph <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one
-nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
+nnoremap <leader>bq :<c-u>pp <bar> bd #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
-" RAINBOW PARENTHESES
-nnoremap <leader>rba :<c-u>RainbowParentheses<cr>
-nnoremap <leader>rbd :<c-u>RainbowParentheses!<cr>
-
-" VIM-JS-FILE-IMPORT
-let g:js_file_import_no_mappings = 1
-nmap <leader>if <plug>(JsFileImport)
-nmap <leader>iF <plug>(JsFileImportList)
-nmap <leader>ig <plug>(JsGotoDefinition)
-nmap <leader>iG <plug>(JsGotoDefinition)
-nmap <leader>ip <plug>(PromptJsFileImport)
-nmap <leader>is <plug>(SortJsFileImport)
-nmap <leader>ic <plug>(JsFixImport)
-
-" PYTHON-IMPORTS
-nmap <leader>pyi :<c-u>ImportName<cr>
-nmap <leader>pyh :<c-u>ImportNameHere<cr>
 
 " LANGUAGECLIENT
 nnoremap <silent> gd :<c-u>call LanguageClient_textDocument_definition()<cr>

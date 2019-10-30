@@ -7,22 +7,9 @@ let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
 
-" NEOTERM
-let g:neoterm_autoscroll = 1
-
-" FILE BROWSING:
-" Tweaks for browsing
-let g:netrw_banner      =0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv        =1          " open splits to the right
-let g:netrw_liststyle   =3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-" NOW WE CAN:
-" - :edit a folder to open a file browser
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mapping
+" VIMWIKI
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.wiki'}]
 
 " LIGHTLINE
 let lightline                              = {}
@@ -46,25 +33,6 @@ function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
-" PEAR-TREE (AUTO-PAIRS SMART PAIRS)
-let g:pear_tree_smart_openers   = 1
-let g:pear_tree_smart_closers   = 1
-let g:pear_tree_smart_backspace = 1
-let g:pear_tree_ft_disabled     = ['elixir', 'markdown']
-
-" RAINBOW PARENS
-augroup rainbow_lisp
-  autocmd!
-  autocmd FileType lisp,clojure,scheme,racket RainbowParentheses
-augroup END
-
-let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']]
-
-" NVIM-COLORIZER-LUA
-set rtp+=~/.config/nvim/pack/minpac/start/nvim-colorizer.lua
-runtime plugin/nvim-colorizer.lua
-lua require'colorizer'.setup()
-
 " EMMET
 let g:user_emmet_settings={
 \  'javascript' : {
@@ -81,10 +49,6 @@ let g:mkdp_markdown_css ='~/.config/nvim/github-markdown-css/github-markdown.css
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
-
-" JSX
-let g:jsx_ext_required = 0
-let g:vim_jsx_pretty_colorful_config = 1
 
 " LANGUAGECLIENT
  let g:LanguageClient_serverCommands = {
