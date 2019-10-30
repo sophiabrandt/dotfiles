@@ -106,7 +106,7 @@ nmap <leader>ph <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one
-nnoremap <leader>bq :<c-u>pp <bar> bd #<cr>
+nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
