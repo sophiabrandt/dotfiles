@@ -1,12 +1,11 @@
 # dotfiles
 
-> dev setup with st, tmux, fish, NeoVim, etc.
+> dev setup with kitty, fish, NeoVim, etc.
 
 ## OS
 
 - Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/download/i3/)
-
-The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Colemak](https://colemak.com/) and some programs which I wanted to run at startup.
+- colorscheme [Nord][nord]
 
 ## Terminal
 
@@ -19,5 +18,7 @@ The i3 config is pretty much vanilla Manjaro i3 except some keybindings for [Col
 
 ## Look
 
-- color scheme: [Nord](https://github.com/arcticicestudio/nord-vim)
+- color scheme: [Nord][nord]
 - font: [Victor Mono](https://rubjo.github.io/victor-mono/)
+
+[nord]: https://www.nordtheme.com/
