@@ -6,19 +6,13 @@ set termguicolors
 set hidden
 set nobackup
 set nowritebackup
-set smartindent
-set copyindent
 set smartcase
-set inccommand=nosplit
-set completeopt=menu,menuone,preview,noselect,noinsert
-set number relativenumber
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set scrolloff=4
-set expandtab
-set showtabline=2
 set ignorecase
+set inccommand=nosplit
+set number
+set completeopt=menu,menuone,preview,noselect,noinsert
+set scrolloff=4
+set showtabline=2
 set lazyredraw
 set showmatch
 set history=500
@@ -40,17 +34,6 @@ set nojoinspaces
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
-" FINDING FILES:
-" Search down into subfolders
-" Provides tab-completion for all file-related tasks
-set path+=**
-
-" Display all matching files when we tab complete
-set wildmode=full
-
-" Automatically change to current directory
-" autocmd BufEnter * silent! lcd %:p:h
 
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)
@@ -78,8 +61,8 @@ function! ExecuteMacroOverVisualRange()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
-" MARKDOWN
-au BufNewFile,BufFilePre,BufRead   *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx set ft=markdown
+" " MARKDOWN
+" au BufNewFile,BufFilePre,BufRead   *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx set ft=markdown
 autocmd BufRead,BufNewFile         *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE
@@ -91,6 +74,7 @@ function! s:MkNonExDir(file, buf)
         endif
     endif
 endfunction
+
 augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))

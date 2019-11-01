@@ -14,9 +14,6 @@ nnoremap : ;
 nnoremap j gj
 nnoremap k gk
 
-" xx is escape in insert mode
-inoremap xx <esc>
-
 " jump to start of line and end of line
 inoremap <c-a> <c-o>^
 nnoremap B ^
@@ -51,8 +48,12 @@ nmap <silent> <c-l> <c-w><right>
 " TERMINAL
 " Getting out of Terminal mode
 if has('nvim')
+  " use esc to exit terminal mode
   tnoremap <esc> <c-\><c-n>
-  tnoremap <c-v><esc> <esc>
+  " use ctrl+] to exit terminal mode
+  tnoremap <c-]> <c-\><c-n>
+  " use alt+[ to send escape key to underlying program in buffer
+  tnoremap <a-[> <esc>
 endif
 
 " AUTOSAVE
@@ -64,7 +65,7 @@ if executable('grip')
 endif
 
 " MARKDOWN-PREVIEW
-nmap <c-p> <plug>MarkdownPreviewToggle
+nnoremap <leader><md> <plug>MarkdownPreviewToggle
 
 
 " Quit help files
@@ -98,7 +99,7 @@ nmap <leader>pe <Plug>(PickerEdit)
 nmap <leader>ps <Plug>(PickerSplit)
 nmap <leader>pt <Plug>(PickerTabedit)
 nmap <leader>pv <Plug>(PickerVsplit)
-nmap <leader>pb <Plug>(PickerBuffer)
+nmap <leader>bb <Plug>(PickerBuffer)
 nmap <leader>p] <Plug>(PickerTag)
 nmap <leader>pw <Plug>(PickerStag)
 nmap <leader>po <Plug>(PickerBufferTag)
