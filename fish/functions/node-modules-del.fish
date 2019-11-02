@@ -1,4 +1,4 @@
-# Defined in - @ line 1
-function node-modules-del --description alias\ node-modules-del\ find\ .\ -name\ \"node_modules\"\ -exec\ rm\ -rf\ \'\{\}\'\ +
-	find . -name "node_modules" -exec rm -rf '{}' + $argv;
+function node-modules-del
+	fd -t d -I node_modules -x rm -rf '{}' \+;
+pnpm store prune
 end
