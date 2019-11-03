@@ -67,11 +67,6 @@ endif
 " MARKDOWN-PREVIEW
 nnoremap <leader><md> <plug>MarkdownPreviewToggle
 
-
-" Quit help files
-" type q to exit
-autocmd Filetype help nnoremap <buffer> q :q<cr>
-
 " replace f and t with one-character vim sneak
 map f <plug>Sneak_f
 map F <plug>Sneak_F
