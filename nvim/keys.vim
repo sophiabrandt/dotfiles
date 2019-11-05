@@ -34,11 +34,6 @@ nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
 
-" ctrl+s to save file
-noremap  <silent><c-s> :<c-u>update<cr>
-vnoremap <silent><c-s> :<c-u><c-c>:update<cr>
-inoremap <silent><c-s> :<c-u><c-o>:update<cr>
-
 " Use ctrl-[hjkl] to navigate panes
 nmap <silent> <c-k> <c-w><up>
 nmap <silent> <c-j> <c-w><down>
