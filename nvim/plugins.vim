@@ -7,9 +7,8 @@ let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
 
-" VIMWIKI
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.wiki'}]
+" WIKI
+let g:wiki_root = '~/vimwiki'
 
 " LIGHTLINE
 let lightline                              = {}
