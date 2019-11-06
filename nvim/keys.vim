@@ -34,6 +34,11 @@ nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
 
+" ctrl+s to save file
+noremap  <silent><c-s> :<c-u>update<cr>
+vnoremap <silent><c-s> :<c-u><c-c>:update<cr>
+inoremap <silent><c-s> :<c-u><c-o>:update<cr>
+
 " Use ctrl-[hjkl] to navigate panes
 nmap <silent> <c-k> <c-w><up>
 nmap <silent> <c-j> <c-w><down>
@@ -53,6 +58,11 @@ endif
 
 " AUTOSAVE
 nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
+
+" WIKI.VIM
+nmap <leader>wt <plug>(wiki-list-toggle)
+nmap <leader>jp <plug>(wiki-journal-prev)
+nmap <leader>jn <plug>(wiki-journal-next)
 
 " Grip (Preview Markdown)
 if executable('grip')

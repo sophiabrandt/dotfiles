@@ -7,8 +7,14 @@ let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
 
-" WIKI
-let g:wiki_root = '~/vimwiki'
+" WIKI.VIM
+let g:wiki_root             = '~/wiki'
+let g:wiki_filetypes        = ['md']
+let g:wiki_link_target_type = 'md'
+let g:wiki_list_todos       = ['TODO', 'IN_PROGRESS', 'DONE']
+let g:wiki_journal          = {
+    \ 'name': 'log'
+    \}
 
 " LIGHTLINE
 let lightline                              = {}
