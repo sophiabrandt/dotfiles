@@ -55,6 +55,9 @@ let g:mkdp_markdown_css ='~/.config/nvim/github-markdown-css/github-markdown.css
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" MERLIN
+let g:merlin_completion_with_doc = 1
+
 " LANGUAGECLIENT
  let g:LanguageClient_serverCommands = {
  \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
@@ -106,6 +109,7 @@ let g:ale_linters = {
 \   'jsx':        ['tsserver', 'eslint', 'stylelint'],
 \   'markdown':   ['remark_lint', 'writegood'],
 \   'nim':        ['nimlsp', 'nim check'],
+\   'ocaml':      ['merlin'],
 \   'python':     ['flake8'],
 \   'reason':     ['reason-language-server'],
 \   'scss':       ['stylelint', 'csslint'],
@@ -124,6 +128,7 @@ let g:ale_fixers = {
 \   'json':       ['prettier', 'fixjson'],
 \   'jsx':        ['eslint', 'prettier'],
 \   'markdown':   ['prettier'],
+\   'ocaml':      ['ocamlformat'],
 \   'python' :    ['yapf', 'black'],
 \   'reason':     ['refmt'],
 \   'scss':       ['prettier', 'stylelint'],

@@ -9,7 +9,7 @@ set nowritebackup
 set smartcase
 set ignorecase
 set inccommand=nosplit
-set number
+set number relativenumber
 set completeopt=menu,menuone,preview,noselect,noinsert
 set scrolloff=4
 set showtabline=2
@@ -18,6 +18,8 @@ set showmatch
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
+set expandtab shiftwidth=2
+set colorcolumn=80
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
@@ -46,6 +48,10 @@ command! MakeTags !ctags -R .
 
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
+
+" OCAML/MERLIN
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " AUTOCOMPLETE & SPELL CHECKING
 " Autocomplete with dictionary words when spell check is on

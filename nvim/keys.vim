@@ -111,7 +111,6 @@ nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
-
 " LANGUAGECLIENT
 nnoremap <silent> gd :<c-u>call LanguageClient_textDocument_definition()<cr>
 nnoremap <silent> gt :<c-u>call LanguageClient_textDocument_typeDefinition()<cr>
