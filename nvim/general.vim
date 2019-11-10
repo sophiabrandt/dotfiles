@@ -1,7 +1,4 @@
 " BASIC SETUP
-colorscheme nord
-" colorscheme PaperColor
-" set background=light
 set termguicolors
 set hidden
 set nobackup

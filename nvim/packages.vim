@@ -1,5 +1,6 @@
-command! PackUpdate packadd minpac | source $MYVIMRC | redraw | call minpac#update()
+command! PackUpdate packadd minpac | source $MYVIMRC | redraw | call minpac#update('', {'do': 'call minpac#status()'})
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
 
 if !exists('*minpac#init')
   finish

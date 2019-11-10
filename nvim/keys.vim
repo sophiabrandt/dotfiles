@@ -90,6 +90,8 @@ nnoremap <leader>vm :<c-u>e ~/.config/nvim/packages.vim<cr>
 nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
 " Keys
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
+" Colorscheme
+nnoremap <leader>vc :<c-u>e ~/.config/nvim/colorscheme.vim<cr>
 
 " Find with :Rg
 nnoremap <leader>rg :<c-u>Rg<cr>

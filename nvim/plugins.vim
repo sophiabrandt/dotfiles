@@ -18,7 +18,6 @@ let g:wiki_journal          = {
 
 " LIGHTLINE
 let lightline                              = {}
-let g:lightline.colorscheme                = 'nord'
 let g:lightline#bufferline#show_number     = 1
 let g:lightline#bufferline#shorten_path    = 0
 let g:lightline#bufferline#enable_devicons = 1
@@ -64,10 +63,10 @@ let g:merlin_completion_with_doc = 1
  \   'javascript': ['typescript-language-server', '--stdio'],
  \   'javascriptjsx': ['typescript-language-server', '--stdio'],
  \   'nim': ['nimlsp', '~/.choosenim/toolchains/nim-1.0.0'],
+ \   'python': ['~/.local/bin/pyls'],
  \   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
  \   'typescript': ['typescript-language-server', '--stdio'],
  \   'typescript.tsx': ['typescript-language-server', '--stdio'],
- \   'python': ['~/.local/bin/pyls'],
  \}
 
  let g:LanguageClient_diagnosticsList = 'Disabled'
