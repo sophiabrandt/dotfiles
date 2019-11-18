@@ -21,9 +21,9 @@ inoremap <c-e> <c-o>$
 nnoremap E $
 
 " replace word with default register
-nnoremap <leader>r "_diwP"
+nnoremap <leader>rr "_diwP"
 " paste from clipboard
-nnoremap <leader>cv "+p
+nnoremap <leader>pp "+p
 
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
@@ -57,7 +57,11 @@ if has('nvim')
 endif
 
 " AUTOSAVE
-nnoremap <leader>ast :<c-u>AutoSaveToggle<cr>
+nnoremap <leader>as :<c-u>AutoSaveToggle<cr>
+
+" GOYO
+nnoremap <leader>gg :<c-u>Goyo<cr>
+xnoremap <leader>gg :<c-u>Goyo<cr>
 
 " WIKI.VIM
 nmap <leader>wt <plug>(wiki-list-toggle)
@@ -70,7 +74,7 @@ if executable('grip')
 endif
 
 " MARKDOWN-PREVIEW
-nnoremap <leader><md> <plug>MarkdownPreviewToggle
+nmap <leader>md <plug>MarkdownPreviewToggle
 
 " replace f and t with one-character vim sneak
 map f <plug>Sneak_f
@@ -97,15 +101,15 @@ nnoremap <leader>vc :<c-u>e ~/.config/nvim/colorscheme.vim<cr>
 nnoremap <leader>rg :<c-u>Rg<cr>
 
 " PICKER
-nmap <leader>pe <Plug>(PickerEdit)
-nmap <leader>ps <Plug>(PickerSplit)
-nmap <leader>pt <Plug>(PickerTabedit)
-nmap <leader>pv <Plug>(PickerVsplit)
+nmap <leader>be <Plug>(PickerEdit)
+nmap <leader>bs <Plug>(PickerSplit)
+nmap <leader>bt <Plug>(PickerTabedit)
+nmap <leader>bv <Plug>(PickerVsplit)
 nmap <leader>bb <Plug>(PickerBuffer)
-nmap <leader>p] <Plug>(PickerTag)
-nmap <leader>pw <Plug>(PickerStag)
-nmap <leader>po <Plug>(PickerBufferTag)
-nmap <leader>ph <Plug>(PickerHelp)
+nmap <leader>b] <Plug>(PickerTag)
+nmap <leader>bw <Plug>(PickerStag)
+nmap <leader>bo <Plug>(PickerBufferTag)
+nmap <leader>bh <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one
@@ -114,17 +118,17 @@ nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
 nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
 
 " LANGUAGECLIENT
-nnoremap <silent> gd :<c-u>call LanguageClient_textDocument_definition()<cr>
-nnoremap <silent> gt :<c-u>call LanguageClient_textDocument_typeDefinition()<cr>
-nnoremap <silent> gi :<c-u>call LanguageClient_textDocument_implementation()<cr>
-nnoremap <silent> gR :<c-u>call LanguageClient_textDocument_rename()<cr>
-nnoremap <silent> gf :<c-u>call LanguageClient_textDocument_formatting()<cr>
-nnoremap <silent> gS :<c-u>call LanguageClient_textDocument_documentSymbol()<cr>
-nnoremap <silent> gw :<c-u>call LanguageClient_workspace_symbol()<cr>
-nnoremap <silent> gr :<c-u>call LanguageClient_textDocument_references()<cr>
-nnoremap <silent> ga :<c-u>call LanguageClient_textDocument_codeAction()<cr>
-nnoremap <silent> K  :<c-u>call LanguageClient_textDocument_hover()<cr>
-nnoremap <silent> gh :<c-u>call LanguageClient_contextMenu()<cr>
+nnoremap <silent>gd :<c-u>call LanguageClient_textDocument_definition()<cr>
+nnoremap <silent>gt :<c-u>call LanguageClient_textDocument_typeDefinition()<cr>
+nnoremap <silent>gi :<c-u>call LanguageClient_textDocument_implementation()<cr>
+nnoremap <silent>gR :<c-u>call LanguageClient_textDocument_rename()<cr>
+nnoremap <silent>gf :<c-u>call LanguageClient_textDocument_formatting()<cr>
+nnoremap <silent>gS :<c-u>call LanguageClient_textDocument_documentSymbol()<cr>
+nnoremap <silent>gw :<c-u>call LanguageClient_workspace_symbol()<cr>
+nnoremap <silent>gr :<c-u>call LanguageClient_textDocument_references()<cr>
+nnoremap <silent>ga :<c-u>call LanguageClient_textDocument_codeAction()<cr>
+nnoremap <silent>K  :<c-u>call LanguageClient_textDocument_hover()<cr>
+nnoremap <silent>gh :<c-u>call LanguageClient_contextMenu()<cr>
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)

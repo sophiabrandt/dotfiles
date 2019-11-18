@@ -7,6 +7,11 @@ let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
 
+" LIMELIGHT
+let g:limelight_default_coefficient = 0.8
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
 " WIKI.VIM
 let g:wiki_root             = '~/wiki'
 let g:wiki_filetypes        = ['md']
@@ -59,14 +64,14 @@ let g:merlin_completion_with_doc = 1
 
 " LANGUAGECLIENT
  let g:LanguageClient_serverCommands = {
- \   'elixir': ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
- \   'javascript': ['typescript-language-server', '--stdio'],
- \   'javascriptjsx': ['typescript-language-server', '--stdio'],
- \   'nim': ['nimlsp', '~/.choosenim/toolchains/nim-1.0.0'],
- \   'python': ['~/.local/bin/pyls'],
- \   'reason': ['~/Coding/Reason/rls-linux/reason-language-server'],
- \   'typescript': ['typescript-language-server', '--stdio'],
- \   'typescript.tsx': ['typescript-language-server', '--stdio'],
+ \   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+ \   'javascript':      ['typescript-language-server', '--stdio'],
+ \   'javascriptreact': ['typescript-language-server', '--stdio'],
+ \   'nim':             ['nimlsp', '~/.choosenim/toolchains/nim-1.0.0'],
+ \   'python':          ['~/.local/bin/pyls'],
+ \   'reason':          ['~/Coding/Reason/rls-linux/reason-language-server'],
+ \   'typescript':      ['typescript-language-server', '--stdio'],
+ \   'typescriptreact': ['typescript-language-server', '--stdio'],
  \}
 
  let g:LanguageClient_diagnosticsList = 'Disabled'
@@ -88,50 +93,50 @@ let g:ale_fix_on_save                 = 1
 let g:ale_completion_enabled          = 1
 let g:ale_elixir_elixir_ls_release    = $HOME . '/Coding/Elixir/elixir-ls/release'
 let g:ale_reason_ls_executable        = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
-\   'jsx':     ['css', 'javascript'],
-\   'svelte':  ['css', 'javascript'],
-\   'scss':    ['css'],
 \   'eelixir': ['elixir', 'html'],
+\   'scss':    ['css'],
+\   'svelte':  ['css', 'javascript'],
 \}
 
 let g:ale_linters = {
-\   'clojure':    ['joker', 'clj_kondo'],
-\   'css':        ['stylelint', 'csslint'],
-\   'dart':       ['language_server'],
-\   'elixir':     ['elixir-ls', 'credo'],
-\   'graphql':    ['gqlint'],
-\   'javascript': ['tsserver', 'eslint'],
-\   'json':       ['jsonlint'],
-\   'jsx':        ['tsserver', 'eslint', 'stylelint'],
-\   'markdown':   ['remark_lint', 'writegood'],
-\   'nim':        ['nimlsp', 'nim check'],
-\   'ocaml':      ['merlin'],
-\   'python':     ['flake8'],
-\   'reason':     ['reason-language-server'],
-\   'scss':       ['stylelint', 'csslint'],
-\   'svelte':     ['eslint', 'stylelint', 'csslint'],
-\   'typescript': ['tsserver', 'eslint'],
+\   'clojure':                     ['joker', 'clj_kondo'],
+\   'css':                         ['stylelint', 'csslint'],
+\   'dart':                        ['language_server'],
+\   'elixir':                      ['elixir-ls', 'credo'],
+\   'graphql':                     ['gqlint'],
+\   'javascript':                  ['tsserver', 'eslint'],
+\   'javascriptreact':             ['tsserver', 'eslint'],
+\   'json':                        ['jsonlint'],
+\   'markdown':                    ['remark_lint', 'writegood'],
+\   'nim':                         ['nimlsp', 'nim check'],
+\   'ocaml':                       ['merlin'],
+\   'python':                      ['flake8'],
+\   'reason':                      ['reason-language-server'],
+\   'scss':                        ['stylelint', 'csslint'],
+\   'svelte':                      ['eslint', 'stylelint', 'csslint'],
+\   'typescript':                  ['tsserver', 'eslint', 'stylelint'],
+\   'typescriptreact':             ['tsserver', 'eslint', 'stylelint'],
 \}
 
 let g:ale_fixers = {
-\   'css':        ['prettier', 'stylelint'],
-\   'dart':       ['dartfmt'],
-\   'eelixir':    ['prettier'],
-\   'elixir':     ['mix_format'],
-\   'graphql' :   ['prettier'],
-\   'html':       ['prettier'],
-\   'javascript': ['eslint', 'prettier', 'prettier_eslint'],
-\   'json':       ['prettier', 'fixjson'],
-\   'jsx':        ['eslint', 'prettier'],
-\   'markdown':   ['prettier'],
-\   'ocaml':      ['ocamlformat'],
-\   'python' :    ['yapf', 'black'],
-\   'reason':     ['refmt'],
-\   'scss':       ['prettier', 'stylelint'],
-\   'svelte':     ['eslint', 'prettier', 'prettier_eslint'],
-\   'typescript': ['eslint', 'prettier', 'prettier_eslint'],
-\   '*':          ['remove_trailing_lines', 'trim_whitespace'],
+\   'css':                  ['prettier', 'stylelint'],
+\   'dart':                 ['dartfmt'],
+\   'eelixir':              ['prettier'],
+\   'elixir':               ['mix_format'],
+\   'graphql' :             ['prettier'],
+\   'html':                 ['prettier'],
+\   'javascript':           ['eslint', 'prettier', 'prettier_eslint'],
+\   'javascriptreact':      ['eslint', 'prettier', 'prettier_eslint'],
+\   'json':                 ['prettier', 'fixjson'],
+\   'markdown':             ['prettier'],
+\   'ocaml':                ['ocamlformat'],
+\   'python' :              ['yapf', 'black'],
+\   'reason':               ['refmt'],
+\   'scss':                 ['prettier', 'stylelint'],
+\   'svelte':               ['eslint', 'prettier', 'prettier_eslint'],
+\   'typescript':           ['eslint', 'prettier', 'prettier_eslint'],
+\   'typescriptreact':      ['eslint', 'prettier', 'prettier_eslint'],
+\   '*':                    ['remove_trailing_lines', 'trim_whitespace'],
 \}
