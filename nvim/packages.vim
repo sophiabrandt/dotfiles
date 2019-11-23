@@ -9,7 +9,6 @@ endif
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('NLKNguyen/papercolor-theme')
-call minpac#add('junegunn/seoul256.vim')
 call minpac#add('arcticicestudio/nord-vim')
 call minpac#add('jeffkreeftmeijer/vim-numbertoggle')
 call minpac#add('sgur/vim-editorconfig')
