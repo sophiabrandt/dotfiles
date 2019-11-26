@@ -4,4 +4,5 @@ tags*
 # nvim
 nvim/pack
 nvim/spell
+nvim/undodir
 nvim/.netrwhist

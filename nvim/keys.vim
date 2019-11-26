@@ -6,9 +6,9 @@ nnoremap <space> <nop>
 let maplocalleader=","
 nnoremap , <nop>
 
-" swap semicolon and colon in normal mode to enter command mode more easily
-nnoremap ; :
-nnoremap : ;
+" " swap semicolon and colon in normal mode to enter command mode more easily
+" nnoremap ; :
+" nnoremap : ;
 
 " movement
 nnoremap j gj
@@ -20,10 +20,16 @@ nnoremap B ^
 inoremap <c-e> <c-o>$
 nnoremap E $
 
+" undo & redo
+nnoremap <F5> :<c-u>UndotreeToggle<cr>
+nnoremap <F9> g-
+nnoremap <F10> g+
+
 " replace word with default register
 nnoremap <leader>rr "_diwP"
 " paste from clipboard
 nnoremap <leader>pp "+p
+inoremap <c-p> :<c-u><c-o>"+p<cr>
 
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
@@ -36,8 +42,6 @@ nnoremap <leader>ti :<c-u>tabclose<cr>
 
 " ctrl+s to save file
 noremap  <silent><c-s> :<c-u>update<cr>
-vnoremap <silent><c-s> :<c-u><c-c>:update<cr>
-inoremap <silent><c-s> :<c-u><c-o>:update<cr>
 
 " Use ctrl-[hjkl] to navigate panes
 nmap <silent> <c-k> <c-w><up>
