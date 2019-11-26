@@ -1,8 +1,3 @@
-" AUTOSAVE
-let g:auto_save        = 1
-let g:auto_save_silent = 1
-let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
-
 " SNEAK VIM
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
