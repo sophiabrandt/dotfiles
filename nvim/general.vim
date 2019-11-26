@@ -12,10 +12,13 @@ set scrolloff=4
 set showtabline=2
 set lazyredraw
 set showmatch
+set cursorline
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
 set expandtab shiftwidth=2
+set undodir=~/.config/nvim/undodir
+set undofile
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'
