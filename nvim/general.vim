@@ -12,7 +12,6 @@ set scrolloff=4
 set showtabline=2
 set lazyredraw
 set showmatch
-set cursorline
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp

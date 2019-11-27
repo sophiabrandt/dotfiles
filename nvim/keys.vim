@@ -6,10 +6,6 @@ nnoremap <space> <nop>
 let maplocalleader=","
 nnoremap , <nop>
 
-" " swap semicolon and colon in normal mode to enter command mode more easily
-" nnoremap ; :
-" nnoremap : ;
-
 " movement
 nnoremap j gj
 nnoremap k gk
@@ -41,7 +37,9 @@ nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
 
 " ctrl+s to save file
-noremap  <silent><c-s> :<c-u>update<cr>
+nnoremap <silent><c-s> :<c-u>update<cr>
+vnoremap <silent><c-s> <c-c>:update<cr>gv
+inoremap <silent><c-s> <c-o>:update<cr>
 
 " Use ctrl-[hjkl] to navigate panes
 nmap <silent> <c-k> <c-w><up>
@@ -59,9 +57,6 @@ if has('nvim')
   " use alt+[ to send escape key to underlying program in buffer
   tnoremap <a-[> <esc>
 endif
-
-" AUTOSAVE
-nnoremap <leader>as :<c-u>AutoSaveToggle<cr>
 
 " GOYO
 nnoremap <leader>gg :<c-u>Goyo<cr>
