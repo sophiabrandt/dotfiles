@@ -58,6 +58,14 @@ if has('nvim')
   tnoremap <a-[> <esc>
 endif
 
+" NEOTERM
+" <leader>tl will clear neoterm-3.
+nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+" REPLSend
+nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
+nmap <leader>trs <plug>(neoterm-repl-send)
+nmap <leader>trl <plug>(neoterm-repl-send-line)
+
 " GOYO
 nnoremap <leader>gg :<c-u>Goyo<cr>
 xnoremap <leader>gg :<c-u>Goyo<cr>

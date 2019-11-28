@@ -13,6 +13,7 @@ function! PackagerInit() abort
   call packager#add('jeffkreeftmeijer/vim-numbertoggle')
   call packager#add('sgur/vim-editorconfig')
   call packager#add('dbakker/vim-projectroot')
+  call packager#add('kassio/neoterm')
   call packager#add('mbbill/undotree')
   call packager#add('justinmk/vim-dirvish')
   call packager#add('srstevenson/vim-picker')

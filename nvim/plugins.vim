@@ -2,6 +2,9 @@
 let g:sneak#label  = 1
 let g:sneak#s_next = 1
 
+" NEOTERM
+let g:neoterm_autoscroll = 1
+
 " LIMELIGHT
 let g:limelight_default_coefficient = 0.8
 autocmd! User GoyoEnter Limelight
