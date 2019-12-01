@@ -5,6 +5,15 @@ let g:sneak#s_next = 1
 " NEOTERM
 let g:neoterm_autoscroll = 1
 
+" VIM-GREPPER
+let g:grepper       = {}
+let g:grepper.tools = ["rg"]
+let g:grepper.jump  = 1
+
+" UNDOTREE
+let g:undotree_HighlightChangedWithSign = 0
+let g:undotree_WindowLayout             = 4
+
 " LIMELIGHT
 let g:limelight_default_coefficient = 0.8
 autocmd! User GoyoEnter Limelight
@@ -39,6 +48,18 @@ endfunction
 function! MyFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
+
+" GITGUTTER
+let g:gitgutter_grep                    = 'rg'
+let g:gitgutter_map_keys                = 0
+let g:gitgutter_sign_added              = '▎'
+let g:gitgutter_sign_modified           = '▎'
+let g:gitgutter_sign_modified_removed   = '▶'
+let g:gitgutter_sign_removed            = '▶'
+let g:gitgutter_sign_removed_first_line = '◥'
+
+" VIM-LION
+let g:lion_squeeze_spaces = 1
 
 " EMMET
 let g:user_emmet_settings={
@@ -100,7 +121,7 @@ let g:ale_linters = {
 \   'clojure':                     ['joker', 'clj_kondo'],
 \   'css':                         ['stylelint', 'csslint'],
 \   'dart':                        ['language_server'],
-\   'elixir':                      ['elixir-ls', 'credo'],
+\   'elixir':                      ['elixir-ls'],
 \   'graphql':                     ['gqlint'],
 \   'javascript':                  ['tsserver', 'eslint'],
 \   'javascriptreact':             ['tsserver', 'eslint'],

@@ -66,6 +66,18 @@ nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
 nmap <leader>trs <plug>(neoterm-repl-send)
 nmap <leader>trl <plug>(neoterm-repl-send-line)
 
+" VIM-GITGUTTER
+nmap [g <Plug>GitGutterPrevHunkzz
+nmap ]g <Plug>GitGutterNextHunkzz
+nmap <leader>p <Plug>GitGutterPreviewHunk
+nmap <leader>+ <Plug>GitGutterStageHunk
+nmap <leader>- <Plug>GitGutterUndoHunk
+
+" VIM-FUGITIVE
+nnoremap <silent> <leader>B :Gblame<cr>
+nnoremap <silent> <leader>C :Gclog %<cr>
+nnoremap <silent> <leader>G :Gstatus<cr>
+
 " GOYO
 nnoremap <leader>gg :<c-u>Goyo<cr>
 xnoremap <leader>gg :<c-u>Goyo<cr>
@@ -104,8 +116,10 @@ nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 " Colorscheme
 nnoremap <leader>vc :<c-u>e ~/.config/nvim/colorscheme.vim<cr>
 
-" Find with :Rg
-nnoremap <leader>rg :<c-u>Rg<cr>
+" VIM-GREPPER
+nnoremap <leader>/ :<c-u>GrepperRg<space>
+nnoremap gs :Grepper -cword -noprompt<cr>
+xmap gs <plug>(GrepperOperator)
 
 " PICKER
 nmap <leader>be <Plug>(PickerEdit)

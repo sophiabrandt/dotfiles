@@ -18,6 +18,7 @@ set directory=~/.tmp
 set expandtab shiftwidth=2
 set undodir=~/.config/nvim/undodir
 set undofile
+set updatetime=300
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.6.0/bin/neovim-ruby-host'

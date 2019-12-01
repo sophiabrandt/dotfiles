@@ -18,7 +18,7 @@ function! PackagerInit() abort
   call packager#add('justinmk/vim-dirvish')
   call packager#add('srstevenson/vim-picker')
   call packager#add('machakann/vim-highlightedyank')
-  call packager#add('jremmen/vim-ripgrep')
+  call packager#add('mhinz/vim-grepper')
   call packager#add('itchyny/lightline.vim')
   call packager#add('mengelbrecht/lightline-bufferline')
   call packager#add('ryanoasis/vim-devicons')
@@ -40,6 +40,7 @@ function! PackagerInit() abort
   call packager#add('dense-analysis/ale')
   call packager#add('sheerun/vim-polyglot')
   call packager#add('ludovicchabant/vim-gutentags')
+  call packager#add('chrisbra/unicode.vim')
   call packager#add('lervag/wiki.vim')
 
 "Loaded only for specific filetypes on demand. Requires autocommands below.
