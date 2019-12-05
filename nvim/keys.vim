@@ -87,6 +87,13 @@ nmap <leader>wt <plug>(wiki-list-toggle)
 nmap <leader>jp <plug>(wiki-journal-prev)
 nmap <leader>jn <plug>(wiki-journal-next)
 
+" WIKI.VIM
+let g:wiki_mappings_global = {
+      \ '<plug>(wiki-list-toggle)' : '<a-s>',
+      \ '<plug>(wiki-journal-prev)' : '<leader>jp',
+      \ '<plug>(wiki-journal-next)' : '<leader>jn',
+      \}
+
 " Grip (Preview Markdown)
 if executable('grip')
   nnoremap <silent> <leader>mp :<c-u>!grip % -b<cr>
