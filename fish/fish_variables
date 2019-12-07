@@ -6,7 +6,7 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
-SETUVAR PROJECT_PATHS:/home/owlhoot/Coding/\x1e/media/Data/
+SETUVAR PROJECT_PATHS:/home/owlhoot/Coding\x1e/home/owlhoot/Coding/Elixir/\x1e/home/owlhoot/Coding/CSS/\x1e/home/owlhoot/Coding/JavaScript/\x1e/home/owlhoot/Coding/Nim/\x1e/home/owlhoot/Coding/Reason/\x1e/home/owlhoot/Coding/OCaml\x1e/home/owlhoot/Coding/Python/\x1e/home/owlhoot/Coding/TypeScript/\x1e/home/owlhoot/Coding/Docker/
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/owlhoot/\x2elocal/share/z/data
