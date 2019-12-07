@@ -89,9 +89,10 @@ nmap <leader>jn <plug>(wiki-journal-next)
 
 " WIKI.VIM
 let g:wiki_mappings_global = {
-      \ '<plug>(wiki-list-toggle)' : '<a-s>',
-      \ '<plug>(wiki-journal-prev)' : '<leader>jp',
-      \ '<plug>(wiki-journal-next)' : '<leader>jn',
+      \ '<plug>(wiki-list-toggle)'   : '<a-s>',
+      \ 'i_<plug>(wiki-list-toggle)' : '<a-s>',
+      \ '<plug>(wiki-journal-prev)'  : '<leader>jp',
+      \ '<plug>(wiki-journal-next)'  : '<leader>jn',
       \}
 
 " Grip (Preview Markdown)
@@ -114,10 +115,10 @@ nnoremap <leader>vr :<c-u>e $MYVIMRC<cr>
 nnoremap <leader>so :<c-u>source $MYVIMRC<cr>
 " General Config
 nnoremap <leader>vg :<c-u>e ~/.config/nvim/general.vim<cr>
-" Packages
-nnoremap <leader>vm :<c-u>e ~/.config/nvim/packages.vim<cr>
-" Plugins
-nnoremap <leader>vp :<c-u>e ~/.config/nvim/plugins.vim<cr>
+" Plugin Installation
+nnoremap <leader>vi :<c-u>e ~/.config/nvim/plugin_installation.vim<cr>
+" Plugin Configuration/Management
+nnoremap <leader>vm :<c-u>e ~/.config/nvim/plugin_config.vim<cr>
 " Keys
 nnoremap <leader>vk :<c-u>e ~/.config/nvim/keys.vim<cr>
 " Colorscheme
@@ -141,9 +142,9 @@ nmap <leader>bh <Plug>(PickerHelp)
 
 " BUFFERS
 " close the current buffer and move to the previous one
-nnoremap <leader>bq :<c-u>bp <bar> bd #<cr>
+nnoremap <leader>bq :<c-u>bp<bar>bd! #<cr>
 " close all buffers except current one
-nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
+nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 
 " LANGUAGECLIENT
 nnoremap <silent>gd :<c-u>call LanguageClient_textDocument_definition()<cr>
