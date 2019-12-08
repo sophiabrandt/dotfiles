@@ -148,7 +148,7 @@ let g:ale_fixers = {
 \   'json':                 ['prettier', 'fixjson'],
 \   'markdown':             ['prettier'],
 \   'ocaml':                ['ocamlformat'],
-\   'python' :              ['yapf', 'black'],
+\   'python' :              ['black'],
 \   'reason':               ['refmt'],
 \   'scss':                 ['prettier', 'stylelint'],
 \   'svelte':               ['eslint', 'prettier', 'prettier_eslint'],
