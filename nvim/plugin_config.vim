@@ -97,6 +97,9 @@ let g:html_indent_tags = 'li\|p'
  \   'elixir': ['mix.exs'],
  \}
 
+ " VIM-REASOML
+ autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
+
 " ALE
 let g:ale_sign_error                  = '✘'
 let g:ale_sign_warning                = '⚠'
