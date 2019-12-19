@@ -17,7 +17,7 @@ inoremap <c-e> <c-o>$
 nnoremap E $
 
 " undo & redo
-nnoremap <F5> :<c-u>UndotreeToggle<cr>
+nnoremap <F8> :<c-u>UndotreeToggle<cr>
 nnoremap <F9> g-
 nnoremap <F10> g+
 
@@ -57,14 +57,6 @@ if has('nvim')
   " use alt+[ to send escape key to underlying program in buffer
   tnoremap <a-[> <esc>
 endif
-
-" NEOTERM
-" <leader>tl will clear neoterm-3.
-nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
-" REPLSend
-nnoremap <leader>trf :<c-u>TREPLSendFile<cr>
-nmap <leader>trs <plug>(neoterm-repl-send)
-nmap <leader>trl <plug>(neoterm-repl-send-line)
 
 " VIM-GITGUTTER
 nmap [g <Plug>GitGutterPrevHunkzz
