@@ -8,3 +8,6 @@ source /home/owlhoot/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
 # asdf
 source ~/.asdf/asdf.fish
+
+# thefuck
+thefuck --alias | source

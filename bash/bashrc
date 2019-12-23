@@ -7,7 +7,8 @@
 # disable interpreting <ctrl+s> as signal for stopping terminal updates
 stty -ixon
 
-# Terminal to sterminal
+# Terminal to kitty
+source <(kitty + complete setup bash)
 export TERMINAL="kitty"
 
 # Fish Shell
