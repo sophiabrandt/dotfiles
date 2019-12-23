@@ -21,6 +21,9 @@ nnoremap <F8> :<c-u>UndotreeToggle<cr>
 nnoremap <F9> g-
 nnoremap <F10> g+
 
+" switch to sudo to override readonly
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
 " replace word with default register
 nnoremap <leader>rr "_diwP"
 " paste from clipboard
