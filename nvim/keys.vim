@@ -9,6 +9,9 @@ nnoremap , <nop>
 " movement
 nnoremap j gj
 nnoremap k gk
+" move visual selection
+vnoremap J :m '>+1<cr>gv=gv
+vnoremap K :m '<-2<cr>gv=gv
 
 " jump to start of line and end of line
 inoremap <c-a> <c-o>^
@@ -23,6 +26,9 @@ nnoremap <F10> g+
 
 " switch to sudo to override readonly
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+" make . work with visually selected lines
+vnoremap . :normal.<cr>
 
 " replace word with default register
 nnoremap <leader>rr "_diwP"
@@ -44,11 +50,11 @@ nnoremap <silent><c-s> :<c-u>update<cr>
 vnoremap <silent><c-s> <c-c>:update<cr>gv
 inoremap <silent><c-s> <c-o>:update<cr>
 
-" Use ctrl-[hjkl] to navigate panes
-nmap <silent> <c-k> <c-w><up>
-nmap <silent> <c-j> <c-w><down>
-nmap <silent> <c-h> <c-w><left>
-nmap <silent> <c-l> <c-w><right>
+" " Use ctrl-[hjkl] to navigate panes
+" nmap <silent> <c-k> <c-w><up>
+" nmap <silent> <c-j> <c-w><down>
+" nmap <silent> <c-h> <c-w><left>
+" nmap <silent> <c-l> <c-w><right>
 
 " TERMINAL
 " Getting out of Terminal mode

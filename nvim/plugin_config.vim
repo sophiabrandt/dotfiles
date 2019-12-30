@@ -10,6 +10,15 @@ let g:grepper       = {}
 let g:grepper.tools = ["rg"]
 let g:grepper.jump  = 1
 
+" TMUX
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-t><c-p> :TmuxNavigatePrevious<cr>
+
 " UNDOTREE
 let g:undotree_HighlightChangedWithSign = 0
 let g:undotree_WindowLayout             = 4
@@ -113,6 +122,7 @@ let g:ale_fix_on_save                 = 1
 let g:ale_completion_enabled          = 1
 let g:ale_elixir_elixir_ls_release    = $HOME . '/Coding/Elixir/elixir-ls/release'
 let g:ale_reason_ls_executable        = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 let g:ale_linter_aliases = {
 \   'eelixir': ['elixir', 'html'],
