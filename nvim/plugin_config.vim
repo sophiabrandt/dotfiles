@@ -12,12 +12,13 @@ let g:grepper.jump  = 1
 
 " TMUX
 let g:tmux_navigator_no_mappings = 1
-
 nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-t><c-p> :TmuxNavigatePrevious<cr>
+" Disable tmux navigator when zooming the Vim pane
+let g:tmux_navigator_disable_when_zoomed = 1
 
 " UNDOTREE
 let g:undotree_HighlightChangedWithSign = 0
