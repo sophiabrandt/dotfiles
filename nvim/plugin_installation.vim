@@ -60,13 +60,13 @@ endfunction
 "Load plugins only for specific filetype
 augroup packager_filetype
   autocmd!
-  autocmd FileType css,html,scss packadd nvim-colorizer
+  autocmd FileType css,html,scss packadd nvim-colorizer.lua
   autocmd FileType elixir packadd vim-elixir
   autocmd FileType elixir,vim packadd vim-endwise
   autocmd FileType elixir,javascript,javascriptreact,nim,ocaml,python,reason,typescript,typescriptreact packadd LanguageClient-neovim
-  autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats
+  autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
   autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
-  autocmd FileType markdown packadd markdown-preview
+  autocmd FileType markdown packadd markdown-preview.nim
   autocmd FileType markdown packadd goyo.vim
   autocmd FileType markdown packadd limelight.vim
   autocmd FileType markdown packadd emmet-vim
