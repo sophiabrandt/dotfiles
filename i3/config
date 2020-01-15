@@ -260,7 +260,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id betterlockscreen
+bindsym $mod+9 exec --no-startup-id betterlockscreen -l dim
 
 # Autostart applications
 ## adjustment of i3bar battery reading (only run at the very first login):
