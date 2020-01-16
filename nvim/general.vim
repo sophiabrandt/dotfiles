@@ -12,6 +12,11 @@ set scrolloff=4
 set showtabline=2
 set lazyredraw
 set showmatch
+set foldenable
+set foldmethod=indent
+set foldlevelstart=10
+set foldcolumn=2
+set foldnestmax=10
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
@@ -62,8 +67,7 @@ function! ExecuteMacroOverVisualRange()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
-" " MARKDOWN
-" au BufNewFile,BufFilePre,BufRead   *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx set ft=markdown
+" MARKDOWN
 autocmd BufRead,BufNewFile         *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE
@@ -80,3 +84,7 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+" OCAML
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
