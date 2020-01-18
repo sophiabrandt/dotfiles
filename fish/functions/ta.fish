@@ -1,4 +1,4 @@
 # Defined in - @ line 1
-function ta --description 'alias ta t a -t'
-	tmux a -t $argv;
+function ta --description 'alias ta tmux new-session -As'
+	tmux new-session -As $argv;
 end
