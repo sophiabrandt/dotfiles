@@ -53,6 +53,9 @@ command! MakeTags !ctags -R .
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
 
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
 " AUTOCOMPLETE & SPELL CHECKING
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell

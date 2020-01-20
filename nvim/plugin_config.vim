@@ -88,6 +88,11 @@ let g:mkdp_markdown_css ='~/.config/nvim/github-markdown-css/github-markdown.css
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" VIM-TMUX-RUNNER
+let g:VtrStripLeadingWhitespace = 0
+let g:VtrClearEmptyLines = 0
+let g:VtrAppendNewline = 1
+
 " LANGUAGECLIENT
  let g:LanguageClient_serverCommands = {
  \   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],

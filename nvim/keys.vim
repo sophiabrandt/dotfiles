@@ -44,6 +44,9 @@ nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
 " maximize/minimize current tab
 nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
 
 " ctrl+s to save file
 nnoremap <silent><c-b> :<c-u>update<cr>
@@ -68,11 +71,11 @@ if has('nvim')
 endif
 
 " VIM-GITGUTTER
-nmap [g <Plug>GitGutterPrevHunkzz
-nmap ]g <Plug>GitGutterNextHunkzz
-nmap <leader>p <Plug>GitGutterPreviewHunk
-nmap <leader>+ <Plug>GitGutterStageHunk
-nmap <leader>- <Plug>GitGutterUndoHunk
+nmap [g <Plug>(GitGutterPrevHunk)
+nmap ]g <Plug>(GitGutterNextHunk)
+nmap <localleader>p <Plug>(GitGutterPreviewHunk)
+nmap <localleader>+ <Plug>(GitGutterStageHunk)
+nmap <localleader>- <Plug>(GitGutterUndoHunk)
 
 " VIM-FUGITIVE
 nnoremap <silent> <leader>B :Gblame<cr>

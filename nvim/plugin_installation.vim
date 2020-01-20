@@ -11,6 +11,7 @@ function! PackagerInit() abort
   call packager#add('NLKNguyen/papercolor-theme')
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('christoomey/vim-tmux-navigator')
+  call packager#add('christoomey/vim-tmux-runner')
   call packager#add('jeffkreeftmeijer/vim-numbertoggle')
   call packager#add('sgur/vim-editorconfig')
   call packager#add('dbakker/vim-projectroot')
