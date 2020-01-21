@@ -116,19 +116,20 @@ let g:VtrAppendNewline = 1
  autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
 
 " ALE
-let g:ale_sign_error                  = '✘'
-let g:ale_sign_warning                = '⚠'
-highlight ALEErrorSign ctermbg        =NONE ctermfg=red
-highlight ALEWarningSign ctermbg      =NONE ctermfg=yellow
-let g:ale_linters_explicit            = 1
-let g:ale_lint_on_text_changed        = 'never'
-let g:ale_lint_on_enter               = 0
-let g:ale_lint_on_save                = 1
-let g:ale_fix_on_save                 = 1
-let g:ale_completion_enabled          = 1
-let g:ale_elixir_elixir_ls_release    = $HOME . '/Coding/Elixir/elixir-ls/release'
-let g:ale_reason_ls_executable        = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
+let g:ale_sign_error                      = '✘'
+let g:ale_sign_warning                    = '⚠'
+highlight ALEErrorSign ctermbg            =NONE ctermfg=red
+highlight ALEWarningSign ctermbg          =NONE ctermfg=yellow
+let g:ale_linters_explicit                = 1
+let g:ale_lint_on_text_changed            = 'never'
+let g:ale_lint_on_enter                   = 0
+let g:ale_lint_on_save                    = 1
+let g:ale_fix_on_save                     = 1
+let g:ale_completion_enabled              = 1
+let g:ale_elixir_elixir_ls_release        = $HOME . '/Coding/Elixir/elixir-ls/release'
+let g:ale_reason_ls_executable            = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
+let g:ale_javascript_prettier_options     = '--no-semi --single-quote --trailing-comma es5'
+let g:ale_markdown_remark_lint_use_global = 1
 
 let g:ale_linter_aliases = {
 \   'eelixir': ['elixir', 'html'],
@@ -145,7 +146,7 @@ let g:ale_linters = {
 \   'javascript':                  ['tsserver', 'eslint'],
 \   'javascriptreact':             ['tsserver', 'eslint'],
 \   'json':                        ['jsonlint'],
-\   'markdown':                    ['remark_lint', 'writegood'],
+\   'markdown':                    ['remark_lint', 'proselint', 'writegood'],
 \   'nim':                         ['nimlsp', 'nimcheck'],
 \   'ocaml':                       ['merlin'],
 \   'python':                      ['flake8'],
