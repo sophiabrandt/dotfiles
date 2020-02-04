@@ -13,3 +13,5 @@ export TERMINAL="kitty"
 
 # Fish Shell
 exec fish
+
+source /home/owlhoot/.config/broot/launcher/bash/br
