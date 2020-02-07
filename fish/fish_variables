@@ -1,12 +1,14 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export BAT_THEME:ansi\x2ddark
-SETUVAR EDITOR:nvim
+SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR --export PAGER:less
+SETUVAR --export VISUAL:nvim
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/owlhoot/\x2elocal/share/z/data
@@ -15,6 +17,8 @@ SETUVAR Z_EXCLUDE:/home/owlhoot
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR _fish_abbr_g:git
+SETUVAR _fish_abbr_t:tmux
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:b294bb
@@ -43,5 +47,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/owlhoot/\x2egem/ruby/2\x2e7\x2e0/bin\x1e/home/owlhoot/Coding/dotfiles/bin\x1e/home/owlhoot/\x2ecargo/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2elocal/bin\x1e/home/owlhoot/\x2efnm\x1e/home/owlhoot/\x2enpmbin/bin/
+SETUVAR fish_user_paths:/home/owlhoot/bin\x3a/home/owlhoot/\x2easdf/shims\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2easdf/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2eopam/4\x2e09\x2e0/bin\x1e/home/owlhoot/bin\x3a/tmp/fnm\x2dshell\x2d9346141/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2egem/ruby/2\x2e7\x2e0/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/Coding/dotfiles/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2ecargo/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2elocal/bin\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2efnm\x1e/home/owlhoot/bin\x3a/home/owlhoot/\x2enpmbin/bin/\x1e/home/owlhoot/bin\x3a/usr/local/bin\x1e/home/owlhoot/bin\x3a/usr/bin\x1e/home/owlhoot/bin\x3a/bin\x1e/home/owlhoot/bin\x3a/usr/local/sbin\x1e/home/owlhoot/bin\x3a/usr/bin/site_perl\x1e/home/owlhoot/bin\x3a/usr/bin/vendor_perl\x1e/home/owlhoot/bin\x3a/usr/bin/core_perl\x1e/home/owlhoot/\x2egem/ruby/2\x2e7\x2e0/bin\x1e/home/owlhoot/Coding/dotfiles/bin\x1e/home/owlhoot/\x2ecargo/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2elocal/bin\x1e/home/owlhoot/\x2efnm\x1e/home/owlhoot/\x2enpmbin/bin/
 SETUVAR pure_version:2\x2e1\x2e1

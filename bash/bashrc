@@ -11,7 +11,11 @@ stty -ixon
 source <(kitty + complete setup bash)
 export TERMINAL="kitty"
 
-# Fish Shell
-exec fish
+# Fish
+FISH=$(env PATH="$HOME/local/bin:$HOME/local/bin:$PATH" which fish)
 
-source /home/owlhoot/.config/broot/launcher/bash/br
+if [[ -x "$FISH" ]]; then
+  exec env SHELL="$FISH" "$FISH" -i
+fi
+
+if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi
