@@ -98,7 +98,6 @@ let g:VtrAppendNewline = 1
  \   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
  \   'javascript':      ['typescript-language-server', '--stdio'],
  \   'javascriptreact': ['typescript-language-server', '--stdio'],
- \   'nim':             ['~/.nimble/bin/nimlsp'],
  \   'ocaml':           ['ocamllsp'],
  \   'python':          ['~/.local/bin/pyls'],
  \   'reason':          ['~/Coding/Reason/rls-linux/reason-language-server'],

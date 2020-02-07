@@ -53,6 +53,7 @@ function! PackagerInit() abort
   call packager#add('elixir-editors/vim-elixir')
   call packager#add('reasonml-editor/vim-reason-plus')
   call packager#add('jordwalke/vim-reasonml')
+  call packager#add('alaviss/nim.nvim')
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
   call packager#add('norcalli/nvim-colorizer.lua')
   call packager#add('autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'})
@@ -64,13 +65,14 @@ augroup packager_filetype
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
   autocmd FileType elixir packadd vim-elixir
   autocmd FileType elixir,vim packadd vim-endwise
-  autocmd FileType elixir,javascript,javascriptreact,nim,ocaml,python,reason,typescript,typescriptreact packadd LanguageClient-neovim
+  autocmd FileType elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd LanguageClient-neovim
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
   autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
   autocmd FileType markdown packadd markdown-preview.nim
   autocmd FileType markdown packadd goyo.vim
   autocmd FileType markdown packadd limelight.vim
   autocmd FileType markdown packadd emmet-vim
+  autocmd FileType nim packadd nim.nvim
   autocmd FileType reason packadd vim-reason-plus
   autocmd FileType reason,ocaml packadd vim-reasonml
 augroup END
