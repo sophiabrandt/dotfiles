@@ -12,10 +12,9 @@ source <(kitty + complete setup bash)
 export TERMINAL="kitty"
 
 # Fish
-FISH=$(env PATH="$HOME/local/bin:$HOME/local/bin:$PATH" which fish)
-
-if [[ -x "$FISH" ]]; then
-  exec env SHELL="$FISH" "$FISH" -i
+# drop into fish is parent process is NOT fish
+# invoke `bash` from fish with `bash` (sources `~/.bashrc`)
+if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+then
+  exec fish
 fi
-
-if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi
