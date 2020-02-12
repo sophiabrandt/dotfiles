@@ -11,8 +11,11 @@ stty -ixon
 source <(kitty + complete setup bash)
 export TERMINAL="kitty"
 
+# add keychain
+eval $(keychain --eval --quiet --nogui --noask github gitlab)
+
 # Fish
-# drop into fish is parent process is NOT fish
+# drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
 if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
 then
