@@ -68,7 +68,7 @@ augroup packager_filetype
   autocmd FileType elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd LanguageClient-neovim
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
   autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
-  autocmd FileType markdown packadd markdown-preview.nim
+  autocmd FileType markdown packadd markdown-preview.nvim
   autocmd FileType markdown packadd goyo.vim
   autocmd FileType markdown packadd limelight.vim
   autocmd FileType markdown packadd emmet-vim
