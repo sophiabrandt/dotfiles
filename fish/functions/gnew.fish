@@ -1,3 +1,3 @@
 function gnew
-	gcap "📦 NEW: $argv";
+	gcp "📦 NEW: $argv";
 end

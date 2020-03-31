@@ -1,3 +1,3 @@
 function gim
-	gcap "👌 IMPROVE: $argv";
+	gcp "👌 IMPROVE: $argv";
 end

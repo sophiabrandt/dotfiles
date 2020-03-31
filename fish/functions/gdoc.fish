@@ -1,3 +1,3 @@
 function gdoc
-	gcap "📖 DOC: $argv";
+	gcp "📖 DOC: $argv";
 end

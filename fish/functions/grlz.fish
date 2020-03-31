@@ -1,3 +1,3 @@
 function grlz
-	gcap "🚀 RELEASE: $argv";
+	gcp "🚀 RELEASE: $argv";
 end

@@ -1,3 +1,3 @@
 function gfix
-	gcap "🐛 FIX: $argv";
+	gcp "🐛 FIX: $argv";
 end
