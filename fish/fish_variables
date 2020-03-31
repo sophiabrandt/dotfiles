@@ -14,9 +14,11 @@ SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/owlhoot/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:/home/owlhoot
+SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_p:pnpm
@@ -33,6 +35,7 @@ SETUVAR fish_color_error:cc6666
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
