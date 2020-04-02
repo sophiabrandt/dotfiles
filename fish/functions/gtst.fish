@@ -1,3 +1,3 @@
 function gtst
-	gcap "✅ TEST: $argv";
+	gcp "🤖 TEST: $argv";
 end
