@@ -130,6 +130,8 @@ let g:ale_reason_ls_executable            = $HOME . '/Coding/Reason/rls-linux/re
 let g:ale_javascript_prettier_options     = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_markdown_remark_lint_use_global = 1
 
+command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
+
 let g:ale_linter_aliases = {
 \   'eelixir': ['elixir', 'html'],
 \   'scss':    ['css'],
