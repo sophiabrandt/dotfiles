@@ -94,25 +94,26 @@ let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
 " LANGUAGECLIENT
- let g:LanguageClient_serverCommands = {
- \   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
- \   'javascript':      ['typescript-language-server', '--stdio'],
- \   'javascriptreact': ['typescript-language-server', '--stdio'],
- \   'ocaml':           ['ocamllsp'],
- \   'python':          ['~/.local/bin/pyls'],
- \   'reason':          ['~/Coding/Reason/rls-linux/reason-language-server'],
- \   'typescript':      ['typescript-language-server', '--stdio'],
- \   'typescriptreact': ['typescript-language-server', '--stdio'],
- \}
+let g:LanguageClient_serverCommands = {
+\   'dart':            ['/opt/dart-sdk/bin/snapshots/analysis_sever.dart.snapshot --lsp'],
+\   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
+\   'javascript':      ['typescript-language-server', '--stdio'],
+\   'javascriptreact': ['typescript-language-server', '--stdio'],
+\   'ocaml':           ['ocamllsp'],
+\   'python':          ['~/.local/bin/pyls'],
+\   'reason':          ['~/Coding/Reason/rls-linux/reason-language-server'],
+\   'typescript':      ['typescript-language-server', '--stdio'],
+\   'typescriptreact': ['typescript-language-server', '--stdio'],
+\}
 
- let g:LanguageClient_diagnosticsList = 'Disabled'
+let g:LanguageClient_diagnosticsList = 'Disabled'
 
- let g:LanguageClient_rootMarkers = {
- \   'elixir': ['mix.exs'],
- \}
+let g:LanguageClient_rootMarkers = {
+\   'elixir': ['mix.exs'],
+\}
 
- " VIM-REASOML
- autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
+" VIM-REASOML
+autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
 
 " ALE
 let g:ale_sign_error                      = '✘'
