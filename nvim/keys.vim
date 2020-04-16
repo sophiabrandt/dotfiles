@@ -150,27 +150,14 @@ nnoremap <leader>bq :<c-u>bp<bar>bd! #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 
-" LANGUAGECLIENT
-nnoremap <silent>gd :<c-u>call LanguageClient_textDocument_definition()<cr>
-nnoremap <silent>gt :<c-u>call LanguageClient_textDocument_typeDefinition()<cr>
-nnoremap <silent>gi :<c-u>call LanguageClient_textDocument_implementation()<cr>
-nnoremap <silent>gR :<c-u>call LanguageClient_textDocument_rename()<cr>
-nnoremap <silent>gf :<c-u>call LanguageClient_textDocument_formatting()<cr>
-nnoremap <silent>gS :<c-u>call LanguageClient_textDocument_documentSymbol()<cr>
-nnoremap <silent>gw :<c-u>call LanguageClient_workspace_symbol()<cr>
-nnoremap <silent>gr :<c-u>call LanguageClient_textDocument_references()<cr>
-nnoremap <silent>ga :<c-u>call LanguageClient_textDocument_codeAction()<cr>
-nnoremap <silent>K  :<c-u>call LanguageClient_textDocument_hover()<cr>
-nnoremap <silent>gh :<c-u>call LanguageClient_contextMenu()<cr>
-
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)
 nmap <leader>ah <plug>(ale_hover)
 nmap <leader>ad <plug>(ale_documentation)
 nmap <leader>ap <plug>(ale_detail)
-nmap <leader>af <plug>(ale_fix)
-nmap <leader>al <plug>(ale_lint)
+nmap <leader>f <plug>(ale_fix)
+nmap <leader>l <plug>(ale_lint)
 nmap <leader>ar <plug>(ale_find_references)
 imap <c-c> <plug>(ale_complete)
 "Move between linting errors

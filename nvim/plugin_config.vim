@@ -88,32 +88,71 @@ let g:mkdp_markdown_css ='~/.config/nvim/github-markdown-css/github-markdown.css
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" VIM-REASOML
+autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
+
 " VIM-TMUX-RUNNER
 let g:VtrStripLeadingWhitespace = 0
 let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
-" LANGUAGECLIENT
-let g:LanguageClient_serverCommands = {
-\   'dart':            ['dart', '/opt/dart-sdk/bin/snapshots/analysis_sever.dart.snapshot', '--lsp'],
-\   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
-\   'javascript':      ['typescript-language-server', '--stdio'],
-\   'javascriptreact': ['typescript-language-server', '--stdio'],
-\   'ocaml':           ['ocamllsp'],
-\   'python':          ['~/.local/bin/pyls'],
-\   'reason':          ['~/Coding/Reason/rls-linux/reason-language-server'],
-\   'typescript':      ['typescript-language-server', '--stdio'],
-\   'typescriptreact': ['typescript-language-server', '--stdio'],
+" LSC
+let g:lsc_server_commands = {
+\  'dart': {
+\    'command': 'dart_language_server',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'elixir': {
+\    'command': '~/bin/elixir-ls/release/language_server.sh',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'javascript': {
+\    'command': 'typescript-language-server --stdio',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'javascriptreact': {
+\    'command': 'typescript-language-server --stdio',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'ocaml': {
+\    'command': 'ocamllsp',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'reason': {
+\    'command': '~/bin/rls-linux/reason-language-server',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'typescript': {
+\    'command': 'typescript-language-server --stdio',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'typescriptreact': {
+\    'command': 'typescript-language-server --stdio',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
 \}
 
-let g:LanguageClient_diagnosticsList = 'Disabled'
-
-let g:LanguageClient_rootMarkers = {
-\   'elixir': ['mix.exs'],
+" LSC
+let g:lsc_auto_map = {
+\  'defaults': v:true,
+\  'GoToDefinition': 'gd',
+\  'GoToDefinitionSplit': 'gp',
+\  'WorkspaceSymbol': 'gw',
+\  'Completion': 'omnifunc',
 \}
 
-" VIM-REASOML
-autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
+let g:lsc_enable_autocomplete  = v:true
+let g:lsc_enable_diagnostics   = v:false
+let g:lsc_reference_highlights = v:false
+let g:lsc_trace_level          = 'off'
 
 " ALE
 let g:ale_sign_error                      = '✘'
@@ -123,11 +162,11 @@ highlight ALEWarningSign ctermbg          =NONE ctermfg=yellow
 let g:ale_linters_explicit                = 1
 let g:ale_lint_on_text_changed            = 'never'
 let g:ale_lint_on_enter                   = 0
-let g:ale_lint_on_save                    = 1
-let g:ale_fix_on_save                     = 1
-let g:ale_completion_enabled              = 1
-let g:ale_elixir_elixir_ls_release        = $HOME . '/Coding/Elixir/elixir-ls/release'
-let g:ale_reason_ls_executable            = $HOME . '/Coding/Reason/rls-linux/reason-language-server'
+let g:ale_lint_on_save                    = 0
+let g:ale_fix_on_save                     = 0
+let g:ale_completion_enabled              = 0
+let g:ale_elixir_elixir_ls_release        = $HOME . '/bin/elixir-ls/release'
+let g:ale_reason_ls_executable            = $HOME . '/bin/rls-linux/reason-language-server'
 let g:ale_javascript_prettier_options     = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_markdown_remark_lint_use_global = 1
 
@@ -142,6 +181,7 @@ let g:ale_linter_aliases = {
 let g:ale_linters = {
 \   'clojure':                     ['joker', 'clj_kondo'],
 \   'css':                         ['stylelint', 'csslint'],
+\   'dart':                        ['language_server'],
 \   'elixir':                      ['elixir-ls'],
 \   'graphql':                     ['gqlint'],
 \   'javascript':                  ['tsserver', 'eslint'],
