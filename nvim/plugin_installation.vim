@@ -54,6 +54,8 @@ function! PackagerInit() abort
   call packager#add('reasonml-editor/vim-reason-plus')
   call packager#add('jordwalke/vim-reasonml')
   call packager#add('alaviss/nim.nvim')
+  call packager#add('dart-lang/dart-vim-plugin')
+  call packager#add('thosakwe/vim-flutter')
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
   call packager#add('norcalli/nvim-colorizer.lua')
   call packager#add('autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'})
@@ -63,6 +65,8 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
+  autocmd FileType dart packadd dart-vim-plugin
+  autocmd FileType dart packadd vim-flutter
   autocmd FileType elixir packadd vim-elixir
   autocmd FileType elixir,vim packadd vim-endwise
   autocmd FileType elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd LanguageClient-neovim
