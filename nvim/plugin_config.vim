@@ -95,7 +95,7 @@ let g:VtrAppendNewline = 1
 
 " LANGUAGECLIENT
 let g:LanguageClient_serverCommands = {
-\   'dart':            ['/opt/dart-sdk/bin/snapshots/analysis_sever.dart.snapshot --lsp'],
+\   'dart':            ['dart', '/opt/dart-sdk/bin/snapshots/analysis_sever.dart.snapshot', '--lsp'],
 \   'elixir':          ['~/Coding/Elixir/elixir-ls/release/language_server.sh'],
 \   'javascript':      ['typescript-language-server', '--stdio'],
 \   'javascriptreact': ['typescript-language-server', '--stdio'],
@@ -142,7 +142,6 @@ let g:ale_linter_aliases = {
 let g:ale_linters = {
 \   'clojure':                     ['joker', 'clj_kondo'],
 \   'css':                         ['stylelint', 'csslint'],
-\   'dart':                        ['language_server'],
 \   'elixir':                      ['elixir-ls'],
 \   'graphql':                     ['gqlint'],
 \   'javascript':                  ['tsserver', 'eslint'],
