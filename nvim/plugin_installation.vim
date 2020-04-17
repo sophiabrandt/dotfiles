@@ -66,10 +66,10 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
+  autocmd FileType dart,elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd vim-lsc
   autocmd FileType dart packadd dart-vim-plugin,vim-flutter,vim-lsc-dart
   autocmd FileType elixir packadd vim-elixir
   autocmd FileType elixir,vim packadd vim-endwise
-  autocmd FileType dart,elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd vim-lsc
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
   autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
   autocmd FileType markdown packadd emmet.vim,goyo.vim,markdown-preview.nvim,limelight.vim,
