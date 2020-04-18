@@ -7,7 +7,7 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number relativenumber
-set completeopt=menu,menuone,preview,noselect,noinsert
+set completeopt=menu,menuone,noselect,noinsert
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -24,7 +24,7 @@ set expandtab shiftwidth=2
 set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
-set shortmess=F
+set shortmess-=F
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
