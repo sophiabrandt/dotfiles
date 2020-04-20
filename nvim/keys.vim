@@ -53,6 +53,12 @@ nnoremap <silent><c-b> :<c-u>update<cr>
 vnoremap <silent><c-b> <c-c>:update<cr>gv
 inoremap <silent><c-b> <c-o>:update<cr>
 
+" open/close Loclist and quickfix window
+nnoremap <localleader>L :<c-u>lop<cr>
+nnoremap <localleader>l :<c-u>lcl<cr>
+nnoremap <localleader>Q :<c-u>cop<cr>
+nnoremap <localleader>q :<c-u>ccl<cr>
+
 " " Use ctrl-[hjkl] to navigate panes
 " nmap <silent> <c-k> <c-w><up>
 " nmap <silent> <c-j> <c-w><down>

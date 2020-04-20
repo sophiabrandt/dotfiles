@@ -140,9 +140,7 @@ let g:lsc_server_commands = {
 \  },
 \}
 
-" LSC
 let g:lsc_auto_map = {
-\  'defaults': v:true,
 \  'GoToDefinition': 'gd',
 \  'GoToDefinitionSplit': 'gp',
 \  'WorkspaceSymbol': 'gw',
@@ -159,7 +157,7 @@ let g:ale_sign_error                      = '✘'
 let g:ale_sign_warning                    = '⚠'
 highlight ALEErrorSign ctermbg            =NONE ctermfg=red
 highlight ALEWarningSign ctermbg          =NONE ctermfg=yellow
-let g:ale_open_list                       = 1
+let g:ale_open_list                       = 0
 let g:ale_linters_explicit                = 1
 let g:ale_lint_on_text_changed            = 'never'
 let g:ale_lint_on_filetype_changed        = 0
