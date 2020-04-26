@@ -39,7 +39,7 @@ function! PackagerInit() abort
   call packager#add('justinmk/vim-sneak')
   call packager#add('christoomey/vim-system-copy')
   call packager#add('dense-analysis/ale')
-  call packager#add('sheerun/vim-polyglot')
+  " call packager#add('sheerun/vim-polyglot')
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('chrisbra/unicode.vim')
   call packager#add('lervag/wiki.vim')
@@ -56,7 +56,6 @@ function! PackagerInit() abort
   call packager#add('jordwalke/vim-reasonml')
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
   call packager#add('dart-lang/dart-vim-plugin')
-  call packager#add('thosakwe/vim-flutter')
   call packager#add('norcalli/nvim-colorizer.lua')
   call packager#add('natebosch/vim-lsc')
   call packager#add('natebosch/vim-lsc-dart')
@@ -67,7 +66,7 @@ augroup packager_filetype
   autocmd!
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
   autocmd FileType dart,elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd vim-lsc
-  autocmd FileType dart packadd dart-vim-plugin,vim-flutter,vim-lsc-dart
+  autocmd FileType dart packadd dart-vim-plugin,vim-lsc-dart
   autocmd FileType elixir packadd vim-elixir
   autocmd FileType elixir,vim packadd vim-endwise
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
