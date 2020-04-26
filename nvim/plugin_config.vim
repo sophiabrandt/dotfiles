@@ -24,6 +24,11 @@ let g:tmux_navigator_disable_when_zoomed = 1
 let g:undotree_HighlightChangedWithSign = 0
 let g:undotree_WindowLayout             = 4
 
+" PEARTREE
+let g:pear_tree_smart_openers   = 1
+let g:pear_tree_smart_closers   = 1
+let g:pear_tree_smart_backspace = 1
+
 " LIMELIGHT
 let g:limelight_default_coefficient = 0.8
 autocmd! User GoyoEnter Limelight
@@ -96,6 +101,10 @@ let g:VtrStripLeadingWhitespace = 0
 let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
+" VIM POLYGLOT
+" disable for filetypes with separately installed language pack
+let g:polyglot_disabled = ['dart', 'elixir', 'javascript', 'javascriptreact', 'ocaml', 'reason', 'typescript', 'typescriptreact']
+
 " LSC
 let g:lsc_server_commands = {
 \  'dart': {
@@ -115,6 +124,11 @@ let g:lsc_server_commands = {
 \  },
 \  'javascriptreact': {
 \    'command': 'typescript-language-server --stdio',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'nim': {
+\    'command': '~/.nimble/bin/nimlsp',
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
@@ -141,13 +155,14 @@ let g:lsc_server_commands = {
 \}
 
 let g:lsc_auto_map = {
+\  'defaults': v:true,
 \  'GoToDefinition': 'gd',
 \  'GoToDefinitionSplit': 'gp',
 \  'WorkspaceSymbol': 'gw',
 \  'Completion': 'omnifunc',
 \}
 
-let g:lsc_enable_autocomplete  = v:true
+let g:lsc_enable_autocomplete  = v:false
 let g:lsc_enable_diagnostics   = v:false
 let g:lsc_reference_highlights = v:false
 let g:lsc_trace_level          = 'off'

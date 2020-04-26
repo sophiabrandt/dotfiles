@@ -76,6 +76,12 @@ if has('nvim')
   tnoremap <a-[> <esc>
 endif
 
+" MATCHING BRACKTS
+inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap ] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap ) )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+nnoremap % v%
+
 " VIM-GITGUTTER
 nmap [g <Plug>(GitGutterPrevHunk)
 nmap ]g <Plug>(GitGutterNextHunk)
@@ -155,6 +161,9 @@ nmap <leader>bh <Plug>(PickerHelp)
 nnoremap <leader>bq :<c-u>bp<bar>bd! #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
+
+" LSC
+vnoremap <silent> ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<CR>
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)

@@ -43,6 +43,7 @@ function! PackagerInit() abort
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('chrisbra/unicode.vim')
   call packager#add('lervag/wiki.vim')
+  call packager#add('tmsvg/pear-tree')
 
 "Loaded only for specific filetypes on demand. Requires autocommands below.
   call packager#add('junegunn/goyo.vim')
@@ -53,7 +54,6 @@ function! PackagerInit() abort
   call packager#add('elixir-editors/vim-elixir')
   call packager#add('reasonml-editor/vim-reason-plus')
   call packager#add('jordwalke/vim-reasonml')
-  call packager#add('alaviss/nim.nvim')
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
   call packager#add('dart-lang/dart-vim-plugin')
   call packager#add('thosakwe/vim-flutter')
@@ -73,7 +73,6 @@ augroup packager_filetype
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim
   autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
   autocmd FileType markdown packadd emmet.vim,goyo.vim,markdown-preview.nvim,limelight.vim,
-  autocmd FileType nim packadd nim.nvim
   autocmd FileType reason packadd vim-reason-plus
   autocmd FileType reason,ocaml packadd vim-reasonml
 augroup END
