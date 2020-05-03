@@ -39,7 +39,7 @@ function! PackagerInit() abort
   call packager#add('justinmk/vim-sneak')
   call packager#add('christoomey/vim-system-copy')
   call packager#add('dense-analysis/ale')
-  " call packager#add('sheerun/vim-polyglot')
+  call packager#add('sheerun/vim-polyglot')
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('chrisbra/unicode.vim')
   call packager#add('lervag/wiki.vim')
