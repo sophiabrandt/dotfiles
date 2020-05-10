@@ -76,7 +76,7 @@ if has('nvim')
   tnoremap <a-[> <esc>
 endif
 
-" MATCHING BRACKTS
+" MATCHING BRACKETS
 inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap ] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap ) )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
@@ -164,6 +164,11 @@ nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 
 " LSC
 vnoremap <silent> ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<CR>
+
+" VSNIP
+imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)

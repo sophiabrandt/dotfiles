@@ -106,7 +106,7 @@ let g:VtrAppendNewline = 1
 " disable for filetypes with separately installed language pack
 let g:polyglot_disabled = ['dart', 'elixir', 'javascript', 'javascriptreact', 'ocaml', 'reason', 'typescript', 'typescriptreact']
 
-" LSC
+" LSC & VSNIP
 let g:lsc_server_commands = {
 \  'dart': {
 \    'command': 'dart_language_server',
@@ -163,10 +163,12 @@ let g:lsc_auto_map = {
 \  'Completion': 'omnifunc',
 \}
 
-let g:lsc_enable_autocomplete  = v:true
-let g:lsc_enable_diagnostics   = v:false
-let g:lsc_reference_highlights = v:false
-let g:lsc_trace_level          = 'off'
+let g:lsc_enable_autocomplete    = v:true
+let g:lsc_enable_diagnostics     = v:false
+let g:lsc_reference_highlights   = v:false
+let g:lsc_trace_level            = 'off'
+let g:lsc_enable_snippet_support = v:true
+let g:vsnip_snippet_dir          = expand('~/.config/nvim/vsnip')
 
 " ALE
 let g:ale_sign_error                      = '✘'
