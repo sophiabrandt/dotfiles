@@ -15,7 +15,7 @@
 [merge]
   stat = true
 [alias]
-  # Git Commit, Add all and Push — in one step.
+  # Git Commit, and Push — in one step.
   cap = "!f() { git commit -m \"$@\"; git push; }; f"
   # NEW.
   new = "!f() { git cap \"📦 NEW: $@\"; }; f"
