@@ -114,7 +114,7 @@ let g:lsc_server_commands = {
 \    'suppress_stderr': v:true,
 \  },
 \  'elixir': {
-\    'command': '~/bin/elixir-ls/release/language_server.sh',
+\    'command': '~/.bin/elixir-ls/release/language_server.sh',
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
@@ -139,7 +139,7 @@ let g:lsc_server_commands = {
 \    'suppress_stderr': v:true,
 \  },
 \  'reason': {
-\    'command': '~/bin/rls-linux/reason-language-server',
+\    'command': '~/.bin/rls-linux/reason-language-server',
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
@@ -184,8 +184,8 @@ let g:ale_lint_on_enter                   = 0
 let g:ale_lint_on_save                    = 0
 let g:ale_fix_on_save                     = 0
 let g:ale_completion_enabled              = 0
-let g:ale_elixir_elixir_ls_release        = $HOME . '/bin/elixir-ls/release'
-let g:ale_reason_ls_executable            = $HOME . '/bin/rls-linux/reason-language-server'
+let g:ale_elixir_elixir_ls_release        = $HOME . '/.bin/elixir-ls/release'
+let g:ale_reason_ls_executable            = $HOME . '/.bin/rls-linux/reason-language-server'
 let g:ale_javascript_prettier_options     = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_markdown_remark_lint_use_global = 1
 
