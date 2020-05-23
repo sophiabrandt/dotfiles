@@ -6,7 +6,7 @@ set nowritebackup
 set smartcase
 set ignorecase
 set inccommand=nosplit
-set number relativenumber
+set number
 set completeopt=menu,menuone,noselect,noinsert
 set scrolloff=4
 set showtabline=2
@@ -89,6 +89,17 @@ augroup BWCCreateDir
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
+" RELATIVE LINE NUMBER TOGGLE
+" toggle hybrid relative line numbers with \n
+nnoremap <leader>n :set relativenumber!<Cr>
+
+" return to absolute line numbering when cursor leaves buffer/window/split
+augroup numbertoggle
+  autocmd!
+  autocmd BufLeave,WinLeave,FocusLost * set norelativenumber
+augroup END
+
 " " OCAML
 " let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 " execute "set rtp+=" . g:opamshare . "/merlin/vim"
+"

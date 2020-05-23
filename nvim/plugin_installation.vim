@@ -29,7 +29,6 @@ function! PackagerInit() abort
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
   call packager#add('itchyny/lightline.vim')
   call packager#add('jaredgorski/spacecamp')
-  call packager#add('jeffkreeftmeijer/vim-numbertoggle')
   call packager#add('jordwalke/vim-reasonml')
   call packager#add('junegunn/goyo.vim')
   call packager#add('junegunn/limelight.vim')
