@@ -36,10 +36,16 @@ nnoremap <leader>rr "_diwP"
 nnoremap <leader>pp "+p
 inoremap <c-p> :<c-u><c-o>"+p<cr>
 
+" PROJECTROOT
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
 " switch to the directory of currently openend file
 nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
+" navigate projects
+nnoremap <silent> [p :ProjectBufPrev<cr>
+nnoremap <silent> ]p :ProjectBufNext<cr>
+nnoremap <silent> [P :ProjectBufFirst<cr>
+nnoremap <silent> ]P :ProjectBufLast<cr>
 
 " maximize/minimize current tab
 nnoremap <leader>tx :<c-u>tabedit %<cr>
@@ -166,9 +172,8 @@ nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 vnoremap <silent> ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<CR>
 
 " VSNIP
-imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+imap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;'
+smap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;'
 
 " ALE
 nmap <leader>ag <plug>(ale_go_to_definition)
