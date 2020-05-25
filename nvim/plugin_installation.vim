@@ -32,6 +32,7 @@ function! PackagerInit() abort
   call packager#add('jordwalke/vim-reasonml')
   call packager#add('junegunn/goyo.vim')
   call packager#add('junegunn/limelight.vim')
+  call packager#add('frazrepo/vim-rainbow')
   call packager#add('justinmk/vim-dirvish')
   call packager#add('justinmk/vim-sneak')
   call packager#add('lervag/wiki.vim')
