@@ -1,8 +1,7 @@
-[user]
-  name = 'Sophia Brandt'
 [core]
   whitespace = trailing-space,space-before-tab
   editor = nvim
+  excludesfile = /home/owlhoot/.gitignore_global
 [diff]
   renames = copies
   mnemonicprefix = true
@@ -14,6 +13,8 @@
   enabled = true
 [merge]
   stat = true
+[color]
+  ui = auto
 [alias]
   # Git Commit, and Push — in one step.
   cap = "!f() { git commit -m \"$@\"; git push; }; f"
@@ -30,4 +31,8 @@
   # TEST.
   tst = "!f() { git cap \"✅ TEST: $@\"; }; f"
   # Logline
-  logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lol = log --graph --decorate --oneline
+  lola = log --graph --decorate --oneline --all
+  # Diff, Status
+  df = diff --color --color-words --abbrev
+  st = status -s
