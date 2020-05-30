@@ -29,7 +29,6 @@ set shortmess-=F
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 let g:node_host_prog    = '~/.npmbin/bin/neovim-node-host'
-let g:python_host_prog  = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 
 " WHITESPACE
@@ -63,16 +62,16 @@ set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-" VISUALLY SELECT, @ TO RUN MACRO ON ALL LINES
+" MARKDOWN
+autocmd BufRead,BufNewFile *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
+
+" VISUALLY SELECT @ TO RUN MACRO ON ALL LINES
 xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>
 
 function! ExecuteMacroOverVisualRange()
   echo "@".getcmdline()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
-
-" MARKDOWN
-autocmd BufRead,BufNewFile *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE
 function! s:MkNonExDir(file, buf)
@@ -84,19 +83,27 @@ function! s:MkNonExDir(file, buf)
     endif
 endfunction
 
-augroup BWCCreateDir
+augroup Auto_Create_Dir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
-" RELATIVE LINE NUMBER TOGGLE
-" toggle hybrid relative line numbers with \n
-nnoremap <leader>n :set relativenumber!<Cr>
-
-" return to absolute line numbering when cursor leaves buffer/window/split
-augroup numbertoggle
+" SET WORKING DIRECTORY
+augroup working_directory
   autocmd!
-  autocmd BufLeave,WinLeave,FocusLost * set norelativenumber
+  " set current directory on insert mode
+  autocmd InsertEnter * let save_cwd = getcwd() | silent! lcd %:p:h
+  " switch back to previous directory when leaving insert mode
+  autocmd InsertLeave * silent | execute 'lcd' fnameescape(save_cwd)
+augroup END
+
+" RELATIVE LINE NUMBER TOGGLE
+" set relative line numbering when entering insert mode
+" return to absolute line numbering when cursor leaves buffer/window/split
+augroup number_toggle
+  autocmd!
+  autocmd InsertEnter * set relativenumber
+  autocmd BufLeave,WinLeave,InsertLeave,FocusLost * set norelativenumber
 augroup END
 
 " " OCAML

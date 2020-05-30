@@ -36,17 +36,6 @@ nnoremap <leader>rr "_diwP"
 nnoremap <leader>pp "+p
 inoremap <c-p> :<c-u><c-o>"+p<cr>
 
-" PROJECTROOT
-" switch current working directory to project root
-nnoremap <leader>crd :<c-u>ProjectRootCD<cr>
-" switch to the directory of currently openend file
-nnoremap <leader>cwd :<c-u>cd %:p:h<cr>
-" navigate projects
-nnoremap <silent> [p :ProjectBufPrev<cr>
-nnoremap <silent> ]p :ProjectBufNext<cr>
-nnoremap <silent> [P :ProjectBufFirst<cr>
-nnoremap <silent> ]P :ProjectBufLast<cr>
-
 " maximize/minimize current tab
 nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
