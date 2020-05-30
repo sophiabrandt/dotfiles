@@ -88,13 +88,48 @@ augroup Auto_Create_Dir
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
-" SET WORKING DIRECTORY
+" SET CURRENT WORKING DIRECTORY ON INSERT MODE
+" http://inlehmansterms.net/2014/09/04/sane-vim-working-directories/
+" set working directory to git project root
+" or directory of current file if not git project
+function! SetProjectRoot()
+    let current_file = expand('%:p')
+    " do not mess with 'fugitive://' etc
+    if current_file =~ '^\w\+:/' || &filetype =~ '^git'
+      return
+    endif
+
+    lcd %:p:h
+    let git_dir = system("git rev-parse --show-toplevel")
+    " See if the command output starts with 'fatal' (if it does, not in a git repo)
+    let is_not_git_dir = matchstr(git_dir, '^fatal:.*')
+    " if git project, change local directory to git project root
+    if (git_dir != "") && empty(is_not_git_dir)
+      lcd `=git_dir`
+    endif
+  endfunction
+
+  " follow symlinked file
+  function! FollowSymlink()
+    let current_file = expand('%:p')
+    " do not mess with 'fugitive://' etc
+    if current_file =~ '^\w\+:/' || &filetype =~ '^git'
+      return
+    endif
+    if getftype(current_file) == 'link'
+      let actual_file = resolve(current_file)
+      silent! execute 'file ' . actual_file
+    end
+  endfunction
+
 augroup working_directory
   autocmd!
   " set current directory on insert mode
-  autocmd InsertEnter * let save_cwd = getcwd() | silent! lcd %:p:h
-  " switch back to previous directory when leaving insert mode
-  autocmd InsertLeave * silent | execute 'lcd' fnameescape(save_cwd)
+  autocmd InsertEnter * silent! lcd %:p:h
+  " switch back to project root when leaving insert mode
+  autocmd InsertLeave * silent
+    \ call FollowSymlink() |
+    \ call SetProjectRoot()
 augroup END
 
 " RELATIVE LINE NUMBER TOGGLE

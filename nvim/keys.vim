@@ -36,6 +36,12 @@ nnoremap <leader>rr "_diwP"
 nnoremap <leader>pp "+p
 inoremap <c-p> :<c-u><c-o>"+p<cr>
 
+" PROJECTROOT
+" switch current working directory to project root
+nnoremap <leader>crd :<c-u>call SetProjectRoot()<cr>
+" switch to the directory of currently openend file
+nnoremap <leader>cwd :<c-u>lcd %:p:h<cr>
+
 " maximize/minimize current tab
 nnoremap <leader>tx :<c-u>tabedit %<cr>
 nnoremap <leader>ti :<c-u>tabclose<cr>
