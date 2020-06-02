@@ -81,7 +81,7 @@ endif
 inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap ] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap ) )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
-nnoremap % v%
+nmap % v%
 
 " VIM-GITGUTTER
 nmap [g <Plug>(GitGutterPrevHunk)
