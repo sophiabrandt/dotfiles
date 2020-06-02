@@ -9,8 +9,7 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
-SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d10\x2dopenjdk
-SETUVAR --export NPMBIN:/home/owlhoot/Coding/React\x2dNative/travel\x2dapp/node_modules/\x2ebin
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d14\x2dopenjdk/
 SETUVAR --export PAGER:less
 SETUVAR --export VISUAL:nvim
 SETUVAR ZO_CMD:zo
