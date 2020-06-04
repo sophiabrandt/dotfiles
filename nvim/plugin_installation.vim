@@ -18,6 +18,7 @@ function! PackagerInit() abort
   call packager#add('christoomey/vim-tmux-runner')
   call packager#add('cocopon/iceberg.vim')
   call packager#add('dart-lang/dart-vim-plugin')
+  call packager#add('dbakker/vim-projectroot')
   call packager#add('dense-analysis/ale')
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets')
   call packager#add('elixir-editors/vim-elixir')
