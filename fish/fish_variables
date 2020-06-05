@@ -23,6 +23,7 @@ SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_d:docker
+SETUVAR _fish_abbr_dc:docker\x2dcompose
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_px:pnpx

@@ -6,3 +6,6 @@ nvim/pack
 nvim/spell
 nvim/undodir
 nvim/.netrwhist
+
+# .bin
+git-reset-author.sh
