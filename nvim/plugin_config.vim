@@ -138,6 +138,11 @@ let g:lsc_server_commands = {
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
+\  'python': {
+\    'command': '~/.local/bin/pyls',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
 \  'reason': {
 \    'command': '~/.bin/rls-linux/reason-language-server',
 \    'log_level': -1,
