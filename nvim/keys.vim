@@ -171,10 +171,10 @@ imap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;
 smap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;'
 
 " ALE
-nmap <leader>ag <plug>(ale_go_to_definition)
+nmap <leader>ad <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)
-nmap <leader>ah <plug>(ale_hover)
-nmap <leader>ad <plug>(ale_documentation)
+nmap <leader>K <plug>(ale_hover)
+nmap <leader>ac <plug>(ale_documentation)
 nmap <leader>ap <plug>(ale_detail)
 nmap <leader>f <plug>(ale_fix)
 nmap <leader>l <plug>(ale_lint)
