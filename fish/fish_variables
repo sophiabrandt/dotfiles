@@ -36,6 +36,9 @@ SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcom:git\x20checkout\x20master
+SETUVAR _fish_abbr_gft:git\x20fetch
+SETUVAR _fish_abbr_gmg:git\x20merge
+SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_ll:ls\x20\x2dla
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_px:pnpx
