@@ -6,6 +6,11 @@ nnoremap <space> <nop>
 let maplocalleader=","
 nnoremap , <nop>
 
+" Prevent clipboard hijacking
+" https://old.reddit.com/r/vim/comments/hqt7ij/prevent_clipboard_hijacking/
+inoremap <c-r>+ <c-r><c-r>+
+inoremap <c-r>* <c-r><c-r>*
+
 " movement
 nnoremap j gj
 nnoremap k gk
