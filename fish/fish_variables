@@ -14,7 +14,7 @@ SETUVAR F_DATA:/home/owlhoot/\x2elocal/share/f/data
 SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_EXCLUDE:\x5e/tmp/\x2e\x2b
 SETUVAR F_PICKER:fzy
-SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d14\x2dopenjdk/
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
 SETUVAR --export PAGER:less
 SETUVAR --export VISUAL:nvim
 SETUVAR ZO_CMD:zo
