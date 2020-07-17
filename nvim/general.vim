@@ -20,6 +20,10 @@ set foldnestmax=10
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
 set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
@@ -60,6 +64,11 @@ autocmd VimResized * :wincmd =
 set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
+
+
+" MAKEFILES
+" Makefiles need tabs, not spaces
+autocmd FileType make set noexpandtab
 
 " MARKDOWN
 autocmd BufRead,BufNewFile *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
