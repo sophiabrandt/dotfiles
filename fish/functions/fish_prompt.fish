@@ -30,6 +30,7 @@ function fish_prompt
   set -l last_status $status
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
+  set -l magenta (set_color -o magenta)
   set -g red (set_color -o red)
   set -g blue (set_color -o blue)
   set -l green (set_color -o green)
@@ -40,7 +41,7 @@ function fish_prompt
 
   # Display [venvname] if in a virtualenv
   if set -q VIRTUAL_ENV
-    echo -n -s (set_color -b yellow black) '[' (basename "$VIRTUAL_ENV") ']' $normal ' '
+    echo -n -s (set_color -b magenta black) '[' (basename "$VIRTUAL_ENV") ']' $normal ' '
   end
 
   if test $last_status = 0
