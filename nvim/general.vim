@@ -20,7 +20,6 @@ set foldnestmax=10
 set history=500
 set backupdir=~/.tmp
 set directory=~/.tmp
-set expandtab shiftwidth=2
 set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
