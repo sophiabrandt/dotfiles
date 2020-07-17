@@ -38,8 +38,9 @@ vnoremap . :normal.<cr>
 " replace word with default register
 nnoremap <leader>rr "_diwP"
 " paste from clipboard
-nnoremap <leader>pp "+p
-inoremap <c-p> :<c-u><c-o>"+p<cr>
+nnoremap <silent><c-p> "+p
+inoremap <silent><c-p> :<c-u><c-o>"+p<cr>
+vnoremap <silent><c-p> <c-c>"+p
 
 " PROJECTROOT
 " switch current working directory to project root
