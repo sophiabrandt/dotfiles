@@ -97,6 +97,9 @@ let g:html_indent_tags = 'li\|p'
 " VIM-REASOML
 autocmd FileType reason map <buffer> <leader>rf :ReasonPrettyPrint<cr>
 
+" HY
+let g:hy_enable_conceal = 1
+
 " VIM-TMUX-RUNNER
 let g:VtrStripLeadingWhitespace = 0
 let g:VtrClearEmptyLines = 0
