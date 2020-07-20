@@ -20,44 +20,44 @@ function! PackagerInit() abort
   call packager#add('dart-lang/dart-vim-plugin')
   call packager#add('dbakker/vim-projectroot')
   call packager#add('dense-analysis/ale')
-  call packager#add('dsznajder/vscode-es7-javascript-react-snippets')
+  call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('elixir-editors/vim-elixir')
-  call packager#add('fivethree-team/vscode-svelte-snippets')
+  call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('frazrepo/vim-rainbow')
-  call packager#add('herringtondarkholme/yats.vim')
+  call packager#add('herringtondarkholme/yats.vim', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip')
   call packager#add('hrsh7th/vim-vsnip-integ')
   call packager#add('hylang/vim-hy')
-  call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } })
+  call packager#add('iamcco/markdown-preview.nvim', { 'type': 'opt', 'do': { -> mkdp#util#install() } })
   call packager#add('itchyny/lightline.vim')
   call packager#add('jaredgorski/spacecamp')
   call packager#add('jordwalke/vim-reasonml')
-  call packager#add('junegunn/goyo.vim')
-  call packager#add('junegunn/limelight.vim')
+  call packager#add('junegunn/goyo.vim', { 'type': 'opt' })
+  call packager#add('junegunn/limelight.vim', { 'type': 'opt' })
   call packager#add('justinmk/vim-dirvish')
   call packager#add('justinmk/vim-sneak')
-  call packager#add('lervag/wiki.vim')
+  call packager#add('lervag/wiki.vim', { 'type': 'opt' })
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('machakann/vim-highlightedyank')
-  call packager#add('mattn/emmet-vim')
+  call packager#add('mattn/emmet-vim', { 'type': 'opt' })
   call packager#add('mbbill/undotree')
   call packager#add('mengelbrecht/lightline-bufferline')
   call packager#add('mhinz/vim-grepper')
   call packager#add('michaeljsmith/vim-indent-object')
-  call packager#add('nash0x7e2/awesome-flutter-snippets')
+  call packager#add('nash0x7e2/awesome-flutter-snippets', { 'type': 'opt' })
   call packager#add('natebosch/vim-lsc')
-  call packager#add('natebosch/vim-lsc-dart')
+  call packager#add('natebosch/vim-lsc-dart', { 'type': 'opt' })
   call packager#add('nlknguyen/papercolor-theme')
-  call packager#add('norcalli/nvim-colorizer.lua')
-  call packager#add('reasonml-editor/vim-reason-plus')
+  call packager#add('norcalli/nvim-colorizer.lua', { 'type': 'opt' })
+  call packager#add('reasonml-editor/vim-reason-plus', { 'type': 'opt' })
   call packager#add('ryanoasis/vim-devicons')
   call packager#add('sgur/vim-editorconfig')
-  call packager#add('sheerun/vim-polyglot')
+  call packager#add('sheerun/vim-polyglot', { 'type': 'opt' })
   call packager#add('srstevenson/vim-picker')
   call packager#add('tmsvg/pear-tree')
   call packager#add('tommcdo/vim-lion')
   call packager#add('tpope/vim-commentary')
-  call packager#add('tpope/vim-endwise', { 'for': ['crystal', 'elixir', 'ruby', 'vim'] })
+  call packager#add('tpope/vim-endwise')
   call packager#add('tpope/vim-eunuch')
   call packager#add('tpope/vim-fugitive')
   call packager#add('tpope/vim-repeat')
@@ -71,13 +71,8 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
-  autocmd FileType dart packadd dart-vim-plugin,vim-lsc-dart,awesome-flutter-snippets
-  autocmd FileType dart,elixir,javascript,javascriptreact,ocaml,python,reason,typescript,typescriptreact packadd vim-lsc,vim-vsnip,vim-vsnip-integ
-  autocmd FileType elixir packadd vim-elixir
-  autocmd FileType elixir,vim packadd vim-endwise
-  autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd yats.vim,vscode-es7-javascript-react-snippets
-  autocmd FileType javascriptreact,typescriptreact packadd emmet-vim
-  autocmd FileType markdown packadd emmet.vim,goyo.vim,markdown-preview.nvim,limelight.vim,
-  autocmd FileType reason packadd vim-reason-plus
-  autocmd FileType reason,ocaml packadd vim-reasonml
+  autocmd FileType dart packadd vim-lsc-dart
 augroup END
+
+"Lazy load plugins with a mapping
+nnoremap <silent><leader>vp :<c-u>packadd vim-polyglot<cr>
