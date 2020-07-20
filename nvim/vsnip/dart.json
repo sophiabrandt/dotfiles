@@ -1,22 +1,18 @@
 {
   "Part statement": {
     "prefix": "pts",
-    "body": [
-      "part '${TM_FILENAME_BASE}.g.dart';",
-    ],
+    "body": ["part '${TM_FILENAME_BASE}.g.dart';"],
     "description": "Creates a filled-in part statement"
   },
   "Part 'Freezed' statement": {
     "prefix": "ptf",
-    "body": [
-      "part '${TM_FILENAME_BASE}.freezed.dart';",
-    ],
+    "body": ["part '${TM_FILENAME_BASE}.freezed.dart';"],
     "description": "Creates a filled-in freezed part statement"
   },
   "Freezed Data Class": {
     "prefix": "fdataclass",
     "body": [
-      "@immutable",
+      "@freezed",
       "abstract class ${1:DataClass} with _$${1:DataClass}{",
       "  const factory ${1:DataClass}(${2}) = _${1:DataClass};",
       "}"
@@ -26,7 +22,7 @@
   "Freezed Union": {
     "prefix": "funion",
     "body": [
-      "@immutable",
+      "@freezed",
       "abstract class ${1:Union} with _$${1:Union}{",
       "  const factory ${1:Union}.${2}(${4}) = ${3};",
       "}"
@@ -35,9 +31,7 @@
   },
   "Freezed Union Case": {
     "prefix": "funioncase",
-    "body": [
-      "const factory ${1:Union}.${2}(${4}) = ${3};"
-    ],
+    "body": ["const factory ${1:Union}.${2}(${4}) = ${3};"],
     "description": "Freezed Union Case"
-  },
+  }
 }
