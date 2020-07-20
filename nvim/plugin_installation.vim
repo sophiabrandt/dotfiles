@@ -75,4 +75,5 @@ augroup packager_filetype
 augroup END
 
 "Lazy load plugins with a mapping
+nnoremap <silent><leader>ww :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
 nnoremap <silent><leader>vp :<c-u>packadd vim-polyglot<cr>
