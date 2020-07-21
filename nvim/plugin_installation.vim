@@ -17,21 +17,21 @@ function! PackagerInit() abort
   call packager#add('christoomey/vim-tmux-navigator')
   call packager#add('christoomey/vim-tmux-runner')
   call packager#add('cocopon/iceberg.vim')
-  call packager#add('dart-lang/dart-vim-plugin')
+  call packager#add('dart-lang/dart-vim-plugin', { 'type': 'opt' })
   call packager#add('dbakker/vim-projectroot')
   call packager#add('dense-analysis/ale')
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
-  call packager#add('elixir-editors/vim-elixir')
+  call packager#add('elixir-editors/vim-elixir', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('frazrepo/vim-rainbow')
   call packager#add('herringtondarkholme/yats.vim', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip')
   call packager#add('hrsh7th/vim-vsnip-integ')
-  call packager#add('hylang/vim-hy')
+  call packager#add('hylang/vim-hy', { 'type': 'opt' })
   call packager#add('iamcco/markdown-preview.nvim', { 'type': 'opt', 'do': { -> mkdp#util#install() } })
   call packager#add('itchyny/lightline.vim')
   call packager#add('jaredgorski/spacecamp')
-  call packager#add('jordwalke/vim-reasonml')
+  call packager#add('jordwalke/vim-reasonml', { 'type': 'opt' }) 
   call packager#add('junegunn/goyo.vim', { 'type': 'opt' })
   call packager#add('junegunn/limelight.vim', { 'type': 'opt' })
   call packager#add('justinmk/vim-dirvish')
@@ -67,13 +67,21 @@ function! PackagerInit() abort
   call packager#add('wellle/targets.vim')
 endfunction
 
-"Load plugins only for specific filetype
+" Define loading order for language plugins
+" make sure that vim-polyglot is loaded last
+packadd dart-vim-plugin
+packadd vim-elixir
+packadd vim-hy
+packadd vim-reasonml
+packadd vim-polyglot
+
+" Load plugins only for specific filetype
 augroup packager_filetype
   autocmd!
+  autocmd FileType html,eex,js,jsx,tsx packadd emmet-vim
   autocmd FileType css,html,scss packadd nvim-colorizer.lua
   autocmd FileType dart packadd vim-lsc-dart
 augroup END
 
 "Lazy load plugins with a mapping
 nnoremap <silent><leader>ww :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
-nnoremap <silent><leader>vp :<c-u>packadd vim-polyglot<cr>
