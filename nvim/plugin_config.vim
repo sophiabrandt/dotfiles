@@ -160,10 +160,7 @@ let g:lsc_server_commands = {
 \}
 
 let g:lsc_auto_map = {
-\  'defaults': v:true,
-\  'GoToDefinition': 'gd',
-\  'GoToDefinitionSplit': 'gp',
-\  'WorkspaceSymbol': 'gw',
+\  'defaults': v:false,
 \  'Completion': 'omnifunc',
 \}
 
