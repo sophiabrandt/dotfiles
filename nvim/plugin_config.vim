@@ -105,10 +105,6 @@ let g:VtrStripLeadingWhitespace = 0
 let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
-" VIM POLYGLOT
-" disable for filetypes with separately installed language pack
-let g:polyglot_disabled = ['dart', 'elixir', 'javascript', 'javascriptreact', 'ocaml', 'reason', 'typescript', 'typescriptreact']
-
 " LSC & VSNIP
 let g:lsc_server_commands = {
 \  'dart': {
