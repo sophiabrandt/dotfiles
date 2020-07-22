@@ -1,32 +1,5 @@
-# Defined in /home/owlhoot/.config/fish/functions/fish_prompt.fish @ line 2
+# name: sashimi
 function fish_prompt
-  function _git_ahead
-    set -l commits (command git rev-list --left-right '@{upstream}...HEAD' ^/dev/null)
-    if [ $status != 0 ]
-      return
-    end
-    set -l behind (count (for arg in $commits; echo $arg; end | grep '^<'))
-    set -l ahead  (count (for arg in $commits; echo $arg; end | grep -v '^<'))
-    switch "$ahead $behind"
-      case ''     # no upstream
-      case '0 0'  # equal to upstream
-        return
-      case '* 0'  # ahead of upstream
-        echo "$blue↑$normal_c$ahead$whitespace"
-      case '0 *'  # behind upstream
-        echo "$red↓$normal_c$behind$whitespace"
-      case '*'    # diverged from upstream
-        echo "$blue↑$normal$ahead $red↓$normal_c$behind$whitespace"
-    end
-  end
-
-  function _git_branch_name
-    echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-  end
-
-  function _is_git_dirty
-    echo (command git status -s --ignore-submodules=dirty ^/dev/null)
-  end
   set -l last_status $status
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
@@ -76,3 +49,32 @@ function fish_prompt
 
   echo -n -s $initial_indicator $whitespace $cwd $git_info $whitespace $ahead $status_indicator $whitespace
 end
+
+function _git_ahead
+  set -l commits (command git rev-list --left-right '@{upstream}...HEAD' ^/dev/null)
+  if [ $status != 0 ]
+    return
+  end
+  set -l behind (count (for arg in $commits; echo $arg; end | grep '^<'))
+  set -l ahead  (count (for arg in $commits; echo $arg; end | grep -v '^<'))
+  switch "$ahead $behind"
+    case ''     # no upstream
+    case '0 0'  # equal to upstream
+      return
+    case '* 0'  # ahead of upstream
+      echo "$blue↑$normal_c$ahead$whitespace"
+    case '0 *'  # behind upstream
+      echo "$red↓$normal_c$behind$whitespace"
+    case '*'    # diverged from upstream
+      echo "$blue↑$normal$ahead $red↓$normal_c$behind$whitespace"
+  end
+end
+
+function _git_branch_name
+  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
+end
+
+function _is_git_dirty
+  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+end
+

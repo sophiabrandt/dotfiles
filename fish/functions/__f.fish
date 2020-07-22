@@ -147,7 +147,7 @@ function __f -d "Open recent files entered on command line"
                 if set -q F_PICKER
                     set _flag_picker $F_PICKER
                 else
-                    set _flag_picker "fzf --multi --query '$argv'"
+                    set _flag_picker "fzf --multi --no-sort --tiebreak=end,length --query '$argv'"
                 end
             end
 

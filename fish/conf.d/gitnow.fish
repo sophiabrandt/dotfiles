@@ -271,6 +271,7 @@ function move -d "GitNow: Switch from current branch to another but stashing unc
             case -nu -un
                 set v_upstream "-u"
                 set v_no_apply_stash "-n"
+            case -\*
             case '*'
                 set v_branch $v
         end
@@ -284,17 +285,19 @@ function move -d "GitNow: Switch from current branch to another but stashing unc
         return
     end
 
+    set -l v_fetched 0
+
+    # Fetch branch from remote
     if test -n "$v_upstream"
         command git fetch (__gitnow_current_remote) $v_branch
+        set v_fetched 1
     end
 
     set -l v_found (__gitnow_check_if_branch_exist $v_branch)
 
-    # Branch was not found 
-    # Branch was not found 
-    # Branch was not found 
-    if not test $v_found -eq 1
-        echo "Branch `$v_branch` was not found. No possible to switch."
+    # Branch was not found
+    if begin test $v_found -eq 0; and test $v_fetched -eq 0; end
+        echo "Branch `$v_branch` was not found locally. No possible to switch."
         echo "Tip: Use -u (--upstream) flag to fetch a remote branch."
 
         commandline -f repaint
@@ -308,13 +311,21 @@ function move -d "GitNow: Switch from current branch to another but stashing unc
         return
     end
 
-    command git stash
+    set -l v_uncommited (__gitnow_has_uncommited_changes)
+
+    # Stash changes before checkout for uncommited changes only
+    if test $v_uncommited
+        command git stash
+    end
+
     command git checkout $v_branch
 
     # --no-apply-stash
     if test -n "$v_no_apply_stash"
         echo "Stashed changes were not applied. Use `git stash pop` to apply them."
-    else
+    end
+
+    if begin test $v_uncommited; and not test -n "$v_no_apply_stash"; end
         command git stash pop
         echo "Stashed changes applied."
     end
@@ -337,6 +348,40 @@ function logs -d "Gitnow: Shows logs in a fancy way"
     command git log $args --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit | command less -r
 
     commandline -f repaint
+end
+
+function assume -d "Gitnow: Ignore files temporarily"
+    if not __gitnow_is_git_repository
+        __gitnow_msg_not_valid_repository "assume"
+        return
+    end
+
+    set -l v_assume_unchanged "--assume-unchanged"
+    set -l v_files
+
+    for v in $argv
+        switch $v
+            case -n --no-assume
+                set v_assume_unchanged "--no-assume-unchanged"
+            case -h --help
+                echo "NAME"
+                echo "      Gitnow: assume - Ignores changes in certain files temporarily"
+                echo "OPTIONS:"
+                echo "      -n --no-assume  No assume unchanged files to be ignored (revert option)"
+                echo "      -h --help       Show information about the options for this command"
+                return
+            case -\*
+            case '*'
+                set v_files $v_files $v
+        end
+    end
+
+    if test (count $v_files) -lt 1
+        echo "Provide files in order to ignore them temporarily. E.g `assume Cargo.lock`"
+        return
+    end
+
+    command git update-index $v_assume_unchanged $v_files
 end
 
 function github -d "Gitnow: Clone a GitHub repository using SSH"
