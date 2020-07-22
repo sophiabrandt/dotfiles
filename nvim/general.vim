@@ -34,6 +34,9 @@ let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 let g:node_host_prog    = '~/.npmbin/bin/neovim-node-host'
 let g:python3_host_prog = '/usr/bin/python3'
 
+" DON'T SAVE NETRW HISTORY
+let g:netrw_dirhistmax = 0
+
 " WHITESPACE
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
