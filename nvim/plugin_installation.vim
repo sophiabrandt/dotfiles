@@ -24,7 +24,7 @@ function! PackagerInit() abort
   call packager#add('frazrepo/vim-rainbow', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip')
   call packager#add('hrsh7th/vim-vsnip-integ')
-  call packager#add('hylang/vim-hy', { 'type': 'opt' })
+  call packager#add('hylang/vim-hy')
   call packager#add('iamcco/markdown-preview.nvim', { 'type': 'opt', 'do': { -> mkdp#util#install() } })
   call packager#add('itchyny/lightline.vim')
   call packager#add('jaredgorski/spacecamp')
@@ -66,6 +66,9 @@ endfunction
 " Load plugins only for specific filetype
 augroup packager_filetype
   autocmd!
-  autocmd FileType html,eex,js,jsx,tsx packadd emmet-vim
-  autocmd FileType dart packadd vim-lsc-dart
+  autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
+  autocmd FileType html,eelixir packadd emmet-vim
+  autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
+  autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
+  autocmd FileType reason packadd reasonml-plus
 augroup END

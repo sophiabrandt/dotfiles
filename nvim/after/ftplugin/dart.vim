@@ -1,1 +1,0 @@
-packadd awesome-flutter-snippets
