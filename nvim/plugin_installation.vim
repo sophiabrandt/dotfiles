@@ -33,6 +33,7 @@ function! PackagerInit() abort
   call packager#add('junegunn/limelight.vim', { 'type': 'opt' })
   call packager#add('justinmk/vim-dirvish')
   call packager#add('justinmk/vim-sneak')
+  call packager#add('kristijanhusak/vim-js-file-import', { 'type': 'opt', 'do': 'pnpm install' })
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('machakann/vim-highlightedyank')
@@ -68,7 +69,7 @@ augroup packager_filetype
   autocmd!
   autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
   autocmd FileType html,eelixir packadd emmet-vim
-  autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
+  autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
   autocmd FileType reason packadd reasonml-plus
 augroup END
