@@ -11,7 +11,6 @@ set completeopt=menu,menuone,noselect,noinsert
 set scrolloff=4
 set showtabline=2
 set lazyredraw
-set showmatch
 set foldenable
 set foldmethod=indent
 set foldlevelstart=10
