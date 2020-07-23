@@ -51,10 +51,10 @@ function! PackagerInit() abort
   call packager#add('sgur/vim-editorconfig')
   call packager#add('sheerun/vim-polyglot')
   call packager#add('srstevenson/vim-picker')
-  call packager#add('tmsvg/pear-tree')
+  call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
   call packager#add('tommcdo/vim-lion')
   call packager#add('tpope/vim-commentary')
-  call packager#add('tpope/vim-endwise')
+  call packager#add('tpope/vim-endwise', { 'type': 'opt' })
   call packager#add('tpope/vim-eunuch')
   call packager#add('tpope/vim-fugitive')
   call packager#add('tpope/vim-repeat')
@@ -68,8 +68,10 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
+  autocmd FileType dart,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType html,eelixir packadd emmet-vim
   autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
+  autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
   autocmd FileType reason packadd reasonml-plus
 augroup END
