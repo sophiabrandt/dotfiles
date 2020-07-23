@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.wS2fmZ/gitlab-setup.fish @ line 2
+# Defined in /home/owlhoot/.config/fish/functions/gitlab-setup.fish @ line 2
 function gitlab-setup
     git init
     git config user.name 'Sophia Brandt'

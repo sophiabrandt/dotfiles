@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.xi9WMk/github-setup.fish @ line 2
+# Defined in /home/owlhoot/.config/fish/functions/github-setup.fish @ line 2
 function github-setup
     git init
     git config user.name 'Sophia Brandt'
