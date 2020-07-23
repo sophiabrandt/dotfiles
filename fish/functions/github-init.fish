@@ -1,5 +1,4 @@
-# Defined in /home/owlhoot/.config/fish/functions/github-setup.fish @ line 2
-function github-setup
+function github-init
     git init
     git config user.name 'Sophia Brandt'
     git config committer.name 'Sophia Brandt'

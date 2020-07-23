@@ -1,5 +1,4 @@
-# Defined in /home/owlhoot/.config/fish/functions/gitlab-setup.fish @ line 2
-function gitlab-setup
+function gitlab-init
     git init
     git config user.name 'Sophia Brandt'
     git config committer.name 'Sophia Brandt'
