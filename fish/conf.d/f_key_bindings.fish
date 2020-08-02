@@ -1,13 +1,3 @@
-function __f_insert_from_picker
-    set -l paths (__f -ko 2> /dev/null)
-    set -ga __f_temp_exclude_files $paths
-
-    set paths (string escape -n $paths)
-
-    commandline -i (printf '%s ' $paths)
-    commandline -f repaint
-end
-
 if not bind \ek 2>/dev/null
     bind \ek __f_insert_from_picker
 end
