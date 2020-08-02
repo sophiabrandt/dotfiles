@@ -35,7 +35,7 @@ nnoremap <F9> g-
 nnoremap <F10> g+
 
 " switch to sudo to override readonly
-cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null'<bar>edit!
 
 " make . work with visually selected lines
 vnoremap . :normal.<cr>
@@ -195,7 +195,7 @@ smap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;
 " ALE
 nmap <leader>ad <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)
-nmap <leader>K <plug>(ale_hover)
+nmap <leader>ah <plug>(ale_hover)
 nmap <leader>ac <plug>(ale_documentation)
 nmap <leader>ap <plug>(ale_detail)
 nmap <leader>f <plug>(ale_fix)
