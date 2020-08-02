@@ -67,7 +67,6 @@ set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-
 " MAKEFILES
 " Makefiles need tabs, not spaces
 autocmd FileType make set noexpandtab
