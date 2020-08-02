@@ -35,9 +35,11 @@ SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gbr:git\x20branch
+SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcom:git\x20checkout\x20master
+SETUVAR _fish_abbr_gdf:git\x20df
 SETUVAR _fish_abbr_gfom:git\x20fetch\x20origin\x20master
 SETUVAR _fish_abbr_gft:git\x20fetch
 SETUVAR _fish_abbr_gfum:git\x20fetch\x20upstream\x20master
@@ -45,7 +47,8 @@ SETUVAR _fish_abbr_gmg:git\x20merge
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gpom:git\x20pull\x20origin\x20master
 SETUVAR _fish_abbr_gpum:git\x20pull\x20upstream\x20master
-SETUVAR _fish_abbr_ll:ls\x20\x2dla
+SETUVAR _fish_abbr_ll:exa\x20\x2dla
+SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_px:pnpx
 SETUVAR _fish_abbr_t:tmux
