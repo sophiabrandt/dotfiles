@@ -46,7 +46,7 @@ function! PackagerInit() abort
   call packager#add('natebosch/vim-lsc')
   call packager#add('natebosch/vim-lsc-dart', { 'type': 'opt' })
   call packager#add('nlknguyen/papercolor-theme')
-  call packager#add('norcalli/nvim-colorizer.lua', { 'type': 'opt' })
+  call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
   call packager#add('ryanoasis/vim-devicons')
   call packager#add('sgur/vim-editorconfig')
   call packager#add('sheerun/vim-polyglot')
@@ -69,7 +69,7 @@ augroup packager_filetype
   autocmd!
   autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
   autocmd FileType dart,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
-  autocmd FileType html,eelixir packadd emmet-vim
+  autocmd FileType html,elixir,eelixir packadd emmet-vim
   autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
