@@ -15,7 +15,7 @@ SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_EXCLUDE:\x5e/tmp/\x2e\x2b
 SETUVAR F_PICKER:fzy
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
-SETUVAR --export PAGER:less
+SETUVAR --export PAGER:most
 SETUVAR --export VISUAL:nvim
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
@@ -34,6 +34,7 @@ SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
