@@ -10,6 +10,7 @@ nnoremap , <nop>
 nnoremap <localleader>c :<c-u>packadd nvim-colorizer.lua<bar>ColorizerAttachToBuffer<cr>
 nnoremap <localleader>w :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
 nnoremap <localleader>r :<c-u>packadd vim-rainbow<bar>RainbowToggle<cr>
+nnoremap <localleader>e :<c-u>packadd emmet-vim<cr>
 
 " Prevent clipboard hijacking
 " https://old.reddit.com/r/vim/comments/hqt7ij/prevent_clipboard_hijacking/
