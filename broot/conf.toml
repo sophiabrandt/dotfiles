@@ -73,11 +73,17 @@ execution = "git diff {file}"
 # name = "view"
 # invocation = "view"
 # execution = "$PAGER {file}"
+[[verbs]]
+invocation = "view"
+key = "enter"
+execution = "$PAGER {file}"
+leave_broot = false
+apply_to = "file"
 
 [[verbs]]
 name = "view"
 invocation = "view"
-key = "enter"
+shortcut = "v"
 execution = "bat {file}"
 leave_broot = false
 apply_to = "file"
