@@ -117,6 +117,11 @@ let g:lsc_server_commands = {
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
+\  'go': {
+\    'command': 'gopls serve',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
 \  'javascript': {
 \    'command': 'typescript-language-server --stdio',
 \    'log_level': -1,
@@ -204,6 +209,7 @@ let g:ale_linters = {
 \   'dart':                        ['language_server'],
 \   'elixir':                      ['elixir-ls'],
 \   'graphql':                     ['gqlint'],
+\   'go':                          ['gopls'],
 \   'javascript':                  ['tsserver', 'eslint'],
 \   'javascriptreact':             ['tsserver', 'eslint'],
 \   'json':                        ['jsonlint'],
@@ -224,6 +230,7 @@ let g:ale_fixers = {
 \   'eelixir':              ['prettier'],
 \   'elixir':               ['mix_format'],
 \   'graphql' :             ['prettier'],
+\   'go':                   ['gofmt'],
 \   'html':                 ['prettier'],
 \   'javascript':           ['eslint', 'prettier', 'prettier_eslint'],
 \   'javascriptreact':      ['eslint', 'prettier', 'prettier_eslint'],
