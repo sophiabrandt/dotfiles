@@ -14,7 +14,7 @@ SETUVAR F_DATA:/home/owlhoot/\x2elocal/share/f/data
 SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_EXCLUDE:\x5e/tmp/\x2e\x2b
 SETUVAR F_PICKER:fzy
-SETUVAR --export --path GOPATH:/home/owlhoot/go\x1e/home/owlhoot/Coding/Go
+SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/Coding/Go
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
 SETUVAR --export PAGER:most
 SETUVAR --export VISUAL:nvim
@@ -98,7 +98,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2edotnet/tools\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin/\x1e/opt/android\x2dsdk/emulator\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/dart\x2dsdk/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
+SETUVAR fish_user_paths:/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2edotnet/tools\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin/\x1e/opt/android\x2dsdk/emulator\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/dart\x2dsdk/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
 SETUVAR --export keychain_init_args:\x2d\x2dquiet\x1egithub\x2cgitlab
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_color_command_duration:pure_color_warning
