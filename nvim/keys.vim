@@ -48,6 +48,9 @@ nnoremap <silent><c-p> "+p
 inoremap <silent><c-p> :<c-u><c-o>"+p<cr>
 vnoremap <silent><c-p> <c-c>"+p
 
+" Titlecase current line
+nnoremap <leader>tc :s#\v(\w)(\S*)#\u\1\L\2#g<cr>
+
 " PROJECTROOT
 " switch current working directory to project root
 nnoremap <leader>crd :<c-u>call ProjectRootCD()<cr>
