@@ -64,6 +64,9 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
   call packager#add('wellle/targets.vim')
+  call packager#add('wsdjeg/vim-fetch')
+  call packager#add('zphere-zsh/clavichord-omni-completion')
+  call packager#add('zphere-zsh/shell-auto-popmenu')
 endfunction
 
 " Load plugins only for specific filetype
@@ -71,7 +74,7 @@ augroup packager_filetype
   autocmd!
   autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
   autocmd FileType dart,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
-  autocmd FileType html,elixir,eelixir packadd emmet-vim
+  autocmd FileType css,html,elixir,eelixir packadd emmet-vim
   autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
