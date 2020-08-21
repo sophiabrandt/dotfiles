@@ -81,7 +81,7 @@ function show -d "Gitnow: Show commit detail objects"
     if test $len -gt 0
         command git show $argv
     else
-        command git show --compact-summary HEAD
+        command git show --compact-summary --patch HEAD
     end
 
     commandline -f repaint
@@ -125,7 +125,7 @@ function commit-all -d "Gitnow: Add and commit all changes to the repository"
     commit .
 end
 
-function pull -d "Gitnow: Pull changes from remote server but saving uncommitted changes"
+function pull -d "Gitnow: Pull changes from remote server but stashing uncommitted changes"
     if not __gitnow_is_git_repository
         __gitnow_msg_not_valid_repository "pull"
         return
@@ -271,6 +271,16 @@ function move -d "GitNow: Switch from current branch to another but stashing unc
             case -nu -un
                 set v_upstream "-u"
                 set v_no_apply_stash "-n"
+            case -h --help
+                echo "NAME"
+                echo "      Gitnow: move - Switch from current branch to another but stashing uncommitted changes"
+                echo "EXAMPLES"
+                echo "      move <branch to switch to>"
+                echo "OPTIONS:"
+                echo "      -n --no-apply-stash     Switch to a local branch but without applying current stash"
+                echo "      -u --upstream           Fetch a remote branch and switch to it applying current stash. It can be combined with --no-apply-stash"
+                echo "      -h --help               Show information about the options for this command"
+                return
             case -\*
             case '*'
                 set v_branch $v
@@ -346,6 +356,150 @@ function logs -d "Gitnow: Shows logs in a fancy way"
     end
 
     command git log $args --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit | command less -r
+
+    commandline -f repaint
+end
+
+function tag -d "Gitnow: Tag commits following Semver"
+    if not __gitnow_is_git_repository
+        __gitnow_msg_not_valid_repository "tag"
+        return
+    end
+
+    set -l v_major
+    set -l v_minor
+    set -l v_patch
+    set -l v_premajor
+    set -l v_preminor
+    set -l v_prepatch
+    set -l v_latest (__gitnow_get_latest_tag)
+
+    for v in $argv
+        switch $v
+            case -x --major
+                set v_major $v
+            case -y --minor
+                set v_minor $v
+            case -z --patch
+                set v_patch $v
+            case -a --premajor
+                set v_premajor $v
+            case -b --preminor
+                set v_preminor $v
+            case -c --prepatch
+                set v_prepatch $v
+            case -l --latest
+                if not test -n "$v_latest"
+                    echo "There is no any tag created yet."
+                else
+                    echo $v_latest
+                end
+
+                return
+            case -h --help
+                echo "NAME"
+                echo "      Gitnow: tag - Tag commits following The Semantic Versioning 2.0.0 (Semver) [1]"
+                echo "      [1] https://semver.org/"
+                echo "EXAMPLES"
+                echo "      Custom: tag <my tag name>"
+                echo "      Semver: tag --major"
+                echo "OPTIONS:"
+                echo "      -x --major         Tag auto-incrementing a major version number"
+                echo "      -y --minor         Tag auto-incrementing a minor version number"
+                echo "      -z --patch         Tag auto-incrementing a patch version number"
+                echo "      -a --premajor      Tag auto-incrementing a premajor version number"
+                echo "      -b --preminor      Tag auto-incrementing a preminor version number"
+                echo "      -c --prepatch      Tag auto-incrementing a prepatch version number"
+                echo "      -l --latest        Show the latest tag version"
+                echo "      -h --help          Show information about the options for this command"
+                return
+            case -\*
+            case '*'
+                return
+        end
+    end
+
+    # Major tags
+    if test -n "$v_major"
+        if not test -n "$v_latest"
+            command git tag v1.0.0
+            echo "First major tag \"v1.0.0\" was created."
+            return
+        else
+            # Validate Semver format before to proceed
+            if not __gitnow_is_valid_semver_value $v_latest
+                echo "The latest tag \"$v_latest\" has no a valid Semver format."
+                return
+            end
+
+            set -l vstr (__gitnow_get_semver_value $v_latest)
+            set -l x (echo $vstr | awk -F '.' '{print $1}')
+            set -l prefix (echo $v_latest | awk -F "$vstr" '{print $1}')
+            set x (__gitnow_increment_number $x)
+            set -l xyz "$prefix$x.0.0"
+
+            command git tag $xyz
+            echo "Major tag \"$xyz\" was created."
+            return
+        end
+    end
+
+    # Minor tags
+    if test -n "$v_minor"
+        if not test -n "$v_latest"
+            command git tag v0.1.0
+            echo "First minor tag \"v0.1.0\" was created."
+            return
+        else
+            # Validate Semver format before to proceed
+            if not __gitnow_is_valid_semver_value $v_latest
+                echo "The latest tag \"$v_latest\" has no a valid Semver format."
+                return
+            end
+
+            set -l vstr (__gitnow_get_semver_value $v_latest)
+            set -l x (echo $vstr | awk -F '.' '{print $1}')
+            set -l y (echo $vstr | awk -F '.' '{print $2}')
+            set -l prefix (echo $v_latest | awk -F "$vstr" '{print $1}')
+            set y (__gitnow_increment_number $y)
+            set -l xyz "$prefix$x.$y.0"
+
+            command git tag $xyz
+            echo "Minor tag \"$xyz\" was created."
+            return
+        end
+    end
+    
+    # Patch tags
+    if test -n "$v_patch"
+        if not test -n "$v_latest"
+            command git tag v0.0.1
+            echo "First patch tag \"v0.1.0\" was created."
+            return
+        else
+            # Validate Semver format before to proceed
+            if not __gitnow_is_valid_semver_value $v_latest
+                echo "The latest tag \"$v_latest\" has no a valid Semver format."
+                return
+            end
+
+            set -l vstr (__gitnow_get_semver_value $v_latest)
+            set -l x (echo $vstr | awk -F '.' '{print $1}')
+            set -l y (echo $vstr | awk -F '.' '{print $2}')
+            set -l z (echo $vstr | awk -F '.' '{print $3}')
+            set -l prefix (echo $v_latest | awk -F "$vstr" '{print $1}')
+            set z (__gitnow_increment_number $z)
+            set -l xyz "$prefix$x.$y.$z"
+
+            command git tag $xyz
+            echo "Patch tag \"$xyz\" was created."
+            return
+        end
+    end
+
+    # TODO: Premajor tags
+    # TODO: Preminor tags
+    # TODO: Prepatch tags
 
     commandline -f repaint
 end
