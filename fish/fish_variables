@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export ANDROID_HOME:/opt/android\x2dsdk/
 SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk/
+SETUVAR --export BAT_PAGER:less\x20\x2dRF
 SETUVAR --export BAT_THEME:ansi\x2ddark
 SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
@@ -16,7 +17,7 @@ SETUVAR F_EXCLUDE:\x5e/tmp/\x2e\x2b
 SETUVAR F_PICKER:fzy
 SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/Coding/Go/go/
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
-SETUVAR --export PAGER:most
+SETUVAR --export PAGER:less
 SETUVAR --export VISUAL:nvim
 SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20
