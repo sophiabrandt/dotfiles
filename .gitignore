@@ -11,3 +11,4 @@ nvim/.netrwhist
 bin/git-reset-author.sh
 bin/rls-linux
 bin/elixir-ls
+bin/FSAutoComplete

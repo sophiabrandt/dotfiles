@@ -117,6 +117,11 @@ let g:lsc_server_commands = {
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
+\  'fsharp': {
+\    'command': 'dotnet ~/.bin/FSAutoComplete/fsautocomplete.dll --background-service-enabled',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
 \  'go': {
 \    'command': 'gopls serve',
 \    'log_level': -1,
@@ -149,6 +154,11 @@ let g:lsc_server_commands = {
 \  },
 \  'reason': {
 \    'command': '~/.bin/rls-linux/reason-language-server',
+\    'log_level': -1,
+\    'suppress_stderr': v:true,
+\  },
+\  'rust': {
+\    'command': 'rls',
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
 \  },
@@ -218,6 +228,7 @@ let g:ale_linters = {
 \   'ocaml':                       ['merlin'],
 \   'python':                      ['flake8'],
 \   'reason':                      ['reason-language-server'],
+\   'rust':                        ['rls', 'rust-analyzer'],
 \   'scss':                        ['stylelint', 'csslint'],
 \   'svelte':                      ['eslint', 'stylelint', 'csslint'],
 \   'typescript':                  ['tsserver', 'eslint', 'stylelint'],
@@ -240,6 +251,7 @@ let g:ale_fixers = {
 \   'ocaml':                ['ocamlformat'],
 \   'python' :              ['black'],
 \   'reason':               ['refmt'],
+\   'rust':                 ['rustfmt'],
 \   'scss':                 ['prettier', 'stylelint'],
 \   'svelte':               ['eslint', 'prettier', 'prettier_eslint'],
 \   'typescript':           ['eslint', 'prettier', 'prettier_eslint'],
