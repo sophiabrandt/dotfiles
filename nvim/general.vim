@@ -67,13 +67,6 @@ set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-" MAKEFILES
-" Makefiles need tabs, not spaces
-autocmd FileType make set noexpandtab
-
-" MARKDOWN
-autocmd BufRead,BufNewFile *.markdown,*.md,*.mdown,*.mkd,*.mkdn,*.mdwn,*.mdx setlocal spell
-
 " VISUALLY SELECT @ TO RUN MACRO ON ALL LINES
 xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>
 
