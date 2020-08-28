@@ -121,6 +121,13 @@ let g:lsc_server_commands = {
 \    'command': 'dotnet ~/.bin/FSAutoComplete/fsautocomplete.dll --background-service-enabled',
 \    'log_level': -1,
 \    'suppress_stderr': v:true,
+\    'workspace_config': {
+\        'initializationOptions': {
+\            'AutomaticWorkspaceInit': v:true,
+\       },
+\       'Fsharp.dotNetRoot': '/usr/share/dotnet',
+\       'Fsharp.useSdkScripts': v:true
+\    },
 \  },
 \  'go': {
 \    'command': 'gopls serve',
