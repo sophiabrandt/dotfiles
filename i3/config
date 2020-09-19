@@ -56,7 +56,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
-bindsym $mod+F2 exec chromium --force-dark-mode
+bindsym $mod+F2 exec chromium
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
