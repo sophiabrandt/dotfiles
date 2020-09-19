@@ -107,11 +107,6 @@ let g:VtrAppendNewline = 1
 
 " LSC & VSNIP
 let g:lsc_server_commands = {
-\  'dart': {
-\    'command': 'dart_language_server',
-\    'log_level': -1,
-\    'suppress_stderr': v:true,
-\  },
 \  'elixir': {
 \    'command': '~/.bin/elixir-ls/release/language_server.sh',
 \    'log_level': -1,
@@ -233,6 +228,7 @@ let g:ale_linters = {
 \   'svelte':                      ['eslint', 'stylelint', 'csslint'],
 \   'typescript':                  ['tsserver', 'eslint', 'stylelint'],
 \   'typescriptreact':             ['tsserver', 'eslint', 'stylelint'],
+\   'yaml':                        ['yamllint'],
 \}
 
 let g:ale_fixers = {
@@ -256,5 +252,6 @@ let g:ale_fixers = {
 \   'svelte':               ['eslint', 'prettier', 'prettier_eslint'],
 \   'typescript':           ['eslint', 'prettier', 'prettier_eslint'],
 \   'typescriptreact':      ['eslint', 'prettier', 'prettier_eslint'],
+\   'yaml':                 ['prettier'],
 \   '*':                    ['remove_trailing_lines', 'trim_whitespace'],
 \}
