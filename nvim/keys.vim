@@ -193,8 +193,31 @@ nnoremap <silent>gw :LSClientWorkspaceSymbol<cr>
 vnoremap <silent>ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<cr>
 
 " VSNIP
-imap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;'
-smap <expr> <C-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-y>;'
+imap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
+smap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
+
+" List available snippets in insert mode
+inoremap <silent> <C-y> <C-r>=SnippetsComplete()<CR>
+
+function! SnippetsComplete() abort
+    let wordToComplete = matchstr(strpart(getline('.'), 0, col('.') - 1), '\S\+$')
+    let fromWhere      = col('.') - len(wordToComplete)
+    let containWord    = "stridx(v:val.word, wordToComplete)>=0"
+    let candidates     = vsnip#get_complete_items(bufnr("%"))
+    let matches        = map(filter(candidates, containWord),
+                \  "{
+                \      'word': v:val.word,
+                \      'menu': v:val.kind,
+                \      'dup' : 1,
+                \   }")
+
+
+    if !empty(matches)
+        call complete(fromWhere, matches)
+    endif
+
+    return ""
+endfunction
 
 " ALE
 nmap <leader>ad <plug>(ale_go_to_definition)

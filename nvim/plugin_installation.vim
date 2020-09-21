@@ -23,8 +23,8 @@ function! PackagerInit() abort
   call packager#add('fcpg/vim-fahrenheit')
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('frazrepo/vim-rainbow', { 'type': 'opt' })
-  call packager#add('hrsh7th/vim-vsnip')
-  call packager#add('hrsh7th/vim-vsnip-integ')
+  call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
+  call packager#add('hrsh7th/vim-vsnip-integ', { 'type': 'opt' })
   call packager#add('hylang/vim-hy')
   call packager#add('iamcco/markdown-preview.nvim', { 'type': 'opt', 'do': { -> mkdp#util#install() } })
   call packager#add('itchyny/lightline.vim')
@@ -73,9 +73,9 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir packadd emmet-vim
-  autocmd FileType dart packadd awesome-flutter-snippets | packadd vim-lsc-dart
+  autocmd FileType dart packadd vim-vsnip | packadd vim-vsnip-integ | packadd awesome-flutter-snippets | packadd vim-lsc-dart
   autocmd FileType dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
-  autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
+  autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip | packadd vim-vsnip-integ | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType markdown packadd goyo.vim | packadd limelight.vim | packadd markdown-preview.nvim
   autocmd FileType reason packadd reasonml-plus
