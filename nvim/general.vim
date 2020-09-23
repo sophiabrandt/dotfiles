@@ -48,7 +48,7 @@ set splitright
 
 " TAG JUMPING:
 " Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R .
+command! MakeTags !ctags -R --exclude=@/home/$USER/.config/nvim/.ctagsignore .
 
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor
@@ -57,6 +57,16 @@ command! MakeTags !ctags -R .
 
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
+
+" Wildignore settings
+set wildignore+=*.git*
+set wildignore+=*cache*
+set wildignore+=*logs*
+set wildignore+=*node_modules/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
