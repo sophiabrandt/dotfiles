@@ -7,7 +7,7 @@ let maplocalleader=","
 nnoremap , <nop>
 
 "Lazy load plugins with a mapping
-nnoremap <localleader>c :<c-u>packadd nvim-colorizer.lua<bar>ColorizerAttachToBuffer<cr>
+nnoremap <localleader>c :<c-u>packadd nvim-colorizer.lua<bar>lua require 'nvim-colorizer'<cr>:<c-u>ColorizerAttachToBuffer<cr>
 nnoremap <leader>ww :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
 nnoremap <localleader>r :<c-u>packadd vim-rainbow<bar>RainbowToggle<cr>
 nnoremap <localleader>e :<c-u>packadd emmet-vim<cr>
