@@ -64,3 +64,21 @@
   st = status -s
   last = log -1 HEAD
   unstage = reset HEAD --
+  r = !GIT_NO_PAGER=1 git l -30
+  l = "!. ~/.githelpers && pretty_git_log"
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow
+  local = 241
+  remote = green
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = magenta
+

@@ -7,10 +7,15 @@ let maplocalleader=","
 nnoremap , <nop>
 
 "Lazy load plugins with a mapping
-nnoremap <localleader>c :<c-u>packadd nvim-colorizer.lua<bar>lua require 'nvim-colorizer'<cr>:<c-u>ColorizerAttachToBuffer<cr>
+nnoremap <localleader>n :<c-u>packadd nvim-colorizer.lua<bar>lua require 'nvim-colorizer'<cr>:<c-u>ColorizerAttachToBuffer<cr>
 nnoremap <leader>ww :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
 nnoremap <localleader>r :<c-u>packadd vim-rainbow<bar>RainbowToggle<cr>
 nnoremap <localleader>e :<c-u>packadd emmet-vim<cr>
+" enable LSC manually, because vim-polyglot interfers 
+nnoremap <silent><localleader>c :<c-u>LSClientEnable<cr>
+
+" Enable spell checking
+nnoremap <silent><localleader>s :<c-u>set spell!<cr>
 
 " Prevent clipboard hijacking
 " https://old.reddit.com/r/vim/comments/hqt7ij/prevent_clipboard_hijacking/
@@ -192,6 +197,10 @@ nnoremap <silent>gr :LSClientRename<cr>
 nnoremap <silent>gw :LSClientWorkspaceSymbol<cr>
 vnoremap <silent>ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<cr>
 
+" SHELL-AUTO-POPMENU
+nnoremap <leader>ap :ApcEnable<cr>
+nnoremap <leader>ac :ApcDisable<cr>
+
 " VSNIP
 imap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
 smap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
@@ -223,8 +232,8 @@ endfunction
 nmap <leader>ad <plug>(ale_go_to_definition)
 nmap <leader>at <plug>(ale_go_to_type_definition)
 nmap <leader>ah <plug>(ale_hover)
-nmap <leader>ac <plug>(ale_documentation)
-nmap <leader>ap <plug>(ale_detail)
+nmap <leader>ao <plug>(ale_documentation)
+nmap <leader>ae <plug>(ale_detail)
 nmap <leader>f <plug>(ale_fix)
 nmap <leader>l <plug>(ale_lint)
 nmap <leader>ar <plug>(ale_find_references)

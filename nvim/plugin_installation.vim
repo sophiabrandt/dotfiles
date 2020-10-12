@@ -21,6 +21,7 @@ function! PackagerInit() abort
   call packager#add('dense-analysis/ale')
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fcpg/vim-fahrenheit')
+  call packager#add('fenetikm/falcon')
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('frazrepo/vim-rainbow', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
@@ -52,6 +53,7 @@ function! PackagerInit() abort
   call packager#add('ryanoasis/vim-devicons')
   call packager#add('sgur/vim-editorconfig')
   call packager#add('sheerun/vim-polyglot')
+  call packager#add('skywind3000/vim-dict')
   call packager#add('srstevenson/vim-picker')
   call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
   call packager#add('tommcdo/vim-lion')
@@ -60,13 +62,12 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-eunuch')
   call packager#add('tpope/vim-fugitive')
   call packager#add('tpope/vim-repeat')
-  call packager#add('tpope/vim-sleuth')
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
+  call packager#add('vim-add-ons/clavichord-omni-completion')
+  call packager#add('vim-add-ons/shell-auto-popmenu')
   call packager#add('wellle/targets.vim')
   call packager#add('wsdjeg/vim-fetch')
-  call packager#add('zphere-zsh/clavichord-omni-completion')
-  call packager#add('zphere-zsh/shell-auto-popmenu')
 endfunction
 
 " Load plugins only for specific filetype

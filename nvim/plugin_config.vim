@@ -20,6 +20,17 @@ nnoremap <silent> <c-t><c-p> :TmuxNavigatePrevious<cr>
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
 
+" CLAVICHORD/SHELL-AUTO-POPMENU
+let g:apc_enable_ft = {'zsh': 0 }
+let g:apc_min_length = 2
+
+" VIM-DICT
+let g:vim_dict_dict = [
+    \ '~/.vim/dict',
+    \ '~/.config/nvim/dict',
+    \ ]
+let g:vim_dict_config = {'html':'html,javascript,css','markdown':'text','javascriptreact':'javascript','typescriptreact':'typescript'}
+
 " UNDOTREE
 let g:undotree_HighlightChangedWithSign = 0
 let g:undotree_WindowLayout             = 4

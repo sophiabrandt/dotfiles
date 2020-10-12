@@ -27,6 +27,7 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
 set shortmess-=F
+set cpt=.,k,w,b
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
