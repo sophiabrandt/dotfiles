@@ -7,7 +7,7 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number
-set completeopt=menu,menuone,noselect,noinsert
+set completeopt=menu,menuone,noselect,noinsert,longest
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -27,6 +27,7 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
 set shortmess-=F
+set shortmess+=c
 set cpt=.,k,w,b
 
 " NEOVIM PROVIDERS
@@ -122,3 +123,49 @@ augroup END
 " let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 " execute "set rtp+=" . g:opamshare . "/merlin/vim"
 "
+
+" TOGGLE LOCLIST WINDOW
+" https://learnvimscriptthehardway.stevelosh.com/chapters/38.html
+let g:loclist_is_open = 0
+
+function! LoclistToggle()
+    if g:loclist_is_open
+        lclose
+        let g:loclist_is_open = 0
+        execute g:loclist_return_to_window . "wincmd w"
+    else
+        let g:loclist_return_to_window = winnr()
+        copen
+        let g:loclist_is_open = 1
+    endif
+endfunction
+
+" TOGGLE QUICKFIX WINDOW
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
+nnoremap <leader>q :call QuickfixToggle()<cr>
+
+" TOGGLE CLAVICHORD/APC
+" https://github.com/vim-add-ons/clavichord-omni-completion
+let g:apc_is_active = 0
+
+function! ApcToggle()
+    if g:apc_is_active
+        ApcDisable
+        let g:apc_is_active = 0
+    else
+        ApcEnable
+        let g:apc_is_active = 1
+    endif
+endfunction

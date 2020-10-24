@@ -7,12 +7,10 @@ let maplocalleader=","
 nnoremap , <nop>
 
 "Lazy load plugins with a mapping
-nnoremap <localleader>n :<c-u>packadd nvim-colorizer.lua<bar>lua require 'nvim-colorizer'<cr>:<c-u>ColorizerAttachToBuffer<cr>
+nnoremap <localleader>c :<c-u>packadd nvim-colorizer.lua<bar>lua require 'nvim-colorizer'<cr>:<c-u>ColorizerAttachToBuffer<cr>
 nnoremap <leader>ww :<c-u>packadd wiki.vim<bar>WikiIndex<cr>
 nnoremap <localleader>r :<c-u>packadd vim-rainbow<bar>RainbowToggle<cr>
 nnoremap <localleader>e :<c-u>packadd emmet-vim<cr>
-" enable LSC manually, because vim-polyglot interfers 
-nnoremap <silent><localleader>c :<c-u>LSClientEnable<cr>
 
 " Enable spell checking
 nnoremap <silent><localleader>s :<c-u>set spell!<cr>
@@ -75,10 +73,11 @@ vnoremap <silent><c-b> <c-c>:update<cr>gv
 inoremap <silent><c-b> <c-o>:update<cr>
 
 " open/close Loclist and quickfix window
-nnoremap <localleader>L :<c-u>lop<cr>
-nnoremap <localleader>l :<c-u>lcl<cr>
-nnoremap <localleader>Q :<c-u>cop<cr>
-nnoremap <localleader>q :<c-u>ccl<cr>
+nnoremap <localleader>q :call QuickfixToggle()<cr>
+nnoremap <localleader>l :call LoclistToggle()<cr>
+
+" CLAVICHORD-OMNI-COMPLETION
+nnoremap <localleader>a :call ApcToggle()<cr>
 
 " " Use ctrl-[hjkl] to navigate panes
 " nmap <silent> <c-k> <c-w><up>
@@ -196,10 +195,6 @@ nnoremap <silent>gt :LSClientGoToDefinitionSplit<cr>
 nnoremap <silent>gr :LSClientRename<cr>
 nnoremap <silent>gw :LSClientWorkspaceSymbol<cr>
 vnoremap <silent>ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<cr>
-
-" SHELL-AUTO-POPMENU
-nnoremap <leader>ap :ApcEnable<cr>
-nnoremap <leader>ac :ApcDisable<cr>
 
 " VSNIP
 imap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
