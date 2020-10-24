@@ -172,6 +172,10 @@ function fish_prompt
     echo ''
     set_color $lucid_cwd_color
     echo -sn $cwd
+    # Display [venvname] if in a virtualenv
+    if set -q VIRTUAL_ENV
+      echo -n -s ' ' (set_color -b magenta black) '[' (basename "$VIRTUAL_ENV") ']' $normal
+    end
     set_color normal
 
     if test $cwd != '~'
