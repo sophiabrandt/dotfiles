@@ -135,7 +135,7 @@ function! LoclistToggle()
         execute g:loclist_return_to_window . "wincmd w"
     else
         let g:loclist_return_to_window = winnr()
-        copen
+        lopen
         let g:loclist_is_open = 1
     endif
 endfunction
