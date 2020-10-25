@@ -7,7 +7,7 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number
-set completeopt=menu,menuone,noselect,noinsert,longest
+set completeopt=menu,menuone,longest
 set scrolloff=4
 set showtabline=2
 set lazyredraw
