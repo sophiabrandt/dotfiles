@@ -22,7 +22,7 @@ let g:tmux_navigator_disable_when_zoomed = 1
 
 " CLAVICHORD/SHELL-AUTO-POPMENU
 " https://github.com/vim-add-ons/clavichord-omni-completion
-let g:apc_enable_ft = { 'text':1, 'markdown':1 }
+let g:apc_enable_ft = { '*': 1 }
 let g:apc_min_length = 2
 
 " VIM-DICT

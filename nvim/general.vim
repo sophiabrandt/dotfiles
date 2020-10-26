@@ -7,7 +7,7 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number
-set completeopt=menu,menuone,longest
+set completeopt=menu,menuone,noselect,longest
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -26,9 +26,9 @@ set expandtab
 set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
-set shortmess-=F
 set shortmess+=c
 set cpt=.,k,w,b
+set omnifunc=syntaxcomplete#Complete
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
@@ -154,18 +154,13 @@ function! QuickfixToggle()
         let g:quickfix_is_open = 1
     endif
 endfunction
-nnoremap <leader>q :call QuickfixToggle()<cr>
 
 " TOGGLE CLAVICHORD/APC
 " https://github.com/vim-add-ons/clavichord-omni-completion
-let g:apc_is_active = 0
-
 function! ApcToggle()
-    if g:apc_is_active
+    if b:apc_enable
         ApcDisable
-        let g:apc_is_active = 0
     else
         ApcEnable
-        let g:apc_is_active = 1
     endif
 endfunction
