@@ -3,7 +3,7 @@
   editor = nvim
   excludesfile = /home/owlhoot/.gitignore_global
   pager = delta
-	attributesfile = /home/owlhoot/.gitattributes
+  attributesfile = /home/owlhoot/.gitattributes
 [interactive]
   diffFilter = delta --color-only
 [diff]
@@ -82,4 +82,3 @@
   added = green
   changed = yellow
   untracked = magenta
-
