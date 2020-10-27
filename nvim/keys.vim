@@ -76,7 +76,8 @@ inoremap <silent><c-b> <c-o>:update<cr>
 nnoremap <localleader>q :call QuickfixToggle()<cr>
 nnoremap <localleader>l :call LoclistToggle()<cr>
 
-" CLAVICHORD-OMNI-COMPLETION
+" SHELL-AUTO-POPMENU
+" https://github.com/vim-add-ons/shell-auto-popmenu
 nnoremap <localleader>a :call ApcToggle()<cr>
 
 " " Use ctrl-[hjkl] to navigate panes

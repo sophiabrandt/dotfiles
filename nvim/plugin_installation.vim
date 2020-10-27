@@ -62,7 +62,6 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-repeat')
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
-  call packager#add('vim-add-ons/clavichord-omni-completion')
   call packager#add('vim-add-ons/shell-auto-popmenu')
   call packager#add('wellle/targets.vim')
   call packager#add('wsdjeg/vim-fetch')

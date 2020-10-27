@@ -20,8 +20,8 @@ nnoremap <silent> <c-t><c-p> :TmuxNavigatePrevious<cr>
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
 
-" CLAVICHORD/SHELL-AUTO-POPMENU
-" https://github.com/vim-add-ons/clavichord-omni-completion
+" APC
+" https://github.com/vim-add-ons/shell-auto-popmenu
 let g:apc_enable_ft = { '*': 1 }
 let g:apc_min_length = 2
 

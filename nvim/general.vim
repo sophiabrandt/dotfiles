@@ -7,7 +7,7 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number
-set completeopt=menu,menuone,noselect
+set completeopt=menu,menuone,noinsert
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -155,8 +155,8 @@ function! QuickfixToggle()
     endif
 endfunction
 
-" TOGGLE CLAVICHORD/APC
-" https://github.com/vim-add-ons/clavichord-omni-completion
+" TOGGLE APC
+" https://github.com/vim-add-ons/shell-auto-popmenu
 function! ApcToggle()
     if b:apc_enable
         ApcDisable
