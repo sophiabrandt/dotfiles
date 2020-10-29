@@ -43,7 +43,7 @@ SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gcdd:git\x20cdd
 SETUVAR _fish_abbr_gcf:git\x20cdd\x20fire
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
-SETUVAR _fish_abbr_gco:git\x20checkout\x20origin
+SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcs:git\x20cdd\x20status
 SETUVAR _fish_abbr_gd:git\x20pull
 SETUVAR _fish_abbr_gdf:git\x20df
@@ -53,7 +53,7 @@ SETUVAR _fish_abbr_gfix:git\x20fix
 SETUVAR _fish_abbr_gfom:git\x20fetch\x20origin\x20master
 SETUVAR _fish_abbr_gfor:git\x20cdd\x20forget
 SETUVAR _fish_abbr_gft:git\x20fetch
-SETUVAR _fish_abbr_gfum:git\x20fetch\x20upstream\x20master
+SETUVAR _fish_abbr_gfu:git\x20fetch\x20upstream
 SETUVAR _fish_abbr_gim:git\x20imp
 SETUVAR _fish_abbr_glst:git\x20last
 SETUVAR _fish_abbr_gmg:git\x20merge
