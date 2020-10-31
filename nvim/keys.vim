@@ -76,10 +76,6 @@ inoremap <silent><c-b> <c-o>:update<cr>
 nnoremap <localleader>q :call QuickfixToggle()<cr>
 nnoremap <localleader>l :call LoclistToggle()<cr>
 
-" SHELL-AUTO-POPMENU
-" https://github.com/vim-add-ons/shell-auto-popmenu
-nnoremap <localleader>a :call ApcToggle()<cr>
-
 " " Use ctrl-[hjkl] to navigate panes
 " nmap <silent> <c-k> <c-w><up>
 " nmap <silent> <c-j> <c-w><down>
@@ -109,6 +105,10 @@ nmap ]g <Plug>(GitGutterNextHunk)
 nmap <localleader>p <Plug>(GitGutterPreviewHunk)
 nmap <localleader>+ <Plug>(GitGutterStageHunk)
 nmap <localleader>- <Plug>(GitGutterUndoHunk)
+
+" VIMCOMPLETESME
+" Hit Enter to select entry from pop menu
+inoremap <expr> <cr> pumvisible() ? "\<c-n>" : "\<c-g>u\<cr>"
 
 " VIM-FUGITIVE
 nnoremap <silent> <leader>B :Gblame<cr>
@@ -198,11 +198,11 @@ nnoremap <silent>gw :LSClientWorkspaceSymbol<cr>
 vnoremap <silent>ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<cr>
 
 " VSNIP
-imap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
-smap <expr> <c-y>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-y>;'
+imap <expr> <c-z>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-z>;'
+smap <expr> <c-z>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-z>;'
 
 " List available snippets in insert mode
-inoremap <silent> <C-y> <C-r>=SnippetsComplete()<CR>
+inoremap <silent> <c-z> <c-r>=SnippetsComplete()<cr>
 
 function! SnippetsComplete() abort
     let wordToComplete = matchstr(strpart(getline('.'), 0, col('.') - 1), '\S\+$')

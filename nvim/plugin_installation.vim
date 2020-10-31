@@ -8,6 +8,7 @@ function! PackagerInit() abort
   packadd vim-packager
   call packager#init()
   call packager#add('kristijanhusak/vim-packager', {'type': 'opt'})
+  call packager#add('ajh17/VimCompletesMe')
   call packager#add('airblade/vim-gitgutter')
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chaoren/vim-wordmotion')
@@ -62,7 +63,6 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-repeat')
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
-  call packager#add('vim-add-ons/shell-auto-popmenu')
   call packager#add('wellle/targets.vim')
   call packager#add('wsdjeg/vim-fetch')
 endfunction

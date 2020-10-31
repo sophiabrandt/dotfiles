@@ -7,7 +7,9 @@ set smartcase
 set ignorecase
 set inccommand=nosplit
 set number
-set completeopt=menu,menuone,noinsert
+set completeopt=menu,menuone
+set complete=.,k,w,b,t
+set omnifunc=syntaxcomplete#Complete
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -27,8 +29,6 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set updatetime=300
 set shortmess+=c
-set cpt=.,k,w,b
-set omnifunc=syntaxcomplete#Complete
 
 " NEOVIM PROVIDERS
 let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
@@ -152,15 +152,5 @@ function! QuickfixToggle()
         let g:quickfix_return_to_window = winnr()
         copen
         let g:quickfix_is_open = 1
-    endif
-endfunction
-
-" TOGGLE APC
-" https://github.com/vim-add-ons/shell-auto-popmenu
-function! ApcToggle()
-    if b:apc_enable
-        ApcDisable
-    else
-        ApcEnable
     endif
 endfunction

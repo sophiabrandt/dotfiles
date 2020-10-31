@@ -20,11 +20,6 @@ nnoremap <silent> <c-t><c-p> :TmuxNavigatePrevious<cr>
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
 
-" APC
-" https://github.com/vim-add-ons/shell-auto-popmenu
-let g:apc_enable_ft = { '*': 1 }
-let g:apc_min_length = 2
-
 " VIM-DICT
 let g:vim_dict_dict = [
     \ '~/.vim/dict',
@@ -38,9 +33,10 @@ let g:undotree_WindowLayout             = 4
 
 " PEARTREE
 let g:pear_tree_repeatable_expand = 0
-let g:pear_tree_smart_openers   = 1
-let g:pear_tree_smart_closers   = 1
-let g:pear_tree_smart_backspace = 1
+let g:pear_tree_smart_openers     = 1
+let g:pear_tree_smart_closers     = 1
+let g:pear_tree_smart_backspace   = 1
+let g:pear_tree_map_special_keys  = 0
 
 " LIMELIGHT
 let g:limelight_default_coefficient = 0.8
@@ -98,6 +94,8 @@ let g:user_emmet_settings={
 \    'extends': 'jsx',
 \    },
 \}
+
+let g:user_emmet_leader_key='<c-z>'
 
 " MARKDOWN-PREVIEW
 let g:mkdp_refresh_slow = 1
