@@ -106,10 +106,6 @@ nmap <localleader>p <Plug>(GitGutterPreviewHunk)
 nmap <localleader>+ <Plug>(GitGutterStageHunk)
 nmap <localleader>- <Plug>(GitGutterUndoHunk)
 
-" VIMCOMPLETESME
-" Hit Enter to select entry from pop menu
-inoremap <expr> <cr> pumvisible() ? "\<c-n>" : "\<c-g>u\<cr>"
-
 " VIM-FUGITIVE
 nnoremap <silent> <leader>B :Gblame<cr>
 nnoremap <silent> <leader>C :Gclog %<cr>
