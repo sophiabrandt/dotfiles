@@ -114,6 +114,12 @@ let g:VtrStripLeadingWhitespace = 0
 let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
+" MUCOMPLETE
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#chains = {}
+let g:mucomplete#chains.default  = ['user', 'omni', 'c-p', 'path', 'tags', 'dict']
+let g:mucomplete#chains.markdown = ['c-p', 'dict', 'uspl']
+
 " LSC & VSNIP
 let g:lsc_server_commands = {
 \  'elixir': {
@@ -180,7 +186,6 @@ let g:lsc_server_commands = {
 
 let g:lsc_auto_map = {
 \  'defaults': v:false,
-\  'Completion': 'omnifunc',
 \}
 
 let g:lsc_enable_autocomplete    = v:false

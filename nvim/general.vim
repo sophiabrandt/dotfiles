@@ -8,7 +8,7 @@ set ignorecase
 set inccommand=nosplit
 set number
 set completeopt=menu,menuone,noinsert,noselect
-set complete=.,w,b,u,t,k
+set complete=.,w,b,u
 set omnifunc=syntaxcomplete#Complete
 set completefunc=lsc#complete#complete
 set scrolloff=4

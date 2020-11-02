@@ -8,7 +8,6 @@ function! PackagerInit() abort
   packadd vim-packager
   call packager#init()
   call packager#add('kristijanhusak/vim-packager', {'type': 'opt'})
-  call packager#add('ajh17/VimCompletesMe')
   call packager#add('airblade/vim-gitgutter')
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chaoren/vim-wordmotion')
@@ -37,6 +36,7 @@ function! PackagerInit() abort
   call packager#add('justinmk/vim-sneak')
   call packager#add('kristijanhusak/vim-js-file-import', { 'type': 'opt', 'do': 'pnpm install' })
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
+  call packager#add('lifepillar/vim-mucomplete')
   call packager#add('ludovicchabant/vim-gutentags')
   call packager#add('machakann/vim-highlightedyank')
   call packager#add('mattn/emmet-vim', { 'type': 'opt' })
