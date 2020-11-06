@@ -115,10 +115,9 @@ let g:VtrClearEmptyLines = 0
 let g:VtrAppendNewline = 1
 
 " MUCOMPLETE
-let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#chains = {}
 let g:mucomplete#chains.default  = ['user', 'omni', 'c-p', 'path', 'tags', 'dict']
-let g:mucomplete#chains.markdown = ['c-p', 'dict', 'uspl']
+let g:mucomplete#chains.markdown = ['c-p', 'dict', 'uspl', 'thes']
 
 " LSC & VSNIP
 let g:lsc_server_commands = {

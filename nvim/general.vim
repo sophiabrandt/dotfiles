@@ -9,8 +9,6 @@ set inccommand=nosplit
 set number
 set completeopt=menu,menuone,noinsert,noselect
 set complete=.,w,b,u
-set omnifunc=syntaxcomplete#Complete
-set completefunc=lsc#complete#complete
 set scrolloff=4
 set showtabline=2
 set lazyredraw
@@ -80,12 +78,31 @@ set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
+" COMPLETEFUNC
+" set vim-lsc as completefunc if the language server is running
+function! SetCompleteFunc()
+    if LSCServerStatus() ==? "starting" || "running"
+        setlocal completefunc=lsc#complete#complete
+    endif
+endfunction
+
+au BufEnter * call SetCompleteFunc()
+
+" OMNIFUNC
+" see :h ft-syntax-omni
+if has("autocmd") && exists("+omnifunc")
+    autocmd Filetype *
+                \	if &omnifunc == "" |
+                \		setlocal omnifunc=syntaxcomplete#Complete |
+                \	endif
+endif
+
 " VISUALLY SELECT @ TO RUN MACRO ON ALL LINES
 xnoremap @ :<c-u>call ExecuteMacroOverVisualRange()<cr>
 
 function! ExecuteMacroOverVisualRange()
-  echo "@".getcmdline()
-  execute ":'<,'>normal @".nr2char(getchar())
+    echo "@".getcmdline()
+    execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
 " AUTO-CREATE DIRECTORY WHEN SAVING FILE

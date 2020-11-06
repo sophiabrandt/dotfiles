@@ -179,6 +179,9 @@ nnoremap <leader>bq :<c-u>bp<bar>bd! #<cr>
 " close all buffers except current one
 nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 
+" MUCOMPLETE
+nnoremap <silent><localleader>m :<c-u>MUcompleteAutoToggle<cr>
+
 " LSC
 nnoremap <silent>gn :LSClientNextReference<cr>
 nnoremap <silent>gp :LSClientPreviousReference<cr>
