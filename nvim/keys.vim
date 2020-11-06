@@ -47,9 +47,9 @@ vnoremap . :normal.<cr>
 " replace word with default register
 nnoremap <leader>rr "_diwP"
 " paste from clipboard
-nnoremap <silent><c-v> "+p
-inoremap <silent><c-v> :<c-u><c-o>"+p<cr>
-vnoremap <silent><c-v> <c-c>"+p
+nnoremap <silent><a-v> "+p
+inoremap <silent><a-v> :<c-u><c-o>"+p<cr>
+vnoremap <silent><a-v> <c-c>"+p
 
 " Titlecase current line
 nnoremap <leader>tc :s#\v(\w)(\S*)#\u\1\L\2#g<cr>
