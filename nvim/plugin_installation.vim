@@ -52,6 +52,7 @@ function! PackagerInit() abort
   call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
   call packager#add('ryanoasis/vim-devicons')
   call packager#add('sgur/vim-editorconfig')
+  call packager#add('sheerun/vim-polyglot')
   call packager#add('skywind3000/vim-dict')
   call packager#add('srstevenson/vim-picker')
   call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
