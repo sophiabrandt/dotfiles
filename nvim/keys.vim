@@ -182,20 +182,6 @@ nnoremap <leader>bd :<c-u>up<bar>%bd<bar>e#<cr>
 " MUCOMPLETE
 nnoremap <silent><localleader>m :<c-u>MUcompleteAutoToggle<cr>
 
-" LSC
-nnoremap <silent>gn :LSClientNextReference<cr>
-nnoremap <silent>gp :LSClientPreviousReference<cr>
-nnoremap <silent>K  :LSClientShowHover<cr>
-nnoremap <silent>gI :LSClientFindImplementations<cr>
-nnoremap <silent>ga :LSClientFindCodeActions<cr>
-nnoremap <silent>gd :LSClientGoToDefinition<cr>
-nnoremap <silent>gm :LSClientSignatureHelp<cr>
-nnoremap <silent>go :LSClientDocumentSymbol<cr>
-nnoremap <silent>gt :LSClientGoToDefinitionSplit<cr>
-nnoremap <silent>gr :LSClientRename<cr>
-nnoremap <silent>gw :LSClientWorkspaceSymbol<cr>
-vnoremap <silent>ga :call lsc#edit#findCodeActions(lsc#edit#filterActions(), 0, 0)<cr>
-
 " VSNIP
 imap <expr> <c-z>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-z>;'
 smap <expr> <c-z>; vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<c-z>;'

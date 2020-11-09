@@ -78,16 +78,6 @@ set complete+=kspell
 set spelllang=en
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-" COMPLETEFUNC
-" set vim-lsc as completefunc if the language server is running
-function! SetCompleteFunc()
-    if LSCServerStatus() ==? "starting" || "running"
-        setlocal completefunc=lsc#complete#complete
-    endif
-endfunction
-
-au BufEnter * call SetCompleteFunc()
-
 " OMNIFUNC
 " see :h ft-syntax-omni
 if has("autocmd") && exists("+omnifunc")

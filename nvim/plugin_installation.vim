@@ -7,7 +7,6 @@ command! PackStatus call PackagerInit() | source $MYVIMRC | call packager#status
 function! PackagerInit() abort
   packadd vim-packager
   call packager#init()
-  call packager#add('kristijanhusak/vim-packager', {'type': 'opt'})
   call packager#add('airblade/vim-gitgutter')
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chaoren/vim-wordmotion')
@@ -35,6 +34,7 @@ function! PackagerInit() abort
   call packager#add('justinmk/vim-dirvish')
   call packager#add('justinmk/vim-sneak')
   call packager#add('kristijanhusak/vim-js-file-import', { 'type': 'opt', 'do': 'pnpm install' })
+  call packager#add('kristijanhusak/vim-packager', {'type': 'opt'})
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
   call packager#add('lifepillar/vim-mucomplete')
   call packager#add('ludovicchabant/vim-gutentags')
@@ -46,12 +46,12 @@ function! PackagerInit() abort
   call packager#add('mhinz/vim-grepper')
   call packager#add('michaeljsmith/vim-indent-object')
   call packager#add('nash0x7e2/awesome-flutter-snippets', { 'type': 'opt' })
-  call packager#add('natebosch/vim-lsc')
-  call packager#add('natebosch/vim-lsc-dart', { 'type': 'opt' })
   call packager#add('nlknguyen/papercolor-theme')
   call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
+  call packager#add('prabirshrestha/vim-lsp')
   call packager#add('ryanoasis/vim-devicons')
   call packager#add('sgur/vim-editorconfig')
+  call packager#add('sheerun/vim-polyglot')
   call packager#add('skywind3000/vim-dict')
   call packager#add('srstevenson/vim-picker')
   call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
@@ -71,7 +71,7 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir packadd emmet-vim
-  autocmd FileType dart packadd vim-vsnip | packadd vim-vsnip-integ | packadd awesome-flutter-snippets | packadd vim-lsc-dart
+  autocmd FileType dart packadd vim-vsnip | packadd vim-vsnip-integ | packadd awesome-flutter-snippets
   autocmd FileType dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip | packadd vim-vsnip-integ | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
