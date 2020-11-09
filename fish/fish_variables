@@ -4,6 +4,7 @@ SETUVAR --export ANDROID_HOME:/opt/android\x2dsdk/
 SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk/
 SETUVAR --export BAT_PAGER:less\x20\x2dRF
 SETUVAR --export BAT_THEME:ansi\x2ddark
+SETUVAR --export DART_SDK:/opt/flutter/bin/cache/dart\x2dsdk/
 SETUVAR --export DOTNET_ROOT:/usr/share/dotnet/
 SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
