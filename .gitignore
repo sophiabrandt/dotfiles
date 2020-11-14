@@ -2,10 +2,9 @@
 tags*
 
 # nvim
-nvim/pack
-nvim/spell
-nvim/undodir
-nvim/.netrwhist
+vim/pack
+vim/spell
+vim/.netrwhist
 
 # .bin
 bin/git-reset-author.sh

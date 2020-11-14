@@ -16,6 +16,8 @@
 
 - [NeoVim](https://neovim.io/)
 
+_Note_: the [VIM config](vimrc) organization and setup is heavily inspired by [bluz71/dotfiles](https://github.com/bluz71/dotfiles/blob/master/vimrc).
+
 ## Look
 
 - color scheme: [Nord][nord] & [PaperColor](https://github.com/NLKNguyen/papercolor-theme)
