@@ -175,11 +175,11 @@ cnoremap <A-d>  <C-Right><C-w>
 " find & replace helpers
 "-----------------------------
 " - star search that does not move forward to the next match
-nnoremap <silent> g* :let @/='\<'.expand('<Cword>').'\>'<CR>
+nnoremap <silent> g* :let @/='\<'.expand('<cword>').'\>'<CR>
 xnoremap <silent> g* "sy:let @/=@s<CR>
 
 " - star search that does an immediate change on the match
-nnoremap <silent> \c :let @/='\<'.expand('<Cword>').'\>'<CR>cgn
+nnoremap <silent> \c :let @/='\<'.expand('<cword>').'\>'<CR>cgn
 xnoremap <silent> \c "sy:let @/=@s<CR>cgn
 " accept/reject helpers after completing a \c cgn-based star search
 " change operation.
@@ -192,12 +192,12 @@ xmap <CR> .<Esc>gnzz
 xnoremap ! <Esc>ngnzz
 
 " - star search and substitute within the current file
-noremap \s :let @s='\<'.expand('<Cword>').'\>'<CR>:%s/<C-r>s//<Left>
+noremap \s :let @s='\<'.expand('<cword>').'\>'<CR>:%s/<C-r>s//<Left>
 xnoremap \s "sy:%s/<C-r>s//<Left>
 
 " - project-wide star search and substitute using the grepper plugin
 nnoremap \S
-  \ :let @s='\<'.expand('<Cword>').'\>'<CR>
+  \ :let @s='\<'.expand('<cword>').'\>'<CR>
   \ :Grepper -cword -noprompt<CR>
   \ :cfdo %s/<C-r>s// \| update
   \ <Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
