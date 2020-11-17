@@ -24,7 +24,7 @@ function! PackagerInit() abort
   call packager#add('chaoren/vim-wordmotion')
     " ~/.vim/plugin/after/wordmotion.vim - options, mappings
   call packager#add('justinmk/vim-sneak')
-    " ~/.vim/after/plugin/sneak.vim - options, mappings
+    " ~/.vim/plugin/sneak.vim - options, mappings
   call packager#add('mbbill/undotree')
     " ~/.vim/after/plugin/undotree.vim - mappings
     " ~/.vim/after/ftplugin/undotree.vim - options
