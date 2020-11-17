@@ -1,1 +1,1 @@
-colorscheme falcon
+colorscheme nord
