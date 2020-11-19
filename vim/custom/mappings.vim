@@ -35,7 +35,7 @@ endif
 if empty(mapcheck('<C-W>', 'i'))
   inoremap <C-w> <C-g>u<C-w>
 endif
-" Use <C-y> to clear the highlighting of :set hlsearch.
+" use <C-y> to clear the highlighting of :set hlsearch.
 if maparg('<C-y>', 'n') ==# ''
   nnoremap <silent> <C-y> :nohlsearch<C-r>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-y>
 endif

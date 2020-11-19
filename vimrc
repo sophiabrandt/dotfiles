@@ -51,6 +51,11 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
   runtime! macros/matchit.vim
 endif
 
+" diffopt
+if has('nvim-0.3.2') || has('patch-8.1.0360')
+    set diffopt=filler,internal,algorithm:histogram,indent-heuristic
+endif
+
 " Set the persistent undo directory on temporary private fast storage.
 let s:undoDir='/tmp/.undodir_' . $USER
 if !isdirectory(s:undoDir)
@@ -75,6 +80,9 @@ set nojoinspaces
 set splitbelow
 set splitright
 
+" search down subfolders
+set path+=**
+
 " wildignore settings
 set wildmenu
 set wildignore+=*.git*
@@ -88,6 +96,7 @@ set wildignore+=*.png,*.jpg,*.gif
 
 " autocomplete & spell checking
 " autocomplete with dictionary words when spell check is on
+set dictionary=/usr/share/dict/words
 set complete+=kspell
 set spelllang=en
 set spellfile=~/.vim/spell/en.utf-8.add
