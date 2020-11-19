@@ -50,10 +50,15 @@ nnoremap <LocalLeader>l :call loclist#Toggle()<CR>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null'<bar>edit!
 " prompt for external command and insert
 inoremap <C-r>! <-r>=ExternalCommandResult()<CR>
-" pastes from clipboard
-nnoremap <silent><a-v> "+p
-inoremap <silent><a-v> :<C-u><C-o>"+p<CR>
-vnoremap <silent><a-v> <C-c>"+p
+" paste from X11 system clipboard
+nnoremap <silent><a-v> "*p
+inoremap <silent><a-v> :<C-u><C-r>*<CR>
+vnoremap <silent><a-v> <C-c>"*p
+" yank into primary selection clipboard
+nnoremap <silent><a-y> "+yy
+vnoremap <silent><a-y> "+y
+" paste previous yank
+noremap <LocalLeader>p "0p
 " yank into the 'y' register
 noremap <Leader>y "yy
 " paste from the 'y' register
