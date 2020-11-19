@@ -30,7 +30,7 @@ augroup working_directory
   " set current directory on insert mode
   autocmd InsertEnter * let save_cwd = getcwd() | silent! lcd %:p:h
   " switch back to previous directory when leaving insert mode
-  autocmd InsertLeave * silent | execute 'lcd' fnameescape(save_cwd)
+  autocmd InsertLeave * silent execute 'lcd' fnameescape(save_cwd)
 augroup END
 
 " Restore default Enter/Return behaviour for the command line window.
