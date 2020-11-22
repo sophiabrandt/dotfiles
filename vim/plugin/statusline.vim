@@ -9,25 +9,33 @@ function! StatuslineGit()
   return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
 
-function! CurrentMode()
-  let l:currentmode={
-         \ 'n'  : 'NORMAL ',
-         \ 'v'  : 'VISUAL ',
-         \ 'V'  : 'V·Line ',
-         \ '' : 'V·Block ',
-         \ 'i'  : 'INSERT ',
-         \ 'r'  : 'REPLACE ',
-         \ 'Rv' : 'V·Replace ',
-         \ 'c'  : 'Command ',
-         \ 's'  : 'Select ',
-         \ 't'  : 'Terminal ',
-         \}
-  return toupper(l:currentmode[mode()])
+" https://github.com/lukelbd/vim-statusline/blob/master/plugin/statusline.vim
+" Define all the different modes
+" Show whether in pastemode
+function! PrintMode()
+  if &ft && g:nostatus =~? &ft
+    return ''
+  endif
+  let currentmode = {
+    \ 'n':  'Normal',  'no': 'N-Operator Pending',
+    \ 'v':  'Visual',  'V' : 'V-Line',  '': 'V-Block',
+    \ 's':  'Select',  'S' : 'S-Line',  '': 'S-Block',
+    \ 'i':  'Insert',  'R' : 'Replace', 'Rv': 'V-Replace',
+    \ 'c':  'Command', 'r' : 'Prompt',
+    \ 'cv': 'Vim Ex',  'ce': 'Ex',
+    \ 'rm': 'More',    'r?': 'Confirm', '!' : 'shell',
+    \ 't':  'Terminal',
+    \}
+  let string = currentmode[mode()]
+  if &paste
+    let string .= ':Paste'
+  endif
+  return '  [' . string . '] '
 endfunction
 
 set statusline=
 set statusline+=%#PmenuSbar#
-set statusline+=%{CurrentMode()}
+set statusline+=%{PrintMode()}
 set statusline+=%#StatusLine#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#

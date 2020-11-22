@@ -74,7 +74,7 @@ inoremap zya <ESC>:up<CR>a
 inoremap zyz <ESC>ZZ
 nnoremap <leader>u :<C-u>up<CR>
 " hashrocket
-inoremap hsr <space>=><space>
+inoremap hsr =>
 " fold the current indent.
 nnoremap <Leader>z zazz
 " titlecase current line
@@ -102,6 +102,9 @@ nnoremap <Backspace> <C-^>
 " Navigate the jumplist.
 nnoremap [j <C-o>zz
 nnoremap ]j <C-i>zz
+" Navigate the changelist.
+nnoremap [c g;zz
+nnoremap ]c g,zz
 " close the current buffer and move to the previous one
 nnoremap <Leader>bq :<C-u>bp<bar>bd! #<CR>
 " close all buffers except current one
