@@ -76,8 +76,6 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/tmux-navigator.vim - options, mappings
   call packager#add('christoomey/vim-tmux-runner')
     " ~/.vim/after/plugin/tmux-runner.vim - options, mappings
-  call packager#add('iamcco/markdown-preview.nvim', { 'type': 'opt', 'do': { -> mkdp#util#install() } })
-    " ~/.vim/after/plugin/markdown-preview.vim - options, mappings
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
     " ~/.vim/after/plugin/wiki.vim - options, mappings
   call packager#add('ludovicchabant/vim-gutentags')
