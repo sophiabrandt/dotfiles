@@ -38,6 +38,7 @@ SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gai:git\x20cdd\x20aim
 SETUVAR _fish_abbr_gam:git\x20cdd\x20amend
 SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
+SETUVAR _fish_abbr_gapn:git\x20add\x20\x2d\x2dintent\x2dto\x2dadd\x20\x2e\x20\x26\x26\x20git\x20add\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gbrk:git\x20brk
 SETUVAR _fish_abbr_gc:git\x20commit
@@ -56,6 +57,7 @@ SETUVAR _fish_abbr_gfor:git\x20cdd\x20forget
 SETUVAR _fish_abbr_gft:git\x20fetch
 SETUVAR _fish_abbr_gfu:git\x20fetch\x20upstream
 SETUVAR _fish_abbr_gim:git\x20imp
+SETUVAR _fish_abbr_gin:git\x20add\x20\x2dN\x20\x2e
 SETUVAR _fish_abbr_glst:git\x20last
 SETUVAR _fish_abbr_gmg:git\x20merge
 SETUVAR _fish_abbr_gnew:git\x20new
