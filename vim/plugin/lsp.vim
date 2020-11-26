@@ -110,8 +110,3 @@ augroup LSC
 augroup END
 
 let g:lsp_diagnostics_enabled = 0
-
-" automatically handle folding
-set foldmethod=expr
-  \ foldexpr=lsp#ui#vim#folding#foldexpr()
-  \ foldtext=lsp#ui#vim#folding#foldtext()
