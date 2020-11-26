@@ -35,6 +35,7 @@ SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gadn:git\x20add\x20\x2e\x20\x26\x26\x20git\x20diff\x20\x2d\x2dcached
 SETUVAR _fish_abbr_gai:git\x20cdd\x20aim
 SETUVAR _fish_abbr_gam:git\x20cdd\x20amend
 SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
@@ -88,12 +89,11 @@ SETUVAR _fisher_LumaKernel_2F_fish_2D_fd_2D_complete_files:/home/owlhoot/\x2econ
 SETUVAR _fisher_gokulsoumya_2F_f_files:/home/owlhoot/\x2econfig/fish/functions/__f\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_add\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_clean\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_complete\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_extract_paths\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_insert_from_picker\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f_key_bindings\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fish_2D_bax_files:/home/owlhoot/\x2econfig/fish/functions/bax\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/owlhoot/\x2econfig/fish/functions/fisher\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_joseluisq_2F_gitnow_files:/home/owlhoot/\x2econfig/fish/functions/__gitnow_config_file\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__gitnow_functions\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/gitnow_config\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/__gitnow_completions\x2efish
 SETUVAR _fisher_mattgreen_2F_lucid_2E_fish_files:/home/owlhoot/\x2econfig/fish/functions/fish_prompt\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:/home/owlhoot/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/key_bindings\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_extract_files:/home/owlhoot/\x2econfig/fish/functions/extract\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_license_files:/home/owlhoot/\x2econfig/fish/functions/license\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/license\x2efish
-SETUVAR _fisher_plugins:joseluisq/gitnow\x1ejorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1emattgreen/lucid\x2efish\x1ejorgebucaran/fisher
+SETUVAR _fisher_plugins:jorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1emattgreen/lucid\x2efish\x1ejorgebucaran/fisher
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:b294bb
