@@ -1,5 +1,5 @@
 " https://www.reddit.com/r/vim/comments/8asgjj/topnotch_vim_markdown_live_previews_with_no/
-function! MarkdownPreview() abort
+function! markdown#Preview() abort
   if exists('s:markdown_job_id') && s:markdown_job_id > 0
     call jobstop(s:markdown_job_id)
     unlet s:markdown_job_id
@@ -14,6 +14,3 @@ function! MarkdownPreview() abort
   endfunction
 endfunction
 
-if executable('grip')
-  nmap <silent><Leader>md :<C-u>call MarkdownPreview()<CR>
-endif
