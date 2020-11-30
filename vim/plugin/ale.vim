@@ -25,7 +25,6 @@ let g:ale_fix_on_save                     = 0
 let g:ale_completion_enabled              = 0
 let g:ale_elixir_elixir_ls_release        = $HOME . '/.bin/elixir-ls/release'
 let g:ale_reason_ls_executable            = $HOME . '/.bin/rls-linux/reason-language-server'
-let g:ale_javascript_prettier_options     = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_markdown_remark_lint_use_global = 1
 
 nmap <Leader>ad <Plug>(ale_go_to_definition)
@@ -42,9 +41,10 @@ nmap ]r <Plug>(ale_next_wrap)zz
 nmap [r <Plug>(ale_previous_wrap)zz
 
 let g:ale_linter_aliases = {
-\   'eelixir': ['elixir', 'html'],
-\   'scss':    ['css'],
-\   'svelte':  ['css', 'javascript'],
+\ 'eelixir': ['elixir', 'html'],
+\ 'scss'   : ['css'],
+\ 'svelte' : ['html', 'css', 'javascript'],
+\ 'vue'    : ['html', 'css', 'javascript'],
 \}
 
 let g:ale_linters = {
@@ -67,6 +67,7 @@ let g:ale_linters = {
 \   'svelte':                      ['eslint', 'stylelint', 'csslint'],
 \   'typescript':                  ['tsserver', 'eslint', 'stylelint'],
 \   'typescriptreact':             ['tsserver', 'eslint', 'stylelint'],
+\   'vue':                         ['eslint', 'stylelint', 'csslint'],
 \   'yaml':                        ['yamllint'],
 \}
 
@@ -91,6 +92,7 @@ let g:ale_fixers = {
 \   'svelte':               ['eslint', 'prettier', 'prettier_eslint'],
 \   'typescript':           ['eslint', 'prettier', 'prettier_eslint'],
 \   'typescriptreact':      ['eslint', 'prettier', 'prettier_eslint'],
+\   'vue':                  ['eslint', 'prettier', 'prettier_eslint'],
 \   'yaml':                 ['prettier'],
 \   '*':                    ['remove_trailing_lines', 'trim_whitespace'],
 \}

@@ -92,7 +92,7 @@ endfunction
 " Load plugins only for specific filetype
 augroup packager_filetype
   autocmd!
-  autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
+  autocmd FileType css,html,elixir,eelixir,tmpl,vue packadd emmet-vim
   autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets
   autocmd FileType javascript,javascriptreact,svelte,typescript,typescriptreact packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
