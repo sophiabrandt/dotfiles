@@ -21,6 +21,7 @@ SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/Coding/Go/g
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
 SETUVAR --export PAGER:less
 SETUVAR --export THEFUCK_OVERRIDDEN_ALIASES:gsed\x2cgit
+SETUVAR --export TMUX_THEME:srcery
 SETUVAR --export VISUAL:nvim
 SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20

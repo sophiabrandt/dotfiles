@@ -14,6 +14,7 @@ function! PackagerInit() abort
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('fenetikm/falcon')
   call packager#add('jaredgorski/spacecamp')
+  call packager#add('srcery-colors/srcery-vim')
   "-----------------------------
   " style plugins
   "-----------------------------
