@@ -66,12 +66,6 @@ noremap <Leader>p "yp
 noremap <Leader>P "yP
 " insert from the yank register.
 inoremap <C-y> <C-r>y
-" delete last word
-inoremap xyd <C-w>
-cnoremap xyd <C-w>
-" save/exit
-inoremap zya <ESC>:up<CR>a
-inoremap zyz <ESC>ZZ
 nnoremap <leader>u :<C-u>up<CR>
 " hashrocket
 inoremap hsr =>
