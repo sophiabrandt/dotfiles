@@ -53,7 +53,7 @@ let g:ale_linters = {
 \   'dart':                        ['dart-analysis-server-lsp'],
 \   'elixir':                      ['elixir-ls'],
 \   'graphql':                     ['gqlint'],
-\   'go':                          ['gopls', 'golint'],
+\   'go':                          ['gopls', 'staticcheck'],
 \   'javascript':                  ['tsserver', 'eslint'],
 \   'javascriptreact':             ['tsserver', 'eslint'],
 \   'json':                        ['jsonlint'],

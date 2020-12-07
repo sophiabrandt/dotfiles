@@ -26,7 +26,7 @@ func! s:setup_ls(...) abort
         endif
 
         if has_key(l:cap, 'definitionProvider')
-            nmap <silent><buffer>gd <plug>(lsp-peek-definition)
+            nmap <silent><buffer>gd <plug>(lsp-definition)
         endif
 
         if has_key(l:cap, 'typeDefinitionProvider')
@@ -77,7 +77,7 @@ augroup LSC
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'typescript-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-                \ 'whitelist': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
+                \ 'whitelist': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'nimble',
