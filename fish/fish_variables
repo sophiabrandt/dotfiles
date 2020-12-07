@@ -51,6 +51,7 @@ SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcs:git\x20cdd\x20status
 SETUVAR _fish_abbr_gd:git\x20pull
 SETUVAR _fish_abbr_gdf:git\x20df
+SETUVAR _fish_abbr_gdif:git\x20diff
 SETUVAR _fish_abbr_gdoc:git\x20doc
 SETUVAR _fish_abbr_gfi:git\x20cdd\x20fire
 SETUVAR _fish_abbr_gfix:git\x20fix
@@ -67,14 +68,18 @@ SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gpo:git\x20pull\x20origin
 SETUVAR _fish_abbr_gpu:git\x20pull\x20upstream
+SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_grlz:git\x20rlz
 SETUVAR _fish_abbr_gst:git\x20status\x20\x2dsb
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gtst:git\x20tst
-SETUVAR _fish_abbr_kb:minikube\x20kubectl\x20\x2d\x2d
+SETUVAR _fish_abbr_kb:kubectl
+SETUVAR _fish_abbr_kn:kind
+SETUVAR _fish_abbr_kz:kustomize
 SETUVAR _fish_abbr_ll:exa\x20\x2dla
 SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_mk:minikube
+SETUVAR _fish_abbr_mkb:minicube\x20kubectl\x20\x2d\x2d
 SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_px:pnpx
@@ -124,7 +129,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e/home/owlhoot/Coding/Go/go/bin\x1e/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2edotnet/tools\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin/\x1e/opt/android\x2dsdk/emulator\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
+SETUVAR fish_user_paths:/home/owlhoot/\x2ecargo/bin\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e/home/owlhoot/Coding/Go/go/bin\x1e/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2edotnet/tools\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
 SETUVAR --export keychain_init_args:\x2d\x2dquiet\x1egithub\x2cgitlab
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_color_command_duration:pure_color_warning
