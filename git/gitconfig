@@ -81,4 +81,4 @@
     changed = yellow
     untracked = magenta
 [init]
-	defaultBranch = main
+    defaultBranch = main
