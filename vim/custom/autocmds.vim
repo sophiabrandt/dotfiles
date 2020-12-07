@@ -37,3 +37,10 @@ augroup END
 autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 autocmd BufReadPost loclist nnoremap <buffer> <CR> <CR>
+
+" Persistent folds
+augroup auto_save_folds
+  autocmd!
+  autocmd BufWinLeave * silent! mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
