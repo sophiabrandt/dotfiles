@@ -34,7 +34,6 @@ set shiftwidth=4
 set showtabline=2
 set smartcase
 set tabstop=4
-set termguicolors
 set viewoptions-=options
 
 if &shell =~# 'fish$' && (v:version < 704 || v:version == 704 && !has('patch276'))
@@ -44,6 +43,13 @@ endif
 " Allow color schemes to do bright colors without forcing bold.
 if &t_Co == 8 && $TERM !~# '^Eterm'
   set t_Co=16
+endif
+
+" Enable true color
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
 endif
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
