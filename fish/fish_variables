@@ -93,7 +93,7 @@ SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_vimin:vim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fisher_LumaKernel_2F_fish_2D_fd_2D_complete_files:/home/owlhoot/\x2econfig/fish/completions/fd\x2efish
 SETUVAR _fisher_gokulsoumya_2F_f_files:/home/owlhoot/\x2econfig/fish/functions/__f\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_add\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_clean\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_complete\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_extract_paths\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_insert_from_picker\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f_key_bindings\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fish_2D_bax_files:/home/owlhoot/\x2econfig/fish/functions/bax\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fish_2D_bax_files:/home/owlhoot/\x2econfig/fish/functions/bax\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/replay\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/replay\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/owlhoot/\x2econfig/fish/functions/fisher\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_mattgreen_2F_lucid_2E_fish_files:/home/owlhoot/\x2econfig/fish/functions/fish_prompt\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:/home/owlhoot/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/key_bindings\x2efish
