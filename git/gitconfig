@@ -65,6 +65,7 @@
   unstage = reset HEAD --
   r = !GIT_NO_PAGER=1 git l -30
   l = "!. ~/.githelpers && pretty_git_log"
+  pj = !which onefetch && onefetch
 [color]
     ui = auto
 [color "branch"]
