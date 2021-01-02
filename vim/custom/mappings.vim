@@ -122,8 +122,8 @@ noremap [s [szz
 " window managment mappings
 "-----------------------------
 " zoom a vim pane, <C-w>= to re-balance
-nnoremap <Leader>- :wincmd _<CR>:wincmd \|<CR>
-nnoremap <Leader>= :wincmd =<CR>
+nnoremap <LocalLeader>- :wincmd _<CR>:wincmd \|<CR>
+nnoremap <LocalLeader>= :wincmd =<CR>
 
 "-----------------------------
 " completion mappings
