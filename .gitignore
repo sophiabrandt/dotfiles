@@ -7,7 +7,9 @@ vim/spell
 vim/.netrwhist
 
 # .bin
-bin/git-reset-author.sh
-bin/rls-linux
-bin/elixir-ls
-bin/FSAutoComplete
+bin/
+!!bin/readme_template_downloader
+!!bin/readme_template_downloader.nim
+!!bin/tat
+!!bin/tm
+!!bin/ytwtch.sh
