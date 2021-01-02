@@ -33,6 +33,7 @@ function! PackagerInit() abort
   call packager#add('mhinz/vim-grepper')
     " ~/.vim/after/plugin/grepper.vim - options, mappings
   call packager#add('michaeljsmith/vim-indent-object')
+  call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
   call packager#add('skywind3000/vim-auto-popmenu', { 'type': 'opt' })
   call packager#add('tommcdo/vim-lion')
     " ~/.vim/after/plugin/lion.vim - options, mappings
@@ -96,9 +97,10 @@ augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
   autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets
+  autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets 
   autocmd FileType svelte packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType vue packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets
-  autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,objc,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
-  autocmd FileType markdown,text packadd vim-auto-popmenu | let g:apc_enable_ft = {'text':1, 'markdown':1}
+  autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
+  autocmd FileType markdown,text packadd vim-auto-popmenu | let g:apc_enable_ft = {'text':1, 'markdown':1} | execute ':ApcEnable'
 augroup END
