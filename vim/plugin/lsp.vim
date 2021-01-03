@@ -95,9 +95,9 @@ augroup LSC
                 \ 'whitelist': ['nim', 'nimble']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'ocmallsp',
+                \ 'name': 'ocaml-lsp',
                 \ 'cmd': {_->['ocamllsp']},
-                \ 'whitelist': ['ocamlp']
+                \ 'whitelist': ['ocaml']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'pyls',
