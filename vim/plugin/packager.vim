@@ -60,6 +60,7 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/ale.vim - options, mappings
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
+  call packager#add('HerringtonDarkholme/yats.vim')
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
     " ~/.vim/after/plugin/vsnip.vim - options, mappings
     " ~/.vim/vsnip - custom snippets

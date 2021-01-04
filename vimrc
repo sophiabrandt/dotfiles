@@ -35,6 +35,7 @@ set showtabline=2
 set smartcase
 set tabstop=4
 set viewoptions-=options
+set re=0
 
 if &shell =~# 'fish$' && (v:version < 704 || v:version == 704 && !has('patch276'))
   set shell=/usr/bin/env\ bash
