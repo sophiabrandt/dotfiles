@@ -1,0 +1,80 @@
+########################################################################
+# File name: srcery.conf
+# Project: srcery color scheme for tmux
+# Version: 0.0.2
+# Copyright: Birger J. Nordølum <contact+license@mindtooth.no>
+#
+# This file contains the default color settings.
+#
+########################################################################
+
+
+# Special Colors {{
+
+orange=colour202
+brightorange=colour208
+hard_black=colour233
+xgray1=colour235
+xgray2=colour236
+xgray3=colour237
+xgray4=colour238
+xgray5=colour239
+xgray6=colour240
+
+# }}}
+# Theme Styling {{{
+
+# Main Status Style
+set -g status-style fg=brightwhite,bg=$xgray1
+
+# Left Statusline
+set -g status-left-style fg=brightwhite,bg=$xgray3
+set -g status-left-length 40
+
+# Right Statusline
+set -g status-right-style fg=brightwhite,bg=brightblack
+set -g status-right-length 150
+
+# Window Statusline
+setw -g window-status-current-style fg=brightwhite,bg=$xgray3,bold
+
+setw -g window-status-style fg=white,bg=default
+
+setw -g window-status-separator ""
+
+setw -g window-status-activity-style fg=brightwhite,bg=default
+setw -g window-status-bell-style fg=black,bg=yellow
+
+# Pane border
+setw -g pane-border-style fg=$xgray3,bg=default
+setw -g pane-active-border-style fg=white,bg=default
+
+# Clock mode
+setw -g clock-mode-colour brightwhite
+setw -g clock-mode-style 24
+
+# Command message
+set -g message-command-style fg=brightwhite,bg=brightblack
+
+# Mode Style
+setw -g mode-style fg=white,bold,bg=blue
+
+# Message
+set -g message-style fg=brightwhite,bg=$xgray4
+
+# Pane number indicator
+set -g display-panes-colour $xgray5
+set -g display-panes-active-colour brightwhite
+
+# }}}
+# Plugin settings {{{
+
+# tmux-prefix-highlight
+# TODO: Can script be validated
+set -g @prefix_highlight_fg 'black'
+set -g @prefix_highlight_bg 'brightwhite'
+set -g @prefix_highlight_show_copy_mode 'on'
+
+# }}}
+
+# vim: filetype=tmux:formatoptions-=t:
