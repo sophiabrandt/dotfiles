@@ -2,6 +2,6 @@
 function falcon
 	set -Ux TMUX_THEME falcon
 	kitty @ set-colors -a -c ~/.config/kitty/falcon.conf
-	sed -e "116 c\# tpm plugin for nord theme" ~/.tmux.conf > ~/.tmux.conf.tmp && mv ~/.tmux.conf.tmp ~/.tmux.conf
+	sed -e "116 c\# tpm plugin for themes" ~/.tmux.conf > ~/.tmux.conf.tmp && mv ~/.tmux.conf.tmp ~/.tmux.conf
 	sed -e '1 c\colorscheme falcon' ~/.vim/custom/colorscheme.vim > ~/.vim/custom/colorscheme.vim.tmp && mv ~/.vim/custom/colorscheme.vim.tmp ~/.vim/custom/colorscheme.vim
 end
