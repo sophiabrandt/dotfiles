@@ -13,9 +13,9 @@ function! PackagerInit() abort
   "-----------------------------
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('fenetikm/falcon')
-  call packager#add('franbach/miramare')
   call packager#add('jaredgorski/spacecamp')
   call packager#add('romainl/Apprentice')
+  call packager#add('sainnhe/forest-night')
   call packager#add('srcery-colors/srcery-vim')
   "-----------------------------
   " style plugins
