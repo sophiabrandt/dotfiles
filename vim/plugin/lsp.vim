@@ -56,7 +56,7 @@ augroup LSC
     autocmd!
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'omnisharp-roslyn',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('mono $HOME/.bin/omnisharp/OmniSharp.exe --languageserver')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, 'mono $HOME/.bin/omnisharp/OmniSharp.exe --languageserver']},
                 \ 'whitelist': ['cs']
                 \})
     autocmd User lsp_setup call lsp#register_server({
@@ -66,12 +66,12 @@ augroup LSC
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'elixir-ls',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('$HOME/.bin/elixir-ls/release/language_server.sh')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/elixir-ls/release/language_server.sh']},
                 \ 'whitelist': ['elixir', 'eelixir']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'fsharp-language-server',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('dotnet $HOME/.bin/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp3.0/FSharpLanguageServer.dll')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, 'dotnet $HOME/.bin/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp3.0/FSharpLanguageServer.dll']},
                 \ 'whitelist': ['fsharp']
                 \})
     autocmd User lsp_setup call lsp#register_server({
@@ -81,7 +81,7 @@ augroup LSC
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'java-language-server',
-                \ 'cmd': {_->['bash', expand('$HOME/.bin/java-language-server/dist/lang_server_linux.sh')]},
+                \ 'cmd': {_->['bash', '$HOME/.bin/java-language-server/dist/lang_server_linux.sh']},
                 \ 'whitelist': ['java']
                 \})
     autocmd User lsp_setup call lsp#register_server({
@@ -91,7 +91,7 @@ augroup LSC
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'nimble',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('$HOME/.nimble/bin/nimlsp')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.nimble/bin/nimlsp']},
                 \ 'whitelist': ['nim', 'nimble']
                 \})
     autocmd User lsp_setup call lsp#register_server({
@@ -101,12 +101,12 @@ augroup LSC
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'pyls',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('$HOME/.local/bin/pyls')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.local/bin/pyls']},
                 \ 'whitelist': ['python']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'reason-language-server',
-                \ 'cmd': {_->[&shell, &shellcmdflag, expand('$HOME/.bin/rls-linux/reason-language-server')]},
+                \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/rls-linux/reason-language-server']},
                 \ 'whitelist': ['reason']
                 \})
     autocmd User lsp_setup call lsp#register_server({
