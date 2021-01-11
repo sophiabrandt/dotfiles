@@ -105,7 +105,7 @@ set wildignore+=*.png,*.jpg,*.gif
 " autocomplete with dictionary words when spell check is on
 set dictionary=/usr/share/dict/words
 set complete+=kspell
-set spelllang=en
+set spelllang=en_us
 set spellfile=~/.vim/spell/en.utf-8.add
 
 " nvim specific settings
