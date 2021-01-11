@@ -7,6 +7,7 @@ nnoremap <space> <nop>
 let maplocalleader=","
 nnoremap , <nop>
 
+
 "-----------------------------
 " general mappings
 "-----------------------------
@@ -43,6 +44,7 @@ endif
 nnoremap <LocalLeader>q :call quickfix#Toggle()<CR>
 nnoremap <LocalLeader>l :call loclist#Toggle()<CR>
 
+
 "-----------------------------
 " helper mappings
 "-----------------------------
@@ -76,6 +78,7 @@ noremap <Leader>tcj :s#\v(\w)(\S*)#\u\1\L\2#g<CR>
 " source (reload) vimrc
 nnoremap <Leader>vs:<c-u>source $MYVIMRC<cr>
 
+
 "-----------------------------
 " navigation mappings
 "-----------------------------
@@ -108,6 +111,7 @@ nnoremap <Leader>vr :<c-u>e $HOME/.vimrc<cr>
 nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<cr>
 nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<cr>
 
+
 "-----------------------------
 " Center navigation mappings
 "-----------------------------
@@ -118,12 +122,14 @@ noremap N  Nzz
 noremap ]s ]szz
 noremap [s [szz
 
+
 "-----------------------------
 " window managment mappings
 "-----------------------------
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <LocalLeader>- :wincmd _<CR>:wincmd \|<CR>
 nnoremap <LocalLeader>= :wincmd =<CR>
+
 
 "-----------------------------
 " completion mappings
@@ -144,8 +150,7 @@ inoremap <C-f>     <C-x><C-f>
 inoremap <C-l>     <C-x><C-l>
 "   c - term completion that combines the sources of the 'complete' option
 inoremap <expr> <C-c> pumvisible() ? "\<C-e>\<C-n>": "\<C-n>"
-" Also (see ~/dotfiles/vim/plugin/vsnip.vim):
-"   s - snippet completion
+" Snippet completion: see vim/plugin/vsnip.vim
 
 
 "-----------------------------
@@ -172,6 +177,7 @@ cnoremap <A-b>  <C-Left>
 cnoremap <A-f>  <C-Right>
 cnoremap <A-BS> <C-w>
 cnoremap <A-d>  <C-Right><C-w>
+
 
 "-----------------------------
 " find & replace helpers
