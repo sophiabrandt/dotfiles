@@ -17,9 +17,11 @@ function! PackagerInit() abort
   call packager#add('romainl/Apprentice')
   call packager#add('sainnhe/forest-night')
   call packager#add('srcery-colors/srcery-vim')
+
   "-----------------------------
   " style plugins
   "-----------------------------
+
   "-----------------------------
   " behaviour plugins
   "-----------------------------
@@ -45,23 +47,24 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
   call packager#add('wellle/targets.vim')
+
   "-----------------------------
   " filesystem plugins
   "-----------------------------
   call packager#add('srstevenson/vim-picker')
     " ~/.vim/after/plugin/picker.vim - options, mappings
   call packager#add('justinmk/vim-dirvish')
+
   "-----------------------------
   " development plugins
   "-----------------------------
-  call packager#add('airblade/vim-gitgutter')
-    " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('dense-analysis/ale')
     " ~/.vim/plugin/ale.vim - (startup) options
     " ~/.vim/after/plugin/ale.vim - options, mappings
+  call packager#add('airblade/vim-gitgutter')
+    " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
-  call packager#add('HerringtonDarkholme/yats.vim')
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
     " ~/.vim/after/plugin/vsnip.vim - options, mappings
     " ~/.vim/vsnip - custom snippets
@@ -74,6 +77,7 @@ function! PackagerInit() abort
   call packager#add('sheerun/vim-polyglot')
   call packager#add('skywind3000/vim-dict')
     " ~/.vim/plugin/dict.vim - options, mappings
+
   "-----------------------------
   " misc plugins
   "-----------------------------
@@ -81,9 +85,12 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/tmux-navigator.vim - options, mappings
   call packager#add('christoomey/vim-tmux-runner')
     " ~/.vim/after/plugin/tmux-runner.vim - options, mappings
+  call packager#add('hauleth/asyncdo.vim')
+  call packager#add('igemnace/vim-makery')
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
     " ~/.vim/after/plugin/wiki.vim - options, mappings
   call packager#add('ludovicchabant/vim-gutentags')
+
   "-----------------------------
   " neovim plugins
   "-----------------------------
