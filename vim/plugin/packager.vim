@@ -85,8 +85,6 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/tmux-navigator.vim - options, mappings
   call packager#add('christoomey/vim-tmux-runner')
     " ~/.vim/after/plugin/tmux-runner.vim - options, mappings
-  call packager#add('hauleth/asyncdo.vim')
-  call packager#add('igemnace/vim-makery')
   call packager#add('lervag/wiki.vim', { 'type': 'opt' })
     " ~/.vim/after/plugin/wiki.vim - options, mappings
   call packager#add('ludovicchabant/vim-gutentags')
