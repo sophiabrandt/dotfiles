@@ -1,5 +1,5 @@
 func! s:setup_ls(...) abort
-    let l:servers = lsp#get_whitelisted_servers()
+    let l:servers = lsp#get_allowed_servers()
 
     for l:server in l:servers
         let l:cap = lsp#get_server_capabilities(l:server)
@@ -57,62 +57,62 @@ augroup LSC
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'omnisharp-roslyn',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'mono $HOME/.bin/omnisharp/OmniSharp.exe --languageserver']},
-                \ 'whitelist': ['cs']
+                \ 'allowlist': ['cs']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'dart',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'dart $DART_SDK/bin/snapshots/analysis_server.dart.snapshot --lsp']},
-                \ 'whitelist': ['dart']
+                \ 'allowlist': ['dart']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'elixir-ls',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/elixir-ls/release/language_server.sh']},
-                \ 'whitelist': ['elixir', 'eelixir']
+                \ 'allowlist': ['elixir', 'eelixir']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'fsharp-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'dotnet $HOME/.bin/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp3.0/FSharpLanguageServer.dll']},
-                \ 'whitelist': ['fsharp']
+                \ 'allowlist': ['fsharp']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'gopls',
                 \ 'cmd': {_->['gopls']},
-                \ 'whitelist': ['go']
+                \ 'allowlist': ['go']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'java-language-server',
                 \ 'cmd': {_->['bash', '$HOME/.bin/java-language-server/dist/lang_server_linux.sh']},
-                \ 'whitelist': ['java']
+                \ 'allowlist': ['java']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'typescript-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-                \ 'whitelist': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue']
+                \ 'allowlist': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'nimble',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.nimble/bin/nimlsp']},
-                \ 'whitelist': ['nim', 'nimble']
+                \ 'allowlist': ['nim', 'nimble']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'ocaml-lsp',
                 \ 'cmd': {_->['ocamllsp']},
-                \ 'whitelist': ['ocaml']
+                \ 'allowlist': ['ocaml']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'pyls',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.local/bin/pyls']},
-                \ 'whitelist': ['python']
+                \ 'allowlist': ['python']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'reason-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/rls-linux/reason-language-server']},
-                \ 'whitelist': ['reason']
+                \ 'allowlist': ['reason']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'RLS',
                 \ 'cmd': {_->['rls']},
-                \ 'whitelist': ['rust']
+                \ 'allowlist': ['rust']
                 \})
 
     autocmd User lsp_server_init call <SID>setup_ls()
