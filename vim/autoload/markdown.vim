@@ -1,6 +1,6 @@
 " https://www.reddit.com/r/vim/comments/8asgjj/topnotch_vim_markdown_live_previews_with_no/
 function! markdown#Preview() abort
-  if exists('s:markdown_job_id') && s:markdown_job_id > 0
+  if executable('grip') && exists('s:markdown_job_id') && s:markdown_job_id > 0
     call jobstop(s:markdown_job_id)
     unlet s:markdown_job_id
   endif

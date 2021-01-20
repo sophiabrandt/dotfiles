@@ -1,4 +1,4 @@
-let g:vsnip_snippet_dir = $HOME . '~/.vim/vsnip'
+let g:vsnip_snippet_dir = $HOME . '/.vim/vsnip'
 
 " use snippet for multiple filetypes
 let g:vsnip_filetypes                 = {}
