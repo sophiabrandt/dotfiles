@@ -30,6 +30,7 @@ SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_bd:buildah
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x2dcompose
 SETUVAR _fish_abbr_dm:docker\x2dmachine
@@ -85,6 +86,7 @@ SETUVAR _fish_abbr_mk:minikube
 SETUVAR _fish_abbr_mkb:minicube\x20kubectl\x20\x2d\x2d
 SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_p:pnpm
+SETUVAR _fish_abbr_pd:podman
 SETUVAR _fish_abbr_px:pnpx
 SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_ta:tmux\x20new\x2dsession\x20\x2dAs
