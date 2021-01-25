@@ -77,6 +77,8 @@ nnoremap <Leader>z zazz
 noremap <Leader>tcj :s#\v(\w)(\S*)#\u\1\L\2#g<CR>
 " source (reload) vimrc
 nnoremap <Leader>vs:<c-u>source $MYVIMRC<cr>
+" insert result of external command
+inoremap <C-R>! <C-R>=extCmd#InsertResult()<CR>
 
 
 "-----------------------------
