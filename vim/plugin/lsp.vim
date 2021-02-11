@@ -27,6 +27,7 @@ func! s:setup_ls(...) abort
 
         if has_key(l:cap, 'definitionProvider')
             nmap <silent><buffer>gd <plug>(lsp-definition)
+            nmap <silent><buffer>gk <plug>(lsp-peek-definition)
         endif
 
         if has_key(l:cap, 'typeDefinitionProvider')
