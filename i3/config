@@ -289,6 +289,7 @@ exec --no-startup-id xautolock -time 20 -locker 'betterlockscreen -w dim'
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id caffeine
+exec --no-startup-id insync start
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
