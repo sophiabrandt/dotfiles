@@ -15,7 +15,7 @@ function! PackagerInit() abort
   call packager#add('fenetikm/falcon')
   call packager#add('jaredgorski/spacecamp')
   call packager#add('romainl/Apprentice')
-  call packager#add('sainnhe/forest-night')
+  call packager#add('sainnhe/everforest')
   call packager#add('srcery-colors/srcery-vim')
 
   "-----------------------------
