@@ -66,6 +66,7 @@ function! PackagerInit() abort
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
+  call packager#add('kristijanhusak/vim-js-file-import', { 'type': 'opt' })
     " ~/.vim/after/plugin/vsnip.vim - options, mappings
     " ~/.vim/vsnip - custom snippets
   call packager#add('mattn/emmet-vim', { 'type': 'opt' })
@@ -106,7 +107,7 @@ augroup packager_filetype
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
   autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets
   autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
-  autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets 
+  autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets  | packadd vim-js-file-import
   autocmd FileType svelte packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType vue packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
