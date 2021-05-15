@@ -28,6 +28,7 @@ set nobackup
 set nowritebackup
 set number
 set ruler
+set colorcolumn=81,82
 set scrolloff=4
 set sessionoptions-=options
 set shiftwidth=4
