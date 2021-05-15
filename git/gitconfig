@@ -1,43 +1,43 @@
 [core]
-    whitespace = trailing-space,space-before-tab
-    editor = nvim
-    excludesfile = /home/owlhoot/.gitignore_global
-    pager = delta
-    attributesfile = /home/owlhoot/.gitattributes
+  whitespace = trailing-space,space-before-tab
+  editor = nvim
+  excludesfile = /home/owlhoot/.gitignore_global
+  pager = delta
+  attributesfile = /home/owlhoot/.gitattributes
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 [diff]
-    renames = copies
-    colorMoved = default
-    mnemonicprefix = true
-    tool = vimdiff
-    prompt = false
+  renames = copies
+  colorMoved = default
+  mnemonicprefix = true
+  tool = vimdiff
+  prompt = false
 [delta]
-    features = side-by-side line-numbers decorations
-    whitespace-error-style = 22 reverse
-    inspect-raw-lines = false
-    plus-style = syntax "#003800"
-    minus-style = syntax "#3f0001"
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  inspect-raw-lines = false
+  plus-style = syntax "#003800"
+  minus-style = syntax "#3f0001"
 [delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-    file-decoration-style = none
-    hunk-header-decoration-style = cyan box ul
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
 [delta "line-numbers"]
-    line-numbers-left-style = cyan
-    line-numbers-right-style = cyan
-    line-numbers-minus-style = 124
-    line-numbers-plus-style = 28
+  line-numbers-left-style = cyan
+  line-numbers-right-style = cyan
+  line-numbers-minus-style = 124
+  line-numbers-plus-style = 28
 [branch]
-    autosetupmerge = true
+  autosetupmerge = true
 [push]
-    default = tracking
+  default = tracking
 [rerere]
-    enabled = true
+  enabled = true
 [merge]
-    stat = true
+  stat = true
 [pull]
-    rebase = false
+  rebase = false
 [alias]
   # Git Commit, and Push — in one step.
   cm = "!f() { git commit -m \"$@\"; }; f"
@@ -67,19 +67,8 @@
   l = "!. ~/.githelpers && pretty_git_log"
   pj = !which onefetch && onefetch
 [color]
-    ui = auto
-[color "branch"]
-    current = yellow
-    local = 241
-    remote = green
-[color "diff"]
-    meta = yellow
-    frag = magenta
-    old = red
-    new = green
-[color "status"]
-    added = green
-    changed = yellow
-    untracked = magenta
-[init]
-    defaultBranch = main
+  ui = auto
+  diff = auto
+  status = auto
+  interactive = auto
+  pager = true
