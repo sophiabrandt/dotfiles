@@ -65,6 +65,7 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/ale.vim - options, mappings
   call packager#add('airblade/vim-gitgutter')
     " ~/.vim/after/plugin/gitgutter.vim - options, mappings
+  call packager#add('Alexisvt/flutter-snippets', { 'type': 'opt' })
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
@@ -107,7 +108,7 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
-  autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets
+  autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets  | packadd vim-js-file-import
   autocmd FileType svelte packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
