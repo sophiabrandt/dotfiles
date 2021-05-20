@@ -72,3 +72,5 @@
   status = auto
   interactive = auto
   pager = true
+[init]
+  defaultBranch = main
