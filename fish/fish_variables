@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export ANDROID_HOME:/opt/android\x2dsdk/
 SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk/
+SETUVAR --export CHROME_EXECUTABLE:google\x2dchrome\x2dstable
 SETUVAR --export DART_SDK:/opt/flutter/bin/cache/dart\x2dsdk/
 SETUVAR --export DOTNET_ROOT:/usr/share/dotnet
 SETUVAR --export EDITOR:nvim
@@ -137,7 +138,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/usr/share/dotnet\x1e/home/owlhoot/\x2earkade/bin\x1e/home/owlhoot/\x2ecargo/bin\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e/home/owlhoot/Coding/Go/go/bin\x1e/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
+SETUVAR fish_user_paths:/opt/android\x2dsdk/tools/bin\x1e/usr/share/dotnet\x1e/home/owlhoot/\x2earkade/bin\x1e/home/owlhoot/\x2ecargo/bin\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e/home/owlhoot/Coding/Go/go/bin\x1e/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/Coding/Go/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
 SETUVAR --export keychain_init_args:\x2d\x2dquiet\x1egithub\x2cgitlab
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_color_command_duration:pure_color_warning
