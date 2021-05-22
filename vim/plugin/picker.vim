@@ -1,4 +1,5 @@
 nmap <Leader>be <Plug>(PickerEdit)
+nmap <C-p>      <Plug>(PickerEdit)
 nmap <Leader>bs <Plug>(PickerSplit)
 nmap <Leader>bt <Plug>(PickerTabedit)
 nmap <Leader>bv <Plug>(PickerVsplit)
