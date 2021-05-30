@@ -68,13 +68,11 @@ noremap <Leader>p "yp
 noremap <Leader>P "yP
 " insert from the yank register.
 inoremap <C-y> <C-r>y
-nnoremap <leader>u :<C-u>up<CR>
+nnoremap <Leader>u :<C-u>up<CR>
 " hashrocket
 inoremap hsr =>
 " fold the current indent.
 nnoremap <Leader>z zazz
-" titlecase current line
-noremap <Leader>tcj :s#\v(\w)(\S*)#\u\1\L\2#g<CR>
 " source (reload) vimrc
 nnoremap <Leader>vs:<c-u>source $MYVIMRC<cr>
 " insert result of external command

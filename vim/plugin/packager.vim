@@ -66,6 +66,7 @@ function! PackagerInit() abort
   call packager#add('airblade/vim-gitgutter')
     " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('Alexisvt/flutter-snippets', { 'type': 'opt' })
+  call packager#add('christoomey/vim-titlecase')
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
