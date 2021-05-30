@@ -77,6 +77,7 @@ SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gtst:git\x20tst
 SETUVAR _fish_abbr_hd:history\x20delete
 SETUVAR _fish_abbr_hr:history\x20merge
+SETUVAR _fish_abbr_hs:history\x20search
 SETUVAR _fish_abbr_kb:kubectl
 SETUVAR _fish_abbr_kn:kind
 SETUVAR _fish_abbr_kz:kustomize
@@ -91,7 +92,7 @@ SETUVAR _fish_abbr_pd:podman
 SETUVAR _fish_abbr_px:pnpx
 SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_ta:tmux\x20new\x2dsession\x20\x2dAs
-SETUVAR _fish_abbr_td:tmux\x20detach
+SETUVAR _fish_abbr_td:todo\x2esh
 SETUVAR _fish_abbr_tls:tmux\x20ls
 SETUVAR _fish_abbr_tn:tmux\x20new\x20\x2dt
 SETUVAR _fish_abbr_v:nvim
