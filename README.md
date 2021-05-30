@@ -21,7 +21,7 @@ _Note_: the [VIM config](vimrc) organization and setup is heavily inspired by [b
 ## Look
 
 - color scheme: [Nord][nord] and [falcon][falcon]
-- font: [Victor Mono](https://rubjo.github.io/victor-mono/)
+- font: [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
 
 [nord]: https://www.nordtheme.com/
 [falcon]: https://github.com/fenetikm/falcon
