@@ -82,9 +82,12 @@ inoremap <C-R>! <C-R>=extCmd#InsertResult()<CR>
 "-----------------------------
 " navigation mappings
 "-----------------------------
-" move 10
-nnoremap <A-j> 10j
-nnoremap <A-k> 10k
+" screen screen up and down
+nnoremap <C-j> 10j
+nnoremap <C-k> 10k
+" scroll
+nnoremap <C-Up>   <C-e>
+nnoremap <C-Down> <C-y>
 " Move vertically by visual line unless preceded by a count. If a movement is
 " greater than 5 then automatically add to the jumplist.
 nnoremap <expr> j v:count ? (v:count > 5 ? "m'" . v:count : '') . 'j' : 'gj'
@@ -111,9 +114,8 @@ nnoremap <Leader>vr :<c-u>e $HOME/.vimrc<cr>
 nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<cr>
 nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<cr>
 
-
 "-----------------------------
-" Center navigation mappings
+" center navigation mappings
 "-----------------------------
 noremap {  {zz
 noremap }  }zz
