@@ -83,11 +83,8 @@ inoremap <C-R>! <C-R>=extCmd#InsertResult()<CR>
 " navigation mappings
 "-----------------------------
 " screen screen up and down
-nnoremap <C-j> 10j
-nnoremap <C-k> 10k
-" scroll
-nnoremap <C-Up>   <C-e>
-nnoremap <C-Down> <C-y>
+nnoremap <A-j> 10j
+nnoremap <A-k> 10k
 " Move vertically by visual line unless preceded by a count. If a movement is
 " greater than 5 then automatically add to the jumplist.
 nnoremap <expr> j v:count ? (v:count > 5 ? "m'" . v:count : '') . 'j' : 'gj'
