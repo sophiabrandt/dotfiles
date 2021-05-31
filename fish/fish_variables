@@ -108,7 +108,8 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/owlhoot/\x2econfig/fish/funct
 SETUVAR _fisher_jorgebucaran_2F_hydro_files:/home/owlhoot/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/fish_prompt\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/fish_title\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/hydro\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_extract_files:/home/owlhoot/\x2econfig/fish/functions/extract\x2efish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_license_files:/home/owlhoot/\x2econfig/fish/functions/license\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/license\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1ejorgebucaran/fisher\x1eTSFoster/posix\x2dsource\x1ejorgebucaran/hydro
+SETUVAR _fisher_plugins:jorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1ejorgebucaran/fisher\x1eTSFoster/posix\x2dsource\x1ejorgebucaran/hydro
+SETUVAR _hydro_git_2911397:main\u2022\x20\u21914\x20
 SETUVAR _hydro_git_4077434:main\u2022\x20
 SETUVAR _hydro_git_988787:\x1d
 SETUVAR fish_color_autosuggestion:969896
