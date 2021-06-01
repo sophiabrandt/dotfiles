@@ -1,0 +1,10 @@
+export TODO_DIR="$HOME/wiki/braindump"
+export TODO_FILE="$TODO_DIR/todo.txt"
+export DONE_FILE="$TODO_DIR/done.txt"
+export REPORT_FILE="$TODO_DIR/report.txt"
+export TMP_FILE="/tmp/todo.tmp"
+export TODOTXT_DEFAULT_ACTION=ls
+# Prepend the date to any added task.
+export TODOTXT_DATE_ON_ADD=1
+# Automatically delete blank line numbers
+export TODOTXT_PRESERVE_LINE_NUMBERS=0

@@ -94,7 +94,14 @@ SETUVAR _fish_abbr_px:pnpx
 SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_ta:tmux\x20new\x2dsession\x20\x2dAs
 SETUVAR _fish_abbr_td:todo\x2esh
+SETUVAR _fish_abbr_tda:todo\x2esh\x20add
+SETUVAR _fish_abbr_tdd:todo\x2esh\x20do
+SETUVAR _fish_abbr_tdl:todo\x2esh\x20ls
+SETUVAR _fish_abbr_tdla:todo\x2esh\x20lsa
+SETUVAR _fish_abbr_tdls:todo\x2esh\x20listall
+SETUVAR _fish_abbr_tdrm:todo\x2esh\x20rm
 SETUVAR _fish_abbr_tls:tmux\x20ls
+SETUVAR _fish_abbr_tma:tmux\x20new\x2dsession\x20\x2dAs
 SETUVAR _fish_abbr_tn:tmux\x20new\x20\x2dt
 SETUVAR _fish_abbr_v:nvim
 SETUVAR _fish_abbr_vi:nvim
