@@ -4,7 +4,6 @@ let g:grepper.jump  = 1
 let g:grepper.stop  = 1000
 
 " Search for user-supplied term.
-nnoremap <Leader>g :<C-u>GrepperRg<Space>
 nnoremap <Leader>/ :<C-u>GrepperRg<space>
 " Search for current word or selection.
 nnoremap gs :Grepper -cword -noprompt<CR>
