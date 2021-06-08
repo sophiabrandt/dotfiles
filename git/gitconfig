@@ -40,21 +40,21 @@
   rebase = false
 [alias]
   # Git Commit, and Push — in one step.
-  cm = "!f() { git commit -m \"$@\"; }; f"
+  cmp = "!f() { git commit -m \"$@\"; }; f"
   # NEW.
-  new = "!f() { git cm \"📦 NEW: $@\"; }; f"
+  new = "!f() { git cmp \"📦 NEW: $@\"; }; f"
   # IMPROVE.
-  imp = "!f() { git cm \"👌 IMPROVE: $@\"; }; f"
+  imp = "!f() { git cmp \"👌 IMPROVE: $@\"; }; f"
   # FIX.
-  fix = "!f() { git cm \"🐛 FIX: $@\"; }; f"
+  fix = "!f() { git cmp \"🐛 FIX: $@\"; }; f"
   # RELEASE.
-  rlz = "!f() { git cm \"🚀 RELEASE: $@\"; }; f"
+  rlz = "!f() { git cmp \"🚀 RELEASE: $@\"; }; f"
   # DOC.
-  doc = "!f() { git cm \"📖 DOC: $@\"; }; f"
+  doc = "!f() { git cmp \"📖 DOC: $@\"; }; f"
   # TEST.
-  tst = "!f() { git cm \"🤖 TEST: $@\"; }; f"
+  tst = "!f() { git cmp \"🤖 TEST: $@\"; }; f"
   # BREAKING CHANGE.
-  brk = "!f() { git cm \"‼️ BREAKING: $@\"; }; f"
+  brk = "!f() { git cmp \"‼️ BREAKING: $@\"; }; f"
   # Logline
   lol = log --graph --decorate --oneline
   lola = log --graph --decorate --oneline --all
@@ -63,8 +63,6 @@
   st = status -s
   last = log -1 HEAD
   unstage = reset HEAD --
-  r = !GIT_NO_PAGER=1 git l -30
-  l = "!. ~/.githelpers && pretty_git_log"
   pj = !which onefetch && onefetch
 [color]
   ui = auto

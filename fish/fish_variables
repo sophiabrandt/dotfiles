@@ -39,7 +39,8 @@ SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gadn:git\x20add\x20\x2e\x20\x26\x26\x20git\x20diff\x20\x2d\x2dcached
-SETUVAR _fish_abbr_gai:git\x20cdd\x20aim
+SETUVAR _fish_abbr_gai:git\x20add\x20\x2di
+SETUVAR _fish_abbr_gaim:git\x20cdd\x20aim
 SETUVAR _fish_abbr_gam:git\x20cdd\x20amend
 SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gapn:git\x20add\x20\x2d\x2dintent\x2dto\x2dadd\x20\x2e\x20\x26\x26\x20git\x20add\x20\x2d\x2dpatch
@@ -73,6 +74,7 @@ SETUVAR _fish_abbr_gpo:git\x20pull\x20origin
 SETUVAR _fish_abbr_gpu:git\x20pull\x20upstream
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_grlz:git\x20rlz
+SETUVAR _fish_abbr_grs:git\x20reset
 SETUVAR _fish_abbr_gst:git\x20status\x20\x2dsb
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gtst:git\x20tst
