@@ -66,7 +66,7 @@ function! PackagerInit() abort
   call packager#add('airblade/vim-gitgutter')
     " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('Alexisvt/flutter-snippets', { 'type': 'opt' })
-  call packager#add('christoomey/vim-titlecase')
+  call packager#add('christoomey/vim-titlecase', { 'type': 'opt' })
   call packager#add('dsznajder/vscode-es7-javascript-react-snippets', { 'type': 'opt' })
   call packager#add('fivethree-team/vscode-svelte-snippets', { 'type': 'opt' })
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
@@ -115,5 +115,5 @@ augroup packager_filetype
   autocmd FileType svelte packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets | packadd vscode-svelte-snippets
   autocmd FileType vue packadd emmet-vim | packadd vim-vsnip | packadd vscode-es7-javascript-react-snippets
   autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
-  autocmd FileType markdown,text packadd vim-vsnip | packadd vim-auto-popmenu | let g:apc_enable_ft = {'text':1, 'markdown':1} | execute ':ApcEnable'
+  autocmd FileType markdown,text packadd vim-vsnip | packadd vim-titlecase | packadd vim-auto-popmenu | let g:apc_enable_ft = {'text':1, 'markdown':1} | execute ':ApcEnable'
 augroup END
