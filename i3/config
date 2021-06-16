@@ -16,13 +16,12 @@ hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+Shift+y border pixel 1
+bindsym $mod+Shift+n border pixel 1
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Victor Mono SemiBold 12
-
+font pango:JetBrains Mono Regular 12
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
