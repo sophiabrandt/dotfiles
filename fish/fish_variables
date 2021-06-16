@@ -32,7 +32,7 @@ SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr__2D_:cd\x20\x2d
 SETUVAR _fish_abbr_bd:buildah
 SETUVAR _fish_abbr_d:docker
-SETUVAR _fish_abbr_dc:docker\x2dcompose
+SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_dm:docker\x2dmachine
 SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
@@ -98,9 +98,11 @@ SETUVAR _fish_abbr_ta:tmux\x20new\x2dsession\x20\x2dAs
 SETUVAR _fish_abbr_td:todo\x2esh
 SETUVAR _fish_abbr_tda:todo\x2esh\x20add
 SETUVAR _fish_abbr_tdd:todo\x2esh\x20do
-SETUVAR _fish_abbr_tdl:todo\x2esh\x20ls\x20\x7c\x20most
+SETUVAR _fish_abbr_tdl:todo\x2esh\x20ls
 SETUVAR _fish_abbr_tdla:todo\x2esh\x20lsa
 SETUVAR _fish_abbr_tdls:todo\x2esh\x20listall
+SETUVAR _fish_abbr_tdp:todo\x2esh\x20ls\x20\x7c\x20most
+SETUVAR _fish_abbr_tdr:todo\x2esh\x20rm
 SETUVAR _fish_abbr_tdrm:todo\x2esh\x20rm
 SETUVAR _fish_abbr_tls:tmux\x20ls
 SETUVAR _fish_abbr_tma:tmux\x20new\x2dsession\x20\x2dAs
