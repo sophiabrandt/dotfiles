@@ -88,6 +88,7 @@ SETUVAR _fish_abbr_ll:exa\x20\x2dla
 SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_mk:minikube
 SETUVAR _fish_abbr_mkb:minicube\x20kubectl\x20\x2d\x2d
+SETUVAR _fish_abbr_mkf:mkfile
 SETUVAR _fish_abbr_mpsp:mpv\x20\x2d\x2dspeed\x3d2\x2e5\x20\x2d\x2daf\x3drubberband\x3dpitch\x2dscale\x3d0\x2e981818181818181
 SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_p:pnpm
