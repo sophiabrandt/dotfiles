@@ -34,8 +34,16 @@
   default = tracking
 [rerere]
   enabled = true
+# set "nvim" as tool for merging
 [merge]
   stat = true
+  tool = nvim
+# define command which will be used when "nvim" is set as a merge tool
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+# automatically launch merge tool without displaying a prompt
+[mergetool]
+  prompt = false
 [pull]
   rebase = false
 [alias]
