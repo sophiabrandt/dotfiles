@@ -20,7 +20,7 @@ alias dartfmt="dart format"
 # Fish
 # drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
-if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+if [[ $(ps -p $PPID -o command | tail -n +2) != "fish" ]]
 then
   exec fish
 fi
