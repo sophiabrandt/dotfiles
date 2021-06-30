@@ -7,7 +7,7 @@ ln -s dotfiles/bash/profile      .profile
 ln -s dotfiles/fish              .config/fish
 ln -s dotfiles/git/gitconfig     .gitconfig
 ln -s dotfiles/tmux/tmux.conf    .tmux.conf
-ln -s dotfiles/kitty             .kitty
+ln -s dotfiles/kitty             .config/kitty
 ln -s dotfiles/vim/              .vim
 ln -s dotfiles/vimrc             .vimrc
 
