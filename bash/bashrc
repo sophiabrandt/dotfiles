@@ -26,4 +26,3 @@ then
 fi
 
 source /home/owlhoot/.config/broot/launcher/bash/br
-complete -C /usr/local/bin/bitcomplete bit
