@@ -1,3 +1,3 @@
 # fnm
-set PATH /home/owlhoot/.fnm $PATH
+set PATH $HOME/.fnm $PATH
 fnm env | source
