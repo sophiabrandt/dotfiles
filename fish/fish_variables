@@ -119,7 +119,7 @@ SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_extract_files:\x24HOME/\x2econfig/
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_license_files:\x24HOME/\x2econfig/fish/functions/license\x2efish\x1e\x24HOME/\x2econfig/fish/completions/license\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1ejorgebucaran/fisher\x1eTSFoster/posix\x2dsource\x1ejorgebucaran/hydro
 SETUVAR _hydro_git_2911397:main\u2022\x20\u21914\x20
-SETUVAR _hydro_git_361018:main\u2022\x20\u21912\x20
+SETUVAR _hydro_git_361018:main\u2022\x20\u21913\x20\u21932\x20
 SETUVAR _hydro_git_4077434:main\u2022\x20
 SETUVAR _hydro_git_988787:\x1d
 SETUVAR fish_color_autosuggestion:969896
