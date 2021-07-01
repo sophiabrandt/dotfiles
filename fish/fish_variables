@@ -11,16 +11,16 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
-SETUVAR F_DATA_DIR:\x24HOME/\x2elocal/share/f
+SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_PICKER:fzy
-SETUVAR --export --path GOPATH:\x24HOME/\x2ego\x1e\x24HOME/projects/go/workspace
+SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/projects/go/workspace
 SETUVAR --export JAVA_HOME:/usr/lib/jvm/default
 SETUVAR --export PAGER:less
 SETUVAR --export THEFUCK_OVERRIDDEN_ALIASES:gsed\x2cgit
 SETUVAR --export TMUX_THEME:nord
-SETUVAR --export UNCRUSTIFY_CONFIG:\x24HOME/\x2euncrustify\x2ecfg
+SETUVAR --export UNCRUSTIFY_CONFIG:/home/owlhoot/\x2euncrustify\x2ecfg
 SETUVAR --export VISUAL:nvim
-SETUVAR Z_DATA_DIR:\x24HOME/\x2elocal/share/z
+SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
@@ -87,7 +87,7 @@ SETUVAR _fish_abbr_mk:minikube
 SETUVAR _fish_abbr_mkb:minicube\x20kubectl\x20\x2d\x2d
 SETUVAR _fish_abbr_mkf:mkfile
 SETUVAR _fish_abbr_mpsp:mpv\x20\x2d\x2dspeed\x3d2\x2e5\x20\x2d\x2daf\x3drubberband\x3dpitch\x2dscale\x3d0\x2e981818181818181
-SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20\x24HOME/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
+SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_pd:podman
 SETUVAR _fish_abbr_px:pnpx
@@ -107,19 +107,19 @@ SETUVAR _fish_abbr_tma:tmux\x20new\x2dsession\x20\x2dAs
 SETUVAR _fish_abbr_tn:tmux\x20new\x20\x2dt
 SETUVAR _fish_abbr_v:nvim
 SETUVAR _fish_abbr_vi:nvim
-SETUVAR _fish_abbr_vimin:vim\x20\x2du\x20\x24HOME/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
+SETUVAR _fish_abbr_vimin:vim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_yd:youtubedr\x20download
-SETUVAR _fisher_LumaKernel_2F_fish_2D_fd_2D_complete_files:\x24HOME/\x2econfig/fish/completions/fd\x2efish
-SETUVAR _fisher_TSFoster_2F_posix_2D_source_files:\x24HOME/\x2econfig/fish/functions/posix\x2dsource\x2efish\x1e\x24HOME/\x2econfig/fish/completions/posix\x2dsource\x2efish
-SETUVAR _fisher_gokulsoumya_2F_f_files:\x24HOME/\x2econfig/fish/functions/__f\x2efish\x1e\x24HOME/\x2econfig/fish/functions/__f_add\x2efish\x1e\x24HOME/\x2econfig/fish/functions/__f_clean\x2efish\x1e\x24HOME/\x2econfig/fish/functions/__f_complete\x2efish\x1e\x24HOME/\x2econfig/fish/functions/__f_extract_paths\x2efish\x1e\x24HOME/\x2econfig/fish/functions/__f_insert_from_picker\x2efish\x1e\x24HOME/\x2econfig/fish/conf\x2ed/f\x2efish\x1e\x24HOME/\x2econfig/fish/conf\x2ed/f_key_bindings\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fish_2D_bax_files:\x24HOME/\x2econfig/fish/functions/replay\x2efish\x1e\x24HOME/\x2econfig/fish/completions/replay\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x24HOME/\x2econfig/fish/functions/fisher\x2efish\x1e\x24HOME/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_jorgebucaran_2F_hydro_files:\x24HOME/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e\x24HOME/\x2econfig/fish/functions/fish_prompt\x2efish\x1e\x24HOME/\x2econfig/fish/functions/fish_title\x2efish\x1e\x24HOME/\x2econfig/fish/conf\x2ed/hydro\x2efish
-SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_extract_files:\x24HOME/\x2econfig/fish/functions/extract\x2efish
-SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_license_files:\x24HOME/\x2econfig/fish/functions/license\x2efish\x1e\x24HOME/\x2econfig/fish/completions/license\x2efish
+SETUVAR _fisher_LumaKernel_2F_fish_2D_fd_2D_complete_files:/home/owlhoot/\x2econfig/fish/completions/fd\x2efish
+SETUVAR _fisher_TSFoster_2F_posix_2D_source_files:/home/owlhoot/\x2econfig/fish/functions/posix\x2dsource\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/posix\x2dsource\x2efish
+SETUVAR _fisher_gokulsoumya_2F_f_files:/home/owlhoot/\x2econfig/fish/functions/__f\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_add\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_clean\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_complete\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_extract_paths\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/__f_insert_from_picker\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/f_key_bindings\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fish_2D_bax_files:/home/owlhoot/\x2econfig/fish/functions/replay\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/replay\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/owlhoot/\x2econfig/fish/functions/fisher\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_hydro_files:/home/owlhoot/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/fish_prompt\x2efish\x1e/home/owlhoot/\x2econfig/fish/functions/fish_title\x2efish\x1e/home/owlhoot/\x2econfig/fish/conf\x2ed/hydro\x2efish
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_extract_files:/home/owlhoot/\x2econfig/fish/functions/extract\x2efish
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_license_files:/home/owlhoot/\x2econfig/fish/functions/license\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/license\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fish\x2dbax\x1eoh\x2dmy\x2dfish/plugin\x2dlicense\x1eoh\x2dmy\x2dfish/plugin\x2dextract\x1egokulsoumya/f\x1eLumaKernel/fish\x2dfd\x2dcomplete\x1ejorgebucaran/fisher\x1eTSFoster/posix\x2dsource\x1ejorgebucaran/hydro
 SETUVAR _hydro_git_2911397:main\u2022\x20\u21914\x20
-SETUVAR _hydro_git_361018:main\u2022\x20\u21913\x20\u21932\x20
+SETUVAR _hydro_git_361018:main\u2022\x20
 SETUVAR _hydro_git_4077434:main\u2022\x20
 SETUVAR _hydro_git_988787:\x1d
 SETUVAR fish_color_autosuggestion:969896
@@ -151,7 +151,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:\x24HOME/\x2ego/bin\x1e\x24HOME/projects/go/go/bin\x1e/opt/android\x2dsdk/tools/bin\x1e/usr/share/dotnet\x1e\x24HOME/\x2earkade/bin\x1e\x24HOME/\x2ecargo/bin\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e\x24HOME/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e\x24HOME/\x2edeno/bin\x1e\x24HOME/\x2ebin\x1e/opt/flutter/bin\x1e\x24HOME/\x2enimble/bin\x1e\x24HOME/\x2epub\x2dcache/bin\x1e\x24HOME/\x2enpmbin/bin\x1e\x24HOME/\x2efnm
+SETUVAR fish_user_paths:/home/owlhoot/\x2ego/bin\x1e/home/owlhoot/projects/go/go/bin\x1e/opt/android\x2dsdk/tools/bin\x1e/usr/share/dotnet\x1e/home/owlhoot/\x2earkade/bin\x1e/home/owlhoot/\x2ecargo/bin\x1e/opt/android\x2dsdk/emulator\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/opt/flutter/bin/cache/dart\x2dsdk/bin\x1e/home/owlhoot/\x2edeno/bin\x1e/home/owlhoot/\x2ebin\x1e/opt/flutter/bin\x1e/home/owlhoot/\x2enimble/bin\x1e/home/owlhoot/\x2epub\x2dcache/bin\x1e/home/owlhoot/\x2enpmbin/bin\x1e/home/owlhoot/\x2efnm
 SETUVAR --export keychain_init_args:\x2d\x2dquiet\x1egithub\x2cgitlab
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_color_command_duration:pure_color_warning
