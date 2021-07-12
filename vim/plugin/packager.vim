@@ -12,6 +12,7 @@ function! PackagerInit() abort
   " color scheme plugins
   "-----------------------------
   call packager#add('arcticicestudio/nord-vim')
+  call packager#add('chriskempson/base16-vim')
   call packager#add('fenetikm/falcon')
   call packager#add('jaredgorski/spacecamp')
   call packager#add('romainl/Apprentice')
