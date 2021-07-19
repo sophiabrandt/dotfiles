@@ -63,7 +63,7 @@ let g:ale_linters = {
 \ 'ocaml':           ['merlin'],
 \ 'python':          ['flake8'],
 \ 'reason':          ['reason-language-server'],
-\ 'rust':            ['rls', 'rust-analyzer'],
+\ 'rust':            ['analyzer'],
 \ 'scss':            ['stylelint', 'csslint'],
 \ 'svelte':          ['eslint', 'stylelint', 'csslint'],
 \ 'typescript':      ['tsserver', 'eslint', 'stylelint'],

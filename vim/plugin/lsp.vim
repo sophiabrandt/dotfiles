@@ -126,10 +126,18 @@ augroup LSC
                 \ 'allowlist': ['reason']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'RLS',
-                \ 'cmd': {_->['rls']},
-                \ 'allowlist': ['rust']
-                \})
+				\   'name': 'Rust Language Server',
+                \   'cmd': {server_info->['rustup', 'run', 'nightly', 'rust-analyzer']},
+                \   'whitelist': ['rust'],
+                \   'initialization_options': {
+                \     'cargo': {
+                \       'loadOutDirsFromCheck': v:true,
+                \     },
+                \     'procMacro': {
+                \       'enable': v:true,
+                \     },
+                \   },
+                \ })
 
     autocmd User lsp_server_init call <SID>setup_ls()
     autocmd BufEnter * call <SID>setup_ls()
