@@ -30,4 +30,4 @@ then
   exec fish
 fi
 
-source $HOME/.config/broot/launcher/bash/br
+source /home/owlhoot/.config/broot/launcher/bash/br
