@@ -17,6 +17,11 @@ eval $(keychain --eval --quiet --nogui --noask github gitlab)
 # alias dartfmt
 alias dartfmt="dart format"
 
+# alias xdg-open
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	alias xdg-open="open"
+fi
+
 # Fish
 # drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
