@@ -73,7 +73,7 @@
   unstage = reset HEAD --
   pj = !which onefetch && onefetch
   # show conflicted files
-  uu = git diff --name-only --diff-filter=U
+  uu = diff --name-only --diff-filter=U
 [color]
   ui = auto
   diff = auto
