@@ -71,6 +71,8 @@ inoremap <C-y> <C-r>y
 nnoremap <Leader>u :<C-u>up<CR>
 " hashrocket
 inoremap hsr =>
+" normal rocket
+inoremap nsr ->
 " fold the current indent.
 nnoremap <Leader>z zazz
 " source (reload) vimrc
