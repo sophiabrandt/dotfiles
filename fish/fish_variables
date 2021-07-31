@@ -27,6 +27,7 @@ SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr__2D_:cd\x20\x2d
 SETUVAR _fish_abbr_bd:buildah
+SETUVAR _fish_abbr_ca:cargo
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_dm:docker\x2dmachine
