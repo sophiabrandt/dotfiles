@@ -12,6 +12,8 @@
   "Freezed Data Class": {
     "prefix": "fdataclass",
     "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';\n",
+      "part '${TM_FILENAME_BASE}.freezed.dart';\n",
       "@freezed",
       "class ${1:DataClass} with _$${1:DataClass} {",
       "  const ${1:DataClass}._();",
@@ -23,6 +25,8 @@
   "Freezed Union": {
     "prefix": "funion",
     "body": [
+      "import 'package:freezed_annotation/freezed_annotation.dart';\n",
+      "part '${TM_FILENAME_BASE}.freezed.dart';\n",
       "@freezed",
       "class ${1:Union} with _$${1:Union} {",
       "  const ${1:Union}._();",

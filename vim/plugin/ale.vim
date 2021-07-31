@@ -51,7 +51,7 @@ let g:ale_linters = {
 \ 'clojure':         ['joker', 'clj_kondo'],
 \ 'cs':              ['csc'],
 \ 'css':             ['stylelint', 'csslint'],
-\ 'dart':            ['dart-analysis-server-lsp'],
+\ 'dart':            ['dart_analyze'],
 \ 'elixir':          ['elixir-ls'],
 \ 'graphql':         ['gqlint'],
 \ 'go':              ['gopls', 'staticcheck'],
@@ -75,7 +75,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \ 'cs':              ['uncrustify'],
 \ 'css':             ['prettier', 'stylelint'],
-\ 'dart':            ['dartfmt'],
+\ 'dart':            ['dart-format'],
 \ 'eelixir':         ['prettier'],
 \ 'elixir':          ['mix_format'],
 \ 'graphql' :        ['prettier'],
@@ -99,12 +99,3 @@ let g:ale_fixers = {
 \ 'yaml':            ['prettier'],
 \ '*':               ['remove_trailing_lines', 'trim_whitespace'],
 \}
-
-" use the Dart Analysis Server (LSP)
-call ale#linter#Define('dart', {
- \  'name': 'dart-analysis-server-lsp',
- \  'lsp': 'stdio',
- \  'executable': 'dart',
- \  'command': 'dart $DART_SDK/bin/snapshots/analysis_server.dart.snapshot --lsp',
- \  'project_root': function('ale_linters#dart#language_server#GetProjectRoot'),
- \})

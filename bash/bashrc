@@ -14,9 +14,6 @@ export TERMINAL="kitty"
 # add keychain
 eval $(keychain --eval --quiet --nogui --noask github gitlab)
 
-# alias dartfmt
-alias dartfmt="dart format"
-
 # alias xdg-open
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias xdg-open="open"
