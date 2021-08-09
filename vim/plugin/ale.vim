@@ -35,6 +35,7 @@ nmap <Leader>ae <Plug>(ale_detail)
 nmap <Leader>f  <Plug>(ale_fix)
 nmap <Leader>l  <Plug>(ale_lint)
 nmap <Leader>ar <Plug>(ale_find_references)
+nmap <Leader>an <Plug>(ale_rename)
 
 " move between linting errors
 nmap ]r <Plug>(ale_next_wrap)zz
