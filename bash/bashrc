@@ -19,6 +19,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias xdg-open="open"
 fi
 
+# alias docker-compose to v2
+alias docker-compose="docker compose"
+
 # Fish
 # drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
