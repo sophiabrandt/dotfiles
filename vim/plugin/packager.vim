@@ -17,7 +17,6 @@ function! PackagerInit() abort
   call packager#add('fenetikm/falcon')
   call packager#add('jaredgorski/spacecamp')
   call packager#add('romainl/Apprentice')
-  call packager#add('romgrk/github-light.vim')
   call packager#add('sainnhe/everforest')
   call packager#add('srcery-colors/srcery-vim')
   call packager#add('sonph/onehalf', {'rtp': 'vim'})
