@@ -11,6 +11,7 @@ ln -s dotfiles/tmux/tmux.conf       .tmux.conf
 ln -s dotfiles/kitty                .config/kitty
 ln -s dotfiles/vim/                 .vim
 ln -s dotfiles/vimrc                .vimrc
+ln -s dotfiles/idea/ideavimrc       .ideavimrc
 
 mkdir -p .config/nvim
 ln -s ~/dotfiles/nvim/init.vim .config/nvim/init.vim
