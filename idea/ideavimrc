@@ -12,6 +12,8 @@ set scrolloff=5
 
 " Do incremental searching.
 set incsearch
+" Ignore case
+set ignorecase
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
