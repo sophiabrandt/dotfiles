@@ -1,4 +1,4 @@
 # Defined interactively
-function mkfile
+function mktouch
 mkdir -p (dirname $argv) && touch $argv
 end
