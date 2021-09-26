@@ -10,7 +10,8 @@ function! markdown#Preview() abort
     \ grip . shellescape(expand('%:p')) . " 0 2>&1 | awk '/Running/ { printf $4 }'",
     \ { 'on_stdout': 'OnGripStart', 'pty': 1 })
   function! OnGripStart(_, output, __)
-    call system('xdg-open ' . a:output[0])
+	echom 'Markdown preview running on' a:output[0]
+    call system('open ' . a:output[0])
   endfunction
 endfunction
 
