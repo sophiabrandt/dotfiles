@@ -11,7 +11,7 @@ function! markdown#Preview() abort
     \ { 'on_stdout': 'OnGripStart', 'pty': 1 })
   function! OnGripStart(_, output, __)
 	echom 'Markdown preview running on' a:output[0]
-    call system('open ' . a:output[0])
+    call system('xdg-open ' . a:output[0])
   endfunction
 endfunction
 
