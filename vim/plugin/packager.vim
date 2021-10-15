@@ -14,13 +14,6 @@ function! PackagerInit() abort
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chiendo97/intellij.vim')
   call packager#add('chriskempson/base16-vim')
-  call packager#add('cocopon/iceberg.vim')
-  call packager#add('fenetikm/falcon')
-  call packager#add('jaredgorski/spacecamp')
-  call packager#add('romainl/Apprentice')
-  call packager#add('sainnhe/everforest')
-  call packager#add('srcery-colors/srcery-vim')
-  call packager#add('sonph/onehalf', {'rtp': 'vim'})
 
   "-----------------------------
   " style plugins
