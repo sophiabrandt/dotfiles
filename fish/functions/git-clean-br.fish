@@ -1,3 +1,3 @@
 function git-clean-br
-git for-each-ref --format '%(refname:short)' refs/heads | grep -v $argv | xargs git branch -D
+git branch | egrep -v "(^\*|master|main|dev)" | xargs -r git branch -D
 end
