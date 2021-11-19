@@ -92,7 +92,8 @@ SETUVAR _fish_abbr_np:npx
 SETUVAR _fish_abbr_nvimin:nvim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
 SETUVAR _fish_abbr_p:pnpm
 SETUVAR _fish_abbr_pd:podman
-SETUVAR _fish_abbr_px:pnpx
+SETUVAR _fish_abbr_pe:pnpm\x20exec
+SETUVAR _fish_abbr_px:pnpm\x20dlx
 SETUVAR _fish_abbr_t:tmux
 SETUVAR _fish_abbr_ta:tmux\x20new\x2dsession\x20\x2dAs
 SETUVAR _fish_abbr_td:todo\x2esh
