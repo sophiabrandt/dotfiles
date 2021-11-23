@@ -194,9 +194,9 @@ xnoremap <silent> \c "sy:let @/=@s<CR>cgn
 " change operation.
 "
 " - go to the next star search match and highlight it
-nnoremap <CR> gnzz
+nnoremap <M-CR> gnzz
 " - accept the star search change and go to the next match and highlight it
-xmap <CR> .<Esc>gnzz
+xmap <M-CR> .<Esc>gnzz
 " - reject the star search change and go to the next match and highlight it
 xnoremap ! <Esc>ngnzz
 
