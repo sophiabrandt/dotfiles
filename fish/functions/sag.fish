@@ -1,3 +1,3 @@
-function say
+function sag
 flite -voice slt $argv
 end
