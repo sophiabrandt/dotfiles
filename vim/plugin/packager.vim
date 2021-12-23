@@ -26,8 +26,8 @@ function! PackagerInit() abort
   call packager#add('bronson/vim-visual-star-search')
   call packager#add('chaoren/vim-wordmotion')
     " ~/.vim/plugin/after/wordmotion.vim - options, mappings
-  call packager#add('justinmk/vim-sneak')
-    " ~/.vim/plugin/sneak.vim - options, mappings
+  call packager#add('easymotion/vim-easymotion')
+    " ~/.vim/plugin/vim-easymotion.vim - options, mappings
   call packager#add('mbbill/undotree')
     " ~/.vim/after/plugin/undotree.vim - mappings
     " ~/.vim/after/ftplugin/undotree.vim - options
