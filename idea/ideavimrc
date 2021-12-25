@@ -20,13 +20,15 @@ set argtextobj
 set commentary
 set easymotion
 set matchit
-set multiple-cursors
 set surround
 set textobj-entire
 set vim-indent-object
+set vim-paragraph-motion
+
 
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
+let g:EasyMotion_smartcase = 1
 
 """ Common settings -------------------------
 set showmode
@@ -51,11 +53,8 @@ set ideastatusicon=gray
 set idearefactormode=keep
 
 """ Mappings --------------------------------
-map <leader>f <Plug>(easymotion-s)
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
 
 :map \r <Action>(ReformatCode)
 
