@@ -4,6 +4,7 @@
   excludesfile = /home/owlhoot/.gitignore_global
   pager = delta
   attributesfile = /home/owlhoot/.gitattributes
+  commentChar = auto
 [interactive]
   diffFilter = delta --color-only
 [diff]
