@@ -19,10 +19,11 @@ set ReplaceWithRegister
 set argtextobj
 set commentary
 set easymotion
+set highlightedyank
 set matchit
 set surround
 set textobj-entire
-set vim-indent-object
+set textobj-indent
 set vim-paragraph-motion
 
 
