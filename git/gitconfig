@@ -39,6 +39,7 @@
 [merge]
   stat = true
   tool = nvim
+  conflictStyle = zdiff3
 # define command which will be used when "nvim" is set as a merge tool
 [mergetool "nvim"]
   cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
