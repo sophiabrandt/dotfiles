@@ -41,6 +41,7 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-endwise', { 'type': 'opt' })
   call packager#add('tpope/vim-eunuch')
   call packager#add('tpope/vim-repeat')
+  call packager#add('tpope/vim-sleuth')
   call packager#add('tpope/vim-surround')
   call packager#add('tpope/vim-unimpaired')
   call packager#add('wellle/targets.vim')
@@ -62,6 +63,7 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('Alexisvt/flutter-snippets', { 'type': 'opt' })
   call packager#add('christoomey/vim-titlecase', { 'type': 'opt' })
+  call packager#add('elixir-editors/vim-elixir')
   call packager#add('hrsh7th/vim-vsnip', { 'type': 'opt' })
   call packager#add('kristijanhusak/vim-js-file-import', { 'type': 'opt' })
     " ~/.vim/after/plugin/vsnip.vim - options, mappings
@@ -72,7 +74,6 @@ function! PackagerInit() abort
   call packager#add('prabirshrestha/vim-lsp')
     " ~/.vim/after/plugin/lsp.vim - options, mappings
   call packager#add('sgur/vim-editorconfig')
-  call packager#add('sheerun/vim-polyglot')
   call packager#add('skywind3000/vim-dict')
     " ~/.vim/plugin/dict.vim - options, mappings
   call packager#add('tpope/vim-fugitive')
@@ -102,9 +103,9 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
-  autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
+  autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets | packadd flutter-snippets
+  autocmd FileType elixir,eelixir,lua,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import
-  autocmd FileType lua,elixir,eelixir,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType markdown,text packadd vim-vsnip | packadd vim-titlecase | packadd vim-auto-popmenu
 augroup END
