@@ -106,6 +106,6 @@ augroup packager_filetype
   autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType dart packadd vim-vsnip | packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType elixir,eelixir,lua,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
-  autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import
+  autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip
   autocmd FileType markdown,text packadd vim-vsnip | packadd vim-titlecase | packadd vim-auto-popmenu
 augroup END
