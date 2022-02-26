@@ -6,6 +6,9 @@
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
+" clipboard
+set clipboard^=unnamed,unnamedplus
+
 " Do incremental searching.
 set incsearch
 " Ignore case
