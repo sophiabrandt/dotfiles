@@ -7,10 +7,8 @@
 set scrolloff=5
 
 " clipboard
-set clipboard^=unnamed,unnamedplus
+set clipboard^=unnamed,unnamedplus,ideaput
 
-" Do incremental searching.
-set incsearch
 " Ignore case
 set ignorecase
 
@@ -43,9 +41,10 @@ set nu
 """ Leader ------------------
 let mapleader=" "
 nnoremap <space> <nop>
-" localleader is comma
-let maplocalleader=","
-nnoremap , <nop>
+
+""" Manage .ideavimrc ---------------
+nnoremap \e :e ~/.ideavimrc<CR>
+:map \r <Action>(IdeaVim.ReloadVimRc.reload)
 
 """ Insert mappings ------------------
 inoremap hsr =>
@@ -60,19 +59,106 @@ set idearefactormode=keep
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
-:map \r <Action>(ReformatCode)
+""" Distraction Free Mode -------------------
+:map <c-z> <Action>(ToggleDistractionFreeMode)
+""" Terminal -------------------
+:map <c-t> <Action>(ActivateTerminalToolWindow)
+:map <leader>t <Action>(Terminal.OpenInTerminal)
+""" Navigation -------------------
+:map <c-\> <Action>(SplitVertically)
+:map <c--> <Action>(SplitHorizontally)
+:map <c-=> <Action>(Unsplit)
+:map <c-m> <Action>(MoveEditorToOppositeTabGroup)
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+:map <TAB> <Action>(PreviousTab)
+:map <s-TAB> <Action>(NextTab)
+:map <Leader>en <Action>(EditSourceInNewWindow)
+:map <Leader>n <Action>(NextWindow)
+:map <Leader>q <Action>(CloseContent)
+:map <Leader>qa <Action>(CloseAllEditors)
+""" Editing source code -------------------
+" make dot work on visual line selections.
+xnoremap . :norm.<CR>
+" Y should behave like D and C, from cursor till the end of line.
+noremap Y y$
+" U for redo, the opposite of u for undo.
+nnoremap U <C-r>
+"-----------------------------
+" readline-like mappings
+"-----------------------------
+" - Ctrl-a - go to the start of line
+" - Ctrl-e - go to the end of the line
+" - Alt-b  - back a word
+" - Alt-f  - forward a word
+" - Alt-BS - delete backward word
+" - Alt-d  - delete forward word
+nnoremap B ^
+nnoremap E $
+inoremap <C-a>  <C-o>^
+inoremap <C-e>  <C-o>$
+inoremap <A-b>  <C-Left>
+inoremap <A-f>  <C-Right>
+inoremap <A-BS> <C-w>
+inoremap <A-d>  <C-o>dw
+" as above but for command mode.
+cnoremap <C-a>  <Home>
+cnoremap <C-e>  <End>
+cnoremap <A-b>  <C-Left>
+cnoremap <A-f>  <C-Right>
+cnoremap <A-BS> <C-w>
+cnoremap <A-d>  <C-Right><C-w>
 
-map <leader>d <Action>(Debug)
-map <leader>r <Action>(RenameElement)
-map <leader>c <Action>(Stop)
-map <leader>z <Action>(ToggleDistractionFreeMode)
-
-map <leader>v <Action>(SelectInProjectView)
-map <leader>a <Action>(Annotate)
-map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
-map <S-Space> <Action>(GotoNextError)
-
-map <leader>b <Action>(ToggleLineBreakpoint)
-map <leader>o <Action>(FileStructurePopup)
+vnoremap < <gv
+vnoremap > >gv
+:map [[ <Action>(MethodUp)
+:map ]] <Action>(MethodDown)
+:map zc <Action>(CollapseRegion)
+:map zo <Action>(ExpandRegion)
+:map <leader>zc <Action>(CollapseAllRegions)
+:map <leader>zo <Action>(ExpandAllRegions)
+:map <leader>c <Action>(CommentByLineComment)
+:map <leader>r <Action>(Refactorings.QuickListPopupAction)
+:map <leader>=  <Action>(ReformatCode)
+:map <leader>o <Action>(OptimizeImports)
+:map <c-r> <Action>(RecentFiles)
+:map <leader>l <Action>(RecentLocations)
+:map <leader>h  <Action>(LocalHistory.ShowHistory)
+:map ge <Action>(GotoNextError)
+:map gE <Action>(GotoPreviousError)
+""" Searching and Source Code Navigation -------------------
+:map <c-/> <Action>(FindInPath)
+:map <c-a> <Action>(GotoAction)
+:map <c-f> <Action>(GotoFile)
+:map <leader>u <Action>(FindUsages)
+:map <leader>s <Action>(GotoRelated)
+:map <leader>h <Action>(CallHierarchy)
+:map <leader>b <Action>(ShowNavBar)
+:map <c-s> <Action>(FileStructurePopup)
+:map <c-g> <Action>(GotoSymbol)
+:map gc <Action>(GotoClass)
+:map gi <Action>(GotoImplementation)
+:map gd <Action>(GotoDeclaration)
+:map gp <Action>(GotoSuperMethod)
+:map gt <Action>(GotoTest)
+:map gb <Action>(Back)
+:map gf <Action>(Forward)
+""" Tool windows -------------------
+:map <c-p> <Action>(JumpToLastWindow)
+:map <c-x> <Action>(HideAllWindows)
+""" Running and Debugging -------------------
+:map ,r <Action>(ContextRun)
+:map ,c <Action>(RunClass)
+:map ,f <Action>(ChooseRunConfiguration)
+:map ,t <Action>(ActivateRunToolWindow)
+:map ,u <Action>(Rerun)
+:map ,f <Action>(RerunFailedTests)
+:map ,b <Action>(ToggleLineBreakpoint)
+:map ,d <Action>(ContextDebug)
+:map ,n <Action>(ActivateDebugToolWindow)
 
 " Find more examples here: https://jb.gg/share-ideavimrc
