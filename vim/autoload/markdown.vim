@@ -7,15 +7,16 @@ function! markdown#Preview() abort
   " use grip with github-access token to avoid hitting the API limit
   let grip = 'pass show github/grip-access-token | xargs -I {} grip --pass {} '
   let s:markdown_job_id = jobstart(
-    \ grip . shellescape(expand('%:p')) . " 0 2>&1 | awk '/Running/ { printf $4 }'",
+    \ grip . shellescape(expand('%:p')) . " 0 2>&1 | awk -F ':|/' '/Running/ { print $5 }'",
     \ { 'on_stdout': 'OnGripStart', 'pty': 1 })
   function! OnGripStart(_, output, __)
-    echom 'Markdown preview running on' a:output[0]
+    let port = a:output[0][0:-2]
+    echom 'Markdown preview running on' port
     let uname = substitute(system('uname'), '\n', '', '')
     if uname == 'Linux'
-      call system('xdg-open ' . a:output[0])
+      call system('xdg-open http://localhost:' . port)
     else
-      call system('open ' . a:output[0])
+      call system('open http://localhost:' . port)
     endif
   endfunction
 endfunction
