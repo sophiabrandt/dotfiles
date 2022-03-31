@@ -16,11 +16,6 @@ ln -s dotfiles/idea/ideavimrc       .ideavimrc
 mkdir -p .config/nvim
 ln -s ~/dotfiles/nvim/init.vim .config/nvim/init.vim
 
-mkdir .todo
-# todo.sh config file needs to be a a hard link
-ln dotfiles/todo.txt-cli/config      .todo/config
-ln -s dotfiles/todo.txt-cli/addons   .todo.actions.d
-
 mkdir -p .config/broot
 ln -s dotfiles/broot/conf.toml .config/broot/conf.toml
 
