@@ -65,7 +65,15 @@
       "})"
     ]
   },
-  "Individual test": {
+  "Test block": {
+    "prefix": "test",
+    "body": [
+      "test('$1', () => {",
+      "  $2",
+      "})"
+    ]
+  },
+  "It block": {
     "prefix": "it",
     "body": [
       "it('$1', () => {",
