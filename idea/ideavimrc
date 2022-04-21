@@ -133,7 +133,6 @@ vnoremap > >gv
 """ Searching and Source Code Navigation -------------------
 :map <c-/> <Action>(FindInPath)
 :map <c-a> <Action>(GotoAction)
-:map <c-f> <Action>(GotoFile)
 :map <leader>u <Action>(FindUsages)
 :map <leader>s <Action>(GotoRelated)
 :map <leader>h <Action>(CallHierarchy)

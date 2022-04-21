@@ -5,6 +5,7 @@
   pager = delta
   attributesfile = /home/owlhoot/.gitattributes
   commentChar = auto
+  autocrlf = input
 [interactive]
   diffFilter = delta --color-only
 [diff]
