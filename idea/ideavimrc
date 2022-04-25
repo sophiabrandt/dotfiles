@@ -77,10 +77,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 :map <TAB> <Action>(PreviousTab)
 :map <s-TAB> <Action>(NextTab)
-:map <Leader>en <Action>(EditSourceInNewWindow)
-:map <Leader>n <Action>(NextWindow)
-:map <Leader>q <Action>(CloseContent)
-:map <Leader>qa <Action>(CloseAllEditors)
+:map <leader>en <Action>(EditSourceInNewWindow)
+:map <leader>n <Action>(NextWindow)
+:map <leader>x <Action>(CloseContent)
+:map <leader>qa <Action>(CloseAllEditors)
 """ Editing source code -------------------
 " make dot work on visual line selections.
 xnoremap . :norm.<CR>
