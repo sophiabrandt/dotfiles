@@ -120,6 +120,8 @@ execution = ":toggle_git_status"
 # render on terminals with low capabilities.
 #
 
+[skin]
+default = "none none"
 # [skin]
 # default = "gray(20) gray(1)"
 # tree = "rgb(89, 73, 101) none"
