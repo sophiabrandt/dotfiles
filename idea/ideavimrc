@@ -16,10 +16,12 @@ set ignorecase
 map Q gq
 
 """ Plugins  --------------------------------
+set NERDTree
 set ReplaceWithRegister
 set argtextobj
 set commentary
 set easymotion
+set exchange
 set highlightedyank
 set matchit
 set surround
@@ -55,26 +57,27 @@ set ideajoin
 set ideastatusicon=gray
 set idearefactormode=keep
 
-""" Mappings --------------------------------
+""" Plugin Mappings --------------------------------
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
+:map \n :NERDTreeToggle<CR>
 
 """ Distraction Free Mode -------------------
-:map <c-z> <Action>(ToggleDistractionFreeMode)
+:map <C-z> <Action>(ToggleDistractionFreeMode)
 """ Terminal -------------------
-:map <c-t> <Action>(ActivateTerminalToolWindow)
+:map <C-t> <Action>(ActivateTerminalToolWindow)
 :map <leader>t <Action>(Terminal.OpenInTerminal)
 """ Navigation -------------------
-:map <c-\> <Action>(SplitVertically)
-:map <c--> <Action>(SplitHorizontally)
-:map <c-=> <Action>(Unsplit)
-:map <c-m> <Action>(MoveEditorToOppositeTabGroup)
-sethandler <c-j> a:vim
-sethandler <c-k> a:vim
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
+:map <C-\> <Action>(SplitVertically)
+:map <C--> <Action>(SplitHorizontally)
+:map <C-=> <Action>(Unsplit)
+:map <C-m> <Action>(MoveEditorToOppositeTabGroup)
+sethandler <C-j> a:vim
+sethandler <C-k> a:vim
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
 :map <TAB> <Action>(PreviousTab)
 :map <s-TAB> <Action>(NextTab)
 :map <leader>en <Action>(EditSourceInNewWindow)
@@ -125,21 +128,21 @@ vnoremap > >gv
 :map <leader>r <Action>(Refactorings.QuickListPopupAction)
 :map <leader>=  <Action>(ReformatCode)
 :map <leader>o <Action>(OptimizeImports)
-:map <c-r> <Action>(RecentFiles)
+:map <C-r> <Action>(RecentFiles)
 :map <leader>l <Action>(RecentLocations)
 :map <leader>h  <Action>(LocalHistory.ShowHistory)
 :map ge <Action>(GotoNextError)
 :map gE <Action>(GotoPreviousError)
 """ Searching and Source Code Navigation -------------------
-:map <c-/> <Action>(FindInPath)
-:map <c-a> <Action>(GotoAction)
+:map <C-/> <Action>(FindInPath)
+:map <C-a> <Action>(GotoAction)
 :map <leader>u <Action>(FindUsages)
 :map <leader>s <Action>(GotoRelated)
 :map <leader>h <Action>(CallHierarchy)
 :map <leader>b <Action>(ShowNavBar)
-:map <c-s> <Action>(FileStructurePopup)
-:map <c-g> <Action>(GotoSymbol)
-:map gc <Action>(GotoClass)
+:map <C-s> <Action>(FileStructurePopup)
+:map <C-g> <Action>(GotoSymbol)
+:map ga <Action>(GotoClass)
 :map gi <Action>(GotoImplementation)
 :map gd <Action>(GotoDeclaration)
 :map gp <Action>(GotoSuperMethod)
@@ -147,12 +150,12 @@ vnoremap > >gv
 :map gb <Action>(Back)
 :map gf <Action>(Forward)
 """ Tool windows -------------------
-:map <c-p> <Action>(JumpToLastWindow)
-:map <c-x> <Action>(HideAllWindows)
+:map <C-p> <Action>(JumpToLastWindow)
+:map <C-x> <Action>(HideAllWindows)
 """ Running and Debugging -------------------
 :map ,r <Action>(ContextRun)
 :map ,c <Action>(RunClass)
-:map ,f <Action>(ChooseRunConfiguration)
+:map ,o <Action>(ChooseRunConfiguration)
 :map ,t <Action>(ActivateRunToolWindow)
 :map ,u <Action>(Rerun)
 :map ,f <Action>(RerunFailedTests)
