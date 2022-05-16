@@ -105,6 +105,7 @@ SETUVAR _fish_abbr_tn:tmux\x20new\x20\x2dt
 SETUVAR _fish_abbr_v:nvim
 SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_vimin:vim\x20\x2du\x20/home/owlhoot/dotfiles/minimalvimrc\x20\x2d\x2dnoplugin
+SETUVAR _fish_abbr_y:yarn
 SETUVAR _fish_abbr_yd:youtubedr\x20download
 SETUVAR _fisher_LumaKernel_2F_fish_2D_fd_2D_complete_files:/home/owlhoot/\x2econfig/fish/completions/fd\x2efish
 SETUVAR _fisher_TSFoster_2F_posix_2D_source_files:/home/owlhoot/\x2econfig/fish/functions/posix\x2dsource\x2efish\x1e/home/owlhoot/\x2econfig/fish/completions/posix\x2dsource\x2efish
