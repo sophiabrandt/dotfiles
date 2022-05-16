@@ -14,6 +14,7 @@ function! PackagerInit() abort
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chiendo97/intellij.vim')
   call packager#add('doums/darcula')
+  call packager#add('folke/tokyonight.nvim')
 
   "-----------------------------
   " style plugins
