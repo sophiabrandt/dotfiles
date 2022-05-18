@@ -15,6 +15,7 @@ function! PackagerInit() abort
   call packager#add('chiendo97/intellij.vim')
   call packager#add('doums/darcula')
   call packager#add('folke/tokyonight.nvim')
+  call packager#add('rebelot/kanagawa.nvim')
 
   "-----------------------------
   " style plugins
