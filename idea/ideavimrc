@@ -46,7 +46,7 @@ nnoremap <space> <nop>
 
 """ Manage .ideavimrc ---------------
 nnoremap \e :e ~/.ideavimrc<CR>
-:map \r <Action>(IdeaVim.ReloadVimRc.reload)
+nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
 
 """ Insert mappings ------------------
 inoremap hsr =>
@@ -60,30 +60,30 @@ set idearefactormode=keep
 """ Plugin Mappings --------------------------------
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
-:map \n :NERDTreeToggle<CR>
+nnoremap \t :NERDTreeToggle<CR>
 
 """ Distraction Free Mode -------------------
-:map <C-z> <Action>(ToggleDistractionFreeMode)
+nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
 """ Terminal -------------------
-:map <C-t> <Action>(ActivateTerminalToolWindow)
-:map <leader>t <Action>(Terminal.OpenInTerminal)
+nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
 """ Navigation -------------------
-:map <C-\> <Action>(SplitVertically)
-:map <C--> <Action>(SplitHorizontally)
-:map <C-=> <Action>(Unsplit)
-:map <C-m> <Action>(MoveEditorToOppositeTabGroup)
+nnoremap <C-\> :action SplitVertically<CR>
+nnoremap <C--> :action SplitHorizontally<CR>
+nnoremap <C-=> :action Unsplit<CR>
+nnoremap <C-m> :action MoveEditorToOppositeTabGroup<CR>
 sethandler <C-j> a:vim
 sethandler <C-k> a:vim
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-:map <TAB> <Action>(PreviousTab)
-:map <s-TAB> <Action>(NextTab)
-:map <leader>en <Action>(EditSourceInNewWindow)
-:map <leader>n <Action>(NextWindow)
-:map <leader>x <Action>(CloseContent)
-:map <leader>qa <Action>(CloseAllEditors)
+nnoremap <TAB> :action PreviousTab<CR>
+nnoremap <s-TAB> :action NextTab<CR>
+nnoremap <leader>en :action EditSourceInNewWindow<CR>
+nnoremap <leader>n :action NextWindow<CR>
+map <leader>x :action CloseContent<CR>
+map <leader>qa :action CloseAllEditors<CR>
 """ Editing source code -------------------
 " make dot work on visual line selections.
 xnoremap . :norm.<CR>
@@ -118,49 +118,51 @@ cnoremap <A-d>  <C-Right><C-w>
 
 vnoremap < <gv
 vnoremap > >gv
-:map [[ <Action>(MethodUp)
-:map ]] <Action>(MethodDown)
-:map zc <Action>(CollapseRegion)
-:map zo <Action>(ExpandRegion)
-:map <leader>zc <Action>(CollapseAllRegions)
-:map <leader>zo <Action>(ExpandAllRegions)
-:map <leader>c <Action>(CommentByLineComment)
-:map <leader>r <Action>(Refactorings.QuickListPopupAction)
-:map <leader>=  <Action>(ReformatCode)
-:map <leader>o <Action>(OptimizeImports)
-:map <C-r> <Action>(RecentFiles)
-:map <leader>l <Action>(RecentLocations)
-:map <leader>h  <Action>(LocalHistory.ShowHistory)
-:map ge <Action>(GotoNextError)
-:map gE <Action>(GotoPreviousError)
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>zc :action CollapseAllRegions<CR>
+nnoremap <leader>zo :action ExpandAllRegions<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>f  :action ReformatCode<CR>
+nnoremap <leader>l  :action Stylelint.Fix<CR>
+nnoremap <leader>o :action OptimizeImports<CR>
+nnoremap <C-r> :action RecentFiles<CR>
+nnoremap <leader>y :action RecentLocations<CR>
+nnoremap <leader>h  :action LocalHistory.ShowHistory<CR>
+nnoremap ]r :action GotoNextError<CR>
+nnoremap [r :action GotoPreviousError<CR>
+nnoremap ge :action ShowErrorDescription<CR>
 """ Searching and Source Code Navigation -------------------
-:map <C-/> <Action>(FindInPath)
-:map <C-a> <Action>(GotoAction)
-:map <leader>u <Action>(FindUsages)
-:map <leader>s <Action>(GotoRelated)
-:map <leader>h <Action>(CallHierarchy)
-:map <leader>b <Action>(ShowNavBar)
-:map <C-s> <Action>(FileStructurePopup)
-:map <C-g> <Action>(GotoSymbol)
-:map ga <Action>(GotoClass)
-:map gi <Action>(GotoImplementation)
-:map gd <Action>(GotoDeclaration)
-:map gp <Action>(GotoSuperMethod)
-:map gt <Action>(GotoTest)
-:map gb <Action>(Back)
-:map gf <Action>(Forward)
+nnoremap <C-/> :action FindInPath<CR>
+nnoremap <C-a> :action GotoAction<CR>
+nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>s :action GotoRelated<CR>
+nnoremap <leader>h :action CallHierarchy<CR>
+nnoremap <leader>b :action ShowNavBar<CR>
+nnoremap <C-s> :action FileStructurePopup<CR>
+nnoremap <C-g> :action GotoSymbol<CR>
+nnoremap ga :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gp :action GotoSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
 """ Tool windows -------------------
-:map <C-p> <Action>(JumpToLastWindow)
-:map <C-x> <Action>(HideAllWindows)
+nnoremap <C-p> :action JumpToLastWindow<CR>
+nnoremap <C-x> :action HideAllWindows<CR>
 """ Running and Debugging -------------------
-:map ,r <Action>(ContextRun)
-:map ,c <Action>(RunClass)
-:map ,o <Action>(ChooseRunConfiguration)
-:map ,t <Action>(ActivateRunToolWindow)
-:map ,u <Action>(Rerun)
-:map ,f <Action>(RerunFailedTests)
-:map ,b <Action>(ToggleLineBreakpoint)
-:map ,d <Action>(ContextDebug)
-:map ,n <Action>(ActivateDebugToolWindow)
+nnoremap ,r :action ContextRun<CR>
+nnoremap ,c :action RunClass<CR>
+nnoremap ,o :action ChooseRunConfiguration<CR>
+nnoremap ,t :action ActivateRunToolWindow<CR>
+nnoremap ,u :action Rerun<CR>
+nnoremap ,f :action RerunFailedTests<CR>
+nnoremap ,b :action ToggleLineBreakpoint<CR>
+nnoremap ,d :action ContextDebug<CR>
+nnoremap ,n :action ActivateDebugToolWindow<CR>
 
 " Find more examples here: https://jb.gg/share-ideavimrc
