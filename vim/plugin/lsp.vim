@@ -126,9 +126,10 @@ augroup LSC
                 \ 'allowlist': ['reason']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-				\   'name': 'Rust Language Server',
+                \   'name': 'Rust Language Server',
                 \   'cmd': {server_info->['rustup', 'run', 'nightly', 'rust-analyzer']},
                 \   'whitelist': ['rust'],
+                \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
                 \   'initialization_options': {
                 \     'cargo': {
                 \       'loadOutDirsFromCheck': v:true,
