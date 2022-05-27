@@ -1,11 +1,13 @@
 [core]
   whitespace = trailing-space,space-before-tab
   editor = nvim
-  excludesfile = /home/owlhoot/.gitignore_global
+  excludesfile = ~/.gitignore_global
   pager = delta
-  attributesfile = /home/owlhoot/.gitattributes
+  attributesfile = ~/.gitattributes
   commentChar = auto
   autocrlf = input
+[include]
+  path = ~/.gitconfig_local
 [interactive]
   diffFilter = delta --color-only
 [diff]
