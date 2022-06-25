@@ -5,6 +5,7 @@
 ## OS
 
 - Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/downloads/community/i3/)
+- MacOS M1
 
 ## Terminal
 
