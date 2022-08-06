@@ -21,7 +21,7 @@ alias docker-compose="docker compose"
 # Fish
 # drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
-if [[ $(ps -p $PPID -o command | tail -n +2) != "fish" ]]
+if [[ $(ps -p $PPID -o command | tail -n +2) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
 then
   exec fish
 fi
