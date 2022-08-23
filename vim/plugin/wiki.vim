@@ -28,8 +28,9 @@ augroup CustomWikiAutocmds
         \ nmap <silent><buffer> gf <plug>(wiki-link-follow)
 augroup END
 
-let g:wiki_map_link_create = 'CustomWikiLinkCreateFunction'
+let g:wiki_map_create_page = 'CustomWikiLinkCreateFunction'
+let g:wiki_map_text_to_link = 'CustomWikiLinkCreateFunction'
 
 function! CustomWikiLinkCreateFunction(text) abort
-  return substitute(a:text, '\s\+', '_', 'ge')
+  return [substitute(a:text, '\s\+', '_', 'ge'), a:text]
 endfunction
