@@ -10,7 +10,7 @@ function! markdown#Preview() abort
     \ grip . shellescape(expand('%:p')) . " 0 2>&1 | awk -F ':|/' '/Running/ { print $5 }'",
     \ { 'on_stdout': 'OnGripStart', 'pty': 1 })
   function! OnGripStart(_, output, __)
-    let port = a:output[0][0:-2]
+    let port = a:output[0][0:5]
     echom 'Markdown preview running on' port
     let uname = substitute(system('uname'), '\n', '', '')
     if uname == 'Linux'
