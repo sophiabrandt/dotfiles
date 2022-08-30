@@ -14,8 +14,6 @@ function! PackagerInit() abort
   call packager#add('arcticicestudio/nord-vim')
   call packager#add('chiendo97/intellij.vim')
   call packager#add('doums/darcula')
-  call packager#add('folke/tokyonight.nvim')
-  call packager#add('rebelot/kanagawa.nvim')
 
   "-----------------------------
   " style plugins
@@ -95,9 +93,11 @@ function! PackagerInit() abort
   " neovim plugins
   "-----------------------------
   if has("nvim")
-	  call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
-        " ~/.vim/after/plugin/nvim-colorizer.vim - options, mappings
-        " ~/.vim/lua/nvim-colorizer.lua - options, mappings
+    call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
+    " ~/.vim/after/plugin/nvim-colorizer.vim - options, mappings
+    " " ~/.vim/lua/nvim-colorizer.lua - options, mappings
+    call packager#add('folke/tokyonight.nvim')
+    call packager#add('rebelot/kanagawa.nvim')
   endif
 endfunction
 
