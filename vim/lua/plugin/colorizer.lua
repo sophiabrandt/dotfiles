@@ -3,8 +3,13 @@ require 'colorizer'.setup ({
   'html';
   'javascript';
   'javascriptreact';
+  'json';
+  'markdown';
+  'scss';
   'typescript';
   'typescriptreact';
+  'vim';
+  'yaml';
 }, {
   mode = 'background';
   names = true;

@@ -71,8 +71,6 @@ function! PackagerInit() abort
   call packager#add('mattn/emmet-vim', { 'type': 'opt' })
     " ~/.vim/after/plugin/emmet.vim - options, mappings
   call packager#add('nash0x7e2/awesome-flutter-snippets', { 'type': 'opt' })
-  call packager#add('prabirshrestha/vim-lsp')
-    " ~/.vim/after/plugin/lsp.vim - options, mappings
   call packager#add('sgur/vim-editorconfig')
   call packager#add('skywind3000/vim-dict')
     " ~/.vim/plugin/dict.vim - options, mappings
@@ -93,11 +91,24 @@ function! PackagerInit() abort
   " neovim plugins
   "-----------------------------
   if has("nvim")
+    call packager#add('neovim/nvim-lspconfig')
+    call packager#add('hrsh7th/cmp-nvim-lsp')
+    call packager#add('hrsh7th/cmp-buffer')
+    call packager#add('hrsh7th/cmp-path')
+    call packager#add('hrsh7th/cmp-cmdline')
+    call packager#add('hrsh7th/nvim-cmp')
+
+    call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
+
     call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
     " ~/.vim/after/plugin/nvim-colorizer.vim - options, mappings
     " " ~/.vim/lua/nvim-colorizer.lua - options, mappings
     call packager#add('folke/tokyonight.nvim')
     call packager#add('rebelot/kanagawa.nvim')
+  else
+    " use vim-lsp for Vim
+    call packager#add('prabirshrestha/vim-lsp')
+      " ~/.vim/after/plugin/lsp.vim - options, mappings
   endif
 endfunction
 

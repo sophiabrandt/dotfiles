@@ -110,8 +110,12 @@ nnoremap <Leader>bq :<C-u>bp<bar>bd! #<CR>
 nnoremap <Leader>bd :<C-u>up<bar>%bd<bar>e#<CR>
 " easily move to config files
 nnoremap <Leader>vr :<c-u>e $HOME/.vimrc<cr>
-nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<cr>
-nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<cr>
+nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<CR>
+nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<CR>
+
+" get current directory
+nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
+
 
 "-----------------------------
 " center navigation mappings
