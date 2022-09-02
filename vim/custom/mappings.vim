@@ -114,7 +114,9 @@ nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<CR>
 nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<CR>
 
 " get current directory
-nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
+nnoremap <Leader>cd :lcd %:p:h<CR>:pwd<CR>
+" Open files located in the same dir in with the current file is edited
+nnoremap <Leader>ew :e <C-R>=expand("%:.:h") . "/"<CR>
 
 
 "-----------------------------
