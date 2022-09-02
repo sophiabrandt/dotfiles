@@ -94,8 +94,6 @@ function! PackagerInit() abort
     call packager#add('neovim/nvim-lspconfig')
     call packager#add('hrsh7th/cmp-nvim-lsp')
     call packager#add('hrsh7th/cmp-buffer')
-    call packager#add('hrsh7th/cmp-path')
-    call packager#add('hrsh7th/cmp-cmdline')
     call packager#add('hrsh7th/nvim-cmp')
 
     call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})

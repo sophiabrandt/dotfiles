@@ -53,7 +53,6 @@ cmp.setup.filetype({ "dart", "html", "javascript", "typescript", "go", "rust" },
     end,
   },
   sources = {
-    { name = "path" },
     { name = "nvim_lsp", keyword_length = 3, max_item_count = 10 },
     { name = "vsnip", keyword_length = 3, max_item_count = 5 },
     { name = "buffer", keyword_length = 4, max_item_count = 10 },
