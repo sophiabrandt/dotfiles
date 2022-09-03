@@ -57,7 +57,7 @@ nvim_lsp.html.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,
   cmd = { "vscode-html-language-server", "--stdio" },
-  filetypes = { "eruby", "html" },
+  filetypes = { "html" },
   flags = { debounce_text_changes = 300 },
 })
 
@@ -74,14 +74,6 @@ nvim_lsp.rust_analyzer.setup({
       },
     },
   },
-})
-
-nvim_lsp.solargraph.setup({
-  on_attach = lsp_on_attach,
-  capabilities = capabilities,
-  flags = { debounce_text_changes = 300 },
-  single_file_support = true, -- Allow LSP to work in standalone Ruby scripts
-  settings = { solargraph = { diagnostics = false } },
 })
 
 nvim_lsp.tsserver.setup({
