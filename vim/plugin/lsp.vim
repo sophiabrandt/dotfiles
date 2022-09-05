@@ -140,7 +140,7 @@ augroup LSC
                 \   },
                 \ })
 
-    if !has('nivm')
+    if !has('nvim')
         autocmd User lsp_server_init call <SID>setup_ls()
         autocmd BufEnter * call <SID>setup_ls()
     endif
