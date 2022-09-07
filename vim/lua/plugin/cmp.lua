@@ -17,6 +17,7 @@ cmp.setup.filetype({ "dart", "html", "javascript", "typescript", "go", "rust" },
     format = function(entry, item)
       item.menu = ({
         nvim_lsp = "[L]",
+        vim_lsp = "[V]",
         vsnip = "[S]",
         buffer = "[B]",
       })[entry.source.name]
