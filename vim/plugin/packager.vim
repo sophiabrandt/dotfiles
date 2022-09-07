@@ -71,6 +71,8 @@ function! PackagerInit() abort
   call packager#add('mattn/emmet-vim', { 'type': 'opt' })
     " ~/.vim/after/plugin/emmet.vim - options, mappings
   call packager#add('nash0x7e2/awesome-flutter-snippets', { 'type': 'opt' })
+  call packager#add('prabirshrestha/vim-lsp')
+    " ~/.vim/after/plugin/lsp.vim - options, mappings
   call packager#add('sgur/vim-editorconfig')
   call packager#add('skywind3000/vim-dict')
     " ~/.vim/plugin/dict.vim - options, mappings
@@ -95,6 +97,8 @@ function! PackagerInit() abort
     call packager#add('hrsh7th/cmp-nvim-lsp')
     call packager#add('hrsh7th/cmp-buffer')
     call packager#add('hrsh7th/nvim-cmp')
+    call packager#add('hrsh7th/cmp-vsnip')
+    call packager#add('dmitmel/cmp-vim-lsp')
 
     call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
 
@@ -103,10 +107,6 @@ function! PackagerInit() abort
     " " ~/.vim/lua/nvim-colorizer.lua - options, mappings
     call packager#add('folke/tokyonight.nvim')
     call packager#add('rebelot/kanagawa.nvim')
-  else
-    " use vim-lsp for Vim
-    call packager#add('prabirshrestha/vim-lsp')
-      " ~/.vim/after/plugin/lsp.vim - options, mappings
   endif
 endfunction
 

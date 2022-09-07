@@ -140,10 +140,8 @@ augroup LSC
                 \   },
                 \ })
 
-    if !has('nvim')
-        autocmd User lsp_server_init call <SID>setup_ls()
-        autocmd BufEnter * call <SID>setup_ls()
-    endif
+    autocmd User lsp_server_init call <SID>setup_ls()
+    autocmd BufEnter * call <SID>setup_ls()
 augroup END
 
 let g:lsp_diagnostics_enabled                = 0
