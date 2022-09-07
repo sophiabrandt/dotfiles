@@ -9,45 +9,45 @@ func! s:setup_ls(...) abort
         endif
 
         if has_key(l:cap, 'hoverProvider')
-            setlocal keywordprg=:LspHover
+            nmap <silent><buffer><Leader>K <plug>(lsp-hover)
         endif
 
         if has_key(l:cap, 'referencesProvider')
-            nmap <silent><buffer>gn <plug>(lsp-next-reference)
-            nmap <silent><buffer>gp <plug>(lsp-previous-reference)
+            nmap <silent><buffer><Leader>gn <plug>(lsp-next-reference)
+            nmap <silent><buffer><Leader>gp <plug>(lsp-previous-reference)
         endif
 
         if has_key(l:cap, 'implementationProvider')
-            nmap <silent><buffer>gI <plug>(lsp-implementation)
+            nmap <silent><buffer><Leader>gI <plug>(lsp-implementation)
         endif
 
         if has_key(l:cap, 'codeActionProvider')
-            nmap <silent><buffer>ga <plug>(lsp-code-action)
+            nmap <silent><buffer><Leader>ga <plug>(lsp-code-action)
         endif
 
         if has_key(l:cap, 'definitionProvider')
-            nmap <silent><buffer>gd <plug>(lsp-definition)
-            nmap <silent><buffer>gk <plug>(lsp-peek-definition)
+            nmap <silent><buffer><Leader>gd <plug>(lsp-definition)
+            nmap <silent><buffer><Leader>gk <plug>(lsp-peek-definition)
         endif
 
         if has_key(l:cap, 'typeDefinitionProvider')
-            nmap <silent><buffer>gt <plug>(lsp-type-definition)
+            nmap <silent><buffer><Leader>gt <plug>(lsp-type-definition)
         endif
 
         if has_key(l:cap, 'signatureHelpProvider')
-            nmap <silent><buffer>gm <plug>(lsp-signature-help)
+            nmap <silent><buffer><Leader>gm <plug>(lsp-signature-help)
         endif
 
         if has_key(l:cap, 'documentSymbolProvider')
-            nmap <silent><buffer>go <plug>(lsp-document-symbol)
+            nmap <silent><buffer><Leader>go <plug>(lsp-document-symbol)
         endif
 
         if has_key(l:cap, 'renameProvider')
-            nmap <silent><buffer>gr <plug>(lsp-rename)
+            nmap <silent><buffer><Leader>gr <plug>(lsp-rename)
         endif
 
         if has_key(l:cap, 'workspaceSymbolProvider')
-            nmap <silent><buffer>gw <plug>(lsp-workspace-symbol)
+            nmap <silent><buffer><Leader>gw <plug>(lsp-workspace-symbol)
         endif
 
     endfor
