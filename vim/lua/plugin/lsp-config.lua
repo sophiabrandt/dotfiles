@@ -82,3 +82,11 @@ nvim_lsp.tsserver.setup({
   flags = { debounce_text_changes = 300 },
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 })
+
+nvim_lsp.gopls.setup({
+  on_attach = lsp_on_attach,
+  capabilities = capabilities,
+  flags = { debounce_text_changes = 300 },
+  filetypes = { "go" },
+  root_dir = nvim_lsp.util.root_pattern("go.mod"),
+})
