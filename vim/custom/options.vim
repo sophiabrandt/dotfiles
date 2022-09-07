@@ -8,7 +8,7 @@ endif
 set autoindent 
 set backspace=indent,eol,start
 set backupdir=~/.tmp
-set complete=.,w,b,u,k,t
+set complete=.,w,b,u,t
 set completeopt=menu,menuone,noinsert,noselect
 set directory=~/.tmp
 set foldcolumn=2

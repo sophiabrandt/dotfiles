@@ -12,7 +12,17 @@ local replace_termcodes = function(key)
   return vim.api.nvim_replace_termcodes(key, true, true, true)
 end
 
-cmp.setup.filetype({ "dart", "html", "javascript", "typescript", "go", "rust" }, {
+cmp.setup.filetype({
+  "dart",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact",
+  "go",
+  "rust"
+},
+{
   formatting = {
     format = function(entry, item)
       item.menu = ({
@@ -27,7 +37,7 @@ cmp.setup.filetype({ "dart", "html", "javascript", "typescript", "go", "rust" },
   mapping = {
     ["<C-e>"] = cmp.mapping.close(),
     ["<C-y>"] = cmp.mapping.confirm({ select = true }),
-    ["<Tab>"] = function(fallback)
+    ["<C-n>"] = function(fallback)
       if pumvisible() == 1 then
         feedkeys(replace_termcodes("<C-n>"), "n")
       elseif cmp.visible() then
@@ -36,7 +46,7 @@ cmp.setup.filetype({ "dart", "html", "javascript", "typescript", "go", "rust" },
         fallback()
       end
     end,
-    ["<S-Tab>"] = function(fallback)
+    ["<C-p>"] = function(fallback)
       if pumvisible() == 1 then
         feedkeys(replace_termcodes("<C-p>"), "n")
       elseif cmp.visible() then
