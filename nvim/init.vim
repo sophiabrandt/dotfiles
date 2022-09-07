@@ -4,4 +4,5 @@ source ~/.vimrc
 
 lua << EOF
 require("plugin.lsp-config")
+require("plugin.cmp")
 EOF
