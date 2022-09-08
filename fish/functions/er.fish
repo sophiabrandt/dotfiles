@@ -1,3 +1,3 @@
 function er
-nvim (rg -l $argv | fzy)
+$EDITOR (rg -l $argv | fzy)
 end
