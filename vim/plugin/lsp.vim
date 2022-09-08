@@ -61,11 +61,6 @@ augroup LSC
                 \ 'allowlist': ['cs']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'dart',
-                \ 'cmd': {_->[&shell, &shellcmdflag, 'dart $DART_SDK/bin/snapshots/analysis_server.dart.snapshot --lsp']},
-                \ 'allowlist': ['dart']
-                \})
-    autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'elixir-ls',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/elixir-ls/release/language_server.sh']},
                 \ 'allowlist': ['elixir', 'eelixir']
@@ -74,11 +69,6 @@ augroup LSC
                 \ 'name': 'fsharp-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, 'dotnet $HOME/.bin/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp3.0/FSharpLanguageServer.dll']},
                 \ 'allowlist': ['fsharp']
-                \})
-    autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'gopls',
-                \ 'cmd': {_->['gopls']},
-                \ 'allowlist': ['go']
                 \})
     autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'eclipse.jdt.ls',
@@ -101,11 +91,6 @@ augroup LSC
                 \ 'allowlist': ['java']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'typescript-language-server',
-                \ 'cmd': {_->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-                \ 'allowlist': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue']
-                \})
-    autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'nimble',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.nimble/bin/nimlsp']},
                 \ 'allowlist': ['nim', 'nimble']
@@ -125,20 +110,6 @@ augroup LSC
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/rls-linux/reason-language-server']},
                 \ 'allowlist': ['reason']
                 \})
-    autocmd User lsp_setup call lsp#register_server({
-                \   'name': 'Rust Language Server',
-                \   'cmd': {server_info->['rustup', 'run', 'nightly', 'rust-analyzer']},
-                \   'whitelist': ['rust'],
-                \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
-                \   'initialization_options': {
-                \     'cargo': {
-                \       'loadOutDirsFromCheck': v:true,
-                \     },
-                \     'procMacro': {
-                \       'enable': v:true,
-                \     },
-                \   },
-                \ })
 
     autocmd User lsp_server_init call <SID>setup_ls()
     autocmd BufEnter * call <SID>setup_ls()
