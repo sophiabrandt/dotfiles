@@ -18,6 +18,9 @@ mkdir -p .config/nvim
 ln -s ~/dotfiles/nvim/init.vim .config/nvim/init.vim
 
 mkdir -p .config/broot
-ln -s dotfiles/broot/conf.toml .config/broot/conf.toml
+ln -s ~/dotfiles/broot/conf.toml .config/broot/conf.toml
+
+mkdir -p .config/helix
+ln -s ~/dotfiles/helix/conf.toml .config/helix/conf.toml
 
 ln -s ~/dotfiles/bin ~/.bin
