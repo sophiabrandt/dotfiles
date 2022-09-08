@@ -34,7 +34,6 @@ function! PackagerInit() abort
     " ~/.vim/after/plugin/grepper.vim - options, mappings
   call packager#add('michaeljsmith/vim-indent-object')
   call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
-  call packager#add('skywind3000/vim-auto-popmenu', { 'type': 'opt' })
   call packager#add('tommcdo/vim-lion')
     " ~/.vim/after/plugin/lion.vim - options, mappings
   call packager#add('tpope/vim-commentary')
@@ -74,8 +73,6 @@ function! PackagerInit() abort
   call packager#add('prabirshrestha/vim-lsp')
     " ~/.vim/after/plugin/lsp.vim - options, mappings
   call packager#add('sgur/vim-editorconfig')
-  call packager#add('skywind3000/vim-dict')
-    " ~/.vim/plugin/dict.vim - options, mappings
   call packager#add('tpope/vim-fugitive')
 
   "-----------------------------
@@ -118,5 +115,5 @@ augroup packager_filetype
   autocmd FileType dart packadd vim-vsnip | if(has("nvim") packadd cmp-vsnip endif | packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType elixir,eelixir,lua,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip | if(has("nvim") packadd cmp-vsnip endif
-  autocmd FileType markdown,text packadd vim-vsnip | if(has("nvim") packadd cmp-vsnip endif | packadd  packadd vim-titlecase | packadd vim-auto-popmenu
+  autocmd FileType markdown,text packadd vim-vsnip | if(has("nvim") packadd cmp-vsnip endif | packadd  packadd vim-titlecase
 augroup END
