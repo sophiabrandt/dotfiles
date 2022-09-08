@@ -86,7 +86,7 @@ apply_to = "file"
 name = "view"
 invocation = "view"
 shortcut = "v"
-execution = "bat {file}"
+execution = "$PAGER {file}"
 leave_broot = false
 apply_to = "file"
 
