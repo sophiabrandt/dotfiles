@@ -89,4 +89,17 @@ nvim_lsp.gopls.setup({
   flags = { debounce_text_changes = 300 },
   filetypes = { "go" },
   root_dir = nvim_lsp.util.root_pattern("go.mod"),
+  settings = {
+    gopls = {
+      experimentalPostfixCompletions = true,
+      analyses = {
+        unusedparams = true,
+        shadow = true,
+      },
+      staticcheck = true,
+    },
+  },
+  init_options = {
+    usePlaceholders = true,
+  }
 })
