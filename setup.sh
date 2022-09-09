@@ -21,6 +21,7 @@ mkdir -p .config/broot
 ln -s ~/dotfiles/broot/conf.toml .config/broot/conf.toml
 
 mkdir -p .config/helix
-ln -s ~/dotfiles/helix/conf.toml .config/helix/conf.toml
+ln -s ~/dotfiles/helix/config.toml .config/helix/config.toml
+ln -s ~/dotfiles/helix/languages.toml .config/helix/languages.toml
 
-ln -s ~/dotfiles/bin ~/.bin
+ln -s ~/dotfiles/bin .bin

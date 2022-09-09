@@ -46,11 +46,32 @@ nvim_lsp.dartls.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,
   flags = { debounce_text_changes = 300 },
-  init_options = { closingLabels = true },
   handlers = {
     ["dart/textDocument/publishClosingLabels"] = dart_closing_labels.handler(),
   },
+  init_options = { closingLabels = true },
   root_dir = nvim_lsp.util.root_pattern("pubspec.yaml"),
+})
+
+nvim_lsp.gopls.setup({
+  on_attach = lsp_on_attach,
+  capabilities = capabilities,
+  filetypes = { "go" },
+  flags = { debounce_text_changes = 300 },
+  root_dir = nvim_lsp.util.root_pattern("go.mod"),
+  settings = {
+    gopls = {
+      experimentalPostfixCompletions = true,
+      analyses = {
+        unusedparams = true,
+        shadow = true,
+      },
+      staticcheck = true,
+    },
+  },
+  init_options = {
+    usePlaceholders = true,
+  }
 })
 
 nvim_lsp.html.setup({
@@ -59,6 +80,15 @@ nvim_lsp.html.setup({
   cmd = { "vscode-html-language-server", "--stdio" },
   filetypes = { "html" },
   flags = { debounce_text_changes = 300 },
+})
+
+nvim_lsp.marksman.setup({
+  on_attach = lsp_on_attach,
+  capabilities = capabilities,
+  cmd = { "marksman", "server" },
+  filetypes = { "markdown" },
+  flags = { debounce_text_changes = 300 },
+  root_dir = nvim_lsp.util.root_pattern(".git", "marksman.toml"),
 })
 
 nvim_lsp.rust_analyzer.setup({
@@ -81,25 +111,4 @@ nvim_lsp.tsserver.setup({
   capabilities = capabilities,
   flags = { debounce_text_changes = 300 },
   root_dir = nvim_lsp.util.root_pattern("package.json"),
-})
-
-nvim_lsp.gopls.setup({
-  on_attach = lsp_on_attach,
-  capabilities = capabilities,
-  flags = { debounce_text_changes = 300 },
-  filetypes = { "go" },
-  root_dir = nvim_lsp.util.root_pattern("go.mod"),
-  settings = {
-    gopls = {
-      experimentalPostfixCompletions = true,
-      analyses = {
-        unusedparams = true,
-        shadow = true,
-      },
-      staticcheck = true,
-    },
-  },
-  init_options = {
-    usePlaceholders = true,
-  }
 })
