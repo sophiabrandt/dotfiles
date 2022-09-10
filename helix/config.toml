@@ -1,4 +1,4 @@
-theme = "hord"
+theme = "nord"
 
 [editor.cursor-shape]
 insert = "bar"
