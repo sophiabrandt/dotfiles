@@ -8,7 +8,7 @@ select = "underline"
 [editor.statusline]
 left = ["mode", "diagnostics"]
 center = ["file-name"]
-right = ["selections", "position", "file-encoding", "file-type"]
+right = ["selections", "file-type", "file-encoding", "position-percentage", "position"]
 
 [keys.normal]
 g = { a = "code_action", o = "goto_last_accessed_file" }
