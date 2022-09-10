@@ -4,3 +4,8 @@ theme = "hord"
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.statusline]
+left = ["mode", "diagnostics"]
+center = ["file-name"]
+right = ["selections", "position", "file-encoding", "file-type"]
