@@ -7,6 +7,7 @@ local nvim_lsp = require("lspconfig")
 local lsp_capabilities = require("util.lsp-capabilities")
 local handlers = require("util.lsp-handlers")
 local dart_closing_labels = require("util.dart-closing-labels")
+local diagnostic = vim.diagnostic
 local lsp = vim.lsp
 local map = vim.keymap.set
 
@@ -21,6 +22,10 @@ local lsp_on_attach = function(client)
   map("n", "K", lsp.buf.hover, opts)
   map("n", "gr", lsp.buf.references, opts)
   map("n", "gR", lsp.buf.rename, opts)
+  map("n", "[d", diagnostic.goto_prev, opts)
+  map("n", "]d", diagnostic.goto_next, opts)
+  map("n", "<Space>e", diagnostic.open_float, opts)
+  map("n", "<Space>q", diagnostic.setloclist, opts)
   map("i", "<C-k>", lsp.buf.signature_help, opts)
 
   -- Formatting is conditional on server capabilities.
