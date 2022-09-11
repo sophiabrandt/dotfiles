@@ -90,10 +90,13 @@ function! PackagerInit() abort
   " neovim plugins
   "-----------------------------
   if has("nvim")
+    " language server
     call packager#add('neovim/nvim-lspconfig')
+
+    " autocompletion
+    call packager#add('hrsh7th/nvim-cmp')
     call packager#add('hrsh7th/cmp-nvim-lsp')
     call packager#add('hrsh7th/cmp-buffer')
-    call packager#add('hrsh7th/nvim-cmp')
     call packager#add('hrsh7th/cmp-vsnip', { 'type': 'opt' })
     call packager#add('dmitmel/cmp-vim-lsp')
 
@@ -101,7 +104,9 @@ function! PackagerInit() abort
 
     call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
     " ~/.vim/after/plugin/nvim-colorizer.vim - options, mappings
-    " " ~/.vim/lua/nvim-colorizer.lua - options, mappings
+    " " ~/.vim/lua/colorizer.lua - options, mappings
+
+    " neovim-only themes
     call packager#add('folke/tokyonight.nvim')
     call packager#add('rebelot/kanagawa.nvim')
   endif
