@@ -1,8 +1,18 @@
 [[language]]
-name = "markdown"
-scope = "source.md"
-injection-regex = "md|markdown"
-file-types = ["md"]
-roots = [".marksman.toml"]
-language-server = { command = "marksman", args=["server"] }
+file-types = ["md", "txt"]
 indent = { tab-width = 2, unit = "  " }
+injection-regex = "md|markdown"
+language-server = { command = "ltex-ls" }
+name = "markdown"
+roots = [".git"]
+scope = "source.md"
+
+# [[language]]
+# file-types = ["md"]
+# indent = { tab-width = 2, unit = "  " }
+# injection-regex = "md|markdown"
+# language-server = { command = "marksman", args=["server"] }
+# name = "markdown"
+# roots = [".marksman.toml"]
+# scope = "source.md"
+
