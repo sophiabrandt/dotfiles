@@ -143,8 +143,8 @@ nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <C-r> :action RecentFiles<CR>
 nnoremap ,l :action RecentLocations<CR>
 nnoremap ,h  :action LocalHistory.ShowHistory<CR>
-nnoremap ]r :action GotoNextError<CR>
-nnoremap [r :action GotoPreviousError<CR>
+nnoremap ]d :action GotoNextError<CR>
+nnoremap [d :action GotoPreviousError<CR>
 nnoremap ge :action ShowErrorDescription<CR>
 """ Searching and Source Code Navigation -------------------
 nnoremap <C-/> :action FindInPath<CR>
