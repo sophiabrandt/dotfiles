@@ -5,7 +5,7 @@
 ## OS
 
 - Manjaro Linux (Arch-derived distro), [i3 Community edition](https://manjaro.org/downloads/community/i3/)
-- MacOS M1
+- macOS M1
 
 ## Terminal
 
@@ -26,9 +26,9 @@ _Note_: the [VIM config](vimrc) organization and setup is heavily inspired by [b
 
 ## How to Install
 
-I use [Gnu Stow][stow] to symlink my files.
+I use [GNU Stow][stow] to symlink my files.
 
-On MacOs, install via Homebrew: `brew install stow`
+On macOS, install via Homebrew: `brew install stow`
 
 After that, I run the setup script:
 
