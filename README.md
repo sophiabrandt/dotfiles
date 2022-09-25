@@ -24,5 +24,18 @@ _Note_: the [VIM config](vimrc) organization and setup is heavily inspired by [b
 - color scheme: [Nord][nord]
 - font: [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
 
+## How to Install
+
+I use [Gnu Stow][stow] to symlink my files.
+
+On MacOs, install via Homebrew: `brew install stow`
+
+After that, I run the setup script:
+
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
 [nord]: https://www.nordtheme.com/
-[falcon]: https://github.com/fenetikm/falcon
+[stow]: https://www.gnu.org/software/stow/

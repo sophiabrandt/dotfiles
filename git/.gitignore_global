@@ -8,3 +8,7 @@ tags*
 # https://hofmannsven.com/2019/commit-message-driven-development
 COMMIT_MSG
 CDD_COMMIT_MSG
+
+# misc
+.idea
+.DS_Store

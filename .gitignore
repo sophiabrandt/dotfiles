@@ -2,15 +2,15 @@
 tags*
 
 # nvim
-vim/pack
-vim/spell
-vim/.netrwhist
+vim/.vim/pack
+vim/.vim/spell
+vim/.vim/.netrwhist
 
 # .bin
-bin/
-!!bin/readme_template_downloader
-!!bin/readme_template_downloader.nim
-!!bin/tat
-!!bin/tm
-!!bin/ytwtch.sh
-!!bin/yt.sh
+bin/.bin/
+!!bin/.bin/readme_template_downloader
+!!bin/.bin/readme_template_downloader.nim
+!!bin/.bin/tat
+!!bin/.bin/tm
+!!bin/.bin/ytwtch.sh
+!!bin/.bin/yt.sh
