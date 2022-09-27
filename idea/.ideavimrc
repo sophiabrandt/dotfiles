@@ -93,6 +93,7 @@ nnoremap <s-TAB> :action NextTab<CR>
 nnoremap <leader>en :action EditSourceInNewWindow<CR>
 nnoremap <leader>n :action NextWindow<CR>
 map <leader>x :action CloseContent<CR>
+map <leader>X :action ReopenClosedTab<CR>
 map <leader>qa :action CloseAllEditors<CR>
 """ Editing source code -------------------
 " make dot work on visual line selections.
