@@ -11,11 +11,11 @@ case "$-" in *i*) if [ -r ~/.bashrc ]; then . ~/.bashrc; fi;; esac
 # disable interpreting <ctrl+s> as signal for stopping terminal updates
 stty -ixon
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # add keychain only on Linux
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
