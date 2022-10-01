@@ -35,7 +35,8 @@
 [branch]
   autosetupmerge = true
 [push]
-  default = tracking
+  default = current
+  autoSetupRemote = true
 [rerere]
   enabled = true
 # set "nvim" as tool for merging
