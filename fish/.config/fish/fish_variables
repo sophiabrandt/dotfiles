@@ -14,6 +14,7 @@ SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_PICKER:fzy
 SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/projects/go/workspace
+SETUVAR --export HOMEBREW_NO_ENV_HINTS:true
 SETUVAR --export PAGER:most
 SETUVAR --export THEFUCK_OVERRIDDEN_ALIASES:gsed\x2cgit
 SETUVAR --export TMUX_THEME:nord
@@ -51,15 +52,14 @@ SETUVAR _fish_abbr_gcdd:git\x20cdd
 SETUVAR _fish_abbr_gcf:git\x20cdd\x20fire
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_gcr:git\x20cdd\x20forget
 SETUVAR _fish_abbr_gcs:git\x20cdd\x20status
 SETUVAR _fish_abbr_gd:git\x20pull
 SETUVAR _fish_abbr_gdf:git\x20df
 SETUVAR _fish_abbr_gdif:git\x20diff
 SETUVAR _fish_abbr_gdoc:git\x20doc
-SETUVAR _fish_abbr_gfi:git\x20cdd\x20fire
 SETUVAR _fish_abbr_gfix:git\x20fix
 SETUVAR _fish_abbr_gfom:git\x20fetch\x20origin\x20master
-SETUVAR _fish_abbr_gfor:git\x20cdd\x20forget
 SETUVAR _fish_abbr_gft:git\x20fetch
 SETUVAR _fish_abbr_gfu:git\x20fetch\x20upstream
 SETUVAR _fish_abbr_gim:git\x20imp
