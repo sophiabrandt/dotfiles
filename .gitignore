@@ -5,12 +5,15 @@ tags*
 vim/.vim/pack
 vim/.vim/spell
 vim/.vim/.netrwhist
+vim/.vim/view
 
-# .bin
-bin/.bin/
-!!bin/.bin/readme_template_downloader
-!!bin/.bin/readme_template_downloader.nim
-!!bin/.bin/tat
-!!bin/.bin/tm
-!!bin/.bin/ytwtch.sh
-!!bin/.bin/yt.sh
+# bin
+bin/.bin/*
+!bin/.bin/$
+!bin/.bin/git-rename.sh
+!bin/.bin/readme_template_downloader.nim
+!bin/.bin/tat
+!bin/.bin/tm
+!bin/.bin/yt.sh
+!bin/.bin/ytwtch.sh
+
