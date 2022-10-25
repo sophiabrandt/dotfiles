@@ -34,6 +34,7 @@ SETUVAR _fish_abbr_cn:colima\x20nerdctl
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_dm:docker\x2dmachine
+SETUVAR _fish_abbr_dv:devbox
 SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
 SETUVAR _fish_abbr_g:git
