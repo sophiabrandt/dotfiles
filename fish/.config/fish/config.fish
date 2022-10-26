@@ -8,3 +8,6 @@ source ~/.asdf/asdf.fish
 
 # zoxide
 zoxide init fish | source
+
+# tmux-sessionizer
+bind \cf tmux-sessionizer

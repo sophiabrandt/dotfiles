@@ -7,7 +7,9 @@
 # disable interpreting <ctrl+s> as signal for stopping terminal updates
 stty -ixon
 
-alias f="exec fish"
+alias ef="exec fish"
+
+bind '"\C-f":"tmux-sessionizer\n"'
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"

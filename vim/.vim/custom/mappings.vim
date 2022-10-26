@@ -43,6 +43,10 @@ endif
 " open/close Loclist and quickfix window
 nnoremap <LocalLeader>q :call quickfix#Toggle()<CR>
 nnoremap <LocalLeader>l :call loclist#Toggle()<CR>
+" make current file executable
+nnoremap <Leader>x :!chmod +x %<CR>
+" use tmux-sessionizer script
+nnoremap <silent><C-f> :silent !tmux neww tmux-sessionizer<CR>
 
 
 "-----------------------------
