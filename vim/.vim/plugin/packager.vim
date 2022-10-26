@@ -22,7 +22,7 @@ function! PackagerInit() abort
   "-----------------------------
   " behaviour plugins
   "-----------------------------
-  call packager#add('bronson/vim-visual-star-search')
+  call packager#add('nelstrom/vim-visual-star-search')
   call packager#add('chaoren/vim-wordmotion')
     " ~/.vim/plugin/after/wordmotion.vim - options, mappings
   call packager#add('easymotion/vim-easymotion')
