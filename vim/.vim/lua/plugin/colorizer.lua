@@ -5,6 +5,7 @@ require 'colorizer'.setup ({
   'javascriptreact';
   'json';
   'markdown';
+  'python',
   'scss';
   'typescript';
   'typescriptreact';

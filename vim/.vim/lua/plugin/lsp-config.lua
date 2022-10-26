@@ -105,6 +105,15 @@ nvim_lsp.marksman.setup({
   root_dir = nvim_lsp.util.root_pattern(".git", "marksman.toml"),
 })
 
+nvim_lsp.pylsp.setup({
+  on_attach = lsp_on_attach,
+  capabilities = capabilities,
+  cmd = { "pylsp"},
+  filetypes = { "python" },
+  flags = { debounce_text_changes = 300 },
+  root_dir = nvim_lsp.util.root_pattern(".git"),
+})
+
 nvim_lsp.rust_analyzer.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,
