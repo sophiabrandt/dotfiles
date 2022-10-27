@@ -101,11 +101,6 @@ augroup LSC
                 \ 'allowlist': ['ocaml']
                 \})
     autocmd User lsp_setup call lsp#register_server({
-                \ 'name': 'pyls',
-                \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.local/bin/pyls']},
-                \ 'allowlist': ['python']
-                \})
-    autocmd User lsp_setup call lsp#register_server({
                 \ 'name': 'reason-language-server',
                 \ 'cmd': {_->[&shell, &shellcmdflag, '$HOME/.bin/rls-linux/reason-language-server']},
                 \ 'allowlist': ['reason']
