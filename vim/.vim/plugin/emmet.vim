@@ -10,4 +10,6 @@ let g:user_emmet_settings={
 \    },
 \}
 
+" https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
+" type <C-z>,
 let g:user_emmet_leader_key='<C-z>'
