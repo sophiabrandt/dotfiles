@@ -3,6 +3,8 @@ let &packpath = &runtimepath
 source ~/.vimrc
 
 lua << EOF
-require("plugin.lsp-config")
+require("plugin.autopairs")
 require("plugin.cmp")
+require("plugin.lsp-config")
+require("plugin.null-ls")
 EOF

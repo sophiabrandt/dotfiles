@@ -33,7 +33,6 @@ function! PackagerInit() abort
   call packager#add('mhinz/vim-grepper')
     " ~/.vim/after/plugin/grepper.vim - options, mappings
   call packager#add('michaeljsmith/vim-indent-object')
-  call packager#add('tmsvg/pear-tree', { 'type': 'opt' })
   call packager#add('tommcdo/vim-lion')
     " ~/.vim/after/plugin/lion.vim - options, mappings
   call packager#add('tpope/vim-commentary')
@@ -55,9 +54,6 @@ function! PackagerInit() abort
   "-----------------------------
   " development plugins
   "-----------------------------
-  call packager#add('dense-analysis/ale')
-    " ~/.vim/plugin/ale.vim - (startup) options
-    " ~/.vim/after/plugin/ale.vim - options, mappings
   call packager#add('airblade/vim-gitgutter')
     " ~/.vim/after/plugin/gitgutter.vim - options, mappings
   call packager#add('Alexisvt/flutter-snippets', { 'type': 'opt' })
@@ -102,6 +98,12 @@ function! PackagerInit() abort
 
     call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
 
+    call packager#add('jose-elias-alvarez/null-ls.nvim')
+    call packager#add('nvim-lua/plenary.nvim')
+    call packager#add('ThePrimeagen/refactoring.nvim')
+
+    call packager#add("windwp/nvim-autopairs")
+
     call packager#add('norcalli/nvim-colorizer.lua', {'type': 'opt'})
     " ~/.vim/after/plugin/nvim-colorizer.vim - options, mappings
     " " ~/.vim/lua/colorizer.lua - options, mappings
@@ -116,7 +118,6 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
-  autocmd FileType cs,dart,fsharp,go,html,java,javascript,javascriptreact,json,markdown,perl,python,rust,typescript,typescriptreact packadd pear-tree
   autocmd FileType dart packadd vim-vsnip | :if has("nvim") | packadd cmp-vsnip | :endif | packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType elixir,eelixir,lua,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
   autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip | :if has("nvim")| packadd cmp-vsnip | :endif

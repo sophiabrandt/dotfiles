@@ -24,8 +24,8 @@ local lsp_on_attach = function(client)
   map("n", "gR", lsp.buf.rename, opts)
   map("n", "[d", diagnostic.goto_prev, opts)
   map("n", "]d", diagnostic.goto_next, opts)
-  map("n", "<Space>e", diagnostic.open_float, opts)
-  map("n", "<Space>q", diagnostic.setloclist, opts)
+  map("n", "ge", diagnostic.open_float, opts)
+  map("n", "gq", diagnostic.setloclist, opts)
   map("i", "<C-k>", lsp.buf.signature_help, opts)
 
   -- Formatting is conditional on server capabilities.
@@ -35,6 +35,15 @@ local lsp_on_attach = function(client)
   if client.server_capabilities.document_range_formatting then
     map("x", "'f", lsp.buf.range_formatting, opts)
   end
+end
+
+-- Custom on attach function which also disables formatting where null-ls will
+-- be used to format.
+local lsp_on_attach_no_formatting = function(client)
+  client.server_capabilities.document_formatting = false
+  client.server_capabilities.document_range_formatting = false
+
+  lsp_on_attach(client)
 end
 
 -- Global handlers.
@@ -48,7 +57,7 @@ capabilities = lsp_capabilities.update_capabilities(capabilities)
 
 -- The Language Servers.
 nvim_lsp.dartls.setup({
-  on_attach = lsp_on_attach,
+  on_attach = lsp_on_attach_no_formatting,
   capabilities = capabilities,
   flags = { debounce_text_changes = 300 },
   handlers = {
@@ -59,7 +68,7 @@ nvim_lsp.dartls.setup({
 })
 
 nvim_lsp.gopls.setup({
-  on_attach = lsp_on_attach,
+  on_attach = lsp_on_attach_no_formatting,
   capabilities = capabilities,
   filetypes = { "go" },
   flags = { debounce_text_changes = 300 },
@@ -115,7 +124,7 @@ nvim_lsp.pylsp.setup({
 })
 
 nvim_lsp.rust_analyzer.setup({
-  on_attach = lsp_on_attach,
+  on_attach = lsp_on_attach_no_formatting,
   capabilities = capabilities,
   flags = { debounce_text_changes = 300 },
   root_dir = nvim_lsp.util.root_pattern("Cargo.toml"),
@@ -130,7 +139,7 @@ nvim_lsp.rust_analyzer.setup({
 })
 
 nvim_lsp.tsserver.setup({
-  on_attach = lsp_on_attach,
+  on_attach = lsp_on_attach_no_formatting,
   capabilities = capabilities,
   flags = { debounce_text_changes = 300 },
   root_dir = nvim_lsp.util.root_pattern("package.json"),

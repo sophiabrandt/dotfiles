@@ -137,11 +137,11 @@ nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>c :action CommentByLineComment<CR>
 nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
-nnoremap <leader>f :action ReformatCode<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <C-r> :action RecentFiles<CR>
+nnoremap 'f :action ReformatCode<CR>
 nnoremap ,l :action RecentLocations<CR>
 nnoremap ,h  :action LocalHistory.ShowHistory<CR>
 nnoremap ]d :action GotoNextError<CR>
