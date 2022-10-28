@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Attach or create tmux session from predefined set of directories
+
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    selected="$(fd -t d --exact-depth 1 . $HOME $HOME/projects/personal $HOME/projects/work | fzy)"
+fi
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+session_name="$(basename "$selected" | tr . -)"
+
+not_in_tmux() {
+  [ -z "$TMUX" ]
+}
+
+session_exists() {
+  tmux has-session -t "=$session_name"
+}
+
+create_detached_session() {
+  (TMUX='' tmux new-session -Ad -s "$session_name" -c "$selected")
+}
+
+create_if_needed_and_attach() {
+  if not_in_tmux; then
+    tmux new-session -As "$session_name" -c "$selected"
+    exit 0
+  else
+    if ! session_exists; then
+      create_detached_session
+    fi
+    tmux switch-client -t "$session_name"
+  fi
+}
+
+create_if_needed_and_attach
