@@ -26,8 +26,8 @@ fi
 # Fish
 # drop into fish if parent process is NOT fish
 # invoke `bash` from fish with `bash` (sources `~/.bashrc`)
-shell=$(ps -p $PPID -o command | tail -n +2)
-if [[ $shell != "fish" && $shell != *"devbox"* && -z ${BASH_EXECUTION_STRING} ]]
+shellName=$(ps -p $PPID -o command | tail -n +2)
+if [[ $shellName != "fish" && $shellName != *"devbox"* && -z ${BASH_EXECUTION_STRING} ]]
 then
   exec fish
 fi
