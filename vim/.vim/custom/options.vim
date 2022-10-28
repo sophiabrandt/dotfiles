@@ -112,12 +112,16 @@ set spellfile=~/.vim/spell/en.utf-8.add
 " nvim specific settings
 if has('nvim')
   set inccommand=nosplit
-  let g:ruby_host_prog    = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
-  let g:node_host_prog    = '~/.npmbin/bin/neovim-node-host'
+  let g:ruby_host_prog    = '/usr/bin/ruby'
+  let g:node_host_prog    = '$HOME/.volta/bin/neovim-node-host'
   if executable('volta')
 	  let g:node_host_prog = trim(system("volta which neovim-node-host"))
   endif
-  let g:python3_host_prog = '/usr/bin/python3'
+  if has('mac')
+    let g:python3_host_prog = '/opt/homebrew/bin/python'
+  else
+    let g:python3_host_prog = '/usr/bin/python3'
+  endif
 endif
 
 "===========================================================
