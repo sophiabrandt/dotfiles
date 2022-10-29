@@ -83,7 +83,8 @@ nnoremap <Leader>z zazz
 nnoremap <Leader>vs:<c-u>source $MYVIMRC<cr>
 " insert result of external command
 inoremap <C-R>! <C-R>=extCmd#InsertResult()<CR>
-
+" close quickfix and loclist
+nnoremap <LocalLeader>c :cclose<CR>:lclose<CR>
 
 "-----------------------------
 " navigation mappings
