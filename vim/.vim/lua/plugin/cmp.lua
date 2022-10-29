@@ -68,7 +68,7 @@ cmp.setup.filetype({
       else
         fallback()
       end
-    end, {"i","s","c",}),
+    end, {"i","s"}),
     ["<C-f>"] = cmp.mapping.scroll_docs(10),
     ["<C-b>"] = cmp.mapping.scroll_docs(-10),
   },
