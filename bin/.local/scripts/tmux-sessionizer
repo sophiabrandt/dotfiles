@@ -5,7 +5,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected="$(fd -t d --exact-depth 1 . $HOME $HOME/projects/personal $HOME/projects/work | fzy)"
+    selected="$(fd -t d --exact-depth 1 . $HOME $HOME/projects $HOME/projects/personal $HOME/projects/work | fzy)"
 fi
 
 if [[ -z $selected ]]; then
