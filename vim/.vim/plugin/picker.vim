@@ -9,3 +9,7 @@ nmap <Leader>b] <Plug>(PickerTag)
 nmap <Leader>bw <Plug>(PickerStag)
 nmap <Leader>bo <Plug>(PickerBufferTag)
 nmap <Leader>bh <Plug>(PickerHelp)
+
+" do not use Git to search files
+let g:picker_custom_find_executable = 'fd'
+let g:picker_custom_find_flags = '-H -E .git'
