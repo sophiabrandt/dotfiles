@@ -15,7 +15,7 @@ SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_PICKER:fzy
 SETUVAR --export --path GOPATH:/home/owlhoot/\x2ego\x1e/home/owlhoot/projects/go/workspace
 SETUVAR --export HOMEBREW_NO_ENV_HINTS:true
-SETUVAR --export PAGER:most
+SETUVAR --export PAGER:bat
 SETUVAR --export THEFUCK_OVERRIDDEN_ALIASES:gsed\x2cgit
 SETUVAR --export TMUX_THEME:nord
 SETUVAR --export UNCRUSTIFY_CONFIG:/home/owlhoot/\x2euncrustify\x2ecfg

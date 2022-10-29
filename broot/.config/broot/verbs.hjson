@@ -6,6 +6,22 @@
 {
 
     verbs: [
+          {
+              name: view
+              key: "enter"
+              execution: "$PAGER {file}"
+              apply_to: "file"
+              leave_broot: false
+          }
+
+          {
+              name: view
+              shortcut: "v"
+              invocation: "view"
+              execution: "$PAGER {file}"
+              apply_to: "file"
+              leave_broot: false
+          }
 
         # Example 1: launching `tail -n` on the selected file (leaving broot)
         # {
@@ -88,22 +104,22 @@
 
         # A popular set of shortcuts for going up and down:
         #
-        # {
-        #     key: ctrl-k
-        #     execution: ":line_up"
-        # }
-        # {
-        #     key: ctrl-j
-        #     execution: ":line_down"
-        # }
-        # {
-        #     key: ctrl-u
-        #     execution: ":page_up"
-        # }
-        # {
-        #     key: ctrl-d
-        #     execution: ":page_down"
-        # }
+          {
+              key: ctrl-k
+              execution: ":line_up"
+          }
+          {
+              key: ctrl-j
+              execution: ":line_down"
+          }
+          {
+              key: ctrl-u
+              execution: ":page_up"
+          }
+          {
+              key: ctrl-d
+              execution: ":page_down"
+          }
 
         # If you develop using git, you might like to often switch
         # to the git status filter:
