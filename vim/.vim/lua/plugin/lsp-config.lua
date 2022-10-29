@@ -30,10 +30,10 @@ local lsp_on_attach = function(client)
 
   -- Formatting is conditional on server capabilities.
   if client.server_capabilities.document_formatting then
-    map("n", "'f", lsp.buf.format, opts)
+    map("n", "<LocalLeader>f", lsp.buf.format, opts)
   end
   if client.server_capabilities.document_range_formatting then
-    map("x", "'f", lsp.buf.range_formatting, opts)
+    map("x", "<LocalLeader>f", lsp.buf.range_formatting, opts)
   end
 end
 

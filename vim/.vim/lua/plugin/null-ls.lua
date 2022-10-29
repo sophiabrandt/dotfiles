@@ -22,10 +22,10 @@ null_ls.setup({
     -- filetype is attached to a language server, or not, the following mapping
     -- will work for null-ls.
     local opts = { buffer = true }
-    map("n", "'f", function()
+    map("n", "<LocalLeader>f", function()
       vim.lsp.buf.format({ timeout_ms = 8000 })
     end, opts)
-    map("n", ",d", vim.diagnostic.setqflist, opts)
+    map("n", "<LocalLeader>d", vim.diagnostic.setqflist, opts)
     -- Disable null-ls attached 'omnifunc' since it causes problems for
     -- VimCompletesMe, especially Tab-completing in Lua files.
     vim.opt_local.omnifunc = ""
