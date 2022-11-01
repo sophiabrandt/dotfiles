@@ -56,6 +56,8 @@ nnoremap <silent><C-f> :silent !tmux neww tmux-sessionizer<CR>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null'<bar>edit!
 " prompt for external command and insert
 inoremap <C-r>! <-r>=ExternalCommandResult()<CR>
+" reselect pasted text
+nnoremap gp `[v`]
 " paste from X11 system clipboard
 nnoremap <silent><a-v> "*p
 inoremap <silent><a-v> :<C-u><C-r>*<CR>
