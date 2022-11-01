@@ -115,11 +115,8 @@ nnoremap ]c g,zz
 nnoremap <Leader>bq :<C-u>bp<bar>bd! #<CR>
 " close all buffers except current one
 nnoremap <Leader>bd :<C-u>up<bar>%bd<bar>e#<CR>
-" easily move to config files
-nnoremap <Leader>vr :<c-u>e $HOME/.vim/custom/options.vim<cr>
-nnoremap <Leader>vk :<c-u>e $HOME/.vim/custom/mappings.vim<CR>
-nnoremap <Leader>vi :<c-u>e $HOME/.vim/plugin/packager.vim<CR>
-
+" easily move to config
+nnoremap <Leader>vc :<c-u>e $HOME/.vimrc<cr>
 " get current directory
 nnoremap <Leader>cd :lcd %:p:h<CR>:pwd<CR>
 " Open files located in the same dir in with the current file is edited
