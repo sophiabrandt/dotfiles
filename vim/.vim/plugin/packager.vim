@@ -93,7 +93,7 @@ function! PackagerInit() abort
     call packager#add('hrsh7th/nvim-cmp')
     call packager#add('hrsh7th/cmp-nvim-lsp')
     call packager#add('hrsh7th/cmp-buffer')
-    call packager#add('hrsh7th/cmp-vsnip', { 'type': 'opt' })
+    call packager#add('hrsh7th/cmp-vsnip')
     call packager#add('dmitmel/cmp-vim-lsp')
 
     call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
