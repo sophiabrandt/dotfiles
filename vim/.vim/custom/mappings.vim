@@ -149,15 +149,15 @@ nnoremap <LocalLeader>= :wincmd =<CR>
 " completion mappings
 "-----------------------------
 "   ]     - 'tags' file completion
-"   t     - context aware omni completion (via 'omnifunc' setting)
-"   Space     - user defined completion (via 'completefunc' setting)
+"   Space - context aware omni completion (via 'omnifunc' setting)
+"   t     - user defined completion (via 'completefunc' setting)
 "   b     - keyword completion from the current buffer (<C-n><C-b> to extend)
 "   d     - dictionary completion (via 'dictionary' setting)
 "   f     - file path completion
 "   l     - line completion (repeat an existing line)
 inoremap <C-]>     <C-x><C-]>
-inoremap <C-t>     <C-x><C-o>
-inoremap <C-Space> <C-x><C-u>
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-t>     <C-x><C-u>
 inoremap <C-b>     <C-x><C-p>
 inoremap <C-d>     <C-x><C-k>
 inoremap <C-f>     <C-x><C-f>
