@@ -43,6 +43,10 @@ endif
 " open/close Loclist and quickfix window
 nnoremap <LocalLeader>q :call quickfix#Toggle()<CR>
 nnoremap <LocalLeader>l :call loclist#Toggle()<CR>
+" close quickfix and loclist
+nnoremap <LocalLeader>c :cclose<CR>:lclose<CR>
+" set spell
+nnoremap <LocalLeader>s :call spelling#Toggle()<CR>
 " make current file executable
 nnoremap <Leader>x :!chmod +x %<CR>
 " use tmux-sessionizer script
@@ -85,8 +89,7 @@ nnoremap <Leader>z zazz
 nnoremap <Leader>vs:<c-u>source $MYVIMRC<cr>
 " insert result of external command
 inoremap <C-R>! <C-R>=extCmd#InsertResult()<CR>
-" close quickfix and loclist
-nnoremap <LocalLeader>c :cclose<CR>:lclose<CR>
+
 
 "-----------------------------
 " navigation mappings
