@@ -117,6 +117,10 @@ nnoremap <Leader>bq :<C-u>bp<bar>bd! #<CR>
 nnoremap <Leader>bd :<C-u>up<bar>%bd<bar>e#<CR>
 " easily move to config
 nnoremap <Leader>vc :<c-u>e $HOME/.vimrc<cr>
+" get current directory
+nnoremap <Leader>cd :lcd %:p:h<CR>:pwd<CR>
+" Open files located in the same dir in with the current file is edited
+nnoremap <Leader>ed :e <C-R>=expand("%:.:h") . "/"<CR>
 
 
 "-----------------------------
