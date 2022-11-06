@@ -1,3 +1,3 @@
 function er
-$EDITOR (rg -l $argv | fzy)
+$EDITOR (rg -. -l $argv | fzy)
 end
