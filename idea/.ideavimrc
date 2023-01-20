@@ -156,7 +156,6 @@ nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <C-s> :action FileStructurePopup<CR>
 nnoremap <C-g> :action GotoSymbol<CR>
-nnoremap ga :action GotoClass<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gp :action GotoSuperMethod<CR>
