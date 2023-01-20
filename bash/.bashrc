@@ -22,6 +22,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
+export TUT_CONF="$HOME/.config/tut/config.ini"
 
 # add keychain only on Linux
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
