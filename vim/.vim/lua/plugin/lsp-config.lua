@@ -96,24 +96,6 @@ nvim_lsp.html.setup({
   flags = { debounce_text_changes = 300 },
 })
 
-nvim_lsp.ltex.setup({
-  on_attach = lsp_on_attach,
-  capabilities = capabilities,
-  cmd = { "ltex-ls" },
-  filetypes = { "markdown", "text" },
-  flags = { debounce_text_changes = 300 },
-  root_dir = nvim_lsp.util.root_pattern(".git"),
-})
-
-nvim_lsp.marksman.setup({
-  on_attach = lsp_on_attach,
-  capabilities = capabilities,
-  cmd = { "marksman", "server" },
-  filetypes = { "markdown" },
-  flags = { debounce_text_changes = 300 },
-  root_dir = nvim_lsp.util.root_pattern(".git", "marksman.toml"),
-})
-
 nvim_lsp.pylsp.setup({
   on_attach = lsp_on_attach,
   capabilities = capabilities,

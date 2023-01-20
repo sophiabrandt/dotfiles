@@ -41,7 +41,6 @@ null_ls.setup({
     null_ls.builtins.completion.tags,
 
     -- Builtin diagnostics.
-    null_ls.builtins.diagnostics.alex,
     null_ls.builtins.diagnostics.credo,
     null_ls.builtins.diagnostics.eslint.with({
       condition = function(utils)
@@ -54,7 +53,6 @@ null_ls.setup({
     null_ls.builtins.diagnostics.jsonlint,
     null_ls.builtins.diagnostics.revive,
     null_ls.builtins.diagnostics.staticcheck,
-    null_ls.builtins.diagnostics.write_good,
     null_ls.builtins.diagnostics.yamllint,
 
     -- Builtin formatters.

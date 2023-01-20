@@ -93,7 +93,6 @@ function! PackagerInit() abort
     call packager#add('hrsh7th/nvim-cmp')
     call packager#add('hrsh7th/cmp-nvim-lsp')
     call packager#add('hrsh7th/cmp-buffer')
-    call packager#add('hrsh7th/cmp-vsnip')
     call packager#add('dmitmel/cmp-vim-lsp')
 
     call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
@@ -118,8 +117,9 @@ endfunction
 augroup packager_filetype
   autocmd!
   autocmd FileType css,html,elixir,eelixir,tmpl packadd emmet-vim
-  autocmd FileType dart packadd vim-vsnip | :if has("nvim") | packadd cmp-vsnip | :endif | packadd awesome-flutter-snippets | packadd flutter-snippets
+  autocmd FileType dart packadd vim-vsnip packadd awesome-flutter-snippets | packadd flutter-snippets
   autocmd FileType elixir,eelixir,lua,ruby,chrystal,sh,zsh,vb,vbnet,asbvbs,vim,c,cpp,xdefaults,haskell,obj-c,make,verilog,matlab,htmldjango,htmljinja,jinja.html,snippets packadd vim-endwise
-  autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip | :if has("nvim")| packadd cmp-vsnip | :endif
-  autocmd FileType markdown,text packadd vim-vsnip | :if has("nvim") | packadd cmp-vsnip | :endif | packadd vim-titlecase
+  autocmd FileType javascript,javascriptreact,typescript,typescriptreact,vue,svelte packadd emmet-vim | packadd vim-js-file-import | packadd vim-vsnip
+  autocmd FileType markdown,text packadd vim-vsnip | packadd vim-titlecase
+  autocmd FileType rust packadd vim-vsnip
 augroup END

@@ -29,7 +29,6 @@ cmp.setup.filetype({
       item.menu = ({
         nvim_lsp = "[L]",
         vim_lsp = "[V]",
-        vsnip = "[S]",
         buffer = "[B]",
       })[entry.source.name]
       return item
@@ -72,15 +71,9 @@ cmp.setup.filetype({
     ["<C-f>"] = cmp.mapping.scroll_docs(10),
     ["<C-b>"] = cmp.mapping.scroll_docs(-10),
   },
-  snippet = {
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body)
-    end,
-  },
   sources = {
     { name = "nvim_lsp", keyword_length = 3, max_item_count = 10 },
     { name = "vim_lsp", keyword_length = 3, max_item_count = 10 },
-    { name = "vsnip", keyword_length = 3, max_item_count = 5 },
     { name = "buffer", keyword_length = 4, max_item_count = 10 },
   },
   window = {
