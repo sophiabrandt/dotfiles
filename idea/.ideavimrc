@@ -77,7 +77,7 @@ nnoremap ,t :NERDTreeClose<CR>
 nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
 """ Terminal -------------------
 nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+nnoremap <leader>i :action Terminal.OpenInTerminal<CR>
 """ Navigation -------------------
 nnoremap <C-\> :action SplitVertically<CR>
 nnoremap <C--> :action SplitHorizontally<CR>
@@ -134,17 +134,22 @@ nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>y :action ShowIntentionActions<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>c :action CommentByLineComment<CR>
-nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>r :action RefactoringMenu<CR>
+nnoremap <leader>t :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
+nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
 nnoremap <C-r> :action RecentFiles<CR>
 nnoremap ,f :action ReformatCode<CR>
+nnoremap ,p :action ReformatWithPrettierAction<CR>
 nnoremap ,l :action RecentLocations<CR>
 nnoremap ,h  :action LocalHistory.ShowHistory<CR>
+nnoremap ,a  :action Annotate<CR>
 nnoremap ]d :action GotoNextError<CR>
 nnoremap [d :action GotoPreviousError<CR>
 nnoremap ge :action ShowErrorDescription<CR>
