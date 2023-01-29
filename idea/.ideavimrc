@@ -46,7 +46,7 @@ nnoremap <space> <nop>
 
 """ Manage .ideavimrc ---------------
 nnoremap \e :e ~/.ideavimrc<CR>
-nnoremap \s :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap \v :action IdeaVim.ReloadVimRc.reload<CR>
 
 """ Insert mappings ------------------
 inoremap hsr =>
@@ -141,6 +141,8 @@ nnoremap <leader>c :action CommentByLineComment<CR>
 nnoremap <leader>r :action RefactoringMenu<CR>
 nnoremap <leader>t :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
+nnoremap <leader>f :action GotoFile<CR>
+nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>

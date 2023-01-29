@@ -78,7 +78,7 @@ noremap <Leader>p "yp
 noremap <Leader>P "yP
 " insert from the yank register.
 inoremap <C-y> <C-r>y
-nnoremap <Leader>u :<C-u>up<CR>
+nnoremap <Leader>s :<C-u>up<CR>
 " hashrocket
 inoremap hsr =>
 " normal rocket
