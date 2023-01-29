@@ -41,13 +41,13 @@ SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gadn:git\x20add\x20\x2e\x20\x26\x26\x20git\x20diff\x20\x2d\x2dcached
 SETUVAR _fish_abbr_gai:git\x20add\x20\x2di
 SETUVAR _fish_abbr_gaim:git\x20cdd\x20aim
-SETUVAR _fish_abbr_gam:git\x20cdd\x20amend
+SETUVAR _fish_abbr_gam:git\x20commit\x20\x2d\x2damend
 SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gapn:git\x20add\x20\x2d\x2dintent\x2dto\x2dadd\x20\x2e\x20\x26\x26\x20git\x20add\x20\x2d\x2dpatch
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gbrk:git\x20brk
 SETUVAR _fish_abbr_gc:git\x20commit
-SETUVAR _fish_abbr_gca:git\x20commit\x20\x2d\x2damend
+SETUVAR _fish_abbr_gca:git\x20cdd\x20amend
 SETUVAR _fish_abbr_gcdd:git\x20cdd
 SETUVAR _fish_abbr_gcf:git\x20cdd\x20fire
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
