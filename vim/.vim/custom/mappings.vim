@@ -48,10 +48,11 @@ nnoremap <LocalLeader>c :cclose<CR>:lclose<CR>
 " set spell
 nnoremap <LocalLeader>s :call spelling#Toggle()<CR>
 " make current file executable
-nnoremap <Leader>x :!chmod +x %<CR>
+nnoremap <LocalLeader>x :!chmod +x %<CR>
 " use tmux-sessionizer script
 nnoremap <silent><C-f> :silent !tmux neww tmux-sessionizer<CR>
-
+" save and quit
+nnoremap <Leader>x :silent :x<CR>
 
 "-----------------------------
 " helper mappings
