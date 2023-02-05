@@ -36,6 +36,7 @@ SETUVAR _fish_abbr_dm:docker\x2dmachine
 SETUVAR _fish_abbr_dv:devbox
 SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_ee:nvim\x20\x28fd\x20\x7c\x20fzy\x29
+SETUVAR _fish_abbr_ex:exit
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gadn:git\x20add\x20\x2e\x20\x26\x26\x20git\x20diff\x20\x2d\x2dcached
