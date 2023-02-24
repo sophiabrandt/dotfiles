@@ -70,7 +70,7 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 
-nnoremap ,t :NERDTreeToggle<CR>
+nnoremap ,t :NERDTree<CR>
 
 """ Distraction Free Mode -------------------
 nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
