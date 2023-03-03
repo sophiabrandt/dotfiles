@@ -164,13 +164,14 @@ nnoremap <leader>s :action GotoRelated<CR>
 nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <C-s> :action FileStructurePopup<CR>
-nnoremap <C-g> :action GotoSymbol<CR>
+nnoremap <C-m> :action GotoSymbol<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gp :action GotoSuperMethod<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
+nnoremap <C-S-g> :!echo % \| sed "s#${HOME}#~#"<CR>
 """ Tool windows -------------------
 nnoremap <C-p> :action JumpToLastWindow<CR>
 nnoremap <C-x> :action HideAllWindows<CR>
