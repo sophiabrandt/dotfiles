@@ -164,7 +164,7 @@ nnoremap <leader>s :action GotoRelated<CR>
 nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <C-s> :action FileStructurePopup<CR>
-nnoremap <C-m> :action GotoSymbol<CR>
+nnoremap <C-y> :action GotoSymbol<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gp :action GotoSuperMethod<CR>
