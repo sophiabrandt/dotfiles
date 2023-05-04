@@ -174,7 +174,7 @@ nnoremap gf :action Forward<CR>
 nnoremap <C-S-g> :!echo % \| sed "s#${HOME}#~#"<CR>
 """ Tool windows -------------------
 nnoremap <C-p> :action JumpToLastWindow<CR>
-nnoremap <C-x> :action HideAllWindows<CR>
+nnoremap <C-q> :action HideAllWindows<CR>
 """ Running and Debugging -------------------
 nnoremap \c :action ContextRun<CR>
 nnoremap \a :action RunClass<CR>
