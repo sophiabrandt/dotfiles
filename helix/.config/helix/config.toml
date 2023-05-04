@@ -15,6 +15,7 @@ g = { a = "code_action", o = "goto_last_accessed_file" }
 "ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to move to start of next line
 X = "extend_line_above"
 D = "delete_char_backward"
+"C-]" = { k = "normal_mode" }
 
 [keys.insert]
 C-space = "completion"
