@@ -78,6 +78,7 @@ SETUVAR _fish_abbr_grs:git\x20reset
 SETUVAR _fish_abbr_gst:git\x20status\x20\x2dsb
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gtst:git\x20tst
+SETUVAR _fish_abbr_h:hx
 SETUVAR _fish_abbr_hd:history\x20delete
 SETUVAR _fish_abbr_hr:history\x20merge
 SETUVAR _fish_abbr_hs:history\x20search
