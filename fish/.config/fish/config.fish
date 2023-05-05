@@ -6,6 +6,9 @@ source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 # zoxide
 zoxide init fish | source
 
+# starship
+starship init fish | source
+
 # tmux-sessionizer
 bind \cf tmux-sessionizer
 
