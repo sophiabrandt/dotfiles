@@ -23,17 +23,39 @@ export GOPATH="$HOME/.go"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
 export TUT_CONF="$HOME/.config/tut/config.ini"
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	source ~/.orbstack/shell/init.bash 2>/dev/null || :
+fi
 
 # add keychain only on Linux
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  eval $(keychain --eval --quiet --nogui --noask github gitlab)
+	eval $(keychain --eval --quiet --nogui --noask github gitlab)
 fi
 
-# Fish
-# drop into fish if parent process is NOT fish
-# invoke `bash` from fish with `bash` (sources `~/.bashrc`)
-shellName=$(ps -p $PPID -o command | tail -n +2)
-if [[ $shellName != "fish" && $shellName != *"devbox"* && -z ${BASH_EXECUTION_STRING} ]]
-then
-  exec fish
+# check if fish is installed
+if ! command -v fish &> /dev/null; then
+  echo "Fish shell is not installed."
+  return
 fi
+
+# check if the current shell is interactive
+if [[ $- != *i* ]]; then
+  return
+fi
+
+# get the name of the parent shell process
+parent_shell=$(ps -p $PPID -o comm=)
+
+# check if the parent shell is not fish or a subshell
+if [[ "$parent_shell" != "fish" ]] && [[ "$parent_shell" != "bash" ]] && [[ "$parent_shell" != "zsh" ]]; then
+  # check if the current shell is not fish or a subshell
+  if [[ "$0" != "fish" ]] && [[ "$0" != "-fish" ]] && [[ "$0" != "/usr/bin/fish" ]] && [[ "$0" != "/opt/homebrew/bin/fish" ]]; then
+    exec fish
+  fi
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
