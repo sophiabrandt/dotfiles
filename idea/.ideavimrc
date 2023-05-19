@@ -137,8 +137,8 @@ nnoremap <leader>y :action ShowIntentionActions<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>c :action CommentByLineComment<CR>
-nnoremap <leader>r :action RefactoringMenu<CR>
-nnoremap <leader>t :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>r :action RecentFiles<CR>
+nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
 nnoremap <leader>f :action ReformatCode<CR>
 nnoremap <leader>s :action SaveAll<CR>
@@ -147,8 +147,8 @@ nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
 nnoremap <leader>k :action QuickJavaDoc<CR>
 nnoremap <leader>q :action QuickTypeDefinition<CR>
-nnoremap ,r :action RecentFiles<CR>
-nnoremap ,f :action GotoFile<CR>
+nnoremap ,r :action RefactoringMenu<CR>
+nnoremap ,q :action Refactorings.QuickListPopupAction<CR>
 nnoremap ,p :action ReformatWithPrettierAction<CR>
 nnoremap ,l :action RecentLocations<CR>
 nnoremap ,h  :action LocalHistory.ShowHistory<CR>
