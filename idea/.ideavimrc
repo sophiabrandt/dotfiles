@@ -140,13 +140,13 @@ nnoremap <leader>c :action CommentByLineComment<CR>
 nnoremap <leader>r :action RecentFiles<CR>
 nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
-nnoremap <leader>f :action ReformatCode<CR>
 nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
 nnoremap <leader>k :action QuickJavaDoc<CR>
 nnoremap <leader>q :action QuickTypeDefinition<CR>
+nnoremap ,f :action ReformatCode<CR>
 nnoremap ,r :action RefactoringMenu<CR>
 nnoremap ,q :action Refactorings.QuickListPopupAction<CR>
 nnoremap ,p :action ReformatWithPrettierAction<CR>
