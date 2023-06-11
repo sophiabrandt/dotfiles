@@ -16,6 +16,7 @@
   mnemonicprefix = true
   tool = vimdiff
   prompt = false
+  external = difft
 [delta]
   features = side-by-side line-numbers decorations
   whitespace-error-style = 22 reverse
