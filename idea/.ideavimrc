@@ -139,6 +139,7 @@ nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>c :action CommentByLineComment<CR>
 nnoremap <leader>r :action RecentFiles<CR>
 nnoremap <leader>f :action GotoFile<CR>
+nnoremap <leader>g :action Generate<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
 nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
