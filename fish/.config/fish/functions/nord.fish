@@ -1,4 +1,4 @@
 function nord
-	kitty @ set-colors -a -c ~/.config/kitty/themes/nord.conf
+	kitty +kitten themes --reload-in=all Nord
 	echo 'colorscheme nord' > ~/.vim/custom/colorscheme.vim
 end

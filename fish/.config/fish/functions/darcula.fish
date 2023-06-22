@@ -1,4 +1,4 @@
 function darcula
-	kitty @ set-colors -a -c ~/.config/kitty/themes/darcula.conf
+	kitty +kitten themes --reload-in=all darcula
 	echo 'colorscheme darcula' > ~/.vim/custom/colorscheme.vim
 end

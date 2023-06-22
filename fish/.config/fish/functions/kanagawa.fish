@@ -1,4 +1,4 @@
 function kanagawa
-	kitty @ set-colors -a -c ~/.config/kitty/themes/kanagawa.conf
+	kitty +kitten themes --reload-in=all Kanagawa
 	echo 'colorscheme kanagawa' > ~/.vim/custom/colorscheme.vim
 end
