@@ -1,14 +1,33 @@
-theme = "nord"
+		theme = "nord"
+
+[editor]
+scroll-lines = 1
+cursorline = true
+auto-save = false
+completion-trigger-len = 1
+true-color = true
+color-modes = true
+auto-pairs = true
+rulers = [120]
+idle-timeout = 50
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
 [editor.statusline]
-left = ["mode", "diagnostics"]
-center = ["file-name"]
-right = ["selections", "file-type", "file-encoding", "position-percentage", "position"]
+left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
+center = []
+right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
 
 [keys.normal]
 g = { a = "code_action", o = "goto_last_accessed_file" }
