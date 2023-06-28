@@ -150,6 +150,8 @@ nnoremap <leader>q :action QuickTypeDefinition<CR>
 nnoremap ,f :action ReformatCode<CR>
 nnoremap ,r :action RefactoringMenu<CR>
 nnoremap ,q :action Refactorings.QuickListPopupAction<CR>
+vnoremap ,r :action RefactoringMenu<CR>
+vnoremap ,q :action Refactorings.QuickListPopupAction<CR>
 nnoremap ,p :action ReformatWithPrettierAction<CR>
 nnoremap ,l :action RecentLocations<CR>
 nnoremap ,h  :action LocalHistory.ShowHistory<CR>
