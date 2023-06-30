@@ -1,6 +1,7 @@
 theme = "nord"
 
 [editor]
+mouse = false
 scroll-lines = 1
 cursorline = true
 auto-save = false
@@ -34,10 +35,12 @@ g = { a = "code_action", o = "goto_last_accessed_file" }
 "ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to move to start of next line
 X = "extend_line_above"
 D = "delete_char_backward"
-"C-]" = { k = "normal_mode" }
+esc = ["collapse_selection", "keep_primary_selection"]
+space = { x = ":x" }
 
 [keys.insert]
 C-space = "completion"
+"C-[" = "normal_mode"
 # Move cursor in insert mode
 A-h = "move_char_left"
 A-j = "move_line_down"
