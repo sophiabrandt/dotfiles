@@ -21,6 +21,6 @@ map ctrl+shift+' set_tab_title
 
 
 # BEGIN_KITTY_THEME
-# Nord
+# Tokyo Night
 include current-theme.conf
 # END_KITTY_THEME
