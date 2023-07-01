@@ -31,12 +31,20 @@ center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
 
 [keys.normal]
-g = { a = "code_action", o = "goto_last_accessed_file" }
 "ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to move to start of next line
 X = "extend_line_above"
 D = "delete_char_backward"
 esc = ["collapse_selection", "keep_primary_selection"]
-space = { x = ":x" }
+
+[keys.normal.g]
+a = "code_action"
+o = "goto_last_accessed_file"
+q = ":reflow"
+
+[keys.normal.space]
+x = ":x"
+w = ":w"
+q = ":q"
 
 [keys.insert]
 C-space = "completion"
