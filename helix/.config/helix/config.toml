@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "tokyonight"
 
 [editor]
 mouse = false
