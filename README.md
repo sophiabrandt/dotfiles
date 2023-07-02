@@ -16,8 +16,10 @@
 ## Editor
 
 - [NeoVim](https://neovim.io/)
+- [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 
-_Note_: the [VIM config](vimrc) organization and setup is heavily inspired by [bluz71/dotfiles](https://github.com/bluz71/dotfiles/blob/master/vimrc).
+_Note_: I have moved away from Vim. The config is still available as [vim.bak](./vim.bak).  
+The [VIM config](vimrc) organization and setup is heavily inspired by [bluz71/dotfiles](https://github.com/bluz71/dotfiles/blob/master/vimrc).
 
 ## Look
 

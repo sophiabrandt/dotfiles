@@ -1,6 +1,15 @@
 function tokyo-night
-	kitty +kitten themes --reload-in=all Tokyo Night
-	echo -e 'colorscheme tokyonight-night' > ~/.vim/custom/colorscheme.vim
-	sed -e '1 c\
-theme = "tokyonight"' ~/.config/helix/config.toml > ~/.config/helix/config.toml.tmp && mv ~/.config/helix/config.toml.tmp ~/.config/helix/config.toml
+    kitty +kitten themes --reload-in=all Tokyo Night
+    set helix_config_path ~/.config/helix/config.toml
+    set helix_new_theme 'theme = "tokyonight"'
+
+    gsed -i "1s/.*/$helix_new_theme/" $helix_config_path
+
+    set nvim_config_path ~/.config/nvim/lua/custom/plugins/colorscheme.lua
+    set nvim_new_theme 'vim.cmd.colorscheme "tokyonight-night"'
+
+    gsed -i "8s/.*//" $nvim_config_path
+    gsed -i "17s/.*//" $nvim_config_path
+    gsed -i "26s/.*/$nvim_new_theme/" $nvim_config_path
+    gsed -i "35s/.*//" $nvim_config_path
 end

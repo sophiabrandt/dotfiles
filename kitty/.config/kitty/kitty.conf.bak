@@ -21,6 +21,6 @@ map ctrl+shift+' set_tab_title
 
 
 # BEGIN_KITTY_THEME
-# Tokyo Night
+# GitHub Dark Dimmed
 include current-theme.conf
 # END_KITTY_THEME
