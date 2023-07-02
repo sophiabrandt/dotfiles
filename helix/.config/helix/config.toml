@@ -8,9 +8,12 @@ auto-save = false
 completion-trigger-len = 1
 true-color = true
 color-modes = true
-auto-pairs = true
 rulers = [120]
 idle-timeout = 50
+bufferline = "multiple"
+
+[editor.file-picker]
+hidden = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -42,9 +45,17 @@ o = "goto_last_accessed_file"
 q = ":reflow"
 
 [keys.normal.space]
-x = ":x"
-w = ":w"
-q = ":q"
+x = ":buffer-close"
+X = ":x"
+
+[keys.normal.","]
+f = ":format"
+"," = ["keep_primary_selection"]
+
+[keys.normal.",".b]
+q = ":buffer-close"
+a = ":buffer-close-all"
+o = ":buffer-close-others" 
 
 [keys.insert]
 C-space = "completion"
@@ -56,3 +67,9 @@ A-k = "move_line_up"
 A-l = "move_char_right"
 A-o = "open_below"
 A-O = "open_above"
+
+# insert "macros"
+[keys.insert."\\"]
+h = ["normal_mode", ":insert-output echo '=>'", "collapse_selection", "insert_mode"]
+n = ["normal_mode", ":insert-output echo '->'", "collapse_selection", "insert_mode"] 
+

@@ -28,6 +28,7 @@ abbr -a -- cn 'colima nerdctl' # imported from a universal variable, see `help a
 abbr -a -- gam 'git commit --amend' # imported from a universal variable, see `help abbr`
 abbr -a -- gai 'git add -i' # imported from a universal variable, see `help abbr`
 abbr -a -- ee 'nvim (fd | fzy)' # imported from a universal variable, see `help abbr`
+abbr -a -- fe 'hx (fd | fzy)' # imported from a universal variable, see `help abbr`
 abbr -a -- gmg 'git merge' # imported from a universal variable, see `help abbr`
 abbr -a -- hs 'history search' # imported from a universal variable, see `help abbr`
 abbr -a -- - 'cd -' # imported from a universal variable, see `help abbr`
