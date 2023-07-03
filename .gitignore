@@ -2,7 +2,7 @@
 tags*
 
 # nvim
-vim.bak/.vim/pack
-vim.bak/.vim/spell
-vim.bak/.vim/.netrwhist
-vim.bak/.vim/view
+vim/.vim/pack
+vim/.vim/spell
+vim/.vim/.netrwhist
+vim/.vim/view

@@ -12,3 +12,4 @@ stow kitty
 stow nvim
 stow starship
 stow tmux
+stow vim
