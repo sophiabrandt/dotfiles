@@ -419,7 +419,6 @@ local servers = {
   -- clangd = {},
   -- gopls = {},
   -- pyright = {},
-  jdtls = {},
   rust_analyzer = {},
   tsserver = {},
 
