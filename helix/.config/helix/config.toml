@@ -1,4 +1,4 @@
-theme = "tokyonight"
+theme = "nord"
 
 [editor]
 mouse = false
@@ -38,6 +38,8 @@ right = ["selections", "primary-selection-length", "position", "position-percent
 X = "extend_line_above"
 D = "delete_char_backward"
 esc = ["collapse_selection", "keep_primary_selection"]
+"[" = { "b" = "goto_previous_buffer" }
+"]" = { "b" = "goto_next_buffer" }
 
 [keys.normal.g]
 a = "code_action"
@@ -70,6 +72,6 @@ A-O = "open_above"
 
 # insert "macros"
 [keys.insert."\\"]
-h = ["normal_mode", ":insert-output echo '=>'", "collapse_selection", "insert_mode"]
-n = ["normal_mode", ":insert-output echo '->'", "collapse_selection", "insert_mode"] 
+h = ["normal_mode", ":insert-output echo '=>'", "collapse_selection", "insert_at_line_end"]
+n = ["normal_mode", ":insert-output echo '->'", "collapse_selection", "insert_at_line_end"]
 
