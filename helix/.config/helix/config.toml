@@ -8,7 +8,7 @@ auto-save = false
 completion-trigger-len = 1
 true-color = true
 color-modes = true
-rulers = [120]
+rulers = [81,82]
 idle-timeout = 50
 bufferline = "multiple"
 
@@ -23,6 +23,9 @@ select = "underline"
 [editor.indent-guides]
 render = true
 character = "▏"
+
+[editor.soft-wrap]
+enable = true
 
 [editor.lsp]
 display-messages = true
@@ -49,6 +52,7 @@ q = ":reflow"
 [keys.normal.space]
 x = ":buffer-close"
 X = ":x"
+"space" = "buffer_picker"
 
 [keys.normal.","]
 f = ":format"
