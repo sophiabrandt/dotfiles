@@ -3,6 +3,7 @@
 stow bash
 stow bin
 stow broot
+stow dprint
 stow helix
 stow fish
 stow git
