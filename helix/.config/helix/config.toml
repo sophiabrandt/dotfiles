@@ -6,11 +6,12 @@ scroll-lines = 1
 cursorline = true
 auto-save = false
 completion-trigger-len = 1
-true-color = true
+completion-replace = true
 color-modes = true
 rulers = [81,82]
 idle-timeout = 50
 bufferline = "multiple"
+line-number = "relative"
 
 [editor.file-picker]
 hidden = false
@@ -22,7 +23,8 @@ select = "underline"
 
 [editor.indent-guides]
 render = true
-character = "▏"
+character = "┆"
+skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
@@ -37,34 +39,79 @@ center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
 
 [keys.normal]
-"ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to move to start of next line
 X = "extend_line_above"
 D = "delete_char_backward"
+
+H = "select_prev_sibling"
+J = "shrink_selection"
+K = "expand_selection"
+L = "select_next_sibling"
+
 esc = ["collapse_selection", "keep_primary_selection"]
-"[" = { "b" = "goto_previous_buffer" }
-"]" = { "b" = "goto_next_buffer" }
+# Maps the enter key to move to start of next line
+"ret" = ["move_line_down", "goto_first_nonwhitespace"]
+# Change everything from the cursor to the end of the line
+"A-l" = ["collapse_selection", "select_mode", "goto_line_end", "change_selection"]
+# Delete from cursor to line end
+"A-L" = ["extend_to_line_end", "yank", "select_mode", "goto_line_end", "delete_selection"]
+
+i = ["insert_mode", "collapse_selection"]
+a = ["append_mode", "collapse_selection"]
 
 [keys.normal.g]
 a = "code_action"
 o = "goto_last_accessed_file"
-q = ":reflow"
 
 [keys.normal.space]
+"=" = ":format"
 x = ":buffer-close"
 X = ":x"
+F = "file_picker_in_current_buffer_directory"
 "space" = "buffer_picker"
+# Add comma to the end of the line
+"," = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ','",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
+# Add semicolumn to the end of the line
+";" = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ';'",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
 
-[keys.normal.","]
-f = ":format"
-"," = ["keep_primary_selection"]
+[keys.normal."]"]
+"]" = "goto_next_paragraph"
+"b" = "goto_previous_buffer"
 
-[keys.normal.",".b]
-q = ":buffer-close"
-a = ":buffer-close-all"
-o = ":buffer-close-others" 
+[keys.normal."["]
+"[" = "goto_prev_paragraph"
+"b" = "goto_next_buffer"
+
+[keys.select]
+S = "surround_add"
+# Escape out if accidently landing in select mode
+";" = ["collapse_selection", "normal_mode"]
+# Make selecting lines in visual mode behave sensibly
+k = ["extend_line_up", "extend_to_line_bounds"]
+j = ["extend_line_down", "extend_to_line_bounds"]
+
+[keys.select."]"]
+"]" = "goto_next_paragraph"
+
+[keys.select."["]
+"[" = "goto_prev_paragraph"
 
 [keys.insert]
 C-space = "completion"
+# Go back to normal mode without having to use the "ESC" key
 "C-[" = "normal_mode"
 # Move cursor in insert mode
 A-h = "move_char_left"
@@ -74,8 +121,12 @@ A-l = "move_char_right"
 A-o = "open_below"
 A-O = "open_above"
 
-# insert "macros"
+# Jump to start of line to prepend
+C-a = ["collapse_selection", "insert_at_line_start"]
+# Jump to end of line to append
+C-e = ["collapse_selection", "insert_at_line_end"]
+
+# Insert "macros"
 [keys.insert."\\"]
 h = ["normal_mode", ":insert-output echo '=>'", "collapse_selection", "insert_at_line_end"]
 n = ["normal_mode", ":insert-output echo '->'", "collapse_selection", "insert_at_line_end"]
-
