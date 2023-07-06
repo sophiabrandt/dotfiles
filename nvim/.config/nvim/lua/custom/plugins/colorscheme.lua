@@ -3,7 +3,7 @@ return {
 	{
 		'shaunsingh/nord.nvim',
 		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
+		priority = 1000,
 		config = function()
 vim.cmd.colorscheme "nord"
 		end,
@@ -12,7 +12,7 @@ vim.cmd.colorscheme "nord"
 	{
 		'projekt0n/github-nvim-theme',
 		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
+		priority = 1000,
 		config = function()
 
 		end,
@@ -21,7 +21,7 @@ vim.cmd.colorscheme "nord"
 	{
 		'folke/tokyonight.nvim',
 		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
+		priority = 1000,
 		config = function()
 
 		end,
@@ -30,9 +30,18 @@ vim.cmd.colorscheme "nord"
 	{
 		'rebelot/kanagawa.nvim',
 		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
+		priority = 1000,
 		config = function()
 
 		end,
 	},
+	-- catpuccin
+	{
+		'catppuccin/nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+
+		end,
+	}
 }
