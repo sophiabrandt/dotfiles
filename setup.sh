@@ -9,6 +9,7 @@ stow fish
 stow git
 stow homebrew
 stow idea
+stow karabiner
 stow kitty
 stow nvim
 stow starship
