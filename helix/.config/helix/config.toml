@@ -6,11 +6,11 @@ scroll-lines = 1
 cursorline = true
 auto-save = false
 completion-trigger-len = 1
-completion-replace = true
 color-modes = true
 rulers = [81,82]
 idle-timeout = 50
 bufferline = "multiple"
+line-number = "relative"
 
 [editor.file-picker]
 hidden = false
@@ -65,6 +65,7 @@ o = "goto_last_accessed_file"
 "=" = ":format"
 x = ":buffer-close"
 X = ":x"
+q = ":q!"
 F = "file_picker_in_current_buffer_directory"
 "space" = "buffer_picker"
 # Add comma to the end of the line
