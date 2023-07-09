@@ -28,7 +28,6 @@ abbr -a -- cn 'colima nerdctl' # imported from a universal variable, see `help a
 abbr -a -- gam 'git commit --amend' # imported from a universal variable, see `help abbr`
 abbr -a -- gai 'git add -i' # imported from a universal variable, see `help abbr`
 abbr -a -- ee 'nvim (fd | fzy)' # imported from a universal variable, see `help abbr`
-abbr -a -- fe 'hx (fd | fzy)' # imported from a universal variable, see `help abbr`
 abbr -a -- gmg 'git merge' # imported from a universal variable, see `help abbr`
 abbr -a -- hs 'history search' # imported from a universal variable, see `help abbr`
 abbr -a -- - 'cd -' # imported from a universal variable, see `help abbr`
@@ -96,7 +95,7 @@ abbr -a -- mpsp 'mpv --speed=2.5 --af=rubberband=pitch-scale=0.981818181818181' 
 abbr -a -- nd nerdctl # imported from a universal variable, see `help abbr`
 abbr -a -- grlz 'git rlz' # imported from a universal variable, see `help abbr`
 abbr -a -- glst 'git last' # imported from a universal variable, see `help abbr`
-abbr -a -- e nvim # imported from a universal variable, see `help abbr`
+abbr -a -- e hx # imported from a universal variable, see `help abbr`
 abbr -a -- nvimin 'nvim -u /home/owlhoot/dotfiles/minimalvimrc --noplugin' # imported from a universal variable, see `help abbr`
 abbr -a -- pe 'pnpm exec' # imported from a universal variable, see `help abbr`
 abbr -a -- px 'pnpm dlx' # imported from a universal variable, see `help abbr`

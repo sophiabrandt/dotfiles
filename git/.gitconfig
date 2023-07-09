@@ -1,6 +1,6 @@
 [core]
   whitespace = trailing-space,space-before-tab
-  editor = nvim
+  editor = hx
   excludesfile = ~/.gitignore_global
   pager = delta
   attributesfile = ~/.gitattributes
@@ -14,7 +14,6 @@
   renames = copies
   colorMoved = default
   mnemonicprefix = true
-  tool = vimdiff
   prompt = false
   external = difft
 [delta]
