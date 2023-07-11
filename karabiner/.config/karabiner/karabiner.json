@@ -11,14 +11,14 @@
       "complex_modifications": {
         "parameters": {
           "basic.simultaneous_threshold_milliseconds": 50,
-          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_delayed_action_delay_milliseconds": 1000,
           "basic.to_if_alone_timeout_milliseconds": 500,
           "basic.to_if_held_down_threshold_milliseconds": 500,
           "mouse_motion_to_scroll.speed": 100
         },
         "rules": [
           {
-            "description": "Map caps_lock to left_ctrl (Post escape if pressed alone)",
+            "description": "Change caps_lock to right_ctrl (Post escape if pressed alone)",
             "manipulators": [
               {
                 "from": {
@@ -29,31 +29,12 @@
                 },
                 "to": [
                   {
-                    "key_code": "left_control"
+                    "key_code": "right_control"
                   }
                 ],
                 "to_if_alone": [
                   {
                     "key_code": "escape"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Map left_ctrl to caps_lock",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "left_control",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "caps_lock"
                   }
                 ],
                 "type": "basic"
@@ -85,7 +66,7 @@
             ]
           },
           {
-            "description": "Double left shift to cap_lock",
+            "description": "Double left shift to caps_lock",
             "manipulators": [
               {
                 "type": "basic",
