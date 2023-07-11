@@ -67,9 +67,9 @@ o = "goto_last_accessed_file"
 
 [keys.normal.space]
 "=" = ":format"
-w = ":w"
-x = ":buffer-close"
-X = ":x"
+w = ":w!"
+x = ":buffer-close!"
+X = ":x!"
 q = ":q!"
 F = "file_picker_in_current_buffer_directory"
 "space" = "buffer_picker"
