@@ -1,7 +1,7 @@
 function tokyo-storm
     kitty +kitten themes --reload-in=all Tokyo Night Storm
     set helix_config_path ~/.config/helix/config.toml
-    set helix_new_theme 'theme = "tokyonight-storm"'
+    set helix_new_theme 'theme = "tokyonight_storm"'
 
     gsed -i "1s/.*/$helix_new_theme/" $helix_config_path
 
