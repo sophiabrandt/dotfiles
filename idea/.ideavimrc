@@ -147,8 +147,8 @@ nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
 nnoremap <leader>k :action QuickJavaDoc<CR>
 nnoremap <leader>q :action QuickTypeDefinition<CR>
+nnoremap <leader>= :action ReformatCode<CR>
 nnoremap ,a :action Annotate<CR>
-nnoremap ,f :action ReformatCode<CR>
 nnoremap ,h :action LocalHistory.ShowHistory<CR>
 nnoremap ,k :action Git.CompareWithBranch<CR>
 nnoremap ,l :action RecentLocations<CR>
