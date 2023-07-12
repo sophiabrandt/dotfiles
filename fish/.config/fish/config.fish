@@ -52,7 +52,6 @@ abbr -a -- gcdd 'git cdd' # imported from a universal variable, see `help abbr`
 abbr -a -- gcf 'git cdd fire' # imported from a universal variable, see `help abbr`
 abbr -a -- gcm 'git commit -m' # imported from a universal variable, see `help abbr`
 abbr -a -- gco 'git checkout' # imported from a universal variable, see `help abbr`
-abbr -a -- gu 'gitui' # imported from a universal variable, see `help abbr`
 abbr -a -- gcr 'git cdd forget' # imported from a universal variable, see `help abbr`
 abbr -a -- gcs 'git cdd status' # imported from a universal variable, see `help abbr`
 abbr -a -- gd 'git pull' # imported from a universal variable, see `help abbr`
@@ -78,6 +77,7 @@ abbr -a -- grs 'git reset' # imported from a universal variable, see `help abbr`
 abbr -a -- gst 'git status -sb' # imported from a universal variable, see `help abbr`
 abbr -a -- gsw 'git switch' # imported from a universal variable, see `help abbr`
 abbr -a -- gtst 'git tst' # imported from a universal variable, see `help abbr`
+abbr -a -- gu 'gitui' # imported from a universal variable, see `help abbr`
 abbr -a -- h hx # imported from a universal variable, see `help abbr`
 abbr -a -- hd 'history delete' # imported from a universal variable, see `help abbr`
 abbr -a -- hr 'history merge' # imported from a universal variable, see `help abbr`
@@ -95,6 +95,7 @@ abbr -a -- mpsp 'mpv --speed=2.5 --af=rubberband=pitch-scale=0.981818181818181' 
 abbr -a -- n npm # imported from a universal variable, see `help abbr`
 abbr -a -- nd nerdctl # imported from a universal variable, see `help abbr`
 abbr -a -- np npx # imported from a universal variable, see `help abbr`
+abbr -a -- nt notes # imported from a universal variable, see `help abbr`
 abbr -a -- nvimin 'nvim -u /home/owlhoot/dotfiles/minimalvimrc --noplugin' # imported from a universal variable, see `help abbr`
 abbr -a -- p pnpm # imported from a universal variable, see `help abbr`
 abbr -a -- pd podman # imported from a universal variable, see `help abbr`
