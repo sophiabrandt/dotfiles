@@ -94,11 +94,9 @@ F = "file_picker_in_current_buffer_directory"
 
 [keys.normal."]"]
 "]" = "goto_next_paragraph"
-"b" = "goto_previous_buffer"
 
 [keys.normal."["]
 "[" = "goto_prev_paragraph"
-"b" = "goto_next_buffer"
 
 [keys.select]
 S = "surround_add"
