@@ -16,6 +16,7 @@
   mnemonicprefix = true
   prompt = false
   external = difft
+  tool = meld
 [delta]
   features = side-by-side line-numbers decorations
   whitespace-error-style = 22 reverse
@@ -39,16 +40,14 @@
   autoSetupRemote = true
 [rerere]
   enabled = true
-# set "nvim" as tool for merging
+[difftool]
+  prompt = false
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 [merge]
   stat = true
-  tool = nvim
+  tool = meld
   conflictStyle = zdiff3
-# define command which will be used when "nvim" is set as a merge tool
-[mergetool "nvim"]
-  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
-# automatically launch merge tool without displaying a prompt
-[mergetool]
   prompt = false
 [pull]
   rebase = false
