@@ -6,3 +6,6 @@ vim/.vim/pack
 vim/.vim/spell
 vim/.vim/.netrwhist
 vim/.vim/view
+
+# kitty backup
+kitty/.config/kitty/kitty.conf.bak
