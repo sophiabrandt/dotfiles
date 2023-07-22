@@ -1,4 +1,8 @@
 [[language]]
+name = "c-sharp"
+language-server = { command = "dotnet", args = [ "~/.local/bin/omnisharp/OmniSharp.dll", "--languageserver" ] }
+
+[[language]]
 name = "markdown"
 formatter = { command = "prettier", args = ["--parser", "markdown"] }
 auto-format = true
