@@ -69,3 +69,7 @@ codeActionOnSave = { mode = "all" }
 experimental = { }
 problems = { shortenToSingleLine = false }
 workingDirectory = { mode = "auto" }
+
+[language-server.emmet-language-server]
+args = ["--stdio"]
+command="emmet-language-server"
