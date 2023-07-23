@@ -83,7 +83,7 @@ nnoremap <Leader>s :<C-u>up<CR>
 " hashrocket
 inoremap hsr =>
 " normal rocket
-inoremap nsr ->
+inoremap nra ->
 " fold the current indent.
 nnoremap <Leader>z zazz
 " source (reload) vimrc
