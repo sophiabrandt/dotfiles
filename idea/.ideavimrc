@@ -50,7 +50,7 @@ nnoremap \v :action IdeaVim.ReloadVimRc.reload<CR>
 
 """ Insert mappings ------------------
 inoremap hsr =>
-inoremap nsr ->
+inoremap nra ->
 
 """ Idea specific settings ------------------
 set ideajoin

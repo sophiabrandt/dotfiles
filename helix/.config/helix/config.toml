@@ -131,3 +131,8 @@ A-O = "open_above"
 C-a = ["collapse_selection", "insert_at_line_start"]
 # Jump to end of line to append
 C-e = ["collapse_selection", "insert_at_line_end"]
+
+# insert "macros"
+h = { s = { r = ["normal_mode", ":insert-output echo '=>'", "collapse_selection", "insert_at_line_end"] } }
+n = { r = { a = ["normal_mode", ":insert-output echo '->'", "collapse_selection", "insert_at_line_end"] } }
+
