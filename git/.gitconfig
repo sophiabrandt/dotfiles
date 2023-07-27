@@ -9,7 +9,7 @@
 [include]
   path = ~/.gitconfig_local
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = delta --color-only --features=interactive
 [diff]
   renames = copies
   colorMoved = default
@@ -23,6 +23,7 @@
   inspect-raw-lines = false
   plus-style = syntax "#003800"
   minus-style = syntax "#3f0001"
+  navigate = true
 [delta "decorations"]
   commit-decoration-style = bold yellow box ul
   file-style = bold yellow ul
