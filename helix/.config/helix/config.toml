@@ -37,6 +37,9 @@ display-inlay-hints = true
 left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
 center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
+mode.normal = "·"
+mode.insert = "··"
+mode.select = "···"
 
 [keys.normal]
 X = "extend_line_above"
