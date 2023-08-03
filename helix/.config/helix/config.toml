@@ -58,6 +58,8 @@ A-l = ["collapse_selection", "select_mode", "goto_line_end", "change_selection"]
 # Delete from cursor to line end
 A-L = ["extend_to_line_end", "yank", "select_mode", "goto_line_end", "delete_selection"]
 A-j = "join_selections"
+A-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+A-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 i = ["insert_mode", "collapse_selection"]
 a = ["append_mode", "collapse_selection"]

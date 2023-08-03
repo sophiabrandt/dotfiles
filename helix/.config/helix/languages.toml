@@ -1,6 +1,6 @@
 [[language]]
 name = "c-sharp"
-language-server = { command = "dotnet", args = [ "~/.local/bin/omnisharp/OmniSharp.dll", "--languageserver" ] }
+language-server = { command = "dotnet", args = [ "/Users/owlhoot/.local/bin/omnisharp/Omnisharp.dll", "--languageserver" ] }
 
 [[language]]
 name = "markdown"
