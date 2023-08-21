@@ -1,5 +1,6 @@
 #!/bin/sh
 
+stow amethyst
 stow bash
 stow bin
 stow broot
