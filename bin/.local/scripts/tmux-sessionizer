@@ -1,11 +1,19 @@
 #!/bin/sh
 #
-# Attach or create tmux session from predefined set of directories
+# Attach or create tmux session from predefined set of directories or existing sessions
+
+list_sessions() {
+  tmux list-sessions -F '#S' | sed -E 's/:.*$//'
+}
+
+list_directories() {
+  fd -t d --exact-depth 1 . $HOME $HOME/projects $HOME/projects/personal $HOME/projects/work
+}
 
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected="$(fd -t d --exact-depth 1 . $HOME $HOME/projects $HOME/projects/personal $HOME/projects/work | fzy)"
+    selected="$( (list_sessions; list_directories) | fzy )"
 fi
 
 if [[ -z $selected ]]; then
