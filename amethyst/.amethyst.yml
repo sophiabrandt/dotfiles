@@ -279,13 +279,13 @@ focus-follows-mouse: false
 mouse-swaps-windows: false
 
 # true if changing the frame of a window with the mouse should update the layout to accommodate the change (default false). Note that not all layouts will be able to respond to the change.
-mouse-resizes-windows: false
+mouse-resizes-windows: true
 
 # true to display the name of the layout when a new layout is selected (default true).
 enables-layout-hud: true
 
 # true to display the name of the layout when moving to a new space (default true).
-enables-layout-hud-on-space-change: true
+enables-layout-hud-on-space-change: false
 
 # true to get updates to beta versions of the software (default false).
 use-canary-build: false
