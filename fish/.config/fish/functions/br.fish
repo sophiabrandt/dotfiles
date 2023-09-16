@@ -1,1 +1,1 @@
-/Users/owlhoot/Library/Application Support/org.dystroy.broot/launcher/fish/br.fish
+/Users/me/Library/Application Support/org.dystroy.broot/launcher/fish/br.fish
