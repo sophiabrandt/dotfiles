@@ -2,6 +2,7 @@
 
 stow amethyst
 stow bash
+stow bat
 stow bin
 stow broot
 stow dprint
