@@ -215,7 +215,7 @@ display-current-layout:
 # Turn on or off tiling entirely.
 toggle-tiling:
   mod: mod1
-  key: t
+  key: g
 
 # Rerun the current layout's algorithm.
 reevaluate-windows:
