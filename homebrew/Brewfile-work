@@ -1,0 +1,8 @@
+brew "qemu"
+brew "lima"
+brew "colima"
+cask "1password"
+cask "1password-cli"
+cask "microsoft-auto-update"
+cask "microsoft-edge"
+cask "microsoft-teams"

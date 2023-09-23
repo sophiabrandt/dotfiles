@@ -1,6 +1,9 @@
 # ctags
 tags*
 
+# homebrew
+homebrew/*.lock.json
+
 # nvim
 vim/.vim/pack
 vim/.vim/spell
