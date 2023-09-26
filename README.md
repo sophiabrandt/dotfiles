@@ -24,7 +24,7 @@ The [VIM config](vimrc) organization and setup is heavily inspired by [bluz71/do
 ## Look
 
 - color scheme: [Nord][nord]
-- font: [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
+- font: [Lotion](https://font.nina.coffee)
 
 ## How to Install
 
