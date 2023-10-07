@@ -23,6 +23,7 @@ end
 # abbreviations
 abbr -a -- - 'cd -' 
 abbr -a -- b bun
+abbr -a -- bx bunx
 abbr -a -- bd buildah 
 abbr -a -- ca cargo 
 abbr -a -- cl colima 
