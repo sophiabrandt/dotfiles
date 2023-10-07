@@ -12,3 +12,11 @@ vim/.vim/view
 
 # kitty backup
 kitty/.config/kitty/kitty.conf.bak
+
+# jetbrains toolbox scripts
+bin/.local/scripts/goland
+bin/.local/scripts/rider
+bin/.local/scripts/idea
+bin/.local/scripts/webstorm
+bin/.local/scripts/datagrip
+
