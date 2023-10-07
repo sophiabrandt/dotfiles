@@ -17,31 +17,4 @@ vim.cmd.colorscheme "nord"
 
 		end,
 	},
-	-- tokyo-night
-	{
-		'folke/tokyonight.nvim',
-		lazy = false,
-		priority = 1000,
-		config = function()
-
-		end,
-	},
-	-- kanagawa
-	{
-		'rebelot/kanagawa.nvim',
-		lazy = false,
-		priority = 1000,
-		config = function()
-
-		end,
-	},
-	-- catpuccin
-	{
-		'catppuccin/nvim',
-		lazy = false,
-		priority = 1000,
-		config = function()
-
-		end,
-	}
 }
