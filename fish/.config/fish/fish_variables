@@ -82,6 +82,7 @@ SETUVAR pure_color_info:cyan
 SETUVAR pure_color_jobs:pure_color_normal
 SETUVAR pure_color_k8s_context:pure_color_success
 SETUVAR pure_color_k8s_namespace:pure_color_primary
+SETUVAR pure_color_k8s_prefix:pure_color_dark
 SETUVAR pure_color_light:white
 SETUVAR pure_color_mute:brblack
 SETUVAR pure_color_normal:normal
