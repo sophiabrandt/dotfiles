@@ -15,6 +15,10 @@ set ignorecase
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+""" Leader ------------------
+let mapleader=" "
+nnoremap <space> <nop>
+
 """ Plugins  --------------------------------
 set NERDTree
 set ReplaceWithRegister
@@ -40,10 +44,6 @@ set so=5
 set incsearch
 set nu
 
-""" Leader ------------------
-let mapleader=" "
-nnoremap <space> <nop>
-
 """ Manage .ideavimrc ---------------
 nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap \v :action IdeaVim.ReloadVimRc.reload<CR>
@@ -60,10 +60,10 @@ set idearefactormode=keep
 """ Plugin Mappings --------------------------------
 map  ; <Plug>(easymotion-sn)
 omap ; <Plug>(easymotion-tn)
-map  ,n <Plug>(easymotion-next)
-map  ,N <Plug>(easymotion-prev)
 nmap s <Plug>(easymotion-s2)
+nmap S <Plug>(easymotion-s) 
 nmap t <Plug>(easymotion-t2)
+nmap T <Plug>(easymotion-T2)
 
 map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
@@ -145,7 +145,7 @@ nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
-nnoremap <leader>k :action QuickJavaDoc<CR>
+nnoremap <leader>d :action QuickJavaDoc<CR>
 nnoremap <leader>q :action QuickTypeDefinition<CR>
 nnoremap <leader>= :action ReformatCode<CR>
 nnoremap ,a :action Annotate<CR>
