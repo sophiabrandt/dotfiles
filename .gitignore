@@ -13,7 +13,9 @@ vim/.vim/view
 # kitty backup
 kitty/.config/kitty/kitty.conf.bak
 
-# jetbrains toolbox scripts
+# .local
+bin/.local/state
+bin/.local/share
 bin/.local/scripts/goland
 bin/.local/scripts/rider
 bin/.local/scripts/idea
