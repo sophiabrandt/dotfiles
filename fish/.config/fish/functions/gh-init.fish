@@ -1,4 +1,4 @@
-function github-init
+function gh-init
     git init
     git config user.name 'Sophia Brandt'
     git config committer.name 'Sophia Brandt'

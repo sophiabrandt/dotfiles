@@ -1,4 +1,4 @@
-function gitlab-init
+function glab-init
     git init
     git config user.name 'Sophia Brandt'
     git config committer.name 'Sophia Brandt'
