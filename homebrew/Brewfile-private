@@ -1,5 +1,6 @@
 cask "adguard"
 brew "caddy", restart_service: true
+brew "dotnet"
 brew "sqlx-cli"
 brew "translate-shell"
 cask "orbstack"

@@ -1,4 +1,5 @@
 brew "qemu"
+brew "dotnet@6"
 brew "lima"
 brew "colima"
 cask "keypassxc"
