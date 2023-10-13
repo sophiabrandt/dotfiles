@@ -1,8 +1,4 @@
 [[language]]
-name = "c-sharp"
-language-server = { command = "fish", args = [ "-c", "dotnet ~/.local/bin/omnisharp/Omnisharp.dll --languageserver" ] }
-
-[[language]]
 name = "markdown"
 formatter = { command = "prettier", args = ["--parser", "markdown"] }
 auto-format = true
@@ -29,25 +25,25 @@ auto-format = true
 
 [[language]]
 name = "javascript"
-# language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-# language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-# language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-# language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
+language-servers = [{ name = "typescript-language-server", except-features = [ "format" ] }, { name = "eslint", except-features = [ "format" ] } ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
@@ -73,3 +69,4 @@ workingDirectory = { mode = "auto" }
 [language-server.emmet-language-server]
 args = ["--stdio"]
 command="emmet-language-server"
+

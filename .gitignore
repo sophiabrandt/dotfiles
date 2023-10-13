@@ -1,6 +1,9 @@
 # ctags
 tags*
 
+# helix runtime when compiled from source
+helix/.config/helix/runtime
+
 # homebrew
 homebrew/*.lock.json
 
