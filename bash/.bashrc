@@ -27,6 +27,10 @@ if command -v go &>/dev/null; then
     export GOPATH="$HOME/.go"
     export PATH="$PATH:$(go env GOPATH)/bin"
 fi
+# dotnet 6
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
+
 
 # grapheasy
 PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
