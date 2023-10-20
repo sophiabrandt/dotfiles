@@ -1,6 +1,6 @@
 [core]
   whitespace = trailing-space,space-before-tab
-  editor = hx
+  editor = nvim
   excludesfile = ~/.gitignore_global
   pager = delta
   attributesfile = ~/.gitattributes
@@ -16,7 +16,6 @@
   mnemonicprefix = true
   prompt = false
   external = difft
-  tool = meld
 [delta]
   pager = less
   features = side-by-side line-numbers decorations
@@ -48,9 +47,10 @@
   cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 [merge]
   stat = true
-  tool = meld
+  tool = nvim
   conflictStyle = zdiff3
   prompt = false
+  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [pull]
   rebase = false
 [alias]
