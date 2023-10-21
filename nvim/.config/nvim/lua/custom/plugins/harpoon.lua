@@ -29,24 +29,13 @@ return {
 			tabline_prefix = "   ",
 			tabline_suffix = "   ",
 		}
-		-- Harpon telescope extension
-		require("telescope").load_extension('harpoon')
-
 		-- Keymappings
 		vim.keymap.set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = "[H]arpoon [A]dd" })
 		vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = "[H]arpoon [N]ext" })
 		vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = "[H]arpoon [P]revious" })
-		vim.api.nvim_set_keymap('n', '<leader>hm', [[<Cmd>:Telescope harpoon marks<CR>]],
+		vim.api.nvim_set_keymap('n', '<leader>hm', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',
 			{ noremap = true, silent = true, desc = "[H]arpoon [M]arks" })
-
-		local wk = require("which-key")
-		wk.register({
-			["<leader>h"] = {
-				name = "[H]arpoon", _ = 'which_key_ignore',
-				a = { require('harpoon.mark').add_file, "Add File" },
-				n = { require('harpoon.ui').nav_next, "Navigate Next" },
-				p = { require('harpoon.ui').nav_prev, "Navigate Previous" },
-			}
-		}, { prefix = "<leader>" })
+		vim.api.nvim_set_keymap('n', '<leader>hu', ':lua require("harpoon.cmd-ui").toggle_quick_menu()<CR>',
+			{ noremap = true, silent = true, desc = "[H]arpoon [U]i" })
 	end,
 }
