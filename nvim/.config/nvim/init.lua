@@ -472,7 +472,7 @@ local servers = {
   -- clangd = {},
   gopls = {},
   -- pyright = {},
-  csharp_ls = {},
+  -- csharp_ls = {},
   rust_analyzer = {},
   tsserver = {},
 
