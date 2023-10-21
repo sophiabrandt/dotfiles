@@ -1,3 +1,5 @@
+-- File: lua/custom/plugins/harpoon.lua
+
 return {
 	"ThePrimeagen/harpoon",
 	-- Optional dependency
@@ -31,16 +33,16 @@ return {
 		require("telescope").load_extension('harpoon')
 
 		-- Keymappings
-		vim.keymap.set('n', '<leader>pa', require('harpoon.mark').add_file, { desc = "Har[P]oon [A]dd" })
-		vim.keymap.set('n', '<leader>pn', require('harpoon.ui').nav_next, { desc = "Har[P]oon [N]ext" })
-		vim.keymap.set('n', '<lelader>pp', require('harpoon.ui').nav_prev, { desc = "Har[P]oon [P]revious" })
-		vim.api.nvim_set_keymap('n', '<leader>pm', [[<Cmd>:Telescope harpoon marks<CR>]],
-			{ noremap = true, silent = true, desc = "Har[P]oon [M]arks" })
+		vim.keymap.set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = "[H]arpoon [A]dd" })
+		vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = "[H]arpoon [N]ext" })
+		vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = "[H]arpoon [P]revious" })
+		vim.api.nvim_set_keymap('n', '<leader>hm', [[<Cmd>:Telescope harpoon marks<CR>]],
+			{ noremap = true, silent = true, desc = "[H]arpoon [M]arks" })
 
 		local wk = require("which-key")
 		wk.register({
-			["<leader>p"] = {
-				name = "+harpoon",
+			["<leader>h"] = {
+				name = "[H]arpoon", _ = 'which_key_ignore',
 				a = { require('harpoon.mark').add_file, "Add File" },
 				n = { require('harpoon.ui').nav_next, "Navigate Next" },
 				p = { require('harpoon.ui').nav_prev, "Navigate Previous" },
