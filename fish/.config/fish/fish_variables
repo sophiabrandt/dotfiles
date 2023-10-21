@@ -5,7 +5,7 @@ SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk/
 SETUVAR --export CHROME_EXECUTABLE:google\x2dchrome\x2dstable
 SETUVAR --export DART_SDK:/opt/flutter/bin/cache/dart\x2dsdk/
 SETUVAR --export DOTNET_ROOT:/usr/share/dotnet
-SETUVAR --export EDITOR:hx
+SETUVAR --export EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
