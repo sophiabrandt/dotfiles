@@ -32,9 +32,9 @@ return {
 		-- Keymappings
 		vim.keymap.set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = "[H]arpoon [A]dd" })
 		vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = "[H]arpoon [N]ext" })
-		vim.keymap.set('n', 'gy', require('harpoon.ui').nav_next, { desc = "Harpoon Next" })
+		vim.keymap.set('n', 'gY', require('harpoon.ui').nav_next, { desc = "Harpoon Next" })
 		vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = "[H]arpoon [P]revious" })
-		vim.keymap.set('n', 'gx', require('harpoon.ui').nav_prev, { desc = "Harpoon Previous" })
+		vim.keymap.set('n', 'gy', require('harpoon.ui').nav_prev, { desc = "Harpoon Previous" })
 		vim.api.nvim_set_keymap('n', '<leader>hm', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',
 			{ noremap = true, silent = true, desc = "[H]arpoon [M]arks" })
 		vim.api.nvim_set_keymap('n', '<leader>hu', ':lua require("harpoon.cmd-ui").toggle_quick_menu()<CR>',
