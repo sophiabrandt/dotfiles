@@ -14,6 +14,7 @@ stow idea
 stow karabiner
 stow kitty
 stow nvim
+stow sioyek
 stow starship
 stow tmux
 stow vim
