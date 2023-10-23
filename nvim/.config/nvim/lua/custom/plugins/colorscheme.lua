@@ -17,4 +17,13 @@ vim.cmd.colorscheme "nord"
 
 		end,
 	},
+	-- rose pine
+	{
+		'rose-pine/neovim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+
+		end,
+	},
 }
