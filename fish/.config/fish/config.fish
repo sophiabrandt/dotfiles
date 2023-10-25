@@ -32,7 +32,7 @@ abbr -a -- d docker
 abbr -a -- dc 'docker compose' 
 abbr -a -- dm docker-machine 
 abbr -a -- dv devbox 
-abbr -a -- e hx 
+abbr -a -- e nvim 
 abbr -a -- ee 'nvim (fd | fzy)' 
 abbr -a -- ex exit 
 abbr -a -- g git 
