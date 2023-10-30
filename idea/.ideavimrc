@@ -189,5 +189,6 @@ nnoremap \f :action RerunFailedTests<CR>
 nnoremap \b :action ToggleLineBreakpoint<CR>
 nnoremap \d :action ContextDebug<CR>
 nnoremap \n :action ActivateDebugToolWindow<CR>
+nnoremap \m :action MainMenu<CR>
 
 " Find more examples here: https://jb.gg/share-ideavimrc
