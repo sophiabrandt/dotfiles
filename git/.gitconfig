@@ -43,8 +43,10 @@
   enabled = true
 [difftool]
   prompt = false
-[difftool "meld"]
-  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[mergetool]
+  prompt = false
 [merge]
   stat = true
   tool = nvim
