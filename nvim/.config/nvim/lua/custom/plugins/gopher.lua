@@ -12,5 +12,6 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 	},
 	vim.keymap.set('n', '<leader>gsj', "<cmd>GoTagAdd json <CR>", { desc = "Add json struct tags" }),
-	vim.keymap.set('n', '<leader>gsy', "<cmd>GoTagAdd yaml <CR>", { desc = "Add yaml struct tags" })
+	vim.keymap.set('n', '<leader>gsy', "<cmd>GoTagAdd yaml <CR>", { desc = "Add yaml struct tags" }),
+	vim.keymap.set('n', '<leader>gif', "<cmd>GoIfErr<CR>", { desc = "if err snippet" })
 }
