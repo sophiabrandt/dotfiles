@@ -18,7 +18,7 @@ SETUVAR --export PAGER:most
 SETUVAR --export THEFUCK_OVERRIDDEN_ALIASES:gsed\x2cgit
 SETUVAR --export TMUX_THEME:nord
 SETUVAR --export UNCRUSTIFY_CONFIG:/home/owlhoot/\x2euncrustify\x2ecfg
-SETUVAR --export VISUAL:hx
+SETUVAR --export VISUAL:nvim
 SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20
 SETUVAR __fish_init_2_39_8:\x1d
