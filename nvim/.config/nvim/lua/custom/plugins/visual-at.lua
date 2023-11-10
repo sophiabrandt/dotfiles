@@ -6,6 +6,6 @@ vim.api.nvim_exec([[
   endfunction
 ]], false)
 
-vim.api.nvim_set_keymap('x', '@', ':<C-u>call ExecuteMacroOverVisualRange()<CR>', { noremap = true })
-
-return {}
+return {
+  vim.api.nvim_set_keymap('x', '@', ':<C-u>call ExecuteMacroOverVisualRange()<CR>', { noremap = true })
+}
