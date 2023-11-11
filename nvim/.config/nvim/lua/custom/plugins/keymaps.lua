@@ -4,6 +4,8 @@ return {
 	vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc = 'Search [F]iles' }),
 	vim.api.nvim_set_keymap('n', '<leader>x', ':<C-u>bp<bar>bd! #<CR>',
 		{ silent = true, noremap = true, desc = "Close buffer" }),
+	vim.api.nvim_set_keymap('n', '<leader>X', ':<C-u>%bd<bar>e#<bar>bd#<CR>',
+		{ silent = true, noremap = true, desc = "Close all buffers except current one" }),
 	vim.api.nvim_set_keymap('n', '[b', ':bprevious<CR>', { silent = true, noremap = true, desc = "Previous buffer" }),
 	vim.api.nvim_set_keymap('n', ']b', ':bnext<CR>', { silent = true, noremap = true, desc = "Next buffer" }),
 	vim.api.nvim_set_keymap('n', '<localleader>g',
