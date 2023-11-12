@@ -1,3 +1,4 @@
+brew "stats"
 brew "qemu"
 brew "dotnet@6"
 brew "lima"
