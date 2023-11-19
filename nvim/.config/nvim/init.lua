@@ -228,6 +228,11 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
+  {
+    'creativenull/efmls-configs-nvim',
+    version = 'v1.x.x', -- version is optional, but recommended
+    dependencies = { 'neovim/nvim-lspconfig' },
+  }
 }, {})
 
 -- [[ Setting options ]]
@@ -517,6 +522,7 @@ local servers = {
   tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   angularls = {},
+  efm = {},
 
   lua_ls = {
     Lua = {
@@ -602,6 +608,37 @@ cmp.setup {
     { name = 'copilot', group_index = 2 },
   },
 }
+
+-- efm-langserver
+-- Register linters and formatters per language
+local eslint = require('efmls-configs.linters.eslint')
+local gofumpt = require('efmls-configs.formatters.gofumpt')
+local golang_ci = require('efmls-configs.linters.golangci_lint')
+local prettier_d = require('efmls-configs.formatters.prettier_d')
+local languages = {
+  markdown = { prettier_d },
+  go = { gofumpt, golang_ci },
+  typescript = { eslint, prettier_d },
+}
+
+local efmls_config = {
+  filetypes = vim.tbl_keys(languages),
+  settings = {
+    rootMarkers = { '.git/' },
+    languages = languages,
+  },
+  init_options = {
+    documentFormatting = true,
+    documentRangeFormatting = true,
+  },
+}
+
+require('lspconfig').efm.setup(vim.tbl_extend('force', efmls_config, {
+  -- Pass your custom lsp config below like on_attach and capabilities
+  --
+  -- on_attach = on_attach,
+  -- capabilities = capabilities,
+}))
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
