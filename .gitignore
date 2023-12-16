@@ -12,6 +12,7 @@ vim/.vim/pack
 vim/.vim/spell
 vim/.vim/.netrwhist
 vim/.vim/view
+nvim/.config/nvim/lazy-lock.json
 
 # kitty backup
 kitty/.config/kitty/kitty.conf.bak
