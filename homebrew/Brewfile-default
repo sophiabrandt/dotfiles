@@ -75,7 +75,6 @@ brew "eth-p/software/bat-extras"
 brew "oven-sh/bun/bun"
 brew "tankerhq/repo/ruplacer"
 cask "alfred"
-cask "alt-tab"
 cask "amethyst"
 cask "dropbox"
 cask "font-jetbrains-mono"
@@ -93,3 +92,9 @@ cask "rectangle-pro"
 cask "1password"
 cask "1password-cli"
 cask "zoom"
+mas "hide.me VPN", id: 953040671
+mas "Keynote", id: 409183694
+mas "Klipped", id: 1053809492
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "rcmd", id: 1596283165
