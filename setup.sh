@@ -7,6 +7,7 @@ stow bin
 stow broot
 stow dprint
 stow helix
+stow hammerspoon
 stow fish
 stow git
 stow homebrew
