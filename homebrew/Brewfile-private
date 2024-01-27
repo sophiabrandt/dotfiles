@@ -1,4 +1,5 @@
 cask "adguard"
+cask "adguard-vpn"
 brew "caddy", restart_service: true
 brew "dotnet"
 brew "sqlx-cli"
