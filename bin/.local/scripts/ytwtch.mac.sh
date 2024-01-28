@@ -9,4 +9,4 @@ osascript -e 'display notification "Playing Video" with title "Notification"'
 CLIPBOARD_CONTENT=$(pbpaste)
 
 # Play video using mpv
-mpv --ytdl-format=bestvideo+bestaudio/best --fs --speed=2.5 --af=rubberband=pitch-scale=0.981818181818181 "$CLIPBOARD_CONTENT"
+mpv --script-opts-append=ytdl_hook-try_ytdl_first=yes --ytdl-format=best --fs --speed=2.5 --af=rubberband=pitch-scale=0.981818181818181 "$CLIPBOARD_CONTENT"
