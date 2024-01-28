@@ -30,14 +30,14 @@ return {
 			tabline_suffix = "   ",
 		}
 		-- Keymappings
-		vim.keymap.set('n', '<leader>ha', require('harpoon.mark').add_file, { desc = "[H]arpoon [A]dd" })
-		vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = "[H]arpoon [N]ext" })
-		vim.keymap.set('n', '[h', require('harpoon.ui').nav_next, { desc = "Harpoon Next" })
-		vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = "[H]arpoon [P]revious" })
-		vim.keymap.set('n', ']h', require('harpoon.ui').nav_prev, { desc = "Harpoon Previous" })
-		vim.api.nvim_set_keymap('n', '<leader>hm', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',
-			{ noremap = true, silent = true, desc = "[H]arpoon [M]arks" })
-		vim.api.nvim_set_keymap('n', '<leader>hu', ':lua require("harpoon.cmd-ui").toggle_quick_menu()<CR>',
-			{ noremap = true, silent = true, desc = "[H]arpoon [U]i" })
+		vim.keymap.set('n', '<leader>na', require('harpoon.mark').add_file, { desc = "Harpoo[n] [A]dd" })
+		vim.keymap.set('n', '<leader>nn', require('harpoon.ui').nav_next, { desc = "Harpoo[n] [N]ext" })
+		vim.keymap.set('n', '[n', require('harpoon.ui').nav_next, { desc = "Harpoon Next" })
+		vim.keymap.set('n', '<leader>np', require('harpoon.ui').nav_prev, { desc = "Harpoo[n] [P]revious" })
+		vim.keymap.set('n', ']n', require('harpoon.ui').nav_prev, { desc = "Harpoon Previous" })
+		vim.api.nvim_set_keymap('n', '<leader>nm', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',
+			{ noremap = true, silent = true, desc = "Harpoo[n] [M]arks" })
+		vim.api.nvim_set_keymap('n', '<leader>nu', ':lua require("harpoon.cmd-ui").toggle_quick_menu()<CR>',
+			{ noremap = true, silent = true, desc = "Harpoo[n] [U]i" })
 	end,
 }
