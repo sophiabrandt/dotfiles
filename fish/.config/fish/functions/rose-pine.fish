@@ -6,7 +6,7 @@ function rose-pine
     gsed -i "1s/.*/$helix_new_theme/" $helix_config_path
 
     set nvim_config_path ~/.config/nvim/lua/custom/plugins/colorscheme.lua
-    set nvim_new_theme 'vim.cmd.colorscheme "rose-pine"'
+    set nvim_new_theme 'vim.cmd.colorscheme "rose-pine-main"'
 
     gsed -i "8s/.*//" $nvim_config_path
     gsed -i "17s/.*//" $nvim_config_path
