@@ -50,7 +50,7 @@ nnoremap \v :action IdeaVim.ReloadVimRc.reload<CR>
 
 """ Insert mappings ------------------
 inoremap hsr =>
-inoremap nra ->
+inoremap hra ->
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -184,10 +184,12 @@ nnoremap \c :action ContextRun<CR>
 nnoremap \a :action RunClass<CR>
 nnoremap \o :action ChooseRunConfiguration<CR>
 nnoremap \t :action ActivateRunToolWindow<CR>
+nnoremap \i :action Run<CR>
 nnoremap \r :action Rerun<CR>
 nnoremap \f :action RerunFailedTests<CR>
 nnoremap \b :action ToggleLineBreakpoint<CR>
-nnoremap \d :action ContextDebug<CR>
+nnoremap \g :action ContextDebug<CR>
+nnoremap \d :action Debug<CR>
 nnoremap \n :action ActivateDebugToolWindow<CR>
 nnoremap \m :action MainMenu<CR>
 
