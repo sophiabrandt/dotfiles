@@ -12,5 +12,5 @@ return {
 		[[<Cmd>lua vim.fn.system("tmux popup -h '80%' -w '80%' -E 'lazygit'")<CR>]],
 		{ noremap = true, silent = true }),
 	vim.api.nvim_set_keymap('i', 'hsr', '=>', { silent = true, noremap = true }),
-	vim.api.nvim_set_keymap('i', 'nra', '->', { silent = true, noremap = true }),
+	vim.api.nvim_set_keymap('i', 'hra', '->', { silent = true, noremap = true }),
 }
