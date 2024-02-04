@@ -12,3 +12,6 @@ CDD_COMMIT_MSG
 # misc
 .idea
 .DS_Store
+
+# jujutsu
+.jj
