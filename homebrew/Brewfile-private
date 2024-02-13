@@ -1,3 +1,4 @@
+mas "hide.me VPN", id: 953040671
 cask "dropbox"
 cask "adguard"
 cask "adguard-vpn"
