@@ -133,7 +133,7 @@ nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
-nnoremap <leader>y :action ShowIntentionActions<CR>
+nnoremap <leader>p :action PasteMultiple<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>c :action CommentByLineComment<CR>
@@ -145,8 +145,6 @@ nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
-nnoremap <leader>d :action QuickJavaDoc<CR>
-nnoremap <leader>q :action QuickTypeDefinition<CR>
 nnoremap <leader>= :action ReformatCode<CR>
 nnoremap ,a :action Annotate<CR>
 nnoremap ,h :action LocalHistory.ShowHistory<CR>
@@ -159,7 +157,23 @@ vnoremap ,q :action Refactorings.QuickListPopupAction<CR>
 vnoremap ,r :action RefactoringMenu<CR>
 nnoremap ]d :action GotoNextError<CR>
 nnoremap [d :action GotoPreviousError<CR>
+nnoremap ]h :action VcsShowNextChangeMarker<CR>
+nnoremap [h :action VcsShowNextChangeMarker<CR>
 nnoremap ge :action ShowErrorDescription<CR>
+nnoremap <leader>oi :action OptimizeImports<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>rf :action RenameFile<CR>
+nnoremap <leader>ri :action Inline<CR>
+nnoremap <leader>rv :action IntroduceVariable<CR>
+nnoremap <leader>rm :action ExtractMethod<CR>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rp :action IntroduceParameter<CR>
+nnoremap <leader>im :action ImplementMethods<CR>
+nnoremap <leader>om :action OverrideMethods<CR>
+nnoremap <leader>qf :action ShowIntentionActions<CR> //Quickfix
+nnoremap <leader>qd :action QuickJavaDoc<CR>
+nnoremap <leader>qt :action QuickTypeDefinition<CR>
+nnoremap <leader>qi :action QuickImplementations<CR>
 """ Searching and Source Code Navigation -------------------
 nnoremap <C-/> :action FindInPath<CR>
 nnoremap <C-a> :action GotoAction<CR>
@@ -169,12 +183,18 @@ nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <C-s> :action FileStructurePopup<CR>
 nnoremap <C-y> :action GotoSymbol<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fc :action GotoClass<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>fg :action FindInPath<CR>
+nnoremap <leader>fr :action ReplaceInPath<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gp :action GotoSuperMethod<CR>
 nnoremap gt :action GotoTest<CR>
-nnoremap gb :action Back<CR>
-nnoremap gf :action Forward<CR>
+nnoremap <C-o> :action Back<CR>
+nnoremap <C-i> :action Forward<CR>
 nnoremap <C-S-g> :!echo % \| sed "s#${HOME}#~#"<CR>
 """ Tool windows -------------------
 nnoremap <C-p> :action JumpToLastWindow<CR>
