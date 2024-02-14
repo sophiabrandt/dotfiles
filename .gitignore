@@ -24,5 +24,6 @@ bin/.local/scripts/goland
 bin/.local/scripts/rider
 bin/.local/scripts/idea
 bin/.local/scripts/webstorm*
+bin/.local/scripts/weap
 bin/.local/scripts/datagrip
 
