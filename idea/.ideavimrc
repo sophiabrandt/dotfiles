@@ -143,7 +143,6 @@ nnoremap <leader>g :action Generate<CR>
 nnoremap <leader>h :action TogglePopupHints<CR>
 nnoremap <leader>s :action SaveAll<CR>
 nnoremap <leader>l :action Stylelint.Fix<CR>
-nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>a :action Vcs.RollbackChangedLines<CR>
 nnoremap <leader>= :action ReformatCode<CR>
 nnoremap ,a :action Annotate<CR>
@@ -160,6 +159,7 @@ nnoremap [d :action GotoPreviousError<CR>
 nnoremap ]h :action VcsShowNextChangeMarker<CR>
 nnoremap [h :action VcsShowNextChangeMarker<CR>
 nnoremap ge :action ShowErrorDescription<CR>
+nnoremap <leader>er :action ShowErrorDescription<CR>
 nnoremap <leader>oi :action OptimizeImports<CR>
 nnoremap <leader>rn :action RenameElement<CR>
 nnoremap <leader>rf :action RenameFile<CR>
