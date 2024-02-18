@@ -15,3 +15,6 @@ CDD_COMMIT_MSG
 
 # jujutsu
 .jj
+
+# scratch files
+*scratch*
