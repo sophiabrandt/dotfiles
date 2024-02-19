@@ -170,7 +170,7 @@ nnoremap <leader>rr :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>rp :action IntroduceParameter<CR>
 nnoremap <leader>im :action ImplementMethods<CR>
 nnoremap <leader>om :action OverrideMethods<CR>
-nnoremap <leader>qf :action ShowIntentionActions<CR> //Quickfix
+nnoremap <leader>qf :action ShowIntentionActions<CR>
 nnoremap <leader>qd :action QuickJavaDoc<CR>
 nnoremap <leader>qt :action QuickTypeDefinition<CR>
 nnoremap <leader>qi :action QuickImplementations<CR>
