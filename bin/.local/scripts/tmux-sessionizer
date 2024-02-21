@@ -9,7 +9,7 @@ list_sessions() {
 }
 
 list_directories() {
-  fd -t d --exact-depth 1 . $HOME $HOME/projects $HOME/projects/personal $HOME/projects/work
+  fd -t d --exact-depth 1 . $HOME $HOME/projects
 }
 
 if [[ $# -eq 1 ]]; then
