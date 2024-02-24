@@ -86,7 +86,7 @@ abbr -a -- hs 'history search'
 abbr -a -- kb kubectl 
 abbr -a -- kn kind 
 abbr -a -- kz kustomize 
-abbr -a -- ll 'exa -la' 
+abbr -a -- ll 'eza -la' 
 abbr -a -- ls exa 
 abbr -a -- lz lazygit
 abbr -a -- mk minikube 
