@@ -26,4 +26,13 @@ vim.cmd.colorscheme "nord"
 
 		end,
 	},
+	-- poimandres
+	{
+		'olivercederborg/poimandres.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+
+		end
+	},
 }

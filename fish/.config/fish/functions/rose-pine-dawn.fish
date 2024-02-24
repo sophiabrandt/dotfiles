@@ -12,5 +12,4 @@ function rose-pine-dawn
     gsed -i "17s/.*//" $nvim_config_path
     gsed -i "26s/.*/$nvim_new_theme/" $nvim_config_path
     gsed -i "35s/.*//" $nvim_config_path
-    gsed -i "44s/.*//" $nvim_config_path
 end
