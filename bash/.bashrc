@@ -30,6 +30,9 @@ fi
 # dotnet 6
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet@6/libexec"
 export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
+# dotnet ef & mono
+export PATH=$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin/
+export PATH="$PATH:/$HOME/.dotnet/tools"
 
 
 # grapheasy
