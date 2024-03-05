@@ -716,5 +716,9 @@ require('lspconfig').efm.setup(vim.tbl_extend('force', efmls_config, {
   -- capabilities = capabilities,
 }))
 
+-- enable project local configs
+vim.o.exrc = true
+vim.o.secure = true
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
