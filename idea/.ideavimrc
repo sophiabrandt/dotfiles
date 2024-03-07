@@ -60,8 +60,8 @@ set idearefactormode=keep
 """ Plugin Mappings --------------------------------
 map  ; <Plug>(easymotion-sn)
 omap ; <Plug>(easymotion-tn)
-nmap s <Plug>(easymotion-s2)
-nmap S <Plug>(easymotion-s) 
+nmap f <Plug>(easymotion-s2)
+nmap F <Plug>(easymotion-s) 
 nmap t <Plug>(easymotion-t2)
 nmap T <Plug>(easymotion-T2)
 
