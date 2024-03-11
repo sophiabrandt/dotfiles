@@ -27,3 +27,6 @@ bin/.local/scripts/webstorm*
 bin/.local/scripts/weap
 bin/.local/scripts/datagrip
 
+
+# nvim
+lazy-lock.json
