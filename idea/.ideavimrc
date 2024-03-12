@@ -48,10 +48,6 @@ set nu
 nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap \v :action IdeaVim.ReloadVimRc.reload<CR>
 
-""" Insert mappings ------------------
-inoremap hsr =>
-inoremap hra ->
-
 """ Idea specific settings ------------------
 set ideajoin
 set ideastatusicon=gray
