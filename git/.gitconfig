@@ -83,6 +83,7 @@
   pj = !which onefetch && onefetch
   # show conflicted files
   uu = diff --name-only --diff-filter=U
+  staa = stash --all
 [color]
   ui = auto
   diff = auto
