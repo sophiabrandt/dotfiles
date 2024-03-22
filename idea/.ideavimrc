@@ -149,8 +149,6 @@ nnoremap ,l :action RecentLocations<CR>
 nnoremap ,p :action ReformatWithPrettierAction<CR>
 nnoremap ,q :action Refactorings.QuickListPopupAction<CR>
 nnoremap ,r :action RefactoringMenu<CR>
-vnoremap ,q :action Refactorings.QuickListPopupAction<CR>
-vnoremap ,r :action RefactoringMenu<CR>
 nnoremap ]d :action GotoNextError<CR>
 nnoremap [d :action GotoPreviousError<CR>
 nnoremap ]h :action VcsShowNextChangeMarker<CR>
