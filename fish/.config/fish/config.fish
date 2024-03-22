@@ -87,7 +87,7 @@ abbr -a -- kb kubectl
 abbr -a -- kn kind 
 abbr -a -- kz kustomize 
 abbr -a -- ll 'eza -la' 
-abbr -a -- ls exa 
+abbr -a -- ls eza 
 abbr -a -- lz lazygit
 abbr -a -- mk minikube 
 abbr -a -- mkb 'minicube kubectl --' 
