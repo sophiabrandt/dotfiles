@@ -1,4 +1,5 @@
 mas "hide.me VPN", id: 953040671
+mas "reMarkable desktop", id: 1276493162
 cask "dropbox"
 cask "adguard"
 cask "adguard-vpn"
