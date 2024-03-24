@@ -188,8 +188,8 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gp :action GotoSuperMethod<CR>
 nnoremap gt :action GotoTest<CR>
-nnoremap <C-o> :action Back<CR>
-nnoremap <C-i> :action Forward<CR>
+nnoremap [b :action Back<CR>
+nnoremap ]b :action Forward<CR>
 nnoremap <C-S-g> :!echo % \| sed "s#${HOME}#~#"<CR>
 """ Tool windows -------------------
 nnoremap <C-p> :action JumpToLastWindow<CR>
