@@ -25,6 +25,7 @@ set ReplaceWithRegister
 set argtextobj
 set commentary
 set easymotion
+set notimeout
 set exchange
 set highlightedyank
 set matchit
@@ -40,7 +41,6 @@ let g:EasyMotion_smartcase = 1
 
 """ Common settings -------------------------
 set showmode
-set so=5
 set incsearch
 set nu
 
@@ -169,6 +169,10 @@ nnoremap <leader>qf :action ShowIntentionActions<CR>
 nnoremap <leader>qd :action QuickJavaDoc<CR>
 nnoremap <leader>qt :action QuickTypeDefinition<CR>
 nnoremap <leader>qi :action QuickImplementations<CR>
+""" Popup navigation -------------------
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+inoremap <C-y> <Action>(PopupMenu-return)
 """ Searching and Source Code Navigation -------------------
 nnoremap <C-/> :action FindInPath<CR>
 nnoremap <C-a> :action GotoAction<CR>
