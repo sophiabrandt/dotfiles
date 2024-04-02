@@ -32,4 +32,4 @@ brew "rustup-init"
 brew "monolith"
 cask "slack"
 brew "jstkdng/programs/ueberzugpp"
-
+cask "macwhisper"
