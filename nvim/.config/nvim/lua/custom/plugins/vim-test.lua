@@ -5,11 +5,11 @@ return {
   },
   config = function()
     -- Set the keymaps
-    vim.api.nvim_set_keymap('n', 't', ':TestNearest', { silent = true, noremap = true })
-    vim.api.nvim_set_keymap('n', 'T', ':TestFile', { silent = true, noremap = true })
-    vim.api.nvim_set_keymap('n', 'a', ':TestSuite', { silent = true, noremap = true })
-    vim.api.nvim_set_keymap('n', 'L', ':TestLast', { silent = true, noremap = true })
-    vim.api.nvim_set_keymap('n', 'g', ':TestVisit', { silent = true, noremap = true })
+    vim.api.nvim_set_keymap('n', '<leader>t', ':TestNearest', { silent = true, noremap = true })
+    vim.api.nvim_set_keymap('n', '<leader>T', ':TestFile', { silent = true, noremap = true })
+    vim.api.nvim_set_keymap('n', '<leader>a', ':TestSuite', { silent = true, noremap = true })
+    vim.api.nvim_set_keymap('n', '<leader>L', ':TestLast', { silent = true, noremap = true })
+    vim.api.nvim_set_keymap('n', '<leader>g', ':TestVisit', { silent = true, noremap = true })
 
     -- Set the test strategy
     vim.cmd 'let test#strategy = "vimux"'
