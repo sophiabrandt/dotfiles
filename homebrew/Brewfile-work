@@ -12,3 +12,4 @@ cask "dotnet-sdk8-0-100"
 cask "jabra-direct"
 cask "muzzle"
 cask "stats"
+mas "focalboard", id: 1596283165
