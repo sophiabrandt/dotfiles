@@ -33,3 +33,6 @@ lazy-lock.json
 # sioyek
 sioyek/
 !"sioyek/Library/Application Support/sioyek/keys_user.config"
+
+# hammerspoon/rcmd
+hammerspoon/.hammerspoon/rcmd.lua
