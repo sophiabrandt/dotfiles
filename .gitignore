@@ -27,6 +27,9 @@ bin/.local/scripts/webstorm*
 bin/.local/scripts/weap
 bin/.local/scripts/datagrip
 
-
 # nvim
 lazy-lock.json
+
+# sioyek
+sioyek/
+!"sioyek/Library/Application Support/sioyek/keys_user.config"
