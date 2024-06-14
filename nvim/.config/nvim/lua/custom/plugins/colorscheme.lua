@@ -26,6 +26,15 @@ vim.cmd.colorscheme "nord"
 
 		end,
 	},
+	-- falcon
+	{
+		'fenetikm/falcon',
+		lazy = false,
+		priority = 1000,
+		config = function()
+
+		end
+	},
 	-- poimandres
 	{
 		'olivercederborg/poimandres.nvim',
