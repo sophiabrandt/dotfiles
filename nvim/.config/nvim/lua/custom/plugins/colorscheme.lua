@@ -10,7 +10,7 @@ local colorschemes = {
     priority = 1000,
     config = function()
       if colorscheme == 'nord' then
-        vim.cmd.command 'nord'
+        vim.cmd.colorscheme 'nord'
       end
     end,
   },
@@ -21,10 +21,10 @@ local colorschemes = {
     priority = 1000,
     config = function()
       if colorscheme == 'github_dark' then
-        vim.cmd.command 'github_dark_dimmed'
+        vim.cmd.colorscheme 'github_dark_dimmed'
       end
       if colorscheme == 'github_light' then
-        vim.cmd.command 'github_light'
+        vim.cmd.colorscheme 'github_light'
       end
     end,
   },
@@ -35,7 +35,7 @@ local colorschemes = {
     priority = 1000,
     config = function()
       if colorscheme == 'darcula' then
-        vim.cmd.command 'darcula'
+        vim.cmd.colorscheme 'darcula'
       end
     end,
   },
@@ -46,7 +46,7 @@ local colorschemes = {
     priority = 1000,
     config = function()
       if colorscheme == 'falcon' then
-        vim.cmd.command 'falcon'
+        vim.cmd.colorscheme 'falcon'
       end
     end,
   },
@@ -58,10 +58,10 @@ local colorschemes = {
     priority = 1000,
     config = function()
       if colorscheme == 'catppuccin_latte' then
-        vim.cmd.command 'catppuccin-latte'
+        vim.cmd.colorscheme 'catppuccin-latte'
       end
       if colorscheme == 'catppuccin_mocha' then
-        vim.cmd.command 'catppuccin-mocha'
+        vim.cmd.colorscheme 'catppuccin-mocha'
       end
     end,
   },
