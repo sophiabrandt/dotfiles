@@ -1,6 +1,6 @@
 function set_theme
   set -f theme $argv[1]
-  set -gx NVIM_COLORSCHEME $theme
+  echo $theme > ~/.colorscheme
 
   echo "Switched to $theme theme"
 end

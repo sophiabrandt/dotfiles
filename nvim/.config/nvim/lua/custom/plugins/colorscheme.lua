@@ -1,5 +1,16 @@
 -- custom/plugins/colorscheme.lua
-local colorscheme = os.getenv 'NVIM_COLORSCHEME' or 'nord'
+local function read_theme_from_file()
+  local file = io.open(os.getenv 'HOME' .. '/.colorscheme', 'r')
+  if file then
+    local theme = file:read '*all'
+    file:close()
+    return theme:gsub('%s+', '') -- remove any whitespace
+  else
+    return 'nord' -- default theme if file does not exist
+  end
+end
+
+local colorscheme = read_theme_from_file()
 
 -- List of color scheme plugins
 local colorschemes = {
