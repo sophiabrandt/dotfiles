@@ -12,12 +12,10 @@ bind \cf tmux-sessionizer
 switch (uname)
   case Darwin
     alias xdg-open='open &>/dev/null'
-    alias pbc=pbcopy
-    alias pbp=pbpaste
   case Linux
     alias open='xdg-open &>/dev/null'
-    alias pbcopy=pbc
-    alias pbpaste=pbp
+    alias pbcopy=xsel --clipboard --input $argv;
+    alias pbpaste=xsel --clipboard --output $argv;
 end
 
 # abbreviations
