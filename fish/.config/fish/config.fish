@@ -18,6 +18,9 @@ switch (uname)
     alias pbpaste=xsel --clipboard --output $argv;
 end
 
+# direnv
+direnv hook fish | source
+
 # abbreviations
 abbr -a -- - 'cd -' 
 abbr -a -- b bun
