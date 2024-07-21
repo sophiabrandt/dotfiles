@@ -20,12 +20,15 @@ kitty/.config/kitty/kitty.conf.bak
 # .local
 bin/.local/state
 bin/.local/share
-bin/.local/scripts/goland
-bin/.local/scripts/rider
-bin/.local/scripts/idea
-bin/.local/scripts/webstorm*
-bin/.local/scripts/weap
-bin/.local/scripts/datagrip
+bin/.local/scripts
+!!bin/.local/scripts/tat
+!!bin/.local/scripts/tm
+!!bin/.local/scripts/tmux-sessionizer
+!!bin/.local/scripts/git-rename.sh
+!!bin/.local/scripts/$
+!!bin/.local/scripts/$
+!!bin/.local/scripts/ytwatch*
+
 
 # nvim
 lazy-lock.json
