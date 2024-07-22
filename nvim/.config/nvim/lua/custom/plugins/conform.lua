@@ -13,14 +13,21 @@ return {
     },
   },
   -- Everything in opts will be passed to setup()
+  -- This will provide type hinting with LuaLS
+  ---@module "conform"
+  ---@type conform.setupOpts
   opts = {
     -- Define your formatters
     formatters_by_ft = {
       lua = { 'stylua' },
-      go = { { 'gofumpt', 'gofmt' }, 'goimports' },
-      javascript = { { 'prettierd', 'prettier' } },
+      go = { 'gofumpt', 'goimports' },
+      javascript = { 'prettierd', 'prettier', stop_after_first = true },
       markdown = { 'mdformat', 'markdownlint' },
       python = { 'isort', 'black' },
+    },
+    -- Set default options
+    default_format_opts = {
+      lsp_format = 'fallback',
     },
     -- Set up format-on-save
     format_on_save = function(bufnr)
@@ -57,5 +64,27 @@ return {
     })
     -- If you want the formatexpr, here is the place to set it
     vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
+
+    -- Automatically run slow formatters async
+    local slow_format_filetypes = {}
+    require('conform').setup {
+      format_on_save = function(bufnr)
+        if slow_format_filetypes[vim.bo[bufnr].filetype] then
+          return
+        end
+        local function on_format(err)
+          if err and err:match 'timeout$' then
+            slow_format_filetypes[vim.bo[bufnr].filetype] = true
+          end
+        end
+        return { timeout_ms = 200, lsp_format = 'fallback' }, on_format
+      end,
+      format_after_save = function(bufnr)
+        if not slow_format_filetypes[vim.bo[bufnr].filetype] then
+          return
+        end
+        return { lsp_format = 'fallback' }
+      end,
+    }
   end,
 }

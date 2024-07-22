@@ -43,16 +43,15 @@
   enabled = true
 [difftool]
   prompt = false
-[mergetool "nvim"]
-  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[mergetool "vim_mergetool"]
+  cmd = nvim -f -c "MergetoolStart $MERGED $BASE $LOCAL $REMOTE"
 [mergetool]
   prompt = false
 [merge]
   stat = true
-  tool = nvim
+  tool = vim_mergetool
   conflictStyle = zdiff3
   prompt = false
-  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [pull]
   rebase = false
 [alias]

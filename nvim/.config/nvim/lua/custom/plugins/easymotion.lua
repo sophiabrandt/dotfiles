@@ -15,9 +15,9 @@ return {
     vim.api.nvim_set_keymap('n', 'T', '<Plug>(easymotion-T2)', {})
 
     -- Leader key mappings
-    vim.api.nvim_set_keymap('n', '<Leader>l', '<Plug>(easymotion-lineforward)', {})
-    vim.api.nvim_set_keymap('n', '<Leader>j', '<Plug>(easymotion-j)', {})
-    vim.api.nvim_set_keymap('n', '<Leader>k', '<Plug>(easymotion-k)', {})
-    vim.api.nvim_set_keymap('n', '<Leader>h', '<Plug>(easymotion-linebackward)', {})
+    vim.api.nvim_set_keymap('n', '<Leader>l', '<Plug>(easymotion-lineforward)', { desc = 'Line forward' })
+    vim.api.nvim_set_keymap('n', '<Leader>j', '<Plug>(easymotion-j)', { desc = 'Jump forward' })
+    vim.api.nvim_set_keymap('n', '<Leader>k', '<Plug>(easymotion-k)', { desc = 'Jump backward' })
+    vim.api.nvim_set_keymap('n', '<Leader>h', '<Plug>(easymotion-linebackward)', { desc = 'Line backward' })
   end,
 }
