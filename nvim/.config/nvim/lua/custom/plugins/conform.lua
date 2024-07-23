@@ -29,14 +29,6 @@ return {
     default_format_opts = {
       lsp_format = 'fallback',
     },
-    -- Set up format-on-save
-    format_on_save = function(bufnr)
-      -- Disable with a global or buffer-local variable
-      if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
-        return
-      end
-      return { timeout_ms = 500, lsp_fallback = true }
-    end,
     -- Customize formatters
     formatters = {
       shfmt = {
@@ -80,6 +72,9 @@ return {
         return { timeout_ms = 200, lsp_format = 'fallback' }, on_format
       end,
       format_after_save = function(bufnr)
+        if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
+          return
+        end
         if not slow_format_filetypes[vim.bo[bufnr].filetype] then
           return
         end
