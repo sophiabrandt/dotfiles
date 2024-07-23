@@ -1,0 +1,4 @@
+function nano_light
+  kitty +kitten themes --reload-in=all Adwaita light
+  set_theme 'nano_light'
+end

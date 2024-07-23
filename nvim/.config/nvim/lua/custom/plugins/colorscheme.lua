@@ -14,6 +14,22 @@ local colorscheme = read_theme_from_file()
 
 -- List of color scheme plugins
 local colorschemes = {
+  -- nano
+  {
+    'ronisbr/nano-theme.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      if colorscheme == 'nano_dark' then
+        vim.cmd.colorscheme 'nano-theme'
+        vim.o.background = 'dark'
+      end
+      if colorscheme == 'nano_light' then
+        vim.cmd.colorscheme 'nano-theme'
+        vim.o.background = 'light'
+      end
+    end,
+  },
   -- nord
   {
     'shaunsingh/nord.nvim',
