@@ -97,6 +97,7 @@ cask "1password"
 cask "1password-cli"
 cask "zoom"
 cask "hammerspoon"
+cask "brave-browser"
 mas "Keynote", id: 409183694
 mas "Klipped", id: 1053809492
 mas "Numbers", id: 409203825
