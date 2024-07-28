@@ -61,6 +61,10 @@ return {
     local slow_format_filetypes = {}
     require('conform').setup {
       format_on_save = function(bufnr)
+        -- Check the disable_autoformat flags before formatting
+        if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
+          return
+        end
         if slow_format_filetypes[vim.bo[bufnr].filetype] then
           return
         end
@@ -72,6 +76,7 @@ return {
         return { timeout_ms = 200, lsp_format = 'fallback' }, on_format
       end,
       format_after_save = function(bufnr)
+        -- Check the disable_autoformat flags before formatting
         if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
           return
         end
