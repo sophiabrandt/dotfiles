@@ -81,7 +81,6 @@ brew "eth-p/software/bat-extras"
 brew "oven-sh/bun/bun"
 brew "tankerhq/repo/ruplacer"
 cask "alfred"
-cask "amethyst"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "jetbrains-toolbox"
@@ -92,7 +91,6 @@ cask "kitty"
 cask "knockknock"
 cask "notunes"
 cask "sioyek"
-cask "rectangle-pro"
 cask "1password"
 cask "1password-cli"
 cask "zoom"
@@ -103,3 +101,4 @@ mas "Klipped", id: 1053809492
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "rcmd", id: 1596283165
+mas "Charmstone", id:  1563735522
