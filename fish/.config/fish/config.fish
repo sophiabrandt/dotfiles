@@ -18,6 +18,9 @@ switch (uname)
     alias pbpaste=xsel --clipboard --output $argv;
 end
 
+# dotnet
+complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
+
 # direnv
 direnv hook fish | source
 
