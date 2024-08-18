@@ -1,0 +1,42 @@
+{
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "left_shift" }],
+                                "to_if_alone": [{ "key_code": "spacebar" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) | Escape if alone | Use fn + caps lock to enable caps lock",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "caps_lock" },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true
+        }
+    ]
+}

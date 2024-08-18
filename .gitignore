@@ -39,3 +39,6 @@ sioyek/
 
 # hammerspoon/rcmd
 hammerspoon/.hammerspoon/rcmd.lua
+
+# karabiner
+automatic_backups/
