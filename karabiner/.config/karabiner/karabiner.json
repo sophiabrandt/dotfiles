@@ -1,125 +1,42 @@
 {
-  "profiles": [
-    {
-      "complex_modifications": {
-        "rules": [
-          {
-            "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": { "optional": ["any"] }
-                },
-                "to": [{ "key_code": "left_shift" }],
-                "to_if_alone": [{ "key_code": "spacebar" }],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) | Escape if alone | Use fn + caps lock to enable caps lock",
-            "manipulators": [
-              {
-                "from": { "key_code": "caps_lock" },
-                "to": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": ["left_command", "left_control", "left_option"]
-                  }
-                ],
-                "to_if_alone": [{ "key_code": "escape" }],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Colemak CAW to CAWS",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "7"
-                },
-                "to": [
-                  {
-                    "key_code": "backslash"
-                  }
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "left_shift" }],
+                                "to_if_alone": [{ "key_code": "spacebar" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) | Escape if alone | Use fn + caps lock to enable caps lock",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "caps_lock" },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    }
                 ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "7",
-                  "modifiers": {
-                    "mandatory": ["shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "backslash",
-                    "modifiers": ["shift"]
-                  }
-                ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "equal_sign"
-                },
-                "to": [
-                  {
-                    "key_code": "7"
-                  }
-                ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "equal_sign",
-                  "modifiers": {
-                    "mandatory": ["shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "7",
-                    "modifiers": ["shift"]
-                  }
-                ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "backslash"
-                },
-                "to": [
-                  {
-                    "key_code": "equal_sign"
-                  }
-                ]
-              },
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "backslash",
-                  "modifiers": {
-                    "mandatory": ["shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "equal_sign",
-                    "modifiers": ["shift"]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      "name": "Default profile",
-      "selected": true
-    }
-  ]
+            },
+            "name": "Default profile",
+            "selected": true
+        }
+    ]
 }
