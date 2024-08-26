@@ -34,6 +34,7 @@ abbr -a -- cl colima
 abbr -a -- cn 'colima nerdctl' 
 abbr -a -- d docker 
 abbr -a -- dc 'docker compose' 
+abbr -a -- dt 'dotnet'
 abbr -a -- dy 'dig +noall +answer +additional $argv @dns.toys'
 abbr -a -- dm docker-machine 
 abbr -a -- dv devbox 
