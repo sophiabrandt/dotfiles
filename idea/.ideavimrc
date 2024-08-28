@@ -85,8 +85,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-nmap <TAB> <Action>(PreviousTab)
-nmap <s-TAB> <Action>(NextTab)
+nmap <s-TAB> <Action>(PreviousTab)
+nmap <TAB> <Action>(NextTab)
 nmap <leader>en <Action>(EditSourceInNewWindow)
 nmap <leader>n <Action>(NextWindow)
 map <leader>x <Action>(CloseContent)
@@ -179,9 +179,9 @@ map <leader>gc <Action>(CheckinProject)
 map <leader>gs <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
 """ Popup navigation -------------------
-imap <C-j> <Action>(PopupMenu-selectNext)
-imap <C-k> <Action>(PopupMenu-selectPrev)
-imap <C-y> <Action>(PopupMenu-return)
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+inoremap <C-y> <Action>(PopupMenu-return)
 """ Searching and Source Code Navigation -------------------
 nmap <C-/> <Action>(FindInPath)
 nmap <C-a> <Action>(GotoAction)
