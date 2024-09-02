@@ -179,8 +179,6 @@ map <leader>gc <Action>(CheckinProject)
 map <leader>gs <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
 """ Popup navigation -------------------
-inoremap <C-j> <Action>(PopupMenu-selectNext)
-inoremap <C-k> <Action>(PopupMenu-selectPrev)
 inoremap <C-y> <Action>(PopupMenu-return)
 """ Searching and Source Code Navigation -------------------
 nmap <C-/> <Action>(FindInPath)
