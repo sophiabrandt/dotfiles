@@ -7,6 +7,7 @@ tap "homebrew/services"
 tap "oven-sh/bun"
 tap "tankerhq/repo"
 tap "teamookla/speedtest"
+brew "arkade"
 brew "jj"
 cask "arc"
 brew "bash"
@@ -95,6 +96,7 @@ cask "1password-cli"
 cask "zoom"
 cask "hammerspoon"
 cask "brave-browser"
+cask "chatgpt"
 mas "Keynote", id: 409183694
 mas "Klipped", id: 1053809492
 mas "Numbers", id: 409203825
