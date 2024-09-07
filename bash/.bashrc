@@ -22,6 +22,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export HOMEBREW_NO_ENV_HINT=1
 export BASH_SILENCE_DEPRECATION_WARNING=1
 if command -v go &>/dev/null; then
     export GOPATH="$HOME/.go"
