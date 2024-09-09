@@ -76,13 +76,16 @@
   lola = log --graph --decorate --oneline --all
   # Diff, Status
   df = diff --color=always --color-words --abbrev
-  st = status -s
+  st = status -sb
   last = log -1 HEAD
   unstage = reset HEAD --
   pj = !which onefetch && onefetch
   # show conflicted files
   uu = diff --name-only --diff-filter=U
   staa = stash --all
+  wta = worktree add
+  wtl = worktree list
+  wtr = worktree remove
 [color]
   ui = auto
   diff = auto
