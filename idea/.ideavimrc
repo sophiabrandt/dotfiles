@@ -203,7 +203,7 @@ nmap gs <Action>(GotoSuperMethod)
 nmap gt <Action>(GotoTest)
 nmap [b <Action>(Back)
 nmap ]b <Action>(Forward)
-nnoremap <C-S-g> :!echo % \| sed "s#${HOME}#~#"<CR>
+nnoremap <C-S-g> :!echo %<CR>
 """ Tool windows -------------------
 nmap <C-p> <Action>(JumpToLastWindow)
 nmap <C-q> <Action>(HideAllWindows)
