@@ -6,6 +6,7 @@ return {
     "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>",
     { noremap = true, desc = 'Search [F]iles' }
   ),
+  vim.api.nvim_set_keymap('n', '<leader>mt', ':MergetoolToggle<CR>', { silent = true, noremap = true, desc = 'Mergetool Toggle' }),
   vim.api.nvim_set_keymap('v', 'J', ":m '>+1<CR>gv=gv", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap('v', 'K', ":m '<-2<CR>gv=gv", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap('n', '<leader>x', ':<C-u>bp<bar>bd! #<CR>', { silent = true, noremap = true, desc = 'Close buffer' }),
