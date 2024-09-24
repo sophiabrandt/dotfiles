@@ -4,11 +4,11 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Change ⌘+n(j) to Delete/Backspace",
+                        "description": "Change ⌘+m/h to Delete/Backspace",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": ["command"],
                                         "optional": []
@@ -134,9 +134,7 @@
                         "description": "Change spacebar to left_shift. (Post spacebar if pressed alone)",
                         "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "spacebar"
-                                },
+                                "from": { "key_code": "spacebar" },
                                 "to": [{ "key_code": "left_shift" }],
                                 "to_if_alone": [{ "key_code": "spacebar" }],
                                 "type": "basic"
@@ -151,7 +149,12 @@
                                     "key_code": "spacebar",
                                     "modifiers": { "mandatory": ["left_control"] }
                                 },
-                                "to": [{ "repeat": true, "key_code": "return_or_enter" }],
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "repeat": true
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
