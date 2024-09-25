@@ -20,6 +20,26 @@
             ]
           },
           {
+            "description": "Map option + tab to fn + Left ⌘",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "tab",
+                  "modifiers": {
+                    "mandatory": ["left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "apple_vendor_top_case_key_code": "keyboard_fn",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Swap \"command + tab\" with \"control + tab\" optional shift.",
             "manipulators": [
               {
