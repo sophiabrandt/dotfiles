@@ -25,9 +25,7 @@
               {
                 "from": {
                   "key_code": "tab",
-                  "modifiers": {
-                    "mandatory": ["left_option"]
-                  }
+                  "modifiers": { "mandatory": ["left_option"] }
                 },
                 "to": [
                   {
@@ -228,6 +226,19 @@
             {
               "from": { "key_code": "right_option" },
               "to": [{ "key_code": "right_command" }]
+            }
+          ]
+        },
+        {
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 13330,
+            "vendor_id": 14
+          },
+          "simple_modifications": [
+            {
+              "from": { "key_code": "right_control" },
+              "to": [{ "apple_vendor_keyboard_key_code": "function" }]
             }
           ]
         }
