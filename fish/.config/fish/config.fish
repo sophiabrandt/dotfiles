@@ -89,6 +89,7 @@ abbr -a -- gtst 'git tst'
 abbr -a -- gwa 'git worktree add'
 abbr -a -- gwl 'git worktree list'
 abbr -a -- gwr 'git worktree remove'
+abbr -a -- fb 'bat (fd | fzy)'
 abbr -a -- gu 'gitui' 
 abbr -a -- h hx 
 abbr -a -- hd 'history delete' 
