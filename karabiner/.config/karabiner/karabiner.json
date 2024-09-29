@@ -20,6 +20,22 @@
             ]
           },
           {
+            "description": "Change ⌘+g to Delete Forward",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "g",
+                  "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": []
+                  }
+                },
+                "to": [{ "key_code": "delete_forward" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Map option + tab to fn + Left ⌘",
             "manipulators": [
               {
