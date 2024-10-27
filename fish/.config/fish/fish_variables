@@ -7,6 +7,7 @@ SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR F_DATA_DIR:/home/owlhoot/\x2elocal/share/f
 SETUVAR F_PICKER:fzy
+SETUVAR --export PAGER:most
 SETUVAR Z_DATA_DIR:/home/owlhoot/\x2elocal/share/z
 SETUVAR __async_prompt_fish_prompt_text_10302:\x1b\x5b34m\x7e\x1b\x28B\x1b\x5bm\x20\u03bb\x20
 SETUVAR __fish_init_2_39_8:\x1d
