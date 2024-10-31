@@ -316,11 +316,13 @@
             "is_keyboard": true,
             "product_id": 18008,
             "vendor_id": 65261
-          }
+          },
+          "ignore": true
         }
       ],
       "name": "ergo_board",
-      "selected": true
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
     }
   ]
 }
