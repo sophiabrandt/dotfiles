@@ -9,6 +9,8 @@ return {
   vim.api.nvim_set_keymap('n', '<leader>mt', ':MergetoolToggle<CR>', { silent = true, noremap = true, desc = 'Mergetool Toggle' }),
   vim.api.nvim_set_keymap('v', 'J', ":m '>+1<CR>gv=gv", { noremap = true, silent = true }),
   vim.api.nvim_set_keymap('v', 'K', ":m '<-2<CR>gv=gv", { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true }),
+  vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true }),
   vim.api.nvim_set_keymap('n', '<leader>x', ':<C-u>bp<bar>bd! #<CR>', { silent = true, noremap = true, desc = 'Close buffer' }),
   vim.api.nvim_set_keymap('n', '<leader>X', ':<C-u>%bd<bar>e#<bar>bd#<CR>', { silent = true, noremap = true, desc = 'Close all buffers except current one' }),
   vim.api.nvim_set_keymap('n', '[b', ':bprevious<CR>', { silent = true, noremap = true, desc = 'Previous buffer' }),
