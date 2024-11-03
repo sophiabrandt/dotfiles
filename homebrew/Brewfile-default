@@ -94,7 +94,8 @@ cask "1password"
 cask "1password-cli"
 cask "zoom"
 cask "hammerspoon"
-cask "brave-browser"
+cask "firefox-developer-edition"
+cask "zen-browser"
 cask "chatgpt"
 mas "Applight", id: 6476907452
 mas "Keynote", id: 409183694
