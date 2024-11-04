@@ -3,6 +3,7 @@ mas "reMarkable desktop", id: 1276493162
 cask "dropbox"
 cask "adguard"
 cask "adguard-vpn"
+cask "zen-browser"
 brew "caddy", restart_service: true
 brew "dotnet"
 brew "sqlx-cli"
