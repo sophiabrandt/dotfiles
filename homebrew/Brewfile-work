@@ -7,5 +7,3 @@ tap "isen-ng/dotnet-sdk-versions"
 cask "jabra-direct"
 cask "brave-browser"
 cask "muzzle"
-cask "stats"
-mas "focalboard", id: 1596283165
