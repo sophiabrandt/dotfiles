@@ -101,6 +101,7 @@ abbr -a -- kz kustomize
 abbr -a -- ll 'eza -la' 
 abbr -a -- ls eza 
 abbr -a -- lz lazygit
+abbr -a -- lzd lazydocker
 abbr -a -- mk minikube 
 abbr -a -- mkb 'minicube kubectl --' 
 abbr -a -- mkt mktouch 

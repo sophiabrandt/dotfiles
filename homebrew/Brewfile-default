@@ -1,4 +1,5 @@
 tap "buo/cask-upgrade"
+tap "jesseduffield/lazydocker/lazydocker"
 tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
