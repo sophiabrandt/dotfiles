@@ -12,7 +12,6 @@ stow homebrew
 stow idea
 stow karabiner
 stow kitty
-stow leader-key
 stow nvim
 stow sioyek
 stow starship
