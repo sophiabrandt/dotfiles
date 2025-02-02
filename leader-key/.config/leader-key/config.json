@@ -1,0 +1,85 @@
+{
+  "type" : "group",
+  "actions" : [
+    {
+      "label" : "",
+      "value" : "/Users/me/Applications/kitty.app",
+      "type" : "application",
+      "key" : "t"
+    },
+    {
+      "label" : "",
+      "key" : "o",
+      "actions" : [
+        {
+          "label" : "",
+          "value" : "/Users/me/Applications/Zen Browser.app",
+          "type" : "application",
+          "key" : "z"
+        },
+        {
+          "value" : "/Applications/Messages.app",
+          "type" : "application",
+          "key" : "m",
+          "label" : ""
+        },
+        {
+          "key" : "f",
+          "value" : "/Users/me/Applications/Firefox Developer Edition.app",
+          "label" : "",
+          "type" : "application"
+        },
+        {
+          "type" : "application",
+          "value" : "/Applications/Brave Browser.app",
+          "key" : "b",
+          "label" : ""
+        },
+        {
+          "value" : "/Users/me/Applications/Spotify.app",
+          "key" : "s",
+          "type" : "application",
+          "label" : ""
+        },
+        {
+          "value" : "/Users/me/Applications/Discord.app",
+          "label" : null,
+          "type" : "application",
+          "key" : "d"
+        },
+        {
+          "label" : null,
+          "value" : "/Users/me/Applications/OctoEverywhere.app",
+          "key" : "o",
+          "type" : "application"
+        }
+      ],
+      "type" : "group"
+    },
+    {
+      "key" : "c",
+      "type" : "group",
+      "actions" : [
+        {
+          "value" : "/Users/me/Applications/WebStorm.app",
+          "label" : null,
+          "key" : "w",
+          "type" : "application"
+        },
+        {
+          "label" : null,
+          "key" : "r",
+          "value" : "/Users/me/Applications/Rider.app",
+          "type" : "application"
+        },
+        {
+          "type" : "application",
+          "value" : "/Users/me/Applications/GoLand.app",
+          "key" : "g",
+          "label" : null
+        }
+      ],
+      "label" : null
+    }
+  ]
+}
