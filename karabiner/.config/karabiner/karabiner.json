@@ -326,6 +326,15 @@
                         "product_id": 14649,
                         "vendor_id": 49835
                     }
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 51968,
+                        "vendor_id": 17474
+                    },
+                    "ignore": true
                 }
             ],
             "name": "ergo_board",
