@@ -1,119 +1,119 @@
 {
   "actions" : [
     {
-      "type" : "application",
+      "key" : "t",
       "value" : "/Users/me/Applications/kitty.app",
       "label" : "terminal",
-      "key" : "t"
+      "type" : "application"
     },
     {
-      "type" : "group",
-      "key" : "o",
       "actions" : [
         {
-          "key" : "z",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Users/me/Applications/Zen Browser.app"
-        },
-        {
-          "type" : "application",
-          "key" : "m",
-          "label" : "",
-          "value" : "/Applications/Messages.app"
-        },
-        {
-          "label" : "",
           "key" : "f",
           "type" : "application",
-          "value" : "/Users/me/Applications/Firefox Developer Edition.app"
+          "value" : "/Users/me/Applications/Firefox Developer Edition.app",
+          "label" : ""
         },
         {
+          "type" : "application",
           "label" : "",
-          "value" : "/Applications/Brave Browser.app",
           "key" : "b",
-          "type" : "application"
+          "value" : "/Users/me/Applications/Brave Browser.app"
         },
         {
-          "type" : "application",
-          "value" : "/Users/me/Applications/Spotify.app",
           "key" : "s",
-          "label" : ""
+          "type" : "application",
+          "label" : "",
+          "value" : "/Users/me/Applications/Spotify.app"
         },
         {
-          "label" : "",
+          "type" : "application",
           "value" : "/Users/me/Applications/Discord.app",
-          "key" : "d",
-          "type" : "application"
+          "label" : "",
+          "key" : "d"
         },
         {
+          "key" : "c",
           "type" : "application",
           "label" : "",
-          "value" : "/Users/me/Applications/ChatGPT.app",
-          "key" : "c"
+          "value" : "/Users/me/Applications/ChatGPT.app"
         },
         {
-          "type" : "application",
-          "key" : "y",
           "value" : "/Users/me/Applications/YouTube Music.app",
-          "label" : ""
+          "label" : "",
+          "type" : "application",
+          "key" : "y"
         }
       ],
-      "label" : "open"
+      "type" : "group",
+      "label" : "open",
+      "key" : "o"
     },
     {
-      "type" : "group",
       "actions" : [
         {
-          "key" : "w",
-          "type" : "application",
           "label" : "",
-          "value" : "/Users/me/Applications/WebStorm.app"
+          "type" : "application",
+          "value" : "/Users/me/Applications/WebStorm.app",
+          "key" : "w"
         },
         {
-          "label" : "",
+          "type" : "application",
+          "value" : "/Users/me/Applications/Rider.app",
           "key" : "r",
-          "type" : "application",
-          "value" : "/Users/me/Applications/Rider.app"
+          "label" : ""
         },
         {
+          "type" : "application",
           "value" : "/Users/me/Applications/GoLand.app",
           "key" : "g",
-          "type" : "application",
           "label" : ""
+        },
+        {
+          "label" : "",
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Users/me/Applications/DataGrip.app"
+        },
+        {
+          "type" : "application",
+          "value" : "",
+          "label" : null,
+          "key" : ""
         }
       ],
+      "type" : "group",
       "key" : "c",
       "label" : "code"
     },
     {
-      "key" : "p",
       "actions" : [
         {
-          "label" : "",
           "key" : "s",
+          "label" : "",
           "type" : "application",
           "value" : "/Users/me/Applications/OrcaSlicer.app"
         },
         {
-          "label" : "",
           "key" : "o",
-          "type" : "application",
-          "value" : "/Users/me/Applications/OctoEverywhere.app"
-        },
-        {
-          "type" : "application",
           "label" : "",
-          "value" : "/Users/me/Applications/Inkscape.app",
-          "key" : "i"
-        },
-        {
-          "key" : "s",
-          "label" : "",
-          "value" : "/Users/me/Applications/FreeCAD.app",
+          "value" : "/Users/me/Applications/OctoEverywhere.app",
           "type" : "application"
+        },
+        {
+          "label" : "",
+          "type" : "application",
+          "key" : "i",
+          "value" : "/Users/me/Applications/Inkscape.app"
+        },
+        {
+          "value" : "/Users/me/Applications/FreeCAD.app",
+          "key" : "s",
+          "type" : "application",
+          "label" : ""
         }
       ],
+      "key" : "p",
       "type" : "group",
       "label" : "3D printing and stuff"
     },
@@ -122,6 +122,31 @@
       "type" : "application",
       "key" : "f",
       "value" : "/System/Library/CoreServices/Finder.app"
+    },
+    {
+      "label" : "work",
+      "key" : "w",
+      "actions" : [
+        {
+          "key" : "t",
+          "type" : "application",
+          "label" : "",
+          "value" : "/Applications/Microsoft Teams.app"
+        },
+        {
+          "key" : "m",
+          "label" : "",
+          "value" : "/Applications/Microsoft Outlook.app",
+          "type" : "application"
+        }
+      ],
+      "type" : "group"
+    },
+    {
+      "type" : "application",
+      "label" : "",
+      "value" : "/Users/me/Applications/Brave Browser.app",
+      "key" : "b"
     }
   ],
   "type" : "group"
