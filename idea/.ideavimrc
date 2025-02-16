@@ -104,9 +104,6 @@ xnoremap . :norm.<CR>
 noremap Y y$
 " U for redo, the opposite of u for undo.
 nnoremap U <C-r>
-" insert mode mappings
-inoremap aaf ->
-inoremap faf =>
 "-----------------------------
 " readline-like mappings
 "-----------------------------
