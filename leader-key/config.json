@@ -101,13 +101,13 @@
           "value" : "/Users/me/Applications/Inkscape.app"
         },
         {
-          "key" : "s",
+          "key" : "f",
           "label" : "",
           "type" : "application",
           "value" : "/Users/me/Applications/FreeCAD.app"
         }
       ],
-      "key" : "p",
+      "key" : "d",
       "label" : "3D printing and stuff",
       "type" : "group"
     },
